@@ -3,7 +3,6 @@ precomputed/
 pretrained/
 checkpoint/
 checkpoint_latent/
-datasets/
 runs/
 sae/
 sample_h/
