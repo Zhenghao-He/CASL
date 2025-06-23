@@ -673,7 +673,7 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
-    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, use_sae=False, topk_indices=None, topk_to_analyze=None, scale_to_analyze=None,model_save_name=None):
+    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None):
         """
         Apply the model to an input batch.
 
@@ -701,54 +701,23 @@ class UNetModel(nn.Module):
                 # use DeltaBlock
                 if delta_h is None: #Asyrp
                     h2 = h * hs_coeff[0]
-                    if use_sae:
-                        # sae = getattr(self, f"layer_0")
-                        # # import pdb; pdb.set_trace()
-                        # C = h2.shape[1] 
-                        # H, W = h2.shape[2], h2.shape[3]
-                        # input_h = h2.squeeze(0).permute(1, 2, 0).reshape(-1, C).detach()  # [H*W, C]
-                            
-                        # latent, info = sae.encode(input_h, timesteps.long())
-                    
-                        
-                        # latent_full = latent.clone()  # shape: [B, d]
-                        # # import pdb; pdb.set_trace()
-                        # latent_zeroed = th.zeros_like(latent_full)
-                        # topk_idx = topk_indices[:topk_to_analyze]  # list or tensor of indices
-                        # latent_zeroed[:, topk_idx] = latent_full[:, topk_idx] * scale_to_analyze
+                    for i in range(index+1):
+                        # delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb) # delta_h is a tensor of shape (1, C, H* W)
+                        # if perturb:
+                        get_h = getattr(self, f"layer_{i}")
+                        #     state = th.load(model_save_name)[f"{i}"]
+                        #     del state["sae.activation_state_dict"]
+                        #     get_h.load_state_dict(state)
 
-                        # # latent[:, topk_indices[:topk_to_analyze]] *= scale_to_analyze
-
-                        # h_editted = sae.decode(latent_zeroed, info)
-                        # h_editted = h_editted.reshape(H, W, C).permute(2, 0, 1).unsqueeze(0)  # [1, C, H, W]
-
-                        # h_editted = h_editted + h2  # [1, C, H, W]
-
-                        # h2 = h_editted * hs_coeff[1]
-                        # ##################################
-                        for i in range(index+1):
-                            get_h = getattr(self, f"layer_{i}")
-                            state = th.load(model_save_name)[f"{i}"]
-                            del state["sae.activation_state_dict"]
-                            get_h.load_state_dict(state)
-
-                            delta_h = get_h(x = h, 
-                                            t = None if ignore_timestep else timesteps.long(),
-                                            perturb = True,
-                                            topk_indices=topk_indices, 
-                                            topk_to_analyze=topk_to_analyze, 
-                                            scale_to_analyze=scale_to_analyze) # delta_h is a tensor of shape (1, C, H* W)
-                            delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
-                            assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
-                            h2 += delta_h * hs_coeff[i+1]
-
-                    else:
-                        for i in range(index+1):
-                            # delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb) # delta_h is a tensor of shape (1, C, H* W)
-                            delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else timesteps) # delta_h is a tensor of shape (1, C, H* W)
-                            delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
-                            assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
-                            h2 += delta_h * hs_coeff[i+1]
+                        delta_h = get_h(x = h, 
+                                        t = None if ignore_timestep else timesteps.long(),
+                                        perturb = perturb,
+                                        topk_indices=topk_indices, 
+                                        scale_to_analyze=scale_to_analyze) # delta_h is a tensor of shape (1, C, H* W)
+                        delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
+                        assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
+                        h2 += delta_h * hs_coeff[i+1]
+                        # h2 = delta_h * hs_coeff[i+1] 
                 # use input delta_h  : even tough you does not use DeltaBlock, you need to use index is 0.
                 else:  #DiffStyle # DiffStyle; Just ignore this code. We will update about it in README.md later.
                     # pass
@@ -911,7 +880,7 @@ class XBlock(nn.Module):
             hidden_dim=decoder_hidden_dim
         )
 
-    def forward(self, x, t, perturb=False, topk_indices=None, topk_to_analyze=10, scale_to_analyze=1.0):
+    def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0):
         """
         x: Tensor of shape (B, C_in, H, W)
         Return: Tensor of shape (B, C_out, H, W)
@@ -925,7 +894,7 @@ class XBlock(nn.Module):
             z, info = self.sae.encode(x_flat,ts)  # (B, H*W, latent_dim)
         if perturb:
             # import pdb; pdb.set_trace()
-            z[:, topk_indices[:topk_to_analyze]] *= scale_to_analyze
+            z[:, topk_indices] *= scale_to_analyze
         delta_h= self.decoder(z)  # (B, C_out, H, W)
         return delta_h
 

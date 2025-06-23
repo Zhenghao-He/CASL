@@ -10,11 +10,12 @@ export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 # this is for sae analysis
 CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                       \
                         --batch_size 128                                    \
+                        --delta_h                                            \
                         --top_k_indice 1024                              \
                         --epoch_num 100                                      \
                         --alpha 0.5                                           \
                         --topk_to_analyze 256                                  \
-                        --scale_to_analyze 6                                 \
+                        --scale_to_analyze 7                                 \
                         --lr_sae 5e-4                                  \
                         --activation "ReLU"                                 \
                         --k 4096                                              \

@@ -9,6 +9,7 @@ export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
 CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                       \
+                        # --delta_h                                 \ # if you want to use sae to train delta_h, use this flag
                         --batch_size 128                                    \
                         --epoch_num 100                                      \
                         --alpha 2                                           \

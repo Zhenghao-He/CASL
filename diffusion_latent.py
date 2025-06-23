@@ -249,6 +249,8 @@ class Asyrp(object):
                                                     return_clip_loss=True)
         exp_id = os.path.split(self.args.exp)[-1]
         sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
+        if self.args.delta_h:
+            sae_save_name = "delta_" + sae_save_name
         if self.args.load_from_checkpoint:
             save_name = f'checkpoint/{sae_save_name}/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
         else:
@@ -256,12 +258,18 @@ class Asyrp(object):
 
         index_save_name = f"sae/{exp_id}/top{self.args.top_k_indice}_indices_sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
         topk_indices = torch.load(index_save_name)
+        topk_indices = topk_indices[:self.args.topk_to_analyze]
         # sae_save_name = f"sae/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
 
         model = self.load_pretrained_model()
         # model.setattr_edited_sae(sae_save_name) 
         model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
         model.to(self.device)
+        for i in range(self.args.get_h_num):                   
+            get_h = getattr(model, f"layer_{i}")
+            state = torch.load(save_name)[f"{i}"]
+            del state["sae.activation_state_dict"]
+            get_h.load_state_dict(state)
         x_lat_tensor = None
         x0_tensor = None
 
@@ -301,11 +309,11 @@ class Asyrp(object):
                                         x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
                                         folder_dir=save_folder,
                                         file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
-                                        use_sae=True,
+                                        perturb=True,
                                         topk_indices=topk_indices,
-                                        topk_to_analyze = self.args.topk_to_analyze,
+                                        # topk_to_analyze = self.args.topk_to_analyze,
                                         scale_to_analyze = self.args.scale_to_analyze,
-                                        model_save_name = save_name,
+                                        # model_save_name = save_name,
                                         )
                                     
             if step == self.args.n_test_img - 1:
@@ -646,7 +654,7 @@ class Asyrp(object):
                     save_process_delta_h = False, save_process_origin = False,
                     x0_tensor = None, delta_h_dict=None, get_delta_hs=False,
                     folder_dir="", file_name="", hs_coeff=(1.0,1.0),
-                    image_space_noise_dict=None, use_sae=False,topk_indices=None, topk_to_analyze=None, scale_to_analyze=None,model_save_name=None):
+                    image_space_noise_dict=None, perturb=False,topk_indices=None, scale_to_analyze=None):
         
         if save_process_origin or save_process_delta_h:
             os.makedirs(os.path.join(folder_dir,file_name), exist_ok=True)
@@ -715,11 +723,9 @@ class Asyrp(object):
                                         ignore_timestep=self.args.ignore_timesteps,
                                         dt_lambda=self.args.dt_lambda,
                                         warigari=self.args.warigari,
-                                        use_sae=use_sae,
+                                        perturb=perturb,
                                         topk_indices=topk_indices,
-                                        topk_to_analyze=topk_to_analyze,
                                         scale_to_analyze=scale_to_analyze,
-                                        model_save_name=model_save_name,
                                         )
                         progress_bar.update(1)
 

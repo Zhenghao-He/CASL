@@ -229,6 +229,7 @@ def parse_args_and_config():
     parser.add_argument('--sample_h', action='store_true', help='sample_h')
     # Train SAE
     parser.add_argument('--train_sae', action='store_true', help='train_sae')
+    parser.add_argument('--delta_h', action='store_true', help='train delta_h')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch size for training SAE')
     parser.add_argument('--epoch_num', type=int, default=20, help='Number of epochs for training SAE')
     parser.add_argument('--alpha', type=float, default=0, help='Alpha for SAE training')
@@ -283,6 +284,8 @@ def parse_args_and_config():
         pass
 
     sae_save_name = f"sae_{args.activation}_k{args.k}_scale{args.scale}_alpha{args.alpha}_normalize{args.normalize_sae}"
+    if args.delta_h:
+        sae_save_name = "delta_" + sae_save_name
     args.training_image_folder = os.path.join(args.exp, sae_save_name, 'xblock_training_images')
     if not os.path.exists(args.training_image_folder):
         os.makedirs(args.training_image_folder)
