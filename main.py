@@ -225,6 +225,26 @@ def parse_args_and_config():
 
     parser.add_argument('--get_SNR', action="store_true", default=False, help='Whether to get SNR')
 
+    # Sample H
+    parser.add_argument('--sample_h', action='store_true', help='sample_h')
+    # Train SAE
+    parser.add_argument('--train_sae', action='store_true', help='train_sae')
+    parser.add_argument('--batch_size', type=int, default=128, help='Batch size for training SAE')
+    parser.add_argument('--epoch_num', type=int, default=20, help='Number of epochs for training SAE')
+    parser.add_argument('--alpha', type=float, default=0, help='Alpha for SAE training')
+    parser.add_argument('--activation', type=str, default="TopK", help='Activation function for SAE training')
+    parser.add_argument('--k', type=int, default=20, help='K for TopK activation function')
+    parser.add_argument('--scale', type=int, default=32, help='Scale for SAE training')
+    parser.add_argument('--normalize_sae', action='store_true', help='Whether to normalize SAE input')
+    parser.add_argument('--lr_sae', type=float, default=1e-3, help='Learning rate for SAE training')
+    # Train Xblock
+    parser.add_argument('--train_xblock', action='store_true', help='train_xblock')
+
+    # Analysis
+    parser.add_argument('--sae_analysis', action='store_true', help='analysis sae')
+    parser.add_argument('--top_k_indice', type=int, default=20, help='top k indices for sae analysis')
+    parser.add_argument('--topk_to_analyze', type=int, default=20, help='top k indices for sae analysis')
+    parser.add_argument('--scale_to_analyze', type=float, default=32, help='scale for sae analysis')
     args = parser.parse_args()
 
     # parse config file
@@ -262,15 +282,16 @@ def parse_args_and_config():
     elif args.lpips:
         pass
 
-    args.training_image_folder = os.path.join(args.exp, 'training_images')
+    sae_save_name = f"sae_{args.activation}_k{args.k}_scale{args.scale}_alpha{args.alpha}_normalize{args.normalize_sae}"
+    args.training_image_folder = os.path.join(args.exp, sae_save_name, 'xblock_training_images')
     if not os.path.exists(args.training_image_folder):
         os.makedirs(args.training_image_folder)
-    
-    args.test_image_folder = os.path.join(args.exp, 'test_images', str(args.n_test_step))
+
+    args.test_image_folder = os.path.join(args.exp, sae_save_name, 'xblock_test_images', str(args.n_test_step))
     if not os.path.exists(args.test_image_folder):
         os.makedirs(args.test_image_folder)  
 
-    args.image_folder = os.path.join(args.exp, 'image_samples')
+    args.image_folder = os.path.join(args.exp, sae_save_name, 'xblock_image_samples')
     if not os.path.exists(args.image_folder):
         os.makedirs(args.image_folder)
     else:
@@ -329,12 +350,33 @@ def main():
     runner = Asyrp(args, config) # if you want to specify the device, add device="something" in the argument
     try:
         # check the example script files for essential parameters
+        # from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
+        # state_dict = torch.load("sae/sae_model_TopK20_alpha0_scale32.pth")
+        # # import pdb; pdb.set_trace()
+        # sae  = Autoencoder.from_state_dict(state_dict)
+        # import pdb; pdb.set_trace()
         if args.run_train:
             runner.run_training()
         elif args.run_test:
             runner.run_test()
         elif args.lpips:
             runner.compute_lpips_distance()
+        elif args.sample_h:
+            runner.sample_h()
+        elif args.train_sae:
+            runner.train_sae(
+                batch_size=args.batch_size, 
+                epoch_num=args.epoch_num, 
+                alpha=args.alpha, 
+                activation=args.activation, 
+                k=args.k, 
+                scale=args.scale
+            )
+        elif args.train_xblock:
+            runner.run_training()
+        elif args.sae_analysis:
+            runner.get_important_z()
+            runner.edit_by_sae()
 
     except Exception:
         logging.error(traceback.format_exc())

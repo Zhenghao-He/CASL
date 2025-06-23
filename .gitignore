@@ -1,3 +1,16 @@
 test/
 precomputed/
 pretrained/
+checkpoint/
+checkpoint_latent/
+datasets/
+runs/
+sae/
+sample_h/
+test_images/
+utils/*.tsv
+License
+README.md
+requirements.txt
+__pycache__/
+*.py[cod]

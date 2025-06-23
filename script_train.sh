@@ -3,8 +3,9 @@
 sh_file_name="script_train.sh"
 gpu="0"
 
-config="custom.yml" # if you use other dataset, config/path_config.py should be matched
+config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
 guid="smiling" # guid should be in utils/text_dic.py
+export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
 CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
@@ -33,8 +34,8 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
                         --clip_loss_w 1.0                                   \
                         --l1_loss_w 3.0                                     \
                         --retrain 1                                         \
-                        --custom_train_dataset_dir "test_images/celeba/train"       \
-                        --custom_test_dataset_dir "test_images/celeba/test"         \
+                        --custom_train_dataset_dir "hdd1/datasets/celeba_hq/train/male"       \
+                        --custom_test_dataset_dir "hdd1/datasets/celeba_hq/val/male"         \
                         --sh_file_name "script_train.sh"
 
                         # --add_noise_from_xt                               \ # if you compute lpips, use it.

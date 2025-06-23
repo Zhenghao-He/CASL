@@ -6,7 +6,7 @@ config="custom.yml"
 guid="smiling"
 test_step=50    # if large, it takes long time.
 dt_lambda=1.0   # hyperparameter for dt_lambda. This is the method that will appear in the next paper.
-
+export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 CUDA_VISIBLE_DEVICES=$gpu python main.py --run_test                         \
                         --config $config                                    \
                         --exp ./runs/${guid}                                \
@@ -28,8 +28,8 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --run_test                         \
                         --use_x0_tensor                                     \
                         --hs_coeff_delta_h 1.0                              \
                         --dt_lambda $dt_lambda                              \
-                        --custom_train_dataset_dir "test_images/celeba/train"                \
-                        --custom_test_dataset_dir "test_images/celeba/test"                  \
+                        --custom_train_dataset_dir "hdd1/datasets/celeba_hq/train/male"                \
+                        --custom_test_dataset_dir "hdd1/datasets/celeba_hq/val/male"                  \
                         --manual_checkpoint_name "smiling_LC_CelebA_HQ_t999_ninv40_ngen40_0.pth" \
                         --add_noise_from_xt                                 \
                         --lpips_addnoise_th 1.2                             \

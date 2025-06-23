@@ -38,12 +38,18 @@ def denoising_step(xt, t, t_next, *,
                    image_space_noise=0,
                    dt_end = 999,
                    warigari=False,
+                   use_sae=False,
+                   topk_indices=None,
+                   topk_to_analyze=None,
+                   scale_to_analyze=None,
+                   model_save_name=None
                    ):
 
     # Compute noise and variance
     model = models
 
-    et, et_modified, delta_h, middle_h = model(xt, t, index=index, t_edit=t_edit, hs_coeff=hs_coeff, delta_h=delta_h, ignore_timestep=ignore_timestep, use_mask=use_mask)
+    et, et_modified, delta_h, middle_h = model(xt, t, index=index, t_edit=t_edit, hs_coeff=hs_coeff, delta_h=delta_h, ignore_timestep=ignore_timestep, use_mask=use_mask, use_sae=use_sae, topk_indices=topk_indices, topk_to_analyze=topk_to_analyze, scale_to_analyze=scale_to_analyze,model_save_name=model_save_name)
+    # import pdb; pdb.set_trace()
     if learn_sigma:
         et, logvar_learned = torch.split(et, et.shape[1] // 2, dim=1)
         if index is not None:

@@ -82,7 +82,8 @@ class Asyrp(object):
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset in ["CelebA_HQ", "CUSTOM", "CelebA_HQ_Dialog"]:
-            url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/celeba_hq.ckpt"
+            url = "https://my.microsoftpersonalcontent.com/personal/72419b431c262344/_layouts/15/download.aspx?UniqueId=1c262344-9b43-2041-8072-999501000000&Translate=false&tempauth=v1e.eyJzaXRlaWQiOiI2MDY0ZTY4OC00NzJiLTRmZGItOTM5Ny1hZDFmMWI5NDNlZTIiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvbXkubWljcm9zb2Z0cGVyc29uYWxjb250ZW50LmNvbUA5MTg4MDQwZC02YzY3LTRjNWItYjExMi0zNmEzMDRiNjZkYWQiLCJleHAiOiIxNzQ4NzA5NjM1In0.QwQ7GcukQeFzoMTgfhZxQvSqWknENHsQv-f9PZpygB9MIXSkL8mqh8xeE9hqgQd5SCASl7iX4eSgdXWJsOn18O0OBDjv1Dflt7s2ig5b04uduKklGQfamFNgTId3ozoIh3bTGJapBpmZk7R45ihLXzpceAkLqBEGBLA_-C1zBkQmkFfnLTBP2B05K-ARh_w48ChwDe5GnDp3-umwDTvhMoeDoQSB7H2eJNntDt_NYuwMimoqHDMHGi4nvclAwwmsQ8idgJsLwitpRIoqRum7n7Pm_TwY0hbnwjNDdoAOxueg8g0XGB53ZsAv9yS5layEWXKB-aVNFRqSO8ftSRbdFohPiEwDODUaoskV8p23nKQnicSuRLpdEnrFzVxoBlAjT-N2FOKMrFWO89O-GNLbAkrIJOEEWPCPz-6JLCpIGoApCzNzXHsleyNED-1C3VOlwFWYuK6-nyAmY_nXumre8v9oXOWSHB1HA7tScxn-8u4pIOHkl1jWH4ThspbaEArP9OXEGC6_ezKBe9qGodtYdw.2XwYOv7plV_LdlZix4q53ikV_PkZH052V17rqLS_NUA&ApiVersion=2.0"
+            # url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/celeba_hq.ckpt"
         elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET", "MetFACE"]:
             # get the model ["FFHQ", "AFHQ", "MetFACE"] from 
             # https://1drv.ms/u/s!AkQjJhxDm0Fyhqp_4gkYjwVRBe8V_w?e=Et3ITH
@@ -125,7 +126,199 @@ class Asyrp(object):
 
         return model
 
-    
+    def sample_h(self):
+        
+        # ----------- Get seq -----------#    
+        _,_ = self.set_t_edit_t_addnoise(LPIPS_th=self.args.lpips_edit_th, 
+                                                    LPIPS_addnoise_th=self.args.lpips_addnoise_th,
+                                                    return_clip_loss=True)
+
+        seq_inv = np.linspace(0, 1, self.args.n_inv_step) * self.args.t_0
+        seq_inv = [int(s+1e-6) for s in list(seq_inv)]
+        seq_inv_next = [-1] + list(seq_inv[:-1])
+        # ----------- Model -----------#
+        model = self.load_pretrained_model()
+        model = model.to(self.device)
+        model = torch.nn.DataParallel(model)
+        
+        img_folder ='/p/realai/zhenghao/LoRA_SAE/ffhq-dataset/images1024x1024/00000/' # 直接整个文件夹下所有图片
+        # import pdb; pdb.set_trace() 
+        n = 1
+        h_samples = []
+        tmp_transform = transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+        for fname in os.listdir(img_folder):
+            if fname.lower().endswith('.png'):
+                img = os.path.join(img_folder, fname)
+                image = Image.open(img).convert('RGB')
+
+                width, height = image.size
+                if width > height:
+                    image = transforms.CenterCrop(height)(image)
+                else:
+                    image = transforms.CenterCrop(width)(image)
+                
+                image = tmp_transform(image)
+
+                x0 = image.unsqueeze(0).to(self.device)
+
+                x = x0.clone()
+                model.eval()
+                time_s = time.time()
+
+                with torch.no_grad():
+                    with tqdm(total=len(seq_inv), desc=f"Inversion processing") as progress_bar:
+                        for it, (i, j) in enumerate(zip((seq_inv_next[1:]), (seq_inv[1:]))):
+                            t = (torch.ones(n) * i).to(self.device)
+                            t_prev = (torch.ones(n) * j).to(self.device)
+
+                            x, _, _, middle_h = denoising_step(x, t=t, t_next=t_prev, models=model,
+                                                logvars=self.logvar,
+                                                sampling_type='ddim',
+                                                b=self.betas,
+                                                eta=0,
+                                                learn_sigma=self.learn_sigma,
+                                                )
+                            progress_bar.update(1)
+                            C = middle_h.shape[1] 
+                            middle_h = middle_h.squeeze(0).permute(1, 2, 0).reshape(-1, C).detach().cpu()  # [H*W, C]
+                            
+                            h_samples.append({
+                                "middle_h": middle_h,
+                                "timestep": i
+                            })
+                            
+                            
+
+                    time_e = time.time()
+                    progress_bar.set_description(f"Inversion processing time: {time_e - time_s:.2f}s")
+                    x_lat = x.clone()
+                print("Generative process is skipped")
+
+        save_name = f'sample_h/{self.config.data.category}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+
+        torch.save(h_samples, save_name)
+        # import pdb; pdb.set_trace()
+        return h_samples
+        
+
+    def get_important_z(self):
+        # save_name = f'checkpoint/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{it_out}.pth'
+        exp_id = os.path.split(self.args.exp)[-1]
+        # import pdb; pdb.set_trace()
+        if self.args.load_from_checkpoint:
+            save_name = f'checkpoint/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
+        else:
+            save_name = f'checkpoint/{exp_id}_{self.args.n_iter - 1}.pth'
+              # train set
+        model = self.load_pretrained_model()
+        # import pdb; pdb.set_trace()
+        if os.path.exists(save_name):
+            # load checkpoint
+            print(f'{save_name} already exists. load checkpoint')
+            
+            if self.args.train_delta_block:
+                model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
+                print("Setattr layers")
+                # model = model.to(self.device)
+                for i in range(self.args.get_h_num):
+                    get_h = getattr(model, f"layer_{i}")
+                    # import pdb; pdb.set_trace()
+                    state = torch.load(save_name)[f"{i}"]
+                    del state["sae.activation_state_dict"]
+                    get_h.load_state_dict(state)
+                    weight = get_h.decoder.mlp.weight
+                    # weight = get_h.decoder.mlp[0].weight
+                    importance = weight.pow(2).sum(dim=0)
+                    # import pdb; pdb.set_trace()
+                    topk_indices = torch.topk(importance, self.args.top_k_indice).indices
+                    os.makedirs(f"sae/{exp_id}", exist_ok=True)
+                    index_save_name = f"sae/{exp_id}/top{self.args.top_k_indice}_indices_sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
+                    torch.save(topk_indices, index_save_name)
+
+                    return topk_indices
+                    # threshold = 0.05 
+                    # mask = (weight.abs() > threshold)     # [512, 16384] 布尔矩阵
+                    # selected_indices = mask.any(dim=0).nonzero(as_tuple=True)[0]
+                    # import pdb; pdb.set_trace()
+
+        return None
+
+    def edit_by_sae(self):
+        cosine, clip_loss_func = self.set_t_edit_t_addnoise(LPIPS_th=self.args.lpips_edit_th, 
+                                                    LPIPS_addnoise_th=self.args.lpips_addnoise_th,
+                                                    return_clip_loss=True)
+        exp_id = os.path.split(self.args.exp)[-1]
+        sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
+        if self.args.load_from_checkpoint:
+            save_name = f'checkpoint/{sae_save_name}/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
+        else:
+            save_name = f'checkpoint/{sae_save_name}/{exp_id}_{self.args.n_iter - 1}.pth'
+
+        index_save_name = f"sae/{exp_id}/top{self.args.top_k_indice}_indices_sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
+        topk_indices = torch.load(index_save_name)
+        # sae_save_name = f"sae/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+
+        model = self.load_pretrained_model()
+        # model.setattr_edited_sae(sae_save_name) 
+        model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
+        model.to(self.device)
+        x_lat_tensor = None
+        x0_tensor = None
+
+        seq_test = np.linspace(0, 1, self.args.n_train_step) * self.args.t_0
+        seq_test = [int(s+1e-6) for s in list(seq_test)]
+        seq_test_next = [-1] + list(seq_test[:-1])
+
+        if self.args.load_random_noise:
+            # get Random noise xT
+            img_lat_pairs_dic = self.random_noise_pairs(model, saved_noise=self.args.saved_random_noise, save_imgs=self.args.save_precomputed_images)
+        else:
+            # get Real image xT
+            img_lat_pairs_dic = self.precompute_pairs(model, self.args.save_precomputed_images)
+
+        hs_coeff = (1.0, 1.0)
+        save_folder = os.path.join(self.args.exp,sae_save_name, f'test_xblock_editted_delta_images_topk{self.args.topk_to_analyze}_scale{self.args.scale_to_analyze}', str(self.args.n_test_step))
+        os.makedirs(save_folder, exist_ok=True)
+        delta_h_dict = {}
+        for i in seq_test:
+            delta_h_dict[i] = None
+        for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['test']):
+                
+            if x_lat_tensor is None:
+                x_lat_tensor = x_lat
+                if self.args.use_x0_tensor:
+                    x0_tensor = x0
+            else:
+                x_lat_tensor = torch.cat((x_lat_tensor, x_lat), dim=0)
+                if self.args.use_x0_tensor:
+                    x0_tensor = torch.cat((x0_tensor, x0), dim=0)
+            if (step+1) % self.args.bs_train != 0:
+                continue
+        
+
+            self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
+                                        save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
+                                        x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
+                                        folder_dir=save_folder,
+                                        file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
+                                        use_sae=True,
+                                        topk_indices=topk_indices,
+                                        topk_to_analyze = self.args.topk_to_analyze,
+                                        scale_to_analyze = self.args.scale_to_analyze,
+                                        model_save_name = save_name,
+                                        )
+                                    
+            if step == self.args.n_test_img - 1:
+                break
+            # save_image_iter += 1
+            x_lat_tensor = None
+            x0_tensor = None
+
+
+
+
+
+
     def run_training(self):
         print("Running Training...")
 
@@ -173,7 +366,8 @@ class Asyrp(object):
             delta_h_dict[i] = None
 
         if self.args.train_delta_block:
-            model.setattr_layers(self.args.get_h_num)
+            # model.setattr_layers(self.args.get_h_num)# activation='TopK', k=10, alpha=0.5, scale=1.0
+            model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
             print("Setattr layers")
             model = model.to(self.device)
             model = torch.nn.DataParallel(model)
@@ -226,12 +420,15 @@ class Asyrp(object):
             self.args.target_image_id = [int(i) for i in self.args.target_image_id]
 
         # ----------- Training -----------#
+        sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
         for it_out in range(self.args.start_iter_when_you_use_pretrained ,self.args.n_iter):
             exp_id = os.path.split(self.args.exp)[-1]
+            # import pdb; pdb.set_trace()
             if self.args.load_from_checkpoint:
-                save_name = f'checkpoint/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{it_out}.pth'
+                save_name = f'checkpoint/{sae_save_name}/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{it_out}.pth'
             else:
-                save_name = f'checkpoint/{exp_id}_{it_out}.pth'
+                save_name = f'checkpoint/{sae_save_name}/{exp_id}_{it_out}.pth'
+            os.makedirs(os.path.dirname(save_name), exist_ok=True)
 
             # train set
             if self.args.do_train:
@@ -297,6 +494,7 @@ class Asyrp(object):
                         xt_next = x_lat_tensor.to(self.device)
                         
                         # Finally, go into training
+                        # h_samples = []
                         with tqdm(total=len(seq_train), desc=f"training iteration") as progress_bar:
                             for t_it, (i, j) in enumerate(zip(reversed(seq_train), reversed(seq_train_next))):
     
@@ -327,7 +525,7 @@ class Asyrp(object):
                                                                     eta=0.0,
                                                                     learn_sigma=self.learn_sigma,
                                                                     )
-
+                            
                                 progress_bar.update(1)
                                 
                                 loss = 0
@@ -448,7 +646,7 @@ class Asyrp(object):
                     save_process_delta_h = False, save_process_origin = False,
                     x0_tensor = None, delta_h_dict=None, get_delta_hs=False,
                     folder_dir="", file_name="", hs_coeff=(1.0,1.0),
-                    image_space_noise_dict=None):
+                    image_space_noise_dict=None, use_sae=False,topk_indices=None, topk_to_analyze=None, scale_to_analyze=None,model_save_name=None):
         
         if save_process_origin or save_process_delta_h:
             os.makedirs(os.path.join(folder_dir,file_name), exist_ok=True)
@@ -517,6 +715,11 @@ class Asyrp(object):
                                         ignore_timestep=self.args.ignore_timesteps,
                                         dt_lambda=self.args.dt_lambda,
                                         warigari=self.args.warigari,
+                                        use_sae=use_sae,
+                                        topk_indices=topk_indices,
+                                        topk_to_analyze=topk_to_analyze,
+                                        scale_to_analyze=scale_to_analyze,
+                                        model_save_name=model_save_name,
                                         )
                         progress_bar.update(1)
 
@@ -1411,6 +1614,69 @@ class Asyrp(object):
         else:
             return cosine
 
+    def train_sae(self, batch_size=128, epoch_num=20, alpha=0, activation="TopK", k=20, scale=32):
+        save_name = f'sample_h/{self.config.data.category}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        if os.path.exists(save_name):
+            print(f'{save_name} exists. load checkpoint')
+            h_samples = torch.load(save_name)
+        else:
+            print(f"checkpoint({save_name}) does not exist!")
+            exit()
+        # import pdb; pdb.set_trace()
+
+        C = h_samples[0]["middle_h"].shape[1]
+        from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
+        # 初始化 SAE
+        if activation == "TopK":
+            sae = Autoencoder(n_latents=C*scale, n_inputs=C, activation=ACTIVATIONS_CLASSES[activation](k=k), tied=False, normalize=self.args.normalize_sae, ignore_timesteps=False).to(self.device)
+        else:
+            sae = Autoencoder(n_latents=C*scale, n_inputs=C, activation=ACTIVATIONS_CLASSES[activation](), tied=False, normalize=self.args.normalize_sae, ignore_timesteps=False).to(self.device)
+
+        # 优化器
+        optimizer = torch.optim.Adam(sae.parameters(), lr=self.args.lr_sae)  
+        for epoch in range(epoch_num):
+            for index in tqdm(range(0, len(h_samples), batch_size), desc=f"Epoch {epoch}", leave=False):
+                batch_tokens = []
+                batch_timesteps = []
+                for i in range(batch_size):
+                    if index + i >= len(h_samples):
+                        break
+                    middle_h = h_samples[index + i]["middle_h"]         # shape: (H*W, C)
+                    timestep = h_samples[index + i]["timestep"]         # int
+
+                    batch_tokens.append(middle_h)
+                    batch_timesteps.append(torch.full((middle_h.shape[0],), timestep, device=self.device, dtype=torch.long))
+
+                # 拼接所有 token 成一个大 batch（总共有 B * H*W 个 token）
+                batch_input = torch.cat(batch_tokens, dim=0)          # shape: (B*H*W, C)
+                timestep_batch = torch.cat(batch_timesteps, dim=0)    # shape: (B*H*W,)
+                batch_input = batch_input.to(self.device)
+                timestep_batch = timestep_batch.to(self.device)
+
+                _, latents, recons = sae(batch_input, timestep_batch)  # latents shape: (B*H*W, C*scale), recons shape: (B*H*W, C)
+
+                
+                recon_loss = F.mse_loss(recons, batch_input)
+                sparsity_loss = latents.abs().mean()  # 如有稀疏要求可加
+                loss = recon_loss   + alpha * sparsity_loss
+
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+
+            print(f"[Epoch {epoch}] Loss: {loss.item():.4f}")
+            # 保存每个 epoch 的 checkpoint
+            if epoch % 10 == 0 or epoch == epoch_num - 1:
+                checkpoint_path = f"checkpoint/sae_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}_epoch{epoch}.pth"
+                # os.makedirs(os.path.dirname(checkpoint_path), exist_ok=True)
+                torch.save(sae.state_dict(), checkpoint_path)
+
+        torch.save(sae.state_dict(), f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth")    
+
+
+        
+
+        return 
     
 
 

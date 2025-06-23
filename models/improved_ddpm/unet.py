@@ -673,7 +673,7 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
-    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False):
+    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, use_sae=False, topk_indices=None, topk_to_analyze=None, scale_to_analyze=None,model_save_name=None):
         """
         Apply the model to an input batch.
 
@@ -701,11 +701,58 @@ class UNetModel(nn.Module):
                 # use DeltaBlock
                 if delta_h is None: #Asyrp
                     h2 = h * hs_coeff[0]
-                    for i in range(index+1):
-                        delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb)
-                        h2 += delta_h * hs_coeff[i+1]
+                    if use_sae:
+                        # sae = getattr(self, f"layer_0")
+                        # # import pdb; pdb.set_trace()
+                        # C = h2.shape[1] 
+                        # H, W = h2.shape[2], h2.shape[3]
+                        # input_h = h2.squeeze(0).permute(1, 2, 0).reshape(-1, C).detach()  # [H*W, C]
+                            
+                        # latent, info = sae.encode(input_h, timesteps.long())
+                    
+                        
+                        # latent_full = latent.clone()  # shape: [B, d]
+                        # # import pdb; pdb.set_trace()
+                        # latent_zeroed = th.zeros_like(latent_full)
+                        # topk_idx = topk_indices[:topk_to_analyze]  # list or tensor of indices
+                        # latent_zeroed[:, topk_idx] = latent_full[:, topk_idx] * scale_to_analyze
+
+                        # # latent[:, topk_indices[:topk_to_analyze]] *= scale_to_analyze
+
+                        # h_editted = sae.decode(latent_zeroed, info)
+                        # h_editted = h_editted.reshape(H, W, C).permute(2, 0, 1).unsqueeze(0)  # [1, C, H, W]
+
+                        # h_editted = h_editted + h2  # [1, C, H, W]
+
+                        # h2 = h_editted * hs_coeff[1]
+                        # ##################################
+                        for i in range(index+1):
+                            get_h = getattr(self, f"layer_{i}")
+                            state = th.load(model_save_name)[f"{i}"]
+                            del state["sae.activation_state_dict"]
+                            get_h.load_state_dict(state)
+
+                            delta_h = get_h(x = h, 
+                                            t = None if ignore_timestep else timesteps.long(),
+                                            perturb = True,
+                                            topk_indices=topk_indices, 
+                                            topk_to_analyze=topk_to_analyze, 
+                                            scale_to_analyze=scale_to_analyze) # delta_h is a tensor of shape (1, C, H* W)
+                            delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
+                            assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
+                            h2 += delta_h * hs_coeff[i+1]
+
+                    else:
+                        for i in range(index+1):
+                            # delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb) # delta_h is a tensor of shape (1, C, H* W)
+                            delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else timesteps) # delta_h is a tensor of shape (1, C, H* W)
+                            delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
+                            assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
+                            h2 += delta_h * hs_coeff[i+1]
                 # use input delta_h  : even tough you does not use DeltaBlock, you need to use index is 0.
                 else:  #DiffStyle # DiffStyle; Just ignore this code. We will update about it in README.md later.
+                    # pass
+                    print("--------------------use input delta_h---------------------")
                     if use_mask:
                         mask = th.zeros_like(h)
                         mask[:,:,4:-1,3:5] = 1.0
@@ -753,7 +800,7 @@ class UNetModel(nn.Module):
         
 
 
-    def setattr_layers(self, nums):
+    def setattr_layers(self, nums, activation='TopK', k=10, alpha=0.5, scale=1.0):
         ch = int(self.channel_mult[0] * self.model_channels)
 
         for level, mult in enumerate(self.channel_mult):
@@ -766,12 +813,121 @@ class UNetModel(nn.Module):
             #                            temb_channels=self.model_channels * 4,
             #                            dropout=0.0)
             # )
-            setattr(self, f"layer_{i}", DeltaBlock(channels=ch,
-                                       emb_channels=self.model_channels * 4,
-                                       dropout=0.0
-                                       )
-            )
+            # setattr(self, f"layer_{i}", DeltaBlock(channels=ch,
+            #                            emb_channels=self.model_channels * 4,
+            #                            dropout=0.0
+            #                            )
+            # )
+            print("try using SAE to Explain the h Space!!!")
+            setattr(self, f"layer_{i}", XBlock(
+                sae_ckpt_path=f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
+                out_channels=ch, 
+                decoder_hidden_dim=512
+            ))
 
+    def setattr_edited_sae(self, sae_ckpt_path):
+        from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
+        ch = int(self.channel_mult[0] * self.model_channels)
+
+        for level, mult in enumerate(self.channel_mult):
+            for _ in range(self.num_res_blocks):
+                ch = int(mult * self.model_channels)
+        
+        sae = Autoencoder.from_state_dict(th.load(sae_ckpt_path))
+        sae.eval()
+
+        # C = h2.shape[1] 
+        # H, W = h2.shape[2], h2.shape[3]
+        # input_h = h2.squeeze(0).permute(1, 2, 0).reshape(-1, C).detach()  # [H*W, C]
+            
+        # latent, info = sae.encode(input_h, timesteps.long())
+    
+        
+        # latent_full = latent.clone()  # shape: [B, d]
+        # # import pdb; pdb.set_trace()
+        # latent_zeroed = th.zeros_like(latent_full)
+        # topk_idx = topk_indices[:topk_to_analyze]  # list or tensor of indices
+        # latent_zeroed[:, topk_idx] = latent_full[:, topk_idx] * scale_to_analyze
+
+        # # latent[:, topk_indices[:topk_to_analyze]] *= scale_to_analyze
+
+        # h_editted = sae.decode(latent_zeroed, info)
+        # h_editted = h_editted.reshape(H, W, C).permute(2, 0, 1).unsqueeze(0)  # [1, C, H, W]
+
+        # h_editted = h_editted + h2  # [1, C, H, W]
+
+        # h2 = h_editted * hs_coeff[1]
+        setattr(self, f"layer_0", sae)
+        # for i in range(nums):
+        #     print("try using SAE to Explain the h Space!!!")
+        #     setattr(self, f"layer_{i}", XBlock(
+        #         sae_ckpt_path=f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
+        #         out_channels=ch, 
+        #         decoder_hidden_dim=512
+        #     ))
+                    
+class DirectionDecoder(nn.Module):
+    def __init__(self, channels, out_channels, hidden_dim=512):
+        super().__init__()
+        self.out_channels = out_channels
+
+        # self.mlp = nn.Sequential(
+
+        #     nn.Linear(channels, hidden_dim),
+        #     nn.SiLU(),
+        #     nn.Linear(hidden_dim, hidden_dim),
+        #     nn.SiLU(),
+        #     nn.Linear(hidden_dim, hidden_dim),
+        #     nn.SiLU(),
+        #     nn.Linear(hidden_dim, out_channels)
+        # )
+        self.mlp = nn.Linear(channels, out_channels)
+
+    def forward(self, z):
+        """
+        z: Tensor of shape (H*W, C_in)
+        Returns: Tensor of shape (1, C_out, H, W)
+        """
+
+        out = self.mlp(z)          # (H*W, C_out)
+        out = out.transpose(0, 1)  # (C_out, H*W)
+        out = out.unsqueeze(0)  # (1, C_out, H*W)
+        return out
+
+class XBlock(nn.Module):
+    def __init__(self, sae_ckpt_path, out_channels, decoder_hidden_dim=512):
+        super().__init__()
+
+        # === 1. 加载SAE模型 ===
+        from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
+        state_dict = th.load(sae_ckpt_path)
+        self.sae = Autoencoder.from_state_dict(state_dict)
+        self.sae.eval()
+
+        # === 2. 构建DirectionDecoder ===
+        self.decoder = DirectionDecoder(
+            channels=self.sae.encoder.out_features,  
+            out_channels=out_channels,
+            hidden_dim=decoder_hidden_dim
+        )
+
+    def forward(self, x, t, perturb=False, topk_indices=None, topk_to_analyze=10, scale_to_analyze=1.0):
+        """
+        x: Tensor of shape (B, C_in, H, W)
+        Return: Tensor of shape (B, C_out, H, W)
+        """
+        C= x.shape[1]
+        x_flat = x.squeeze(0).permute(1, 2, 0).reshape(-1, C)
+        ts = t.expand(x_flat.shape[0])  # 假设 t.shape == (1, C)
+        ts = ts.long()  # 确保 ts 是 LongTensor
+        # import pdb; pdb.set_trace()
+        with th.no_grad():
+            z, info = self.sae.encode(x_flat,ts)  # (B, H*W, latent_dim)
+        if perturb:
+            # import pdb; pdb.set_trace()
+            z[:, topk_indices[:topk_to_analyze]] *= scale_to_analyze
+        delta_h= self.decoder(z)  # (B, C_out, H, W)
+        return delta_h
 
 class DeltaBlock(TimestepBlock):
     """

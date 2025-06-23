@@ -6,7 +6,7 @@ gpu="0"
 config="custom.yml" # if you use other dataset, config/path_config.py should be matched
 guid="smiling" # guid should be in utils/text_dic.py
 
-
+export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
@@ -23,7 +23,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
                         --n_train_step 50                                   \
                         --n_test_step 50                                    \
                         --just_precompute                                   \
-                        --custom_train_dataset_dir "test_images/celeba/train"       \
-                        --custom_test_dataset_dir "test_images/celeba/test"         \
+                        --custom_train_dataset_dir "hdd1/datasets/celeba_hq/train/male"       \
+                        --custom_test_dataset_dir "hdd1/datasets/celeba_hq/val/male"         \
                         --sh_file_name "script_precompute.sh"
 
