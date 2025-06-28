@@ -171,7 +171,7 @@ class Asyrp(object):
                             t = (torch.ones(n) * i).to(self.device)
                             t_prev = (torch.ones(n) * j).to(self.device)
 
-                            x, _, _, middle_h = denoising_step(x, t=t, t_next=t_prev, models=model,
+                            x, _, _, middle_h,_ = denoising_step(x, t=t, t_next=t_prev, models=model,
                                                 logvars=self.logvar,
                                                 sampling_type='ddim',
                                                 b=self.betas,
@@ -204,11 +204,15 @@ class Asyrp(object):
     def get_important_z(self):
         # save_name = f'checkpoint/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{it_out}.pth'
         exp_id = os.path.split(self.args.exp)[-1]
-        # import pdb; pdb.set_trace()
+        sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
+        if self.args.delta_h:
+            sae_save_name = "delta_" + sae_save_name
+        if self.args.masked_xblock:
+            sae_save_name = f"masked{self.args.mask_top}_" + sae_save_name
         if self.args.load_from_checkpoint:
-            save_name = f'checkpoint/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
+            save_name = f'checkpoint/{sae_save_name}/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
         else:
-            save_name = f'checkpoint/{exp_id}_{self.args.n_iter - 1}.pth'
+            save_name = f'checkpoint/{sae_save_name}/{exp_id}_{self.args.n_iter - 1}.pth'
               # train set
         model = self.load_pretrained_model()
         # import pdb; pdb.set_trace()
@@ -217,7 +221,7 @@ class Asyrp(object):
             print(f'{save_name} already exists. load checkpoint')
             
             if self.args.train_delta_block:
-                model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
+                model.setattr_layers(nums=self.args.get_h_num, mask_topk=self.args.mask_top, activation=self.args.activation, k=self.args.k, alpha=self.args.alpha, scale=self.args.scale)
                 print("Setattr layers")
                 # model = model.to(self.device)
                 for i in range(self.args.get_h_num):
@@ -251,6 +255,8 @@ class Asyrp(object):
         sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
         if self.args.delta_h:
             sae_save_name = "delta_" + sae_save_name
+        if self.args.masked_xblock:
+            sae_save_name = f"masked{self.args.mask_top}_" + sae_save_name
         if self.args.load_from_checkpoint:
             save_name = f'checkpoint/{sae_save_name}/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
         else:
@@ -263,7 +269,7 @@ class Asyrp(object):
 
         model = self.load_pretrained_model()
         # model.setattr_edited_sae(sae_save_name) 
-        model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
+        model.setattr_layers(nums=self.args.get_h_num, mask_topk=self.args.mask_top, activation=self.args.activation, k=self.args.k, alpha=self.args.alpha, scale=self.args.scale)
         model.to(self.device)
         for i in range(self.args.get_h_num):                   
             get_h = getattr(model, f"layer_{i}")
@@ -285,7 +291,7 @@ class Asyrp(object):
             img_lat_pairs_dic = self.precompute_pairs(model, self.args.save_precomputed_images)
 
         hs_coeff = (1.0, 1.0)
-        save_folder = os.path.join(self.args.exp,sae_save_name, f'test_xblock_editted_delta_images_topk{self.args.topk_to_analyze}_scale{self.args.scale_to_analyze}', str(self.args.n_test_step))
+        save_folder = os.path.join(self.args.exp,sae_save_name, f'test_xblock_editted_delta_images_topk{self.args.topk_to_analyze}', str(self.args.n_test_step))
         os.makedirs(save_folder, exist_ok=True)
         delta_h_dict = {}
         for i in seq_test:
@@ -303,18 +309,21 @@ class Asyrp(object):
             if (step+1) % self.args.bs_train != 0:
                 continue
         
-
-            self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
-                                        save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
-                                        x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
-                                        folder_dir=save_folder,
-                                        file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
-                                        perturb=True,
-                                        topk_indices=topk_indices,
-                                        # topk_to_analyze = self.args.topk_to_analyze,
-                                        scale_to_analyze = self.args.scale_to_analyze,
-                                        # model_save_name = save_name,
-                                        )
+            for scale in range(-10,10,2):
+                img_folder = os.path.join(save_folder, f'test_{step}_{self.args.n_iter - 1}')
+                # import pdb; pdb.set_trace()
+                os.makedirs(img_folder, exist_ok=True)
+                self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
+                                            save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
+                                            x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
+                                            folder_dir=img_folder,
+                                            file_name=f'test_{step}_{self.args.n_iter - 1}_scale{scale}', hs_coeff=hs_coeff,
+                                            perturb=True,
+                                            topk_indices=topk_indices,
+                                            # topk_to_analyze = self.args.topk_to_analyze,
+                                            scale_to_analyze =scale,
+                                            # model_save_name = save_name,
+                                            )
                                     
             if step == self.args.n_test_img - 1:
                 break
@@ -375,7 +384,7 @@ class Asyrp(object):
 
         if self.args.train_delta_block:
             # model.setattr_layers(self.args.get_h_num)# activation='TopK', k=10, alpha=0.5, scale=1.0
-            model.setattr_layers(self.args.get_h_num, self.args.activation, self.args.k, self.args.alpha, self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
+            model.setattr_layers(nums=self.args.get_h_num, mask_topk=self.args.mask_top, activation=self.args.activation, k=self.args.k, alpha=self.args.alpha, scale=self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
             print("Setattr layers")
             model = model.to(self.device)
             model = torch.nn.DataParallel(model)
@@ -429,6 +438,10 @@ class Asyrp(object):
 
         # ----------- Training -----------#
         sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
+        if self.args.delta_h:
+            sae_save_name = "delta_" + sae_save_name
+        if self.args.masked_xblock:
+            sae_save_name = f"masked{self.args.mask_top}_" + sae_save_name
         for it_out in range(self.args.start_iter_when_you_use_pretrained ,self.args.n_iter):
             exp_id = os.path.split(self.args.exp)[-1]
             # import pdb; pdb.set_trace()
@@ -511,7 +524,7 @@ class Asyrp(object):
                                 t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
                                 
                                 # step 1: Asyrp
-                                xt_next, x0_t, _, _ = denoising_step(xt_next.detach(), t=t, t_next=t_next, models=model,
+                                xt_next, x0_t, _, _ , mask= denoising_step(xt_next.detach(), t=t, t_next=t_next, models=model,
                                                             logvars=self.logvar,                                        
                                                             b=self.betas,
                                                             sampling_type=self.args.sample_type,
@@ -522,17 +535,19 @@ class Asyrp(object):
                                                             hs_coeff=hs_coeff,
                                                             delta_h= delta_h_dict[0] if (self.args.ignore_timesteps and self.args.train_delta_h) else delta_h_dict[t[0].item()],
                                                             ignore_timestep=self.args.ignore_timesteps,
+                                                            delta_sae = self.args.delta_h, # if you want to use sae to train delta
                                                             )
                                                             # when train delta_block, delta_h is None (ignored)
                                 # step 2: DDIM
                                 with torch.no_grad():    
-                                    x_origin, x0_t_origin, _, _ = denoising_step(x_origin.detach(), t=t, t_next=t_next, models=model,
+                                    x_origin, x0_t_origin, _, _ , _= denoising_step(x_origin.detach(), t=t, t_next=t_next, models=model,
                                                                     logvars=self.logvar,
                                                                     b=self.betas,
                                                                     sampling_type=self.args.sample_type,                                                                
                                                                     eta=0.0,
                                                                     learn_sigma=self.learn_sigma,
-                                                                    )
+                                                                    # delta_sae = self.args.delta_h, # if you want to use sae to train delta
+                                                                    ) # if index == None; no perturbation, normal DDIM
                             
                                 progress_bar.update(1)
                                 
@@ -541,6 +556,7 @@ class Asyrp(object):
                                 loss_l1 = 0
                                 loss_clr = 0
                                 loss_clip = 0
+                                loss_mask = 0 
 
                                 # L1 loss
                                 loss_l1 += nn.L1Loss()(x0_t, x0_t_origin)
@@ -548,6 +564,10 @@ class Asyrp(object):
                                 # Following DiffusionCLIP, we use direction clip loss as below
                                 loss_clip = -torch.log((2 - clip_loss_func(x0, self.src_txts[0], x0_t, self.trg_txts[0])) / 2)
                                 
+                                # mask loss
+                                loss_mask += torch.norm(mask, p=1)
+
+
                                 if self.args.use_id_loss:
                                     # We don't use this.
                                     loss_id += torch.mean(id_loss_func(x0_t, x0_t_origin))
@@ -555,11 +575,13 @@ class Asyrp(object):
                                 loss += self.args.id_loss_w * loss_id
                                 loss += self.args.l1_loss_w * loss_l1 * cosine
                                 loss += self.args.clip_loss_w * loss_clip
+                                if self.args.masked_xblock:
+                                    loss += self.args.mask_loss_w * loss_mask
 
                                 loss.backward()
                                 optim_ft.step()   
 
-                                progress_bar.set_description(f"{step}-{it_out}: loss_clr: {loss_clr:.3f} loss_l1: {loss_l1:.3f} loss_id: {loss_id:.3f} loss_clip:{loss_clip} loss: {loss:.3f} ")
+                                progress_bar.set_description(f"{step}-{it_out}: loss_clr: {loss_clr:.3f} loss_l1: {loss_l1:.3f} loss_id: {loss_id:.3f} loss_clip:{loss_clip} loss_mask: {loss_mask:.3f} loss: {loss:.3f} ")
 
                         # save image
                         if self.args.save_train_image and save_image_iter % self.args.save_train_image_step == 0 and it_out % self.args.save_train_image_iter == 0:
@@ -710,7 +732,7 @@ class Asyrp(object):
                         t = (torch.ones(self.args.bs_train) * i).to(self.device)
                         t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
 
-                        x, x0_t, delta_h, _ = denoising_step(x, t=t, t_next=t_next, models=model,
+                        x, x0_t, delta_h, _, _= denoising_step(x, t=t, t_next=t_next, models=model,
                                         logvars=self.logvar,                                
                                         sampling_type=self.args.sample_type,
                                         b=self.betas,
@@ -1132,7 +1154,7 @@ class Asyrp(object):
                         t = (torch.ones(n) * i).to(self.device)
                         t_prev = (torch.ones(n) * j).to(self.device)
 
-                        x, _, _, h = denoising_step(x, t=t, t_next=t_prev, models=model,
+                        x, _, _, h, _ = denoising_step(x, t=t, t_next=t_prev, models=model,
                                             logvars=self.logvar,
                                             sampling_type='ddim',
                                             b=self.betas,
@@ -1244,7 +1266,7 @@ class Asyrp(object):
                             t = (torch.ones(n) * i).to(self.device)
                             t_prev = (torch.ones(n) * j).to(self.device)
 
-                            x, _, _, _ = denoising_step(x, t=t, t_next=t_prev, models=model,
+                            x, _, _, _, _ = denoising_step(x, t=t, t_next=t_prev, models=model,
                                                logvars=self.logvar,
                                                sampling_type='ddim',
                                                b=self.betas,
@@ -1266,7 +1288,7 @@ class Asyrp(object):
                             t = (torch.ones(n) * i).to(self.device)
                             t_next = (torch.ones(n) * j).to(self.device)
 
-                            x, x0t, _, _ = denoising_step(x, t=t, t_next=t_next, models=model,
+                            x, x0t, _, _, _ = denoising_step(x, t=t, t_next=t_next, models=model,
                                                logvars=self.logvar,
                                                sampling_type=self.args.sample_type,
                                                b=self.betas,
@@ -1352,7 +1374,7 @@ class Asyrp(object):
                                 t = (torch.ones(n) * i).to(self.device)
                                 t_next = (torch.ones(n) * j).to(self.device)
 
-                                x, _, _, _ = denoising_step(x, t=t, t_next=t_next, models=model,
+                                x, _, _, _, _ = denoising_step(x, t=t, t_next=t_next, models=model,
                                                 logvars=self.logvar,
                                                 sampling_type=self.args.sample_type,
                                                 b=self.betas,
@@ -1459,7 +1481,7 @@ class Asyrp(object):
                         t = (torch.ones(self.args.bs_train) * i).to(self.device)
                         t_prev = (torch.ones(self.args.bs_train) * j).to(self.device)
 
-                        x, x0_t, _, _ = denoising_step(x, t=t, t_next=t_prev, models=model,
+                        x, x0_t, _, _, _ = denoising_step(x, t=t, t_next=t_prev, models=model,
                                             logvars=self.logvar,
                                             sampling_type='ddim',
                                             b=self.betas,

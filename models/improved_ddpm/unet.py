@@ -673,7 +673,7 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
-    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None):
+    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae = True):
         """
         Apply the model to an input batch.
 
@@ -693,14 +693,19 @@ class UNetModel(nn.Module):
 
         middle_h = h
         h2 = None
-        
+        mask = None
         if index is not None:
             # assert len(hs_coeff) == index + 1 + 1
             # check t_edit 
             if timesteps[0] >= t_edit:
                 # use DeltaBlock
                 if delta_h is None: #Asyrp
-                    h2 = h * hs_coeff[0]
+                    if delta_sae:
+                        h2 = h * hs_coeff[0]
+                    else:
+                        # import pdb; pdb.set_trace()
+                        h2 = th.zeros_like(h) # h2 is a tensor of shape (1, C, H* W)
+
                     for i in range(index+1):
                         # delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb) # delta_h is a tensor of shape (1, C, H* W)
                         # if perturb:
@@ -709,7 +714,7 @@ class UNetModel(nn.Module):
                         #     del state["sae.activation_state_dict"]
                         #     get_h.load_state_dict(state)
 
-                        delta_h = get_h(x = h, 
+                        delta_h, mask = get_h(x = h, 
                                         t = None if ignore_timestep else timesteps.long(),
                                         perturb = perturb,
                                         topk_indices=topk_indices, 
@@ -717,7 +722,12 @@ class UNetModel(nn.Module):
                         delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
                         assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
                         h2 += delta_h * hs_coeff[i+1]
-                        # h2 = delta_h * hs_coeff[i+1] 
+                        # import pdb; pdb.set_trace()
+                        # if delta_sae:
+                        #     h2 += delta_h * hs_coeff[i+1]
+                        # else:
+                        #     h2 = delta_h * hs_coeff[i+1]
+                        
                 # use input delta_h  : even tough you does not use DeltaBlock, you need to use index is 0.
                 else:  #DiffStyle # DiffStyle; Just ignore this code. We will update about it in README.md later.
                     # pass
@@ -765,11 +775,11 @@ class UNetModel(nn.Module):
 
         h = self.out(h)
         
-        return h, h2, delta_h, middle_h
+        return h, h2, delta_h, middle_h, mask
         
 
 
-    def setattr_layers(self, nums, activation='TopK', k=10, alpha=0.5, scale=1.0):
+    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0):
         ch = int(self.channel_mult[0] * self.model_channels)
 
         for level, mult in enumerate(self.channel_mult):
@@ -790,8 +800,8 @@ class UNetModel(nn.Module):
             print("try using SAE to Explain the h Space!!!")
             setattr(self, f"layer_{i}", XBlock(
                 sae_ckpt_path=f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
-                out_channels=ch, 
-                decoder_hidden_dim=512
+                out_channels=ch,
+                mask_topk=mask_topk
             ))
 
     def setattr_edited_sae(self, sae_ckpt_path):
@@ -836,10 +846,11 @@ class UNetModel(nn.Module):
         #     ))
                     
 class DirectionDecoder(nn.Module):
-    def __init__(self, channels, out_channels, hidden_dim=512):
+    def __init__(self, channels, out_channels, mask_topk=3):
         super().__init__()
         self.out_channels = out_channels
-
+        self.mask_logits = nn.Parameter(th.zeros(channels))
+        self.mask_topk = mask_topk
         # self.mlp = nn.Sequential(
 
         #     nn.Linear(channels, hidden_dim),
@@ -852,19 +863,32 @@ class DirectionDecoder(nn.Module):
         # )
         self.mlp = nn.Linear(channels, out_channels)
 
-    def forward(self, z):
+    def hard_topk_mask(self, logits, k):
+        # logits: [d]
+        topk = th.topk(logits, k=k)
+        hard_mask = th.zeros_like(logits)
+        hard_mask[topk.indices] = 1.0
+        return hard_mask
+
+    def forward(self, z, is_mask=False):
         """
         z: Tensor of shape (H*W, C_in)
         Returns: Tensor of shape (1, C_out, H, W)
         """
 
-        out = self.mlp(z)          # (H*W, C_out)
+        soft_mask = th.sigmoid(self.mask_logits)
+        hard_mask = self.hard_topk_mask(logits=self.mask_logits, k=self.mask_topk)  # Assuming k=10 for hard mask
+        mask = hard_mask.detach() + soft_mask - soft_mask.detach()
+        if is_mask:
+            out = self.mlp(z * mask)          # (H*W, C_out)
+        else:
+            out = self.mlp(z)                 # (H*W, C_out)
         out = out.transpose(0, 1)  # (C_out, H*W)
         out = out.unsqueeze(0)  # (1, C_out, H*W)
-        return out
+        return out, mask
 
 class XBlock(nn.Module):
-    def __init__(self, sae_ckpt_path, out_channels, decoder_hidden_dim=512):
+    def __init__(self, sae_ckpt_path, out_channels, mask_topk=10):
         super().__init__()
 
         # === 1. 加载SAE模型 ===
@@ -877,10 +901,10 @@ class XBlock(nn.Module):
         self.decoder = DirectionDecoder(
             channels=self.sae.encoder.out_features,  
             out_channels=out_channels,
-            hidden_dim=decoder_hidden_dim
+            mask_topk=mask_topk  
         )
 
-    def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0):
+    def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0, is_mask=False):
         """
         x: Tensor of shape (B, C_in, H, W)
         Return: Tensor of shape (B, C_out, H, W)
@@ -895,8 +919,8 @@ class XBlock(nn.Module):
         if perturb:
             # import pdb; pdb.set_trace()
             z[:, topk_indices] *= scale_to_analyze
-        delta_h= self.decoder(z)  # (B, C_out, H, W)
-        return delta_h
+        delta_h, mask = self.decoder(z, is_mask)  # (B, C_out, H, W)
+        return delta_h, mask
 
 class DeltaBlock(TimestepBlock):
     """

@@ -41,12 +41,13 @@ def denoising_step(xt, t, t_next, *,
                    perturb=False,
                    topk_indices=None,
                    scale_to_analyze=None,
+                   delta_sae = True
                    ):
 
     # Compute noise and variance
     model = models
 
-    et, et_modified, delta_h, middle_h = model(xt, t, index=index, t_edit=t_edit, hs_coeff=hs_coeff, delta_h=delta_h, ignore_timestep=ignore_timestep, use_mask=use_mask, perturb=perturb, topk_indices=topk_indices, scale_to_analyze=scale_to_analyze)
+    et, et_modified, delta_h, middle_h, mask = model(xt, t, index=index, t_edit=t_edit, hs_coeff=hs_coeff, delta_h=delta_h, ignore_timestep=ignore_timestep, use_mask=use_mask, perturb=perturb, topk_indices=topk_indices, scale_to_analyze=scale_to_analyze, delta_sae=delta_sae)
     # import pdb; pdb.set_trace()
     if learn_sigma:
         et, logvar_learned = torch.split(et, et.shape[1] // 2, dim=1)
@@ -105,9 +106,9 @@ def denoising_step(xt, t, t_next, *,
 
     # Asyrp & DiffStyle
     if not warigari or index is None:
-        return xt_next, x0_t, delta_h, middle_h
+        return xt_next, x0_t, delta_h, middle_h, mask
 
     # Warigari by young-hyun, Not in the paper
     else:
         # will be updated
-        return xt_next, x0_t, delta_h, middle_h
+        return xt_next, x0_t, delta_h, middle_h, mask

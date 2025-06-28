@@ -12,7 +12,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --train_sae                        \
                         --batch_size 128                                    \
                         --lr_sae 5e-4                                  \
                         --epoch_num 100                                      \
-                        --alpha 4                                           \
+                        --alpha 0.9                                           \
                         --activation "ReLU"                                 \
                         --k 4096                                              \
                         --scale 32                                          \

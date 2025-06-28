@@ -240,6 +240,9 @@ def parse_args_and_config():
     parser.add_argument('--lr_sae', type=float, default=1e-3, help='Learning rate for SAE training')
     # Train Xblock
     parser.add_argument('--train_xblock', action='store_true', help='train_xblock')
+    parser.add_argument('--masked_xblock', action='store_true', help='masked_xblock')
+    parser.add_argument('--mask_loss_w', type=float, default=0, help='Weights of mask loss')
+    parser.add_argument('--mask_top', type=int, default=20, help='Top K for mask training')
 
     # Analysis
     parser.add_argument('--sae_analysis', action='store_true', help='analysis sae')
@@ -286,6 +289,8 @@ def parse_args_and_config():
     sae_save_name = f"sae_{args.activation}_k{args.k}_scale{args.scale}_alpha{args.alpha}_normalize{args.normalize_sae}"
     if args.delta_h:
         sae_save_name = "delta_" + sae_save_name
+    if args.masked_xblock:
+        sae_save_name = f"masked{args.mask_top}_" + sae_save_name
     args.training_image_folder = os.path.join(args.exp, sae_save_name, 'xblock_training_images')
     if not os.path.exists(args.training_image_folder):
         os.makedirs(args.training_image_folder)

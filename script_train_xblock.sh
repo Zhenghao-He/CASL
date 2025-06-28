@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh_file_name="script_train.sh"
+sh_file_name="script_train_xblock.sh"
 gpu="3"
 
 config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
@@ -8,11 +8,14 @@ guid="sad" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
-CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                       \
-                        # --delta_h                                 \ # if you want to use sae to train delta_h, use this flag
+CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                     \
+                        --delta_h                                      \
+                        --mask_loss_w 0                                    \
+                        --mask_top 30                                         \
+                        --masked_xblock                                         \
                         --batch_size 128                                    \
                         --epoch_num 100                                      \
-                        --alpha 2                                           \
+                        --alpha 0.9                                           \
                         --lr_sae 5e-4                                  \
                         --activation "ReLU"                                 \
                         --k 4096                                            \
@@ -40,7 +43,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                       \
                         --hs_coeff_delta_h 1.0                              \
                         --lr_training 0.5                                   \
                         --clip_loss_w 1.0                                   \
-                        --l1_loss_w 4.0                                     \
+                        --l1_loss_w 3.0                                     \
                         --retrain 1                                         \
                         --custom_train_dataset_dir "hdd1/datasets/celeba_hq/train/male"       \
                         --custom_test_dataset_dir "hdd1/datasets/celeba_hq/val/male"         \

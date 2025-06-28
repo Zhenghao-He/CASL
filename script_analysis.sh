@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh_file_name="script_train.sh"
+sh_file_name="script_analysis.sh"
 gpu="1"
 
 config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
@@ -8,17 +8,17 @@ guid="sad" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 # this is for sae analysis
-CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                       \
+CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                     \
+                        --delta_h                                           \
                         --batch_size 128                                    \
-                        --delta_h                                            \
-                        --top_k_indice 1024                              \
-                        --epoch_num 100                                      \
-                        --alpha 0.5                                           \
-                        --topk_to_analyze 256                                  \
-                        --scale_to_analyze 7                                 \
-                        --lr_sae 5e-4                                  \
+                        --top_k_indice 1024                                 \
+                        --epoch_num 100                                     \
+                        --alpha 1                                         \
+                        --topk_to_analyze 5                                 \
+                        --scale_to_analyze 2                                \
+                        --lr_sae 5e-4                                       \
                         --activation "ReLU"                                 \
-                        --k 4096                                              \
+                        --k 4096                                            \
                         --scale 32                                          \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
@@ -27,7 +27,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                       \
                         --do_test 1                                         \
                         --n_train_img 100                                   \
                         --n_test_img 32                                     \
-                        --n_iter 5                                          \
+                        --n_iter 2                                          \
                         --bs_train 1                                        \
                         --t_0 999                                           \
                         --n_inv_step 50                                     \
