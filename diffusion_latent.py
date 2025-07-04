@@ -27,7 +27,7 @@ from losses import id_loss
 from datasets.data_utils import get_dataset, get_dataloader
 from configs.paths_config import DATASET_PATHS, MODEL_PATHS
 from datasets.imagenet_dic import IMAGENET_DIC
-
+from utils.analyze_utils import analyze_soft_mask_distribution_save
 class Asyrp(object):
     def __init__(self, args, config, device=None):
         # ----------- predefined parameters -----------#
@@ -221,7 +221,13 @@ class Asyrp(object):
             print(f'{save_name} already exists. load checkpoint')
             
             if self.args.train_delta_block:
-                model.setattr_layers(nums=self.args.get_h_num, mask_topk=self.args.mask_top, activation=self.args.activation, k=self.args.k, alpha=self.args.alpha, scale=self.args.scale)
+                model.setattr_layers(nums=self.args.get_h_num, 
+                                     mask_topk=self.args.mask_top, 
+                                     activation=self.args.activation, 
+                                     k=self.args.k, 
+                                     alpha=self.args.alpha, 
+                                     scale=self.args.scale,
+                                     is_mask=self.args.masked_xblock)
                 print("Setattr layers")
                 # model = model.to(self.device)
                 for i in range(self.args.get_h_num):
@@ -230,6 +236,7 @@ class Asyrp(object):
                     state = torch.load(save_name)[f"{i}"]
                     del state["sae.activation_state_dict"]
                     get_h.load_state_dict(state)
+                    import pdb; pdb.set_trace() # get_h.decoder.mlp.sample_z(16384, False)
                     weight = get_h.decoder.mlp.weight
                     # weight = get_h.decoder.mlp[0].weight
                     importance = weight.pow(2).sum(dim=0)
@@ -269,13 +276,21 @@ class Asyrp(object):
 
         model = self.load_pretrained_model()
         # model.setattr_edited_sae(sae_save_name) 
-        model.setattr_layers(nums=self.args.get_h_num, mask_topk=self.args.mask_top, activation=self.args.activation, k=self.args.k, alpha=self.args.alpha, scale=self.args.scale)
+        model.setattr_layers(nums=self.args.get_h_num, 
+                        mask_topk=self.args.mask_top, 
+                        activation=self.args.activation, 
+                        k=self.args.k, 
+                        alpha=self.args.alpha, 
+                        scale=self.args.scale,
+                        is_mask=self.args.masked_xblock)
         model.to(self.device)
         for i in range(self.args.get_h_num):                   
             get_h = getattr(model, f"layer_{i}")
             state = torch.load(save_name)[f"{i}"]
             del state["sae.activation_state_dict"]
             get_h.load_state_dict(state)
+
+        import pdb; pdb.set_trace()
         x_lat_tensor = None
         x0_tensor = None
 
@@ -384,14 +399,21 @@ class Asyrp(object):
 
         if self.args.train_delta_block:
             # model.setattr_layers(self.args.get_h_num)# activation='TopK', k=10, alpha=0.5, scale=1.0
-            model.setattr_layers(nums=self.args.get_h_num, mask_topk=self.args.mask_top, activation=self.args.activation, k=self.args.k, alpha=self.args.alpha, scale=self.args.scale)# activation='TopK', k=10, alpha=0.5, scale=1.0
+            model.setattr_layers(nums=self.args.get_h_num, 
+                                  mask_topk=self.args.mask_top, 
+                                  activation=self.args.activation, 
+                                  k=self.args.k, 
+                                  alpha=self.args.alpha, 
+                                  scale=self.args.scale,
+                                  is_mask=self.args.masked_xblock)
             print("Setattr layers")
             model = model.to(self.device)
             model = torch.nn.DataParallel(model)
 
             for i in range(self.args.get_h_num):
                 get_h = getattr(model.module, f"layer_{i}")
-                optim_param_list = optim_param_list + list(get_h.parameters())
+                optim_param_list = optim_param_list + list(get_h.decoder.parameters())
+                # optim_param_list = optim_param_list + list(get_h.parameters())
 
         elif self.args.train_delta_h:
             # h_dim is hard coded to be 512
@@ -565,9 +587,24 @@ class Asyrp(object):
                                 loss_clip = -torch.log((2 - clip_loss_func(x0, self.src_txts[0], x0_t, self.trg_txts[0])) / 2)
                                 
                                 # mask loss
-                                loss_mask += torch.norm(mask, p=1)
-
-
+                                # loss_mask += torch.norm(mask, p=1)
+                                # l0_reg = sum(m.regularization() for m in model.modules() if hasattr(m, "regularization"))
+                                # import pdb; pdb.set_trace()
+                                l0_reg = 0
+                                for i in range(self.args.get_h_num):
+                                    get_h = getattr(model.module, f"layer_{i}")
+                                    for m in get_h.decoder.modules():
+                                        if hasattr(m, "regularization"):
+                                            l0_reg += m.regularization()
+                                loss_mask -= l0_reg
+                                # import pdb; pdb.set_trace()
+                                # loss_mask += ( ((mask.mean() - 0.01) ** 2) +  100*(mask * (1 - mask)).mean())
+                                
+                                # for i, group in enumerate(optim_ft.param_groups):
+                                #     print(f"Parameter Group {i}:")
+                                #     for param in group['params']:
+                                #         print(param.shape, param.requires_grad, type(param))
+                                # import pdb; pdb.set_trace()     
                                 if self.args.use_id_loss:
                                     # We don't use this.
                                     loss_id += torch.mean(id_loss_func(x0_t, x0_t_origin))
@@ -583,6 +620,18 @@ class Asyrp(object):
 
                                 progress_bar.set_description(f"{step}-{it_out}: loss_clr: {loss_clr:.3f} loss_l1: {loss_l1:.3f} loss_id: {loss_id:.3f} loss_clip:{loss_clip} loss_mask: {loss_mask:.3f} loss: {loss:.3f} ")
 
+                        os.makedirs(os.path.join(self.args.training_image_folder,'visualization'), exist_ok=True)
+                        # import pdb; pdb.set_trace()
+                        mask =  get_h.decoder.mlp.sample_z(1, False)[0]
+                        analyze_soft_mask_distribution_save(
+                            soft_mask=mask,
+                            bins=50,
+                            threshold=0,
+                            stats_file=os.path.join(self.args.training_image_folder,'stats_train.txt'),
+                            img_file=os.path.join(self.args.training_image_folder,'visualization',f'train_{step}_{it_out}.png'),
+                            show_kde=True
+                        )
+                        # import pdb; pdb.set_trace()
                         # save image
                         if self.args.save_train_image and save_image_iter % self.args.save_train_image_step == 0 and it_out % self.args.save_train_image_iter == 0:
                             self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
@@ -1707,4 +1756,55 @@ class Asyrp(object):
         return 
     
 
+    def compare_mode(self):
+        from models.sae.sae import Autoencoder
 
+        sae_ckpt_path = f"sae/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+        print(f"Loading SAE model from {sae_ckpt_path}...")
+        state_dict = torch.load(sae_ckpt_path)
+        sae = Autoencoder.from_state_dict(state_dict)
+        sae.eval()
+
+        exp_id = os.path.split(self.args.exp)[-1]
+        sae_save_name = f"sae_{self.args.activation}_k{self.args.k}_scale{self.args.scale}_alpha{self.args.alpha}_normalize{self.args.normalize_sae}"
+        if self.args.delta_h:
+            sae_save_name = "delta_" + sae_save_name
+        if self.args.masked_xblock:
+            sae_save_name = f"masked{self.args.mask_top}_" + sae_save_name
+        if self.args.load_from_checkpoint:
+            save_name = f'checkpoint/{sae_save_name}/{self.args.load_from_checkpoint}_LC_{self.config.data.category}_t{self.args.t_0}_ninv{self.args.n_inv_step}_ngen{self.args.n_train_step}_{self.args.n_iter - 1}.pth'   
+        else:
+            save_name = f'checkpoint/{sae_save_name}/{exp_id}_{self.args.n_iter - 1}.pth'
+
+        model = self.load_pretrained_model()
+        # model.setattr_edited_sae(sae_save_name) 
+        model.setattr_layers(nums=self.args.get_h_num, 
+                        mask_topk=self.args.mask_top, 
+                        activation=self.args.activation, 
+                        k=self.args.k, 
+                        alpha=self.args.alpha, 
+                        scale=self.args.scale,
+                        is_mask=self.args.masked_xblock)
+        model.to(self.device)
+        for i in range(self.args.get_h_num):                   
+            get_h = getattr(model, f"layer_{i}")
+            state = torch.load(save_name)[f"{i}"]
+            del state["sae.activation_state_dict"]
+            get_h.load_state_dict(state)
+        all_equal = True
+        for (k1, v1), (k2, v2) in zip(
+                sae.state_dict().items(), get_h.sae.state_dict().items()):
+            if isinstance(v1, torch.Tensor) and isinstance(v2, torch.Tensor):
+                if not torch.allclose(v1.cpu(), v2.cpu(), atol=0):
+                    print(f"{k1} 不一致")
+                    all_equal = False
+                    raise ValueError(f"{k1} 不一致")
+            else:
+                print("1")
+                print(k1, v1)
+                print(k2, v2)
+        if all_equal:
+            print("所有参数在允许误差范围内一致")
+
+
+        # import pdb; pdb.set_trace()

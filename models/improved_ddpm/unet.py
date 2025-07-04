@@ -779,7 +779,7 @@ class UNetModel(nn.Module):
         
 
 
-    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0):
+    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0, is_mask=False):
         ch = int(self.channel_mult[0] * self.model_channels)
 
         for level, mult in enumerate(self.channel_mult):
@@ -801,7 +801,8 @@ class UNetModel(nn.Module):
             setattr(self, f"layer_{i}", XBlock(
                 sae_ckpt_path=f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
                 out_channels=ch,
-                mask_topk=mask_topk
+                mask_topk=mask_topk,
+                is_mask=is_mask
             ))
 
     def setattr_edited_sae(self, sae_ckpt_path):
@@ -846,11 +847,14 @@ class UNetModel(nn.Module):
         #     ))
                     
 class DirectionDecoder(nn.Module):
-    def __init__(self, channels, out_channels, mask_topk=3):
+    def __init__(self, channels, out_channels, mask_topk=3, is_mask=False):
         super().__init__()
         self.out_channels = out_channels
-        self.mask_logits = nn.Parameter(th.zeros(channels))
-        self.mask_topk = mask_topk
+        # self.mask_logits = nn.Parameter(th.zeros(channels))
+        # self.mask_logits = nn.Parameter(th.randn(channels) * 0.01 - 4.0)
+
+        # self.mask_topk = mask_topk
+        # self.is_mask = is_mask
         # self.mlp = nn.Sequential(
 
         #     nn.Linear(channels, hidden_dim),
@@ -861,7 +865,10 @@ class DirectionDecoder(nn.Module):
         #     nn.SiLU(),
         #     nn.Linear(hidden_dim, out_channels)
         # )
-        self.mlp = nn.Linear(channels, out_channels)
+        from utils.l0_regularization import L0Dense
+        self.mlp = L0Dense(in_features=channels, out_features=out_channels, bias=True, weight_decay=1., droprate_init=0.1, temperature=2./3.,
+                 lamba=10., local_rep=False)
+        # self.mlp = nn.Linear(channels, out_channels)
 
     def hard_topk_mask(self, logits, k):
         # logits: [d]
@@ -870,25 +877,27 @@ class DirectionDecoder(nn.Module):
         hard_mask[topk.indices] = 1.0
         return hard_mask
 
-    def forward(self, z, is_mask=False):
+    def forward(self, z):
         """
         z: Tensor of shape (H*W, C_in)
         Returns: Tensor of shape (1, C_out, H, W)
         """
 
-        soft_mask = th.sigmoid(self.mask_logits)
-        hard_mask = self.hard_topk_mask(logits=self.mask_logits, k=self.mask_topk)  # Assuming k=10 for hard mask
-        mask = hard_mask.detach() + soft_mask - soft_mask.detach()
-        if is_mask:
-            out = self.mlp(z * mask)          # (H*W, C_out)
-        else:
-            out = self.mlp(z)                 # (H*W, C_out)
+        # soft_mask = th.sigmoid(self.mask_logits)
+        # hard_mask = self.hard_topk_mask(logits=self.mask_logits, k=self.mask_topk)  # Assuming k=10 for hard mask
+        # mask = hard_mask.detach() + soft_mask - soft_mask.detach()
+        # if self.is_mask:
+        #     # print("Using mask in DirectionDecoder")
+        #     out = self.mlp(z * mask)          # (H*W, C_out)
+        # else:
+        out = self.mlp(z)                 # (H*W, C_out)
         out = out.transpose(0, 1)  # (C_out, H*W)
         out = out.unsqueeze(0)  # (1, C_out, H*W)
-        return out, mask
+        soft_mask = th.sigmoid(self.mlp.qz_loga)
+        return out, soft_mask
 
 class XBlock(nn.Module):
-    def __init__(self, sae_ckpt_path, out_channels, mask_topk=10):
+    def __init__(self, sae_ckpt_path, out_channels, mask_topk=10, is_mask=False):
         super().__init__()
 
         # === 1. 加载SAE模型 ===
@@ -896,15 +905,16 @@ class XBlock(nn.Module):
         state_dict = th.load(sae_ckpt_path)
         self.sae = Autoencoder.from_state_dict(state_dict)
         self.sae.eval()
-
+        self.is_mask = is_mask
         # === 2. 构建DirectionDecoder ===
         self.decoder = DirectionDecoder(
             channels=self.sae.encoder.out_features,  
             out_channels=out_channels,
-            mask_topk=mask_topk  
+            mask_topk=mask_topk,
+            is_mask=self.is_mask
         )
 
-    def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0, is_mask=False):
+    def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0):
         """
         x: Tensor of shape (B, C_in, H, W)
         Return: Tensor of shape (B, C_out, H, W)
@@ -918,9 +928,15 @@ class XBlock(nn.Module):
             z, info = self.sae.encode(x_flat,ts)  # (B, H*W, latent_dim)
         if perturb:
             # import pdb; pdb.set_trace()
-            z[:, topk_indices] *= scale_to_analyze
-        delta_h, mask = self.decoder(z, is_mask)  # (B, C_out, H, W)
-        return delta_h, mask
+            if self.is_mask:
+                hard_mask = self.decoder.hard_topk_mask(logits=self.decoder.mask_logits, k=self.decoder.mask_topk)
+                idx = th.nonzero(hard_mask).squeeze()
+                z[:, idx] *= scale_to_analyze
+                # import pdb; pdb.set_trace()
+            else:
+                z[:, topk_indices] *= scale_to_analyze
+        delta_h, soft_mask = self.decoder(z)  # (B, C_out, H, W)
+        return delta_h, soft_mask
 
 class DeltaBlock(TimestepBlock):
     """

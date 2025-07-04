@@ -383,6 +383,7 @@ def main():
         elif args.train_xblock:
             runner.run_training()
         elif args.sae_analysis:
+            runner.compare_mode()
             runner.get_important_z()
             runner.edit_by_sae()
 

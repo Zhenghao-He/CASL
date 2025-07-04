@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sh_file_name="script_train_xblock.sh"
-gpu="3"
+gpu="5"
 
 config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
 guid="sad" # guid should be in utils/text_dic.py
@@ -9,14 +9,14 @@ export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
 CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                     \
-                        --delta_h                                      \
-                        --mask_loss_w 0                                    \
-                        --mask_top 30                                         \
-                        --masked_xblock                                         \
+                        --delta_h                                           \
+                        --mask_loss_w 0.000001                                     \
+                        --mask_top 30                                       \
+                        --masked_xblock                                     \
                         --batch_size 128                                    \
-                        --epoch_num 100                                      \
-                        --alpha 0.9                                           \
-                        --lr_sae 5e-4                                  \
+                        --epoch_num 100                                     \
+                        --alpha 4                                           \
+                        --lr_sae 5e-4                                       \
                         --activation "ReLU"                                 \
                         --k 4096                                            \
                         --scale 32                                          \

@@ -14,7 +14,8 @@ def extract(a, t, x_shape):
     broadcastable with x_shape."""
     bs, = t.shape
     assert x_shape[0] == bs, f"{x_shape[0]}, {t.shape}"
-    out = torch.gather(torch.tensor(a, dtype=torch.float, device=t.device), 0, t.long())
+    out = torch.gather(a.to(dtype=torch.float, device=t.device), 0, t.long())
+    # out = torch.gather(torch.tensor(a, dtype=torch.float, device=t.device), 0, t.long())
     assert out.shape == (bs,)
     out = out.reshape((bs,) + (1,) * (len(x_shape) - 1))
     return out
@@ -47,7 +48,11 @@ def denoising_step(xt, t, t_next, *,
     # Compute noise and variance
     model = models
 
-    et, et_modified, delta_h, middle_h, mask = model(xt, t, index=index, t_edit=t_edit, hs_coeff=hs_coeff, delta_h=delta_h, ignore_timestep=ignore_timestep, use_mask=use_mask, perturb=perturb, topk_indices=topk_indices, scale_to_analyze=scale_to_analyze, delta_sae=delta_sae)
+    et, et_modified, delta_h, middle_h, mask = model(xt, t, index=index, t_edit=t_edit, hs_coeff=hs_coeff, delta_h=delta_h, ignore_timestep=ignore_timestep, use_mask=use_mask, 
+                                                     perturb=perturb, 
+                                                     topk_indices=topk_indices, 
+                                                     scale_to_analyze=scale_to_analyze, 
+                                                     delta_sae=delta_sae)
     # import pdb; pdb.set_trace()
     if learn_sigma:
         et, logvar_learned = torch.split(et, et.shape[1] // 2, dim=1)
