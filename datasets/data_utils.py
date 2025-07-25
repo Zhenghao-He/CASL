@@ -33,6 +33,32 @@ class CustomImageDataset(Dataset):
 
         return image
 
+
+class CustomImageDatasetWithName(Dataset):
+    def __init__(self, img_dir, transform=None, test_nums=None, train=True):
+        self.img_dir = img_dir
+        # 建议加上排序，保证文件顺序和标签一致
+        self.img_files = sorted(os.listdir(img_dir))
+        if test_nums is not None:
+            if train:
+                self.img_files = self.img_files[:-test_nums]
+            else:
+                self.img_files = self.img_files[-test_nums:]
+        self.transform = transform
+
+    def __len__(self):
+        return len(self.img_files)
+
+    def __getitem__(self, idx):
+        img_name = self.img_files[idx]
+        img_path = os.path.join(self.img_dir, img_name)
+        image = Image.open(img_path).convert('RGB')
+        if self.transform:
+            image = self.transform(image)
+
+        return image, img_name
+
+
 def get_dataset(dataset_type, dataset_paths, config, target_class_num=None, gender=None):
     # if category is CUSTOM, get images from custom arg path
     if config.data.category == "CUSTOM":
@@ -50,6 +76,9 @@ def get_dataset(dataset_type, dataset_paths, config, target_class_num=None, gend
         train_dataset, test_dataset = get_celeba_dataset(dataset_paths['CelebA_HQ'], config)
     elif dataset_type == "CelebA_HQ_Dialog":
         train_dataset, test_dataset = get_celeba_dialog_dataset(dataset_paths['CelebA_HQ_Dialog'], config)
+    elif dataset_type == "CelebA_HQ_P2":
+        train_dataset = CustomImageDatasetWithName(dataset_paths['CelebA_HQ_P2'], transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]), test_nums=500)
+        test_dataset = CustomImageDatasetWithName(dataset_paths['CelebA_HQ_P2'], transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]), test_nums=500, train=False)
     elif dataset_type == "IMAGENET":
         train_dataset, test_dataset = get_imagenet_dataset(dataset_paths['IMAGENET'], config, class_num=target_class_num)
     elif dataset_type == "MetFACE":

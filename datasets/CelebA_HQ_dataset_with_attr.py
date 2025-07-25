@@ -152,9 +152,13 @@ def get_celeba_dataset_attr(data_root, config):
                                   tfs.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5),
                                                 inplace=True)])
 
-    train_dataset = CustomImageDataset(os.path.join(data_root, 'LMDB_train'),
+    # train_dataset = CustomImageDataset(os.path.join(data_root, 'LMDB_train'),
+    #                                        train_transform, train=True)
+    # test_dataset = CustomImageDataset(os.path.join(data_root, 'LMDB_test'),
+    #                                       test_transform, train=False)
+    train_dataset = CustomImageDataset(data_root,
                                            train_transform, train=True)
-    test_dataset = CustomImageDataset(os.path.join(data_root, 'LMDB_test'),
+    test_dataset = CustomImageDataset(data_root,
                                           test_transform, train=False)
 
 

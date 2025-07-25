@@ -1,27 +1,26 @@
 #!/bin/bash
 
 sh_file_name="script_analysis.sh"
-gpu="0"
+gpu="7"
 
-config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
-guid="sad" # guid should be in utils/text_dic.py
+config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
+guid="smiling" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 # this is for sae analysis
 CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                     \
                         --delta_h                                           \
                         --batch_size 128                                    \
-                        --masked_xblock                                     \
                         --mask_top 30                                       \
                         --top_k_indice 1024                                 \
                         --epoch_num 100                                     \
-                        --alpha 4                                           \
-                        --topk_to_analyze 30                                 \
+                        --alpha 32                                           \
+                        --topk_to_analyze 1                                 \
                         --scale_to_analyze 2                                \
                         --lr_sae 5e-4                                       \
                         --activation "ReLU"                                 \
                         --k 4096                                            \
-                        --scale 32                                          \
+                        --scale 128                                          \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
                         --edit_attr $guid                                   \
@@ -29,7 +28,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                     \
                         --do_test 1                                         \
                         --n_train_img 100                                   \
                         --n_test_img 32                                     \
-                        --n_iter 2                                          \
+                        --n_iter 1                                          \
                         --bs_train 1                                        \
                         --t_0 999                                           \
                         --n_inv_step 50                                     \

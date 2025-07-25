@@ -8,7 +8,7 @@ def analyze_soft_mask_distribution_save(
     bins=50,
     threshold=0.5,
     stats_file='soft_mask_stats.txt',
-    img_file='soft_mask_dist.png',
+    img_dir='soft_mask_dist.png',
     show_kde=True
 ):
     """
@@ -52,13 +52,40 @@ def analyze_soft_mask_distribution_save(
             plt.ylabel('Density')
 
     plt.tight_layout()
-    plt.savefig(img_file)
+    plt.savefig(os.path.join(img_dir, 'soft_mask_distribution.png'), dpi=200)  # 保存图片
     plt.close()
+
+    # importance 是你的 tensor
+    importance_sorted, _ = torch.sort(soft_mask, descending=True)
+
+    # 1. 排序后的数值曲线
+    plt.figure(figsize=(6,4))
+    plt.plot(importance_sorted.cpu().numpy(), marker='o', linewidth=1)
+    plt.xlabel('Sorted index (Top-K)')
+    plt.ylabel('Importance value')
+    plt.title('Elbow Method for Top-K Selection')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(os.path.join(img_dir, 'importance_sorted_curve.png'), dpi=200)   # 保存图片
+    plt.close()
+
+    # 2. 累积占比曲线
+    cumsum = torch.cumsum(importance_sorted, dim=0)
+    cumsum_ratio = cumsum / importance_sorted.sum()
+    plt.figure(figsize=(6,4))
+    plt.plot(cumsum_ratio.cpu().numpy(), marker='.')
+    plt.xlabel('Top-K')
+    plt.ylabel('Cumulative ratio')
+    plt.title('Cumulative Sum Ratio of Importance')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(os.path.join(img_dir, 'importance_cumsum_ratio.png'), dpi=200)   # 保存图片
+    plt.close()
+
 
     # 统计信息
     stat_lines = []
     stat_lines.append(f"=== Soft Mask Analysis ===")
-    stat_lines.append(f"File: {img_file}")
     stat_lines.append(f"min: {data.min():.6f}")
     stat_lines.append(f"max: {data.max():.6f}")
     stat_lines.append(f"mean: {data.mean():.6f}")

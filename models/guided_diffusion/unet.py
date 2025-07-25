@@ -11,7 +11,7 @@ import numpy as np
 import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
-
+from .. xblock.XBlock import XBlock
 from .fp16_util import convert_module_to_f16, convert_module_to_f32
 from .nn import (
     checkpoint,
@@ -672,7 +672,7 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
-    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False , use_mask=False):
+    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False , use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae = True):
         """
         Apply the model to an input batch.
 
@@ -700,18 +700,40 @@ class UNetModel(nn.Module):
 
         middle_h = h
         h2 = None
-
+        mask = None
         if index is not None:
             # assert len(hs_coeff) == index + 1 + 1
             # check t_edit 
             if timesteps[0] >= t_edit:
                 # use DeltaBlock
                 if delta_h is None: #Asyrp
-                    h2 = h * hs_coeff[0]
-                    for i in range(index+1):
-                        delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb)
-                        h2 += delta_h * hs_coeff[i+1]
+                #     h2 = h * hs_coeff[0]
+                #     for i in range(index+1):
+                #         delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb)
+                #         h2 += delta_h * hs_coeff[i+1]
                 # use input delta_h  : even tough you does not use DeltaBlock, you need to use index is 0.
+                    if delta_sae:
+                        h2 = h * hs_coeff[0]
+                    else:
+                        # import pdb; pdb.set_trace()
+                        h2 = th.zeros_like(h) # h2 is a tensor of shape (1, C, H* W)
+
+                    for i in range(index+1):
+                        # delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else emb) # delta_h is a tensor of shape (1, C, H* W)
+                        # if perturb:
+                        get_h = getattr(self, f"layer_{i}")
+                        #     state = th.load(model_save_name)[f"{i}"]
+                        #     del state["sae.activation_state_dict"]
+                        #     get_h.load_state_dict(state)
+
+                        delta_h, mask = get_h(x = h, 
+                                        t = None if ignore_timestep else timesteps.long(),
+                                        perturb = perturb,
+                                        topk_indices=topk_indices, 
+                                        scale_to_analyze=scale_to_analyze) # delta_h is a tensor of shape (1, C, H* W)
+                        delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
+                        assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
+                        h2 += delta_h * hs_coeff[i+1]
                 else:   # DiffStyle; Just ignore this code. We will update about it in README.md later.
                     if use_mask:
                         mask = th.zeros_like(h)
@@ -753,10 +775,28 @@ class UNetModel(nn.Module):
 
         h = self.out(h)
 
-        return h, h2, delta_h, middle_h
+        return h, h2, delta_h, middle_h, mask
 
 
-    def setattr_layers(self, nums):
+    # def setattr_layers(self, nums):
+    #     ch = int(self.channel_mult[0] * self.model_channels)
+
+    #     for level, mult in enumerate(self.channel_mult):
+    #         for _ in range(self.num_res_blocks):
+    #             ch = int(mult * self.model_channels)
+
+    #     for i in range(nums):
+    #         # setattr(self, f"layer_{i}", DeltaBlock(in_channels=ch,
+    #         #                            out_channels=ch,
+    #         #                            temb_channels=self.model_channels * 4,
+    #         #                            dropout=0.0)
+    #         # )
+    #         setattr(self, f"layer_{i}", DeltaBlock(channels=ch,
+    #                                    emb_channels=self.model_channels * 4,
+    #                                    dropout=0.0
+    #                                    )
+    #         )
+    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0, is_mask=False, dataset = ""):
         ch = int(self.channel_mult[0] * self.model_channels)
 
         for level, mult in enumerate(self.channel_mult):
@@ -769,12 +809,18 @@ class UNetModel(nn.Module):
             #                            temb_channels=self.model_channels * 4,
             #                            dropout=0.0)
             # )
-            setattr(self, f"layer_{i}", DeltaBlock(channels=ch,
-                                       emb_channels=self.model_channels * 4,
-                                       dropout=0.0
-                                       )
-            )
-
+            # setattr(self, f"layer_{i}", DeltaBlock(channels=ch,
+            #                            emb_channels=self.model_channels * 4,
+            #                            dropout=0.0
+            #                            )
+            # )
+            print("try using SAE to Explain the h Space!!!")
+            setattr(self, f"layer_{i}", XBlock(
+                sae_ckpt_path=f"sae/{dataset}/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
+                out_channels=ch,
+                mask_topk=mask_topk,
+                is_mask=is_mask
+            ))
 
 class DeltaBlock(TimestepBlock):
     """

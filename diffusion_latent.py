@@ -84,7 +84,7 @@ class Asyrp(object):
         elif self.config.data.dataset in ["CelebA_HQ", "CUSTOM", "CelebA_HQ_Dialog"]:
             url = "https://my.microsoftpersonalcontent.com/personal/72419b431c262344/_layouts/15/download.aspx?UniqueId=1c262344-9b43-2041-8072-999501000000&Translate=false&tempauth=v1e.eyJzaXRlaWQiOiI2MDY0ZTY4OC00NzJiLTRmZGItOTM5Ny1hZDFmMWI5NDNlZTIiLCJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvbXkubWljcm9zb2Z0cGVyc29uYWxjb250ZW50LmNvbUA5MTg4MDQwZC02YzY3LTRjNWItYjExMi0zNmEzMDRiNjZkYWQiLCJleHAiOiIxNzQ4NzA5NjM1In0.QwQ7GcukQeFzoMTgfhZxQvSqWknENHsQv-f9PZpygB9MIXSkL8mqh8xeE9hqgQd5SCASl7iX4eSgdXWJsOn18O0OBDjv1Dflt7s2ig5b04uduKklGQfamFNgTId3ozoIh3bTGJapBpmZk7R45ihLXzpceAkLqBEGBLA_-C1zBkQmkFfnLTBP2B05K-ARh_w48ChwDe5GnDp3-umwDTvhMoeDoQSB7H2eJNntDt_NYuwMimoqHDMHGi4nvclAwwmsQ8idgJsLwitpRIoqRum7n7Pm_TwY0hbnwjNDdoAOxueg8g0XGB53ZsAv9yS5layEWXKB-aVNFRqSO8ftSRbdFohPiEwDODUaoskV8p23nKQnicSuRLpdEnrFzVxoBlAjT-N2FOKMrFWO89O-GNLbAkrIJOEEWPCPz-6JLCpIGoApCzNzXHsleyNED-1C3VOlwFWYuK6-nyAmY_nXumre8v9oXOWSHB1HA7tScxn-8u4pIOHkl1jWH4ThspbaEArP9OXEGC6_ezKBe9qGodtYdw.2XwYOv7plV_LdlZix4q53ikV_PkZH052V17rqLS_NUA&ApiVersion=2.0"
             # url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/celeba_hq.ckpt"
-        elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET", "MetFACE"]:
+        elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET", "MetFACE", "CelebA_HQ_P2"]:
             # get the model ["FFHQ", "AFHQ", "MetFACE"] from 
             # https://1drv.ms/u/s!AkQjJhxDm0Fyhqp_4gkYjwVRBe8V_w?e=Et3ITH
             # reference : ILVR (https://arxiv.org/abs/2108.02938), P2 weighting (https://arxiv.org/abs/2204.00227)
@@ -141,13 +141,17 @@ class Asyrp(object):
         model = model.to(self.device)
         model = torch.nn.DataParallel(model)
         
-        img_folder ='/p/realai/zhenghao/LoRA_SAE/ffhq-dataset/images1024x1024/00000/' # 直接整个文件夹下所有图片
+        img_folder =DATASET_PATHS[self.config.data.dataset] # 直接整个文件夹下所有图片
         # import pdb; pdb.set_trace() 
         n = 1
         h_samples = []
+        cnt = 0
         tmp_transform = transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
         for fname in os.listdir(img_folder):
-            if fname.lower().endswith('.png'):
+            if cnt == self.args.n_train_img:
+                break
+            cnt += 1
+            if fname.lower().endswith('.png') or fname.lower().endswith('.jpg') or fname.lower().endswith('.jpeg'):
                 img = os.path.join(img_folder, fname)
                 image = Image.open(img).convert('RGB')
 
@@ -227,7 +231,8 @@ class Asyrp(object):
                                      k=self.args.k, 
                                      alpha=self.args.alpha, 
                                      scale=self.args.scale,
-                                     is_mask=self.args.masked_xblock)
+                                     is_mask=self.args.masked_xblock,
+                                     dataset=self.config.data.category)
                 print("Setattr layers")
                 # model = model.to(self.device)
                 for i in range(self.args.get_h_num):
@@ -236,16 +241,27 @@ class Asyrp(object):
                     state = torch.load(save_name)[f"{i}"]
                     del state["sae.activation_state_dict"]
                     get_h.load_state_dict(state)
-                    import pdb; pdb.set_trace() # get_h.decoder.mlp.sample_z(16384, False)
+                    # import pdb; pdb.set_trace() # get_h.decoder.mlp.sample_z(16384, False)
                     weight = get_h.decoder.mlp.weight
                     # weight = get_h.decoder.mlp[0].weight
-                    importance = weight.pow(2).sum(dim=0)
+                    importance = weight.pow(2).sum(dim=0).detach()
+                    
+                    parent_folder = os.path.dirname(self.args.training_image_folder)
+                    analyze_soft_mask_distribution_save(
+                        importance,
+                        bins=50,
+                        threshold=0.01,
+                        stats_file=os.path.join(parent_folder, 'importance.txt'),
+                        # img_file=os.path.join(parent_folder, 'importance.png'),
+                        img_dir = parent_folder,
+                        show_kde=True
+                    )
                     # import pdb; pdb.set_trace()
                     topk_indices = torch.topk(importance, self.args.top_k_indice).indices
                     os.makedirs(f"sae/{exp_id}", exist_ok=True)
                     index_save_name = f"sae/{exp_id}/top{self.args.top_k_indice}_indices_sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
                     torch.save(topk_indices, index_save_name)
-
+                    # import pdb; pdb.set_trace()
                     return topk_indices
                     # threshold = 0.05 
                     # mask = (weight.abs() > threshold)     # [512, 16384] 布尔矩阵
@@ -282,7 +298,8 @@ class Asyrp(object):
                         k=self.args.k, 
                         alpha=self.args.alpha, 
                         scale=self.args.scale,
-                        is_mask=self.args.masked_xblock)
+                        is_mask=self.args.masked_xblock,
+                        dataset=self.config.data.category)
         model.to(self.device)
         for i in range(self.args.get_h_num):                   
             get_h = getattr(model, f"layer_{i}")
@@ -290,7 +307,7 @@ class Asyrp(object):
             del state["sae.activation_state_dict"]
             get_h.load_state_dict(state)
 
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         x_lat_tensor = None
         x0_tensor = None
 
@@ -311,8 +328,13 @@ class Asyrp(object):
         delta_h_dict = {}
         for i in seq_test:
             delta_h_dict[i] = None
-        for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['test']):
-                
+        for step, lat_pair in enumerate(img_lat_pairs_dic['test']):
+            img_name = None
+            if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
+                x0, _, x_lat, img_name = lat_pair
+                img_name = os.path.splitext(img_name[0])[0]
+            else:
+                x0, _, x_lat = lat_pair 
             if x_lat_tensor is None:
                 x_lat_tensor = x_lat
                 if self.args.use_x0_tensor:
@@ -324,15 +346,16 @@ class Asyrp(object):
             if (step+1) % self.args.bs_train != 0:
                 continue
         
-            for scale in range(-10,10,2):
-                img_folder = os.path.join(save_folder, f'test_{step}_{self.args.n_iter - 1}')
+            for scale in range(80,200,16):
+                img_folder = os.path.join(save_folder, f'test_{self.args.n_iter - 1}_scale{scale}')
                 # import pdb; pdb.set_trace()
                 os.makedirs(img_folder, exist_ok=True)
-                self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
-                                            save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
+                self.save_image_sae(model, x_lat_tensor, seq_test, seq_test_next,
+                                            save_x0 = False, save_x_origin = False,
                                             x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
                                             folder_dir=img_folder,
-                                            file_name=f'test_{step}_{self.args.n_iter - 1}_scale{scale}', hs_coeff=hs_coeff,
+                                            file_name=f'test_{step}' if img_name is None else img_name, 
+                                            hs_coeff=hs_coeff,
                                             perturb=True,
                                             topk_indices=topk_indices,
                                             # topk_to_analyze = self.args.topk_to_analyze,
@@ -398,14 +421,17 @@ class Asyrp(object):
             delta_h_dict[i] = None
 
         if self.args.train_delta_block:
-            # model.setattr_layers(self.args.get_h_num)# activation='TopK', k=10, alpha=0.5, scale=1.0
+            # model.setattr_layers(self.args.get_h_num)# activation='TopK', k=10, alpha=0.5, scale=1.0\
+            # import pdb; pdb.set_trace()
             model.setattr_layers(nums=self.args.get_h_num, 
                                   mask_topk=self.args.mask_top, 
                                   activation=self.args.activation, 
                                   k=self.args.k, 
                                   alpha=self.args.alpha, 
                                   scale=self.args.scale,
-                                  is_mask=self.args.masked_xblock)
+                                  is_mask=self.args.masked_xblock,
+                                  dataset=self.config.data.category
+                                  )
             print("Setattr layers")
             model = model.to(self.device)
             model = torch.nn.DataParallel(model)
@@ -490,7 +516,10 @@ class Asyrp(object):
                     if self.args.train_delta_block:
                         for i in range(self.args.get_h_num):
                             get_h = getattr(model.module, f"layer_{i}")
-                            get_h.load_state_dict(torch.load(save_name)[f"{i}"])
+                            state = torch.load(save_name)[f"{i}"]
+                            del state["sae.activation_state_dict"]
+                            get_h.load_state_dict(state)
+                            # get_h.load_state_dict(torch.load(save_name)[f"{i}"])
                     if self.args.train_delta_h:
                         for i in delta_h_dict.keys():
                             delta_h_dict[i] = torch.load(save_name)[f"{i}"]
@@ -501,7 +530,13 @@ class Asyrp(object):
                     x_lat_tensor = None
                     x0_tensor = None
 
-                    for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['train']):
+                    for step, lat_pair in enumerate(img_lat_pairs_dic['train']):
+                        img_name = None
+                        if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
+                            x0, _, x_lat, img_name = lat_pair
+                            img_name = os.path.splitext(img_name[0])[0]
+                        else:
+                            x0, _, x_lat = lat_pair
                         if self.args.target_image_id:
                             assert self.args.bs_train == 1, "target_image_id is only supported for batch_size == 1"
                             if not step in self.args.target_image_id:
@@ -590,13 +625,13 @@ class Asyrp(object):
                                 # loss_mask += torch.norm(mask, p=1)
                                 # l0_reg = sum(m.regularization() for m in model.modules() if hasattr(m, "regularization"))
                                 # import pdb; pdb.set_trace()
-                                l0_reg = 0
-                                for i in range(self.args.get_h_num):
-                                    get_h = getattr(model.module, f"layer_{i}")
-                                    for m in get_h.decoder.modules():
-                                        if hasattr(m, "regularization"):
-                                            l0_reg += m.regularization()
-                                loss_mask -= l0_reg
+                                # l0_reg = 0
+                                # for i in range(self.args.get_h_num):
+                                #     get_h = getattr(model.module, f"layer_{i}")
+                                #     for m in get_h.decoder.modules():
+                                #         if hasattr(m, "regularization"):
+                                #             l0_reg += m.regularization()
+                                # loss_mask -= l0_reg
                                 # import pdb; pdb.set_trace()
                                 # loss_mask += ( ((mask.mean() - 0.01) ** 2) +  100*(mask * (1 - mask)).mean())
                                 
@@ -612,8 +647,8 @@ class Asyrp(object):
                                 loss += self.args.id_loss_w * loss_id
                                 loss += self.args.l1_loss_w * loss_l1 * cosine
                                 loss += self.args.clip_loss_w * loss_clip
-                                if self.args.masked_xblock:
-                                    loss += self.args.mask_loss_w * loss_mask
+                                # if self.args.masked_xblock:
+                                #     loss += self.args.mask_loss_w * loss_mask
 
                                 loss.backward()
                                 optim_ft.step()   
@@ -622,15 +657,15 @@ class Asyrp(object):
 
                         os.makedirs(os.path.join(self.args.training_image_folder,'visualization'), exist_ok=True)
                         # import pdb; pdb.set_trace()
-                        mask =  get_h.decoder.mlp.sample_z(1, False)[0]
-                        analyze_soft_mask_distribution_save(
-                            soft_mask=mask,
-                            bins=50,
-                            threshold=0,
-                            stats_file=os.path.join(self.args.training_image_folder,'stats_train.txt'),
-                            img_file=os.path.join(self.args.training_image_folder,'visualization',f'train_{step}_{it_out}.png'),
-                            show_kde=True
-                        )
+                        # mask =  get_h.decoder.mlp.sample_z(1, False)[0]
+                        # analyze_soft_mask_distribution_save(
+                        #     soft_mask=mask,
+                        #     bins=50,
+                        #     threshold=0,
+                        #     stats_file=os.path.join(self.args.training_image_folder,'stats_train.txt'),
+                        #     img_file=os.path.join(self.args.training_image_folder,'visualization',f'train_{step}_{it_out}.png'),
+                        #     show_kde=True
+                        # )
                         # import pdb; pdb.set_trace()
                         # save image
                         if self.args.save_train_image and save_image_iter % self.args.save_train_image_step == 0 and it_out % self.args.save_train_image_iter == 0:
@@ -638,7 +673,8 @@ class Asyrp(object):
                                             save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
                                             x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
                                             folder_dir=self.args.training_image_folder,
-                                            file_name=f'train_{step}_{it_out}', hs_coeff=hs_coeff,
+                                            file_name=f'train_{step}_{it_out}' if img_name is None else f'train_{img_name}_{step}_{it_out}', 
+                                            hs_coeff=hs_coeff,
                                             )
                         
                         if self.args.save_checkpoint_during_iter and save_image_iter % self.args.save_checkpoint_step ==0:
@@ -691,8 +727,13 @@ class Asyrp(object):
             x_lat_tensor = None
             x0_tensor = None
 
-            for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['test']):
-                    
+            for step, lat_pair in enumerate(img_lat_pairs_dic['test']):
+                img_name = None
+                if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
+                    x0, _, x_lat, img_name = lat_pair
+                    img_name = os.path.splitext(img_name[0])[0]
+                else:
+                    x0, _, x_lat = lat_pair
                 if x_lat_tensor is None:
                     x_lat_tensor = x_lat
                     if self.args.use_x0_tensor:
@@ -704,11 +745,12 @@ class Asyrp(object):
                 if (step+1) % self.args.bs_train != 0:
                     continue
 
-                self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
+                self.save_image_sae(model, x_lat_tensor, seq_test, seq_test_next,
                                             save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
                                             x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
-                                            folder_dir=self.args.test_image_folder,
-                                            file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
+                                            folder_dir=os.path.join(self.args.test_image_folder, f'iter{self.args.n_iter - 1}_ngen{self.args.n_train_step}'),
+                                            file_name=f'test_{step}_{self.args.n_iter - 1}' if img_name is None else img_name,
+                                            hs_coeff=hs_coeff,
                                             )
                                         
                 if step == self.args.n_test_img - 1:
@@ -716,7 +758,6 @@ class Asyrp(object):
                 save_image_iter += 1
                 x_lat_tensor = None
                 x0_tensor = None
-
 
 
     @torch.no_grad()
@@ -819,6 +860,129 @@ class Asyrp(object):
         grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
 
         tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalization=True)
+
+        time_e = time.time()
+        print(f'{time_e - time_s} seconds, {file_name}_ngen{self.args.n_train_step}.png is saved')
+
+
+
+    @torch.no_grad()
+    def save_image_sae(self, model, x_lat_tensor, seq_inv, seq_inv_next,
+                    save_x0 = False, save_x_origin = False,
+                    save_process_delta_h = False, save_process_origin = False,
+                    x0_tensor = None, delta_h_dict=None, get_delta_hs=False,
+                    folder_dir="", file_name="", hs_coeff=(1.0,1.0),
+                    image_space_noise_dict=None, perturb=False,topk_indices=None, scale_to_analyze=None):
+        
+        if save_process_origin or save_process_delta_h:
+            os.makedirs(os.path.join(folder_dir,file_name), exist_ok=True)
+
+        process_num = int(save_x_origin) + (len(hs_coeff) if isinstance(hs_coeff, list) else 1)
+        
+
+        with tqdm(total=len(seq_inv)*(process_num), desc=f"Generative process") as progress_bar:
+            time_s = time.time()
+
+            # x_list = []
+
+            if save_x0:
+                if x0_tensor is not None:
+                    x = x0_tensor.to(self.device)
+                    x = (x + 1) * 0.5
+                    grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
+                    save_path = os.path.join(folder_dir, "x0", "images")
+                    os.makedirs(save_path, exist_ok=True)
+                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalization=True)
+
+                    # x_list.append(x0_tensor.to(self.device))
+            
+            if save_x_origin:
+            # No delta h
+                x = x_lat_tensor.clone().to(self.device)
+
+                for it, (i, j) in enumerate(zip(reversed((seq_inv)), reversed((seq_inv_next)))):
+                    t = (torch.ones(self.args.bs_train) * i).to(self.device)
+                    t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
+
+                    x, x0_t, _, _ , _ = denoising_step(x, t=t, t_next=t_next, models=model,
+                                    logvars=self.logvar,
+                                    sampling_type= self.args.sample_type,
+                                    b=self.betas,
+                                    learn_sigma=self.learn_sigma,
+                                    eta=1.0 if (self.args.origin_process_addnoise and t[0]<self.t_addnoise) else 0.0,
+                                    )
+                    progress_bar.update(1)
+                    
+                    if save_process_origin:
+                        output = torch.cat([x, x0_t], dim=0)
+                        output = (output + 1) * 0.5
+                        grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
+                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalization=True)
+
+                # x_list.append(x)
+                x = (x + 1) * 0.5
+                grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
+                save_path = os.path.join(folder_dir, "origin", "images")
+                os.makedirs(save_path, exist_ok=True)
+                tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalization=True)
+
+            if self.args.pass_editing:
+                pass
+            else:
+                if not isinstance(hs_coeff, list):
+                    hs_coeff = [hs_coeff]
+                
+                for hs_coeff_tuple in hs_coeff:
+
+                    x = x_lat_tensor.clone().to(self.device)
+
+                    for it, (i, j) in enumerate(zip(reversed((seq_inv)), reversed((seq_inv_next)))):
+                        t = (torch.ones(self.args.bs_train) * i).to(self.device)
+                        t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
+
+                        x, x0_t, delta_h, _, _= denoising_step(x, t=t, t_next=t_next, models=model,
+                                        logvars=self.logvar,                                
+                                        sampling_type=self.args.sample_type,
+                                        b=self.betas,
+                                        learn_sigma=self.learn_sigma,
+                                        index=self.args.get_h_num-1 if not (self.args.image_space_noise_optim or self.args.image_space_noise_optim_delta_block) else None,
+                                        eta=1.0 if t[0]<self.t_addnoise else 0.0,
+                                        t_edit= self.t_edit,
+                                        hs_coeff=hs_coeff_tuple,
+                                        delta_h=None if get_delta_hs else delta_h_dict[0] if (self.args.ignore_timesteps and self.args.train_delta_h) else delta_h_dict[int(t[0].item())] if t[0]>= self.t_edit else None,
+                                        ignore_timestep=self.args.ignore_timesteps,
+                                        dt_lambda=self.args.dt_lambda,
+                                        warigari=self.args.warigari,
+                                        perturb=perturb,
+                                        topk_indices=topk_indices,
+                                        scale_to_analyze=scale_to_analyze,
+                                        )
+                        progress_bar.update(1)
+
+                        if save_process_delta_h:
+                            output = torch.cat([x, x0_t], dim=0)
+                            output = (output + 1) * 0.5
+                            grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
+                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalization=True)
+                        if get_delta_hs and t[0]>= self.t_edit:
+                            if delta_h_dict[t[0].item()] is None:
+                                delta_h_dict[t[0].item()] = delta_h
+                            else:
+                                delta_h_dict[int(t[0].item())] = delta_h_dict[int(t[0].item())] + delta_h
+
+                    # x_list.append(x)
+                    x = (x + 1) * 0.5
+                    grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
+                    save_path = os.path.join(folder_dir, "delta_h", "images")
+                    os.makedirs(save_path, exist_ok=True)
+                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalization=True)
+
+        # x = torch.cat(x_list, dim=0)
+        # x = (x + 1) * 0.5
+
+        # grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
+
+        # tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalization=True)
 
         time_e = time.time()
         print(f'{time_e - time_s} seconds, {file_name}_ngen{self.args.n_train_step}.png is saved')
@@ -1056,8 +1220,13 @@ class Asyrp(object):
 
         # Train set
         if self.args.do_train:
-            for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['train']):
-
+            for step, lat_pair in enumerate(img_lat_pairs_dic['train']):
+                img_name = None
+                if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
+                    x0, _, x_lat, img_name = lat_pair
+                    img_name = os.path.splitext(img_name[0])[0]
+                else:
+                    x0, _, x_lat = lat_pair
                 if self.args.target_image_id:
                     assert self.args.bs_train == 1, "target_image_id is only supported for batch_size == 1"
                     if not step in self.args.target_image_id:
@@ -1082,7 +1251,8 @@ class Asyrp(object):
                                             x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
                                             folder_dir=self.args.test_image_folder, get_delta_hs=self.args.num_mean_of_delta_hs,
                                             save_process_origin=self.args.save_process_origin, save_process_delta_h=self.args.save_process_delta_h,
-                                            file_name=f'train_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
+                                            file_name=f'train_{step}_{self.args.n_iter - 1}' if img_name is None else f'train_{img_name}_{step}_{self.args.n_iter - 1}',
+                                            hs_coeff=hs_coeff,
                                             )
                                         
                 if step == self.args.n_train_img - 1:
@@ -1120,8 +1290,13 @@ class Asyrp(object):
         if self.args.do_test:
             x_lat_tensor = None
 
-            for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['test']):
-
+            for step, lat_pair in enumerate(img_lat_pairs_dic['test']):
+                img_name = None
+                if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
+                    x0, _, x_lat, img_name = lat_pair
+                    img_name = os.path.splitext(img_name[0])[0]
+                else:
+                    x0, _, x_lat = lat_pair
                 if self.args.target_image_id:
                     assert self.args.bs_train == 1, "target_image_id is only supported for batch_size == 1"
                     if not step in self.args.target_image_id:
@@ -1146,7 +1321,8 @@ class Asyrp(object):
                                             x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
                                             folder_dir=self.args.test_image_folder, get_delta_hs=self.args.num_mean_of_delta_hs,
                                             save_process_origin=self.args.save_process_origin, save_process_delta_h=self.args.save_process_delta_h,
-                                            file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
+                                            file_name=f'test_{step}_{self.args.n_iter - 1}' if img_name is None else f'test_{img_name}_{step}_{self.args.n_iter - 1}',
+                                            hs_coeff=hs_coeff,
                                             )
                                         
                 if step == self.args.n_test_img - 1:
@@ -1295,13 +1471,19 @@ class Asyrp(object):
                     save_process_folder = os.path.join(self.args.image_folder, f'inversion_process')
                     if not os.path.exists(save_process_folder):
                         os.makedirs(save_process_folder)
-
-            for step, img in enumerate(loader):
+ 
+            for step, img_pair in enumerate(loader):
                 if (mode == "train" and step == self.args.n_train_img) or (mode == "test" and step == self.args.n_test_img):
                     break
                 if exist_num != 0:
                     exist_num = exist_num - 1
                     continue
+                if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
+                    img = img_pair[0]
+                    img_name = img_pair[1]
+                else:
+                    img = img_pair
+                
                 x0 = img.to(self.config.device)
                 if save_imgs:
                     tvu.save_image((x0 + 1) * 0.5, os.path.join(self.args.image_folder, f'{mode}_{step}_0_orig.png'))
@@ -1349,7 +1531,11 @@ class Asyrp(object):
                         time_e = time.time()
                         print(f'{time_e - time_s} seconds')
 
-                    img_lat_pairs.append([x0, x.detach().clone(), x_lat.detach().clone()])
+                    if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2': 
+                        img_lat_pairs.append([x0, x.detach().clone(), x_lat.detach().clone(),img_name])
+                    else:
+                        img_lat_pairs.append([x0, x.detach().clone(), x_lat.detach().clone()])
+
                 
                 if save_imgs:
                     tvu.save_image((x + 1) * 0.5, os.path.join(self.args.image_folder,
@@ -1759,7 +1945,7 @@ class Asyrp(object):
     def compare_mode(self):
         from models.sae.sae import Autoencoder
 
-        sae_ckpt_path = f"sae/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+        sae_ckpt_path = f"sae/{self.config.data.category}/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
         print(f"Loading SAE model from {sae_ckpt_path}...")
         state_dict = torch.load(sae_ckpt_path)
         sae = Autoencoder.from_state_dict(state_dict)
@@ -1784,7 +1970,8 @@ class Asyrp(object):
                         k=self.args.k, 
                         alpha=self.args.alpha, 
                         scale=self.args.scale,
-                        is_mask=self.args.masked_xblock)
+                        is_mask=self.args.masked_xblock,
+                        dataset=self.config.data.category,)
         model.to(self.device)
         for i in range(self.args.get_h_num):                   
             get_h = getattr(model, f"layer_{i}")

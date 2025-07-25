@@ -1,25 +1,24 @@
 #!/bin/bash
 
 sh_file_name="script_train_xblock.sh"
-gpu="5"
+gpu="1"
 
-config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
-guid="sad" # guid should be in utils/text_dic.py
+config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
+guid="smiling" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
 CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                     \
                         --delta_h                                           \
-                        --mask_loss_w 0.000001                                     \
+                        --mask_loss_w 0.00001                                     \
                         --mask_top 30                                       \
-                        --masked_xblock                                     \
                         --batch_size 128                                    \
                         --epoch_num 100                                     \
-                        --alpha 4                                           \
+                        --alpha 32                                           \
                         --lr_sae 5e-4                                       \
                         --activation "ReLU"                                 \
                         --k 4096                                            \
-                        --scale 32                                          \
+                        --scale 128                                          \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
                         --edit_attr $guid                                   \
@@ -39,12 +38,13 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                     \
                         --train_delta_block                                 \
                         --sh_file_name $sh_file_name                        \
                         --save_x0                                           \
+                        --save_x_origin                                     \
                         --use_x0_tensor                                     \
                         --hs_coeff_delta_h 1.0                              \
                         --lr_training 0.5                                   \
                         --clip_loss_w 1.0                                   \
                         --l1_loss_w 3.0                                     \
-                        --retrain 1                                         \
+                        --retrain 0                                         \
                         --custom_train_dataset_dir "hdd1/datasets/celeba_hq/train/male"       \
                         --custom_test_dataset_dir "hdd1/datasets/celeba_hq/val/male"         \
                         --sh_file_name "script_train_xblock.sh"

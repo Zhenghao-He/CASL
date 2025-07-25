@@ -865,10 +865,10 @@ class DirectionDecoder(nn.Module):
         #     nn.SiLU(),
         #     nn.Linear(hidden_dim, out_channels)
         # )
-        from utils.l0_regularization import L0Dense
-        self.mlp = L0Dense(in_features=channels, out_features=out_channels, bias=True, weight_decay=1., droprate_init=0.1, temperature=2./3.,
-                 lamba=10., local_rep=False)
-        # self.mlp = nn.Linear(channels, out_channels)
+        # from utils.l0_regularization import L0Dense
+        # self.mlp = L0Dense(in_features=channels, out_features=out_channels, bias=True, weight_decay=100000., droprate_init=0.1, temperature=2./3.,
+        #          lamba=10., local_rep=False)
+        self.mlp = nn.Linear(channels, out_channels)
 
     def hard_topk_mask(self, logits, k):
         # logits: [d]
@@ -893,8 +893,8 @@ class DirectionDecoder(nn.Module):
         out = self.mlp(z)                 # (H*W, C_out)
         out = out.transpose(0, 1)  # (C_out, H*W)
         out = out.unsqueeze(0)  # (1, C_out, H*W)
-        soft_mask = th.sigmoid(self.mlp.qz_loga)
-        return out, soft_mask
+        # soft_mask = th.sigmoid(self.mlp.qz_loga)
+        return out, None
 
 class XBlock(nn.Module):
     def __init__(self, sae_ckpt_path, out_channels, mask_topk=10, is_mask=False):
@@ -934,7 +934,17 @@ class XBlock(nn.Module):
                 z[:, idx] *= scale_to_analyze
                 # import pdb; pdb.set_trace()
             else:
-                z[:, topk_indices] *= scale_to_analyze
+                # 先置零，再单独放大Top-K
+                # import pdb; pdb.set_trace()
+                # to_remove = th.tensor([32088, 3644])
+                # remain_idx = ~th.isin(topk_indices, to_remove)
+                # topk_indices = topk_indices[remain_idx]
+                # topk_indices = th.tensor([32088, 23984,  3644, 30090, 20018, 20188,  5753,   992, 10111, 19893])
+                # topk_indices = topk_indices[2:]
+                z_sparse = th.zeros_like(z)
+                z_sparse[:, topk_indices] = z[:, topk_indices] * scale_to_analyze
+                z = z_sparse
+                # z[:, topk_indices] *= scale_to_analyze
         delta_h, soft_mask = self.decoder(z)  # (B, C_out, H, W)
         return delta_h, soft_mask
 

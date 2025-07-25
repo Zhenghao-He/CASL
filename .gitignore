@@ -12,4 +12,5 @@ License
 README.md
 requirements.txt
 __pycache__/
+celeba_classifier/
 *.py[cod]
