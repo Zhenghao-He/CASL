@@ -779,7 +779,7 @@ class UNetModel(nn.Module):
         
 
 
-    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0, is_mask=False):
+    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0, is_mask=False,dataset=None):
         ch = int(self.channel_mult[0] * self.model_channels)
 
         for level, mult in enumerate(self.channel_mult):
@@ -799,7 +799,7 @@ class UNetModel(nn.Module):
             # )
             print("try using SAE to Explain the h Space!!!")
             setattr(self, f"layer_{i}", XBlock(
-                sae_ckpt_path=f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
+                sae_ckpt_path=f"sae/{dataset}/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
                 out_channels=ch,
                 mask_topk=mask_topk,
                 is_mask=is_mask

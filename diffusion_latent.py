@@ -2,6 +2,8 @@ from audioop import reverse
 from genericpath import isfile
 import time
 from glob import glob
+# from celeba_classifier.celeba_resnet_train import train
+from models.sae.sae import Autoencoder
 from models.guided_diffusion.script_util import guided_Diffusion
 from models.improved_ddpm.nn import normalization
 from tqdm import tqdm
@@ -78,7 +80,8 @@ class Asyrp(object):
         # ----------- Model -----------#
         if self.config.data.dataset == "LSUN":
             if self.config.data.category == "bedroom":
-                url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
+                url = "https://cdn-lfs.hf.co/repos/23/f2/23f277fa4d8a57343190fde8cd738f7d560fb626b64a65dd28f4dc8003fefc0a/2e71ade3fe76bbfe5a4894903ce3fb6f039eabf7643a92f7e335b5c202d8c6c6?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27bedroom.ckpt%3B+filename%3D%22bedroom.ckpt%22%3B&Expires=1753765279&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc1Mzc2NTI3OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9yZXBvcy8yMy9mMi8yM2YyNzdmYTRkOGE1NzM0MzE5MGZkZThjZDczOGY3ZDU2MGZiNjI2YjY0YTY1ZGQyOGY0ZGM4MDAzZmVmYzBhLzJlNzFhZGUzZmU3NmJiZmU1YTQ4OTQ5MDNjZTNmYjZmMDM5ZWFiZjc2NDNhOTJmN2UzMzViNWMyMDJkOGM2YzY%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=OYE7Si-3IWRMrO3H-ZBqi2OVLg%7EmSpfpPtkJSWAf3xjmoMJxJ06LQhlKsZgtAfZCzbQoEAnogqf0CKQvzeNONRnlFlrCapzF9t4RhoHdUQ4dE6xx4CD3qt4imTARGl3yqdAizZSbJtCWOJGNo0wwTrbnMq1PP6xb1H3mo7cZa4SJO6Y6%7E3ssaE4GhJiuLZoz-mwrkPYeEPCI4Hz8M3k2eejE1s0plZNFhodp4AzAXDeMWPcyPYWeC08-VKRYinwMjeEl6KTECJH01ke545INgWRUIjP4CUcEjoUVhXMDgPPVQEnTaTQpjGQ0A%7EtRKqtGPS9zrcdTddtQVOBz8mAA2g__&Key-Pair-Id=K3RPWS32NSSJCE"
+                # url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/bedroom.ckpt"
             elif self.config.data.category == "church_outdoor":
                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
         elif self.config.data.dataset in ["CelebA_HQ", "CUSTOM", "CelebA_HQ_Dialog"]:
@@ -147,10 +150,18 @@ class Asyrp(object):
         h_samples = []
         cnt = 0
         tmp_transform = transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
-        for fname in os.listdir(img_folder):
-            if cnt == self.args.n_train_img:
-                break
-            cnt += 1
+        file_list = sorted(os.listdir(img_folder))
+        test_files = list(reversed(file_list))[:self.args.n_test_img]  # 例如 num_test = 500
+        # for fname in test_files:
+        # import pdb; pdb.set_trace()
+        if self.args.sample_test:
+            files = test_files
+        else:
+            files = file_list[:self.args.n_train_img]
+        for fname in files:
+            # if cnt == self.args.n_train_img:
+            #     break
+            # cnt += 1
             if fname.lower().endswith('.png') or fname.lower().endswith('.jpg') or fname.lower().endswith('.jpeg'):
                 img = os.path.join(img_folder, fname)
                 image = Image.open(img).convert('RGB')
@@ -198,7 +209,8 @@ class Asyrp(object):
                     x_lat = x.clone()
                 print("Generative process is skipped")
 
-        save_name = f'sample_h/{self.config.data.category}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        mode = 'test' if self.args.sample_test else 'train'
+        save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
 
         torch.save(h_samples, save_name)
         # import pdb; pdb.set_trace()
@@ -346,7 +358,8 @@ class Asyrp(object):
             if (step+1) % self.args.bs_train != 0:
                 continue
         
-            for scale in range(80,200,16):
+            # for scale in range(18,32,2):
+            for scale in range(0,200,32):
                 img_folder = os.path.join(save_folder, f'test_{self.args.n_iter - 1}_scale{scale}')
                 # import pdb; pdb.set_trace()
                 os.makedirs(img_folder, exist_ok=True)
@@ -525,12 +538,14 @@ class Asyrp(object):
                             delta_h_dict[i] = torch.load(save_name)[f"{i}"]
                     continue
                 else:
+
                     # Unfortunately, ima_lat_pairs_dic does not match with batch_size
                     # I'm sorry but you have to get ima_lat_pairs_dic with batch_size == 1
                     x_lat_tensor = None
                     x0_tensor = None
-
+                    # import pdb; pdb.set_trace()
                     for step, lat_pair in enumerate(img_lat_pairs_dic['train']):
+                        # import pdb; pdb.set_trace()
                         img_name = None
                         if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
                             x0, _, x_lat, img_name = lat_pair
@@ -791,7 +806,7 @@ class Asyrp(object):
                     t = (torch.ones(self.args.bs_train) * i).to(self.device)
                     t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
 
-                    x, x0_t, _, _  = denoising_step(x, t=t, t_next=t_next, models=model,
+                    x, x0_t, _, _, _  = denoising_step(x, t=t, t_next=t_next, models=model,
                                     logvars=self.logvar,
                                     sampling_type= self.args.sample_type,
                                     b=self.betas,
@@ -1878,7 +1893,7 @@ class Asyrp(object):
             return cosine
 
     def train_sae(self, batch_size=128, epoch_num=20, alpha=0, activation="TopK", k=20, scale=32):
-        save_name = f'sample_h/{self.config.data.category}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        save_name = f'sample_h/{self.config.data.category}_train_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
         if os.path.exists(save_name):
             print(f'{save_name} exists. load checkpoint')
             h_samples = torch.load(save_name)
@@ -1934,16 +1949,13 @@ class Asyrp(object):
                 # os.makedirs(os.path.dirname(checkpoint_path), exist_ok=True)
                 torch.save(sae.state_dict(), checkpoint_path)
 
-        torch.save(sae.state_dict(), f"sae/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth")    
+        os.makedirs(f"sae/{self.config.data.category}/", exist_ok=True)
+        torch.save(sae.state_dict(), f"sae/{self.config.data.category}/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth")    
 
-
-        
-
-        return 
+        return
     
 
     def compare_mode(self):
-        from models.sae.sae import Autoencoder
 
         sae_ckpt_path = f"sae/{self.config.data.category}/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
         print(f"Loading SAE model from {sae_ckpt_path}...")
@@ -1995,3 +2007,138 @@ class Asyrp(object):
 
 
         # import pdb; pdb.set_trace()
+    def analyze_sae(self):
+        sae_ckpt_path = f"sae/{self.config.data.category}/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+        if not os.path.exists(sae_ckpt_path):
+            print(f"SAE model not found at {sae_ckpt_path}. Please train or provide the model.")
+            return
+        state_dict = torch.load(sae_ckpt_path)
+        sae = Autoencoder.from_state_dict(state_dict)
+        sae.eval()
+        sae.to(self.device)
+        # import pdb; pdb.set_trace()
+        mode = 'test' if self.args.sample_test else 'train'
+        save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        if os.path.exists(save_name):
+            print(f'{save_name} exists. load checkpoint')
+            h_samples = torch.load(save_name)
+        else:
+            print(f"checkpoint({save_name}) does not exist!")
+            exit()
+        # import pdb; pdb.set_trace()
+        mse_list = []
+        cos_list = []
+        all_latents = []
+
+        with torch.no_grad():
+            for sample in tqdm(h_samples, desc="Evaluating SAE"):
+                h = sample["middle_h"].to(self.device)  # (H*W, C)
+                t = torch.full((h.shape[0],), sample["timestep"], device=self.device, dtype=torch.long)
+
+                _, latents, recons = sae(h, t)  # latents: (H*W, k)
+
+                # === 1. MSE ===
+                mse = F.mse_loss(recons, h).item()
+                mse_list.append(mse)
+
+                # === 2. Cosine Similarity ===
+                cosine = F.cosine_similarity(recons, h, dim=1)  # per token
+                cos_mean = cosine.mean().item()
+                cos_list.append(cos_mean)
+
+                # === collect latents for DAR ===
+                all_latents.append(latents.detach().cpu())
+
+        # === 3. DAR ===
+        z = torch.cat(all_latents, dim=0)  # shape: (total_tokens, k)
+        z_mean = z.mean(dim=0)             # mean across tokens for each dim, shape: (k,)
+        dar = (z_mean > self.args.threshold).float().mean().item()
+
+        # === Final averages ===
+        avg_mse = sum(mse_list) / len(mse_list)
+        avg_cos = sum(cos_list) / len(cos_list)
+
+        print(f"[Evaluation Results]")
+        print(f"  MSE               : {avg_mse:.6f}")
+        print(f"  Cosine Similarity : {avg_cos:.6f}")
+        print(f"  DAR (τ={self.args.threshold})     : {dar:.6f}")
+
+                # === Save z_mean to txt ===
+        result_txt_path = f"sae/{self.config.data.category}/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.txt"
+        with open(result_txt_path, "w", encoding="utf-8") as f:
+            f.write(f"MSE               : {avg_mse:.6f}\n")
+            f.write(f"Cosine Similarity : {avg_cos:.6f}\n")
+            f.write(f"DAR (τ={self.args.threshold})     : {dar:.6f}\n")
+
+        print(f"Saved evaluation result to {result_txt_path}")
+        return {
+            "mse": avg_mse,
+            "cosine": avg_cos,
+            "dar": dar
+        }
+
+    def sample_z(self):
+        sae_ckpt_path = f"sae/{self.config.data.category}/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+        if not os.path.exists(sae_ckpt_path):
+            print(f"SAE model not found at {sae_ckpt_path}. Please train or provide the model.")
+            return
+        state_dict = torch.load(sae_ckpt_path)
+        sae = Autoencoder.from_state_dict(state_dict)
+        sae.eval()
+        sae.to(self.device)
+        # import pdb; pdb.set_trace()
+        mode = 'test' if self.args.sample_test else 'train'
+        save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        if os.path.exists(save_name):
+            print(f'{save_name} exists. load checkpoint')
+            h_samples = torch.load(save_name)
+        else:
+            print(f"checkpoint({save_name}) does not exist!")
+            exit()
+        # import pdb; pdb.set_trace()
+        mse_list = []
+        cos_list = []
+        all_latents = []
+
+        with torch.no_grad():
+            for sample in tqdm(h_samples, desc="Evaluating SAE"):
+                h = sample["middle_h"].to(self.device)  # (H*W, C)
+                t = torch.full((h.shape[0],), sample["timestep"], device=self.device, dtype=torch.long)
+
+                _, latents, recons = sae(h, t)  # latents: (H*W, k)
+
+                # === 1. MSE ===
+                mse = F.mse_loss(recons, h).item()
+                mse_list.append(mse)
+
+                # === 2. Cosine Similarity ===
+                cosine = F.cosine_similarity(recons, h, dim=1)  # per token
+                cos_mean = cosine.mean().item()
+                cos_list.append(cos_mean)
+
+                # === collect latents for DAR ===
+                all_latents.append(latents.detach().cpu())
+
+        # === 3. DAR ===
+        z = torch.cat(all_latents, dim=0)  # shape: (total_tokens, k)
+        z_sparse = z.to_sparse()
+# torch.save(z_sparse, "z_sparse.pt")
+        # z_mean = z.mean(dim=0)             # mean across tokens for each dim, shape: (k,)
+        # import pdb; pdb.set_trace()
+        # dar = (z_mean > self.args.threshold).float().mean().item()
+
+        # # === Final averages ===
+        # avg_mse = sum(mse_list) / len(mse_list)
+        # avg_cos = sum(cos_list) / len(cos_list)
+
+        # print(f"[Evaluation Results]")
+        # print(f"  MSE               : {avg_mse:.6f}")
+        # print(f"  Cosine Similarity : {avg_cos:.6f}")
+        # print(f"  DAR (τ={self.args.threshold})     : {dar:.6f}")
+
+                # === Save z_mean to txt ===
+        os.makedirs("sample_z", exist_ok=True)
+        result_txt_path = f"sample_z/z_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
+        torch.save(z_sparse, result_txt_path)
+
+        return 

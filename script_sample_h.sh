@@ -1,9 +1,9 @@
 #!/bin/bash
 
-sh_file_name="script_train.sh"
-gpu="1"
+sh_file_name="script_sample_h.sh"
+gpu="3"
 
-config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
+config="afhq.yml" # if you use other dataset, config/path_config.py should be matched
 guid="smiling" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 

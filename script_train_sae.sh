@@ -1,21 +1,21 @@
 #!/bin/bash
 
 sh_file_name="script_train_sae.sh"
-gpu="4"
+gpu="3"
 
-config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
+config="afhq.yml" # if you use other dataset, config/path_config.py should be matched
 guid="smiling" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
 CUDA_VISIBLE_DEVICES=$gpu python main.py --train_sae                        \
-                        --batch_size 128                                    \
+                        --batch_size 64                                    \
                         --lr_sae 5e-4                                       \
                         --epoch_num 100                                     \
-                        --alpha 16                                           \
+                        --alpha 32                                           \
                         --activation "ReLU"                                 \
                         --k 4096                                            \
-                        --scale 256                                          \
+                        --scale 128                                          \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
                         --edit_attr $guid                                   \

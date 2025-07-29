@@ -9,7 +9,12 @@ sample_h/
 test_images/
 utils/*.tsv
 License
-README.md
+logs/
+epr/
+results_0/
+results_500range/
+boundary/
+boundary_good/
 requirements.txt
 __pycache__/
 celeba_classifier/

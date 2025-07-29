@@ -12,6 +12,8 @@ SRC_TRG_TXT_DIC = {
             ['old person']),
     'young': (['person'],
               ['young person']),
+    'big_nose': (['person'],
+                ['person with big nose']),
     'beards': (['person'],
                ['person with beards']),
     'angry': (['face'],

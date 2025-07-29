@@ -130,7 +130,9 @@ def main():
     nls, delta_target, delta_non_targets_mean = nls_metric(metrics_before['acc'].cpu(), metrics_after['acc'].cpu(), target_idx, non_target_indices)
     # acc_target_before, acc_target_after, flip_rate = label_metrics(attrs_before, attrs_after, y_true, target_idx)
     acc_target_before, acc_target_after = metrics_before['acc'][target_idx].cpu().item(), metrics_after['acc'][target_idx].cpu().item()
-    flip_rate = (metrics_before['preds'][target_idx]!=metrics_after['preds'][target_idx]).float().mean().item()
+    # import pdb; pdb.set_trace()
+    flip_rate = (metrics_before['preds'][:, target_idx] != metrics_after['preds'][:, target_idx]).float().mean().item()
+
     print(f"NLS: {nls:.4f}")
     print(f"Target score mean change: {delta_target:.4f}")
     print(f"Non-target attributes mean change: {delta_non_targets_mean:.4f}")

@@ -227,6 +227,9 @@ def parse_args_and_config():
 
     # Sample H
     parser.add_argument('--sample_h', action='store_true', help='sample_h')
+    parser.add_argument('--sample_z', action='store_true', help='sample_z')
+    
+    parser.add_argument('--sample_test', action="store_true", help='Whether to sample test images')
     # Train SAE
     parser.add_argument('--train_sae', action='store_true', help='train_sae')
     parser.add_argument('--delta_h', action='store_true', help='train delta_h')
@@ -249,6 +252,11 @@ def parse_args_and_config():
     parser.add_argument('--top_k_indice', type=int, default=20, help='top k indices for sae analysis')
     parser.add_argument('--topk_to_analyze', type=int, default=20, help='top k indices for sae analysis')
     parser.add_argument('--scale_to_analyze', type=float, default=32, help='scale for sae analysis')
+
+
+    parser.add_argument('--analyze_sae', action='store_true', help='analysis sae')
+    
+    parser.add_argument('--threshold', type=float, default=0.01, help='threshold for sae analysis')
     args = parser.parse_args()
 
     # parse config file
@@ -371,6 +379,8 @@ def main():
             runner.compute_lpips_distance()
         elif args.sample_h:
             runner.sample_h()
+        elif args.sample_z:
+            runner.sample_z()
         elif args.train_sae:
             runner.train_sae(
                 batch_size=args.batch_size, 
@@ -386,6 +396,8 @@ def main():
             runner.compare_mode()
             runner.get_important_z()
             runner.edit_by_sae()
+        elif args.analyze_sae:
+            runner.analyze_sae()
 
     except Exception:
         logging.error(traceback.format_exc())
