@@ -228,7 +228,8 @@ def parse_args_and_config():
     # Sample H
     parser.add_argument('--sample_h', action='store_true', help='sample_h')
     parser.add_argument('--sample_z', action='store_true', help='sample_z')
-    
+    parser.add_argument('--sample_attr', type=str, help='attribute sampling')
+
     parser.add_argument('--sample_test', action="store_true", help='Whether to sample test images')
     # Train SAE
     parser.add_argument('--train_sae', action='store_true', help='train_sae')
@@ -380,7 +381,10 @@ def main():
         elif args.sample_h:
             runner.sample_h()
         elif args.sample_z:
+            runner.sample_h_with_attribute()
+            # runner.get_important_z()
             runner.sample_z()
+            runner.svm_z()
         elif args.train_sae:
             runner.train_sae(
                 batch_size=args.batch_size, 

@@ -4,7 +4,8 @@ sh_file_name="script_sample_z.sh"
 gpu="1"
 
 config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
-guid="smiling" # guid should be in utils/text_dic.py
+concept="Smiling" # concept name, should be in utils/text_dic.py
+guid=${concept,,} # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
@@ -12,6 +13,9 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --sample_z                        \
                         --config $config                                    \
                         --exp ./runs/$guid                                  \
                         --edit_attr $guid                                   \
+                        --top_k_indice 1024                                 \
+                        --topk_to_analyze 16                                 \
+                        --sample_attr $concept                             \
                         --sample_test                                       \
                         --do_train 1                                        \
                         --do_test 1                                         \
@@ -23,7 +27,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --sample_z                        \
                         --n_iter 5                                          \
                         --bs_train 1                                        \
                         --t_0 999                                           \
-                        --n_inv_step 5                                     \
+                        --n_inv_step 50                                     \
                         --n_train_step 50                                   \
                         --n_test_step 100                                   \
                         --get_h_num 1                                       \

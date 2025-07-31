@@ -18,4 +18,8 @@ boundary_good/
 requirements.txt
 __pycache__/
 celeba_classifier/
+charts_*/
+logs/
+sample_z/
+svm_results/
 *.py[cod]

@@ -2077,7 +2077,108 @@ class Asyrp(object):
             "dar": dar
         }
 
+    def sample_h_with_attribute(self):
+        mode = 'test' if self.args.sample_test else 'train'
+        save_name = f'sample_h/CelebA_HQ_{self.args.sample_attr}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        if os.path.exists(save_name):
+            print(f'{save_name} exists. load checkpoint')
+            h_samples = torch.load(save_name)
+            return h_samples
+        from torchvision import transforms
+        from datasets.CelebA_HQ_Balanced import ConceptBalancedImageDataset
+        transform = transforms.Compose([
+            transforms.Resize((256, 256)),
+            transforms.ToTensor(),
+            transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+        ])
+
+        dataset = ConceptBalancedImageDataset(
+            img_dir='../CelebA-HQ/data1024/',
+            attr_file='../CelebA-HQ/list_attr_celeba_shift.txt',
+            concept=self.args.sample_attr,
+            transform=transform,
+            n_samples=1000    # 正负各采样1000
+        )
+
+        # DataLoader用法
+        from torch.utils.data import DataLoader
+        loader = DataLoader(dataset, batch_size=1, shuffle=True)
+
+        # 使用
+        # for imgs, labels, names in loader:
+        #     import pdb; pdb.set_trace()
+        #     print(imgs.shape, labels, names)
+
+        _,_ = self.set_t_edit_t_addnoise(LPIPS_th=self.args.lpips_edit_th, 
+                                                LPIPS_addnoise_th=self.args.lpips_addnoise_th,
+                                                return_clip_loss=True)
+
+        seq_inv = np.linspace(0, 1, self.args.n_inv_step) * self.args.t_0
+        seq_inv = [int(s+1e-6) for s in list(seq_inv)]
+        seq_inv_next = [-1] + list(seq_inv[:-1])
+        # ----------- Model -----------#
+        model = self.load_pretrained_model()
+        model = model.to(self.device)
+        model = torch.nn.DataParallel(model)
+        n = 1
+        h_samples = []
+        cnt = 0
+        for imgs, labels, names in loader:
+            x0 = imgs.to(self.device)
+            # import pdb; pdb.set_trace()
+            x = x0.clone()
+            model.eval()
+            time_s = time.time()
+
+            with torch.no_grad():
+                with tqdm(total=len(seq_inv), desc=f"Inversion processing") as progress_bar:
+                    for it, (i, j) in enumerate(zip((seq_inv_next[1:]), (seq_inv[1:]))):
+                        t = (torch.ones(n) * i).to(self.device)
+                        t_prev = (torch.ones(n) * j).to(self.device)
+
+                        x, _, _, middle_h,_ = denoising_step(x, t=t, t_next=t_prev, models=model,
+                                            logvars=self.logvar,
+                                            sampling_type='ddim',
+                                            b=self.betas,
+                                            eta=0,
+                                            learn_sigma=self.learn_sigma,
+                                            )
+                        progress_bar.update(1)
+                        C = middle_h.shape[1] 
+                        middle_h = middle_h.squeeze(0).permute(1, 2, 0).reshape(-1, C).detach().cpu()  # [H*W, C]
+                        
+                        h_samples.append({
+                            "middle_h": middle_h,
+                            "timestep": i,
+                            "label": labels[0].item(),
+                        })
+                        
+                        
+
+                time_e = time.time()
+                progress_bar.set_description(f"Inversion processing time: {time_e - time_s:.2f}s")
+                x_lat = x.clone()
+            print("Generative process is skipped")
+
+        
+        
+
+        torch.save(h_samples, save_name)
+        # import pdb; pdb.set_trace()
+        return
+
+
+
     def sample_z(self):
+        result_txt_path = f"sample_z/z_{self.args.sample_attr}_topk{self.args.topk_to_analyze}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+        if os.path.exists(result_txt_path):
+            print(f'{result_txt_path} exists. load checkpoint')
+            z_samples = torch.load(result_txt_path)
+            return z_samples
+        exp_id = os.path.split(self.args.exp)[-1]
+        index_save_name = f"sae/{exp_id}/top{self.args.top_k_indice}_indices_sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
+        topk_indices = torch.load(index_save_name)
+        topk_indices = topk_indices[:self.args.topk_to_analyze]
         sae_ckpt_path = f"sae/{self.config.data.category}/sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
         if not os.path.exists(sae_ckpt_path):
             print(f"SAE model not found at {sae_ckpt_path}. Please train or provide the model.")
@@ -2088,7 +2189,7 @@ class Asyrp(object):
         sae.to(self.device)
         # import pdb; pdb.set_trace()
         mode = 'test' if self.args.sample_test else 'train'
-        save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        save_name = f'sample_h/CelebA_HQ_{self.args.sample_attr}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
         if os.path.exists(save_name):
             print(f'{save_name} exists. load checkpoint')
             h_samples = torch.load(save_name)
@@ -2096,49 +2197,80 @@ class Asyrp(object):
             print(f"checkpoint({save_name}) does not exist!")
             exit()
         # import pdb; pdb.set_trace()
-        mse_list = []
-        cos_list = []
-        all_latents = []
 
-        with torch.no_grad():
-            for sample in tqdm(h_samples, desc="Evaluating SAE"):
-                h = sample["middle_h"].to(self.device)  # (H*W, C)
-                t = torch.full((h.shape[0],), sample["timestep"], device=self.device, dtype=torch.long)
+        # all_z = []
+        # all_labels = []
+        # with torch.no_grad():
+        #     for sample in tqdm(h_samples, desc="Evaluating SAE"):
+        #         h = sample["middle_h"].to(self.device)  # (H*W, C)
+        #         t = torch.full((h.shape[0],), sample["timestep"], device=self.device, dtype=torch.long)
+        #         label = sample["label"]
+        #         _, latents, recons = sae(h, t)  # latents: (H*W, k)
 
-                _, latents, recons = sae(h, t)  # latents: (H*W, k)
-
-                # === 1. MSE ===
-                mse = F.mse_loss(recons, h).item()
-                mse_list.append(mse)
-
-                # === 2. Cosine Similarity ===
-                cosine = F.cosine_similarity(recons, h, dim=1)  # per token
-                cos_mean = cosine.mean().item()
-                cos_list.append(cos_mean)
-
-                # === collect latents for DAR ===
-                all_latents.append(latents.detach().cpu())
-
-        # === 3. DAR ===
-        z = torch.cat(all_latents, dim=0)  # shape: (total_tokens, k)
-        z_sparse = z.to_sparse()
-# torch.save(z_sparse, "z_sparse.pt")
-        # z_mean = z.mean(dim=0)             # mean across tokens for each dim, shape: (k,)
-        # import pdb; pdb.set_trace()
-        # dar = (z_mean > self.args.threshold).float().mean().item()
-
-        # # === Final averages ===
-        # avg_mse = sum(mse_list) / len(mse_list)
-        # avg_cos = sum(cos_list) / len(cos_list)
-
-        # print(f"[Evaluation Results]")
-        # print(f"  MSE               : {avg_mse:.6f}")
-        # print(f"  Cosine Similarity : {avg_cos:.6f}")
-        # print(f"  DAR (τ={self.args.threshold})     : {dar:.6f}")
-
-                # === Save z_mean to txt ===
+        #         # === collect latents for DAR ===
+        #         all_z.append(latents.detach().cpu())
+        #         all_labels.append(label)
+        z_samples = []
+        for sample in tqdm(h_samples, desc="Evaluating SAE"):
+            h = sample["middle_h"].to(self.device)
+            t = torch.full((h.shape[0],), sample["timestep"], device=self.device, dtype=torch.long)
+            label = sample["label"]
+            _, latents, recons = sae(h, t)  # latents: (H*W, k)
+            z = latents[:, topk_indices]  # 只保留 top-k 的 latents
+            z_samples.append({
+                "z": z.detach().cpu(),  # shape: (H*W, k)
+                "label": label
+            })
+        # 保存
+        # torch.save(z_samples, "all_z_samples.pth")
         os.makedirs("sample_z", exist_ok=True)
-        result_txt_path = f"sample_z/z_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
-        torch.save(z_sparse, result_txt_path)
+        
+        torch.save(z_samples, result_txt_path)
 
         return 
+    
+    def svm_z(self):
+        z_path = f"sample_z/z_{self.args.sample_attr}_topk{self.args.topk_to_analyze}_alpha{self.args.alpha}_scale{self.args.scale}.pth"
+        z_samples = torch.load(z_path)
+        all_z = []
+        all_labels = []
+        for item in z_samples:
+            z = item["z"].numpy()       # (N, k)
+            vec = z.flatten()           # (N*k, )
+            all_z.append(vec)
+            all_labels.append(item["label"])
+        X = np.stack(all_z)             # (num_imgs, N*k)
+        y = np.array(all_labels)
+        from sklearn.svm import LinearSVC
+        from sklearn.metrics import accuracy_score, f1_score, roc_auc_score, classification_report
+        from sklearn.model_selection import train_test_split
+        import joblib
+
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, stratify=y, random_state=42
+        )
+        clf = LinearSVC()
+        clf.fit(X_train, y_train)
+        y_pred = clf.predict(X_test)
+
+        acc = accuracy_score(y_test, y_pred)
+        f1 = f1_score(y_test, y_pred)
+        report = classification_report(y_test, y_pred)
+
+        print("Acc:", accuracy_score(y_test, y_pred))
+        print("F1:", f1_score(y_test, y_pred))
+        
+        os.makedirs("svm_results", exist_ok=True)
+        try:
+            auc = roc_auc_score(y_test, clf.decision_function(X_test))
+        except Exception as e:
+            auc = f"AUC不可用: {e}"
+        file_name = f"svm_{self.args.sample_attr}_topk{self.args.topk_to_analyze}_alpha{self.args.alpha}_scale{self.args.scale}.txt"
+        with open(f'./svm_results/{file_name}', 'w') as f:
+            f.write(f"Accuracy: {acc:.4f}\n")
+            f.write(f"F1 Score: {f1:.4f}\n")
+            f.write(f"AUC: {auc}\n")
+            f.write("Classification Report:\n")
+            f.write(report)
+
+        joblib.dump(clf, f'./svm_results/svm_model_{self.args.sample_attr}_topk{self.args.topk_to_analyze}_alpha{self.args.alpha}_scale{self.args.scale}.joblib')
