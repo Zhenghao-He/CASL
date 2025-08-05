@@ -106,6 +106,8 @@ class Asyrp(object):
             model = DDPM(self.config) 
             if self.args.model_path:
                 init_ckpt = torch.load(self.args.model_path)
+            elif self.config.data.dataset == "LSUN":
+                init_ckpt = torch.load(MODEL_PATHS[self.config.data.dataset])
             else:
                 init_ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
             self.learn_sigma = False
@@ -359,7 +361,7 @@ class Asyrp(object):
                 continue
         
             # for scale in range(18,32,2):
-            for scale in range(0,200,32):
+            for scale in range(34,64,4):
                 img_folder = os.path.join(save_folder, f'test_{self.args.n_iter - 1}_scale{scale}')
                 # import pdb; pdb.set_trace()
                 os.makedirs(img_folder, exist_ok=True)
@@ -819,7 +821,7 @@ class Asyrp(object):
                         output = torch.cat([x, x0_t], dim=0)
                         output = (output + 1) * 0.5
                         grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
-                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalization=True)
+                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalize=True)
 
                 x_list.append(x)
 
@@ -860,7 +862,7 @@ class Asyrp(object):
                             output = torch.cat([x, x0_t], dim=0)
                             output = (output + 1) * 0.5
                             grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
-                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalization=True)
+                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalize=True)
                         if get_delta_hs and t[0]>= self.t_edit:
                             if delta_h_dict[t[0].item()] is None:
                                 delta_h_dict[t[0].item()] = delta_h
@@ -874,7 +876,7 @@ class Asyrp(object):
 
         grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
 
-        tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalization=True)
+        tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalize=True)
 
         time_e = time.time()
         print(f'{time_e - time_s} seconds, {file_name}_ngen{self.args.n_train_step}.png is saved')
@@ -907,7 +909,7 @@ class Asyrp(object):
                     grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
                     save_path = os.path.join(folder_dir, "x0", "images")
                     os.makedirs(save_path, exist_ok=True)
-                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalization=True)
+                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalize=True)
 
                     # x_list.append(x0_tensor.to(self.device))
             
@@ -932,14 +934,14 @@ class Asyrp(object):
                         output = torch.cat([x, x0_t], dim=0)
                         output = (output + 1) * 0.5
                         grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
-                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalization=True)
+                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalize=True)
 
                 # x_list.append(x)
                 x = (x + 1) * 0.5
                 grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
                 save_path = os.path.join(folder_dir, "origin", "images")
                 os.makedirs(save_path, exist_ok=True)
-                tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalization=True)
+                tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalize=True)
 
             if self.args.pass_editing:
                 pass
@@ -978,7 +980,7 @@ class Asyrp(object):
                             output = torch.cat([x, x0_t], dim=0)
                             output = (output + 1) * 0.5
                             grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
-                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalization=True)
+                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalize=True)
                         if get_delta_hs and t[0]>= self.t_edit:
                             if delta_h_dict[t[0].item()] is None:
                                 delta_h_dict[t[0].item()] = delta_h
@@ -990,14 +992,14 @@ class Asyrp(object):
                     grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
                     save_path = os.path.join(folder_dir, "delta_h", "images")
                     os.makedirs(save_path, exist_ok=True)
-                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalization=True)
+                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalize=True)
 
         # x = torch.cat(x_list, dim=0)
         # x = (x + 1) * 0.5
 
         # grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
 
-        # tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalization=True)
+        # tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalize=True)
 
         time_e = time.time()
         print(f'{time_e - time_s} seconds, {file_name}_ngen{self.args.n_train_step}.png is saved')
@@ -2018,7 +2020,8 @@ class Asyrp(object):
         sae.to(self.device)
         # import pdb; pdb.set_trace()
         mode = 'test' if self.args.sample_test else 'train'
-        save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        save_name = f'sample_h/CelebA_HQ_P2_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+        # save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
         if os.path.exists(save_name):
             print(f'{save_name} exists. load checkpoint')
             h_samples = torch.load(save_name)
@@ -2274,3 +2277,91 @@ class Asyrp(object):
             f.write(report)
 
         joblib.dump(clf, f'./svm_results/svm_model_{self.args.sample_attr}_topk{self.args.topk_to_analyze}_alpha{self.args.alpha}_scale{self.args.scale}.joblib')
+
+    def sample_h_lsun(self):
+        
+        # ----------- Get seq -----------#    
+        _,_ = self.set_t_edit_t_addnoise(LPIPS_th=self.args.lpips_edit_th, 
+                                                    LPIPS_addnoise_th=self.args.lpips_addnoise_th,
+                                                    return_clip_loss=True)
+
+        seq_inv = np.linspace(0, 1, self.args.n_inv_step) * self.args.t_0
+        seq_inv = [int(s+1e-6) for s in list(seq_inv)]
+        seq_inv_next = [-1] + list(seq_inv[:-1])
+        # ----------- Model -----------#
+        model = self.load_pretrained_model()
+        model = model.to(self.device)
+        model = torch.nn.DataParallel(model)
+        
+        # img_folder =DATASET_PATHS[self.config.data.dataset] # 直接整个文件夹下所有图片
+        # import pdb; pdb.set_trace() 
+        n = 1
+        h_samples = []
+        mode = 'train'
+        # cnt = 0
+        # tmp_transform = transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+        # file_list = sorted(os.listdir(img_folder))
+        # test_files = list(reversed(file_list))[:self.args.n_test_img]  # 例如 num_test = 500
+        # for fname in test_files:
+        # import pdb; pdb.set_trace()
+        # if self.args.sample_test:
+        #     files = test_files
+        # else:
+        #     files = file_list[:self.args.n_train_img]
+        train_dataset, test_dataset = get_dataset(self.config.data.dataset, DATASET_PATHS, self.config,
+                                                              target_class_num=self.args.target_class_num)
+
+        loader_dic = get_dataloader(train_dataset, test_dataset, bs_train=1,#self.args.bs_train,
+                                    num_workers=self.config.data.num_workers, shuffle=self.args.shuffle_train_dataloader)
+        loader = loader_dic[mode]
+        exist_num = 0
+        # for fname in files:
+        for step, img_pair in enumerate(loader):
+            if (mode == "train" and step == self.args.n_train_img) or (mode == "test" and step == self.args.n_test_img):
+                    break
+            if exist_num != 0:
+                exist_num = exist_num - 1
+                continue
+            x0 = img_pair.to(self.config.device)
+            x = x0.clone()
+
+            x = x0.clone()
+            model.eval()
+            time_s = time.time()
+
+            with torch.no_grad():
+                with tqdm(total=len(seq_inv), desc=f"Inversion processing") as progress_bar:
+                    for it, (i, j) in enumerate(zip((seq_inv_next[1:]), (seq_inv[1:]))):
+                        t = (torch.ones(n) * i).to(self.device)
+                        t_prev = (torch.ones(n) * j).to(self.device)
+
+                        x, _, _, middle_h,_ = denoising_step(x, t=t, t_next=t_prev, models=model,
+                                            logvars=self.logvar,
+                                            sampling_type='ddim',
+                                            b=self.betas,
+                                            eta=0,
+                                            learn_sigma=self.learn_sigma,
+                                            )
+                        progress_bar.update(1)
+                        C = middle_h.shape[1] 
+                        middle_h = middle_h.squeeze(0).permute(1, 2, 0).reshape(-1, C).detach().cpu()  # [H*W, C]
+                        
+                        h_samples.append({
+                            "middle_h": middle_h,
+                            "timestep": i
+                        })
+                        
+                        
+
+                time_e = time.time()
+                progress_bar.set_description(f"Inversion processing time: {time_e - time_s:.2f}s")
+                x_lat = x.clone()
+            print("Generative process is skipped")
+
+        mode = 'test' if self.args.sample_test else 'train'
+        save_name = f'sample_h/{self.config.data.category}_{mode}_t{self.args.t_0}_ngen{self.args.n_train_step}_nim{self.args.n_train_img}.pth'
+
+        torch.save(h_samples, save_name)
+        # import pdb; pdb.set_trace()
+        return h_samples
+        

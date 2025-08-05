@@ -36,7 +36,14 @@ SRC_TRG_TXT_DIC = {
                    ['person with curly hair']),
     'bald': (['person'],
                    ['person with bald head']),
-
+        'eyeglasses': (['person'],
+                ['person wearing eyeglasses']),
+        'mouth_slightly_open': (['face'],
+                                ['face with mouth slightly open']),
+        'arched_eyebrows': (['face'],
+                        ['face with arched eyebrows']),
+        'narrow_eyes': (['face'],
+                        ['face with narrow eyes']),
 
     'nicolas': (['Person'],
                 ['Nicolas Cage']),

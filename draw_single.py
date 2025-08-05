@@ -13,8 +13,8 @@ save_dir = "./charts_results_pdf/single"
 os.makedirs(save_dir, exist_ok=True)
 font_path = "/u/wff7ad/.fonts/TIMES.TTF"
 prop = fm.FontProperties(fname=font_path, size=48, weight='bold')
-prop_legend = fm.FontProperties(fname=font_path, size=26, weight='bold')
-prop_t       = fm.FontProperties(fname=font_path, size=18, weight='bold')
+prop_legend = fm.FontProperties(fname=font_path, size=36, weight='bold')
+prop_t       = fm.FontProperties(fname=font_path, size=28, weight='bold')
 
 plt.rcParams.update({
     'font.family': 'serif',
@@ -171,7 +171,7 @@ def plot_metrics_vs_alpha(concept_fixed, topk_fixed):
     # 图例合并
     lines = [l1, l2, l3]
     labels = ["EPR", "Target", "Non-target"]
-    leg = ax1.legend(lines, labels, title="Metric", prop=prop_legend, loc='upper left', bbox_to_anchor=(1.1,1))
+    leg = ax1.legend(lines, labels, title="Metric", prop=prop_legend, loc='upper left', bbox_to_anchor=(1.2,1))
     if leg.get_title():
         leg.get_title().set_fontweight('bold')
         leg.get_title().set_fontsize(prop_legend.get_size_in_points())
@@ -205,7 +205,7 @@ def plot_metrics_vs_topk(concept_fixed, alpha_fixed):
     # 图例合并
     lines = [l1, l2, l3]
     labels = ["EPR", "Target", "Non-target"]
-    leg = ax1.legend(lines, labels, title="Metric", prop=prop_legend, loc='upper left', bbox_to_anchor=(1.1,1))
+    leg = ax1.legend(lines, labels, title="Metric", prop=prop_legend, loc='upper left', bbox_to_anchor=(1.2,1))
     if leg.get_title():
         leg.get_title().set_fontweight('bold')
         leg.get_title().set_fontsize(prop_legend.get_size_in_points())
@@ -269,8 +269,9 @@ def plot_metrics_vs_topk(concept_fixed, alpha_fixed):
 
 # ==== 用法举例 ====
 # 画一张横轴α的
-plot_metrics_vs_alpha(concept_fixed="smiling", topk_fixed=1)
+for c in df['concept'].unique():
+    plot_metrics_vs_alpha(concept_fixed=c, topk_fixed=1)
 # 画一张横轴topk的
-plot_metrics_vs_topk(concept_fixed="smiling", alpha_fixed=128)
+    plot_metrics_vs_topk(concept_fixed=c, alpha_fixed=128)
 
-print("所有 PDF 图表已保存至:", save_dir)
+    print("所有 PDF 图表已保存至:", save_dir)

@@ -379,7 +379,8 @@ def main():
         elif args.lpips:
             runner.compute_lpips_distance()
         elif args.sample_h:
-            runner.sample_h()
+            # runner.sample_h()
+            runner.sample_h_lsun()
         elif args.sample_z:
             runner.sample_h_with_attribute()
             # runner.get_important_z()

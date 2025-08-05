@@ -40,21 +40,24 @@
 #!/bin/bash
 #!/bin/bash
 
-MODEL_NAME="resnet"
+MODEL_NAME="resnet"  # resnet18 or mobilenetv2
 BATCH_SIZE=32
-MODEL_PATH=./celeba_classifier/${MODEL_NAME}_model/resnet18_multiplicative_pretrain_
+MODEL_PATH=./celeba_classifier/${MODEL_NAME}_model/${MODEL_NAME}18_multiplicative_pretrain_
 LABEL_FILE=../CelebA-HQ/list_attr_celeba_shift.txt
 BEFORE_DIR=./runs/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/x0
 
-concepts=("Smiling" "Big_Nose" "Young" "Blond_Hair" "No_Beard")
-topks=(1 2 4 8 16 32)
+# concepts=("Eyeglasses" "Mouth_Slightly_Open" "Arched_Eyebrows" "Narrow_Eyes")
+# concepts=("Eyeglasses")
+concepts=("Smiling" "Big_Nose" "Young" "Blond_Hair" "No_Beard" "Eyeglasses" "Mouth_Slightly_Open" "Arched_Eyebrows" "Narrow_Eyes")
+# concepts=("Bald" "Eyeglasses" "Mouth_Slightly_Open" "Arched_Eyebrows" "Narrow_Eyes")
+topks=(1)
 scales=(0 32 64 96 128 160 192)
 
 NUM_GPUS=8
 MAX_TASKS_PER_GPU=2
 MAX_JOBS=$((NUM_GPUS * MAX_TASKS_PER_GPU))
 
-mkdir -p ./epr/${MODEL_NAME}/sae
+mkdir -p ./epr/${MODEL_NAME}
 mkdir -p logs
 
 job_count=0
@@ -76,7 +79,7 @@ for concept in "${concepts[@]}"; do
       ((job_count++))
 
       AFTER_DIR=./runs/${concept_lc}_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk${topk}/100/test_0_scale${scale}/delta_h
-      SAVE_PATH=./epr/${MODEL_NAME}/sae/epr_results_${concept_lc}_topk${topk}_scale${scale}.txt
+      SAVE_PATH=./epr/${MODEL_NAME}/epr_results_${concept_lc}_topk${topk}_scale${scale}.txt
       if [[ -f "$SAVE_PATH" ]]; then
         echo "Skip: $SAVE_PATH already exists."
         continue

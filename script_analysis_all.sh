@@ -9,7 +9,8 @@ export NUMEXPR_NUM_THREADS=1
 
 # 固定参数设置
 sh_file_name="script_analysis.sh"
-config="celeba_p2.yml"
+config="church.yml"
+# config="celeba_p2.yml"
 activation="ReLU"
 scale=128
 k=4096
@@ -18,8 +19,10 @@ bs_train=1
 NUM_GPUS=8
 gpu_id=0
 
-concepts=("smiling" "big_nose" "young" "beards" "blond_hair")
-topks=(1 2 4 8 16 32)
+# concepts=("church_night" "church_red_brick" "church_golden" "church_factory" "church_wooden_house" "church_gothic" "church_ancient_tower" "church_temple" "church_snowy_church")
+concepts=("smiling" "big_nose" "young" "beards" "blond_hair" "eyeglasses" "mouth_slightly_open" "arched_eyebrows" "narrow_eyes")
+# concepts=("bald" "eyeglasses" "mouth_slightly_open" "arched_eyebrows" "narrow_eyes")
+topks=(1)
 
 mkdir -p logs
 

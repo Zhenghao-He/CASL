@@ -68,6 +68,73 @@ def nonlinearity(x):
 def Normalize(in_channels):
     return torch.nn.GroupNorm(num_groups=32, num_channels=in_channels, eps=1e-6, affine=True)
 
+class DirectionDecoder(nn.Module):
+    def __init__(self, channels, out_channels, mask_topk=3, is_mask=False):
+        super().__init__()
+        self.out_channels = out_channels
+        self.mlp = nn.Linear(channels, out_channels)
+
+    def hard_topk_mask(self, logits, k):
+        # logits: [d]
+        topk = torch.topk(logits, k=k)
+        hard_mask = torch.zeros_like(logits)
+        hard_mask[topk.indices] = 1.0
+        return hard_mask
+
+    def forward(self, z):
+        """
+        z: Tensor of shape (H*W, C_in)
+        Returns: Tensor of shape (1, C_out, H, W)
+        """
+        out = self.mlp(z)                 # (H*W, C_out)
+        out = out.transpose(0, 1)  # (C_out, H*W)
+        out = out.unsqueeze(0)  # (1, C_out, H*W)
+        # soft_mask = th.sigmoid(self.mlp.qz_loga)
+        return out, None
+
+class XBlock(nn.Module):
+    def __init__(self, sae_ckpt_path, out_channels, mask_topk=10, is_mask=False):
+        super().__init__()
+
+        # === 1. 加载SAE模型 ===
+        from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
+        state_dict = torch.load(sae_ckpt_path)
+        self.sae = Autoencoder.from_state_dict(state_dict)
+        self.sae.eval()
+        self.is_mask = is_mask
+        # === 2. 构建DirectionDecoder ===
+        self.decoder = DirectionDecoder(
+            channels=self.sae.encoder.out_features,  
+            out_channels=out_channels,
+            mask_topk=mask_topk,
+            is_mask=self.is_mask
+        )
+
+    def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0):
+        """
+        x: Tensor of shape (B, C_in, H, W)
+        Return: Tensor of shape (B, C_out, H, W)
+        """
+        C= x.shape[1]
+        x_flat = x.squeeze(0).permute(1, 2, 0).reshape(-1, C)
+        ts = t.expand(x_flat.shape[0])  # 假设 t.shape == (1, C)
+        ts = ts.long()  # 确保 ts 是 LongTensor
+        # import pdb; pdb.set_trace()
+        with torch.no_grad():
+            z, info = self.sae.encode(x_flat,ts)  # (B, H*W, latent_dim)
+        if perturb:
+            # import pdb; pdb.set_trace()
+            if self.is_mask:
+                hard_mask = self.decoder.hard_topk_mask(logits=self.decoder.mask_logits, k=self.decoder.mask_topk)
+                idx = torch.nonzero(hard_mask).squeeze()
+                z[:, idx] *= scale_to_analyze
+            else:
+                z_sparse = torch.zeros_like(z)
+                z_sparse[:, topk_indices] = z[:, topk_indices] * scale_to_analyze
+                z = z_sparse
+        delta_h, soft_mask = self.decoder(z)  # (B, C_out, H, W)
+        return delta_h, soft_mask
+    
 
 class Upsample(nn.Module):
     def __init__(self, in_channels, with_conv):
@@ -429,19 +496,43 @@ class DDPM(nn.Module):
                                         stride=1,
                                         padding=1)
 
+    def setattr_edited_sae(self, sae_ckpt_path):
+        from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
+        ch = int(self.channel_mult[0] * self.model_channels)
 
-    def setattr_layers(self, nums):
+        for level, mult in enumerate(self.channel_mult):
+            for _ in range(self.num_res_blocks):
+                ch = int(mult * self.model_channels)
+        
+        sae = Autoencoder.from_state_dict(torch.load(sae_ckpt_path))
+        sae.eval()
+    # def setattr_layers(self, nums):
+    #     ch, ch_mult = self.config.model.ch, tuple(self.config.model.ch_mult)
+    #     block_in = None
+    #     for i_level in range(self.num_resolutions):
+    #         block_in = ch * ch_mult[i_level]
+
+    #     for i in range(nums):
+    #         setattr(self, f"layer_{i}", DeltaBlock(in_channels=block_in,
+    #                                    out_channels=block_in,
+    #                                    temb_channels=self.temb_ch,
+    #                                    dropout=0.0)
+    #         )
+    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0, is_mask=False,dataset=None):
+        
         ch, ch_mult = self.config.model.ch, tuple(self.config.model.ch_mult)
         block_in = None
         for i_level in range(self.num_resolutions):
             block_in = ch * ch_mult[i_level]
 
         for i in range(nums):
-            setattr(self, f"layer_{i}", DeltaBlock(in_channels=block_in,
-                                       out_channels=block_in,
-                                       temb_channels=self.temb_ch,
-                                       dropout=0.0)
-            )
+            print("try using SAE to Explain the h Space!!!")
+            setattr(self, f"layer_{i}", XBlock(
+                sae_ckpt_path=f"sae/{dataset}/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
+                out_channels=block_in,
+                mask_topk=mask_topk,
+                is_mask=is_mask
+            ))
 
     # def setattr_delta_h(self, shape):
         
@@ -470,7 +561,7 @@ class DDPM(nn.Module):
         return temb
 
 
-    def forward(self, x, t, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False):
+    def forward(self, x, t, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae = True):
         assert x.shape[2] == x.shape[3] == self.resolution
 
         # timestep embedding
@@ -510,9 +601,27 @@ class DDPM(nn.Module):
             if t[0] >= t_edit:
                 # use DeltaBlock
                 if delta_h is None: #Asyrp
-                    h2 = h * hs_coeff[0]
+                    # h2 = h * hs_coeff[0]
+                    if delta_sae:
+                        h2 = h * hs_coeff[0]
+                    else:
+                        # import pdb; pdb.set_trace()
+                        h2 = torch.zeros_like(h)
                     for i in range(index+1):
-                        delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else temb)
+                        # delta_h = getattr(self, f"layer_{i}")(h, None if ignore_timestep else temb)
+                        # h2 += delta_h * hs_coeff[i+1]
+                        get_h = getattr(self, f"layer_{i}")
+                        #     state = th.load(model_save_name)[f"{i}"]
+                        #     del state["sae.activation_state_dict"]
+                        #     get_h.load_state_dict(state)
+
+                        delta_h, mask = get_h(x = h, 
+                                        t = None if ignore_timestep else t.long(),
+                                        perturb = perturb,
+                                        topk_indices=topk_indices, 
+                                        scale_to_analyze=scale_to_analyze) # delta_h is a tensor of shape (1, C, H* W)
+                        delta_h = delta_h.view(h.shape[0], -1, h.shape[2], h.shape[3])
+                        assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
                         h2 += delta_h * hs_coeff[i+1]
                 # use input delta_h  : even tough you does not use DeltaBlock, you need to use index is 0.
                 else: # DiffStyle; Just ignore this code. We will update about it in README.md later.
@@ -577,7 +686,7 @@ class DDPM(nn.Module):
         h = nonlinearity(h)
         h = self.conv_out(h)
 
-        return h, h2, delta_h, middle_h
+        return h, h2, delta_h, middle_h, None
 
     def forward_layer_check(self, x, t, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False):
         assert x.shape[2] == x.shape[3] == self.resolution

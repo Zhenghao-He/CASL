@@ -3,7 +3,7 @@
 sh_file_name="script_analyze_sae.sh"
 gpu="0"
 
-config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
+config="ffhq.yml" # if you use other dataset, config/path_config.py should be matched
 guid="smiling" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
@@ -14,7 +14,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --analyze_sae                     \
                         --delta_h                                           \
                         --batch_size 128                                    \
                         --epoch_num 100                                     \
-                        --alpha 32                                           \
+                        --alpha 0.5                                           \
                         --lr_sae 5e-4                                       \
                         --activation "ReLU"                                 \
                         --k 4096                                            \

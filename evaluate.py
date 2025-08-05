@@ -3,6 +3,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from celeba_classifier.celeba import CelebA
+# from celeba_classifier.celeba_vgg16_train import AttributeNN
+# from celeba_classifier.celeba_mobilenetv2_train import AttributeNN
 from celeba_classifier.celeba_resnet_train import AttributeNN
 import numpy as np
 import argparse

@@ -14,6 +14,8 @@ def extract(a, t, x_shape):
     broadcastable with x_shape."""
     bs, = t.shape
     assert x_shape[0] == bs, f"{x_shape[0]}, {t.shape}"
+    if isinstance(a, np.ndarray):
+        a = torch.from_numpy(a)
     out = torch.gather(a.to(dtype=torch.float, device=t.device), 0, t.long())
     # out = torch.gather(torch.tensor(a, dtype=torch.float, device=t.device), 0, t.long())
     assert out.shape == (bs,)

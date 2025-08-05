@@ -20,13 +20,15 @@ font_path = '/u/wff7ad/.fonts/TIMES.TTF'
 
 # 全局字体 & seaborn 设置
 prop        = fm.FontProperties(fname=font_path, size=38, weight='bold')
-prop_t       = fm.FontProperties(fname=font_path, size=18, weight='bold')
+prop_t       = fm.FontProperties(fname=font_path, size=28, weight='bold')
 prop_legend = fm.FontProperties(fname=font_path, size=36, weight='bold')
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['mathtext.fontset'] = 'custom'
 plt.rcParams['mathtext.rm'] = 'Times New Roman'
 plt.rcParams['mathtext.it'] = 'Times New Roman:italic'
 plt.rcParams['mathtext.bf'] = 'Times New Roman:bold'
+plt.rcParams['font.family'] = 'Times New Roman'
+
 sns.set(style="whitegrid")
 
 

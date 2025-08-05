@@ -1,10 +1,10 @@
 #!/bin/bash
 
 sh_file_name="script_train_xblock.sh"
-gpu="1"
+gpu="7"
 
-config="afhq.yml" # if you use other dataset, config/path_config.py should be matched
-guid="dog_tongue" # guid should be in utils/text_dic.py
+config="church.yml" # if you use other dataset, config/path_config.py should be matched
+guid="church_ancient_tower" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 
@@ -38,8 +38,8 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --train_xblock                     \
                         --use_x0_tensor                                     \
                         --hs_coeff_delta_h 1.0                              \
                         --lr_training 0.5                                   \
-                        --clip_loss_w 1.5                                   \
-                        --l1_loss_w 4.0                                     \
+                        --clip_loss_w 1.0                                   \
+                        --l1_loss_w 3.0                                     \
                         --retrain 1                                         \
                         --custom_train_dataset_dir "hdd1/datasets/celeba_hq/train/male"       \
                         --custom_test_dataset_dir "hdd1/datasets/celeba_hq/val/male"         \

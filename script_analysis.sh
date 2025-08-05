@@ -1,10 +1,10 @@
 #!/bin/bash
 
 sh_file_name="script_analysis.sh"
-gpu="1"
+gpu="0"
 
-config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
-guid="beards" # guid should be in utils/text_dic.py
+config="church.yml" # if you use other dataset, config/path_config.py should be matched
+guid="church_snowy_church" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 # this is for sae analysis
@@ -15,7 +15,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                     \
                         --top_k_indice 1024                                 \
                         --epoch_num 100                                     \
                         --alpha 32                                           \
-                        --topk_to_analyze 32                                 \
+                        --topk_to_analyze 1                                 \
                         --scale_to_analyze 2                                \
                         --lr_sae 5e-4                                       \
                         --activation "ReLU"                                 \
