@@ -51,8 +51,14 @@ def main():
             destination = (ROOT if relative.parts[0] == 'Asyrp_SAE' else ROOT.parent / relative.parts[0]) / Path(*relative.parts[1:])
             link(archived, destination)
         if args.images:
-            for archive in (args.archive / 'image_archives').glob('*.tar'):
-                subprocess.run(['tar', '--skip-old-files', '-xf', str(archive), '-C', str(ROOT)], check=True)
+            image_log = args.archive / 'audit' / 'image_archives.jsonl'
+            for line in image_log.read_text().splitlines():
+                row = json.loads(line)
+                archive = args.archive / 'image_archives' / Path(row['archive']).name
+                original = Path(row['original_root']).name
+                destination = ROOT if original == 'Asyrp_SAE' else ROOT.parent / original
+                destination.mkdir(exist_ok=True)
+                subprocess.run(['tar', '--skip-old-files', '-xf', str(archive), '-C', str(destination)], check=True)
     print('Layout restored; existing files were preserved.')
 
 if __name__ == '__main__':

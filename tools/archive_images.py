@@ -9,12 +9,21 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
 STORE = Path('/bigtemp/wff7ad/h_SAE')
 
 def main():
+    global ROOT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--baseline', choices=['Asyrp_official', 'sliders', 'MasaCtrl', 'SwiftEdit'])
+    args = parser.parse_args()
+    if args.baseline:
+        ROOT = ROOT.parent / args.baseline
     groups = ['runs', 'results', 'sdxl_rebuttal/results', 'alpha_rebuttal/results', 'novelty_ablation/artifacts', 'sd15_mvp_out', 'sd15_negcfg_out', 'sd15_asyrp_multistep_out', 'test_images']
+    if args.baseline:
+        groups = ['runs', 'results', 'alpha_sweep', 'test_images']
     output = STORE / 'image_archives'
     output.mkdir(exist_ok=True)
     log = (STORE / 'audit' / 'image_archives.jsonl').open('a', buffering=1)
@@ -28,7 +37,7 @@ def main():
                         paths.append(p.relative_to(ROOT))
         if not paths:
             continue
-        destination = output / (group.replace('/', '__') + '.tar')
+        destination = output / ((args.baseline + '__' if args.baseline else '') + group.replace('/', '__') + '.tar')
         if destination.exists():
             raise RuntimeError(f'Archive already exists; inspect before retrying: {destination}')
         listing = STORE / 'audit' / (destination.stem + '_images.list')
