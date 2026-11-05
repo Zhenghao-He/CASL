@@ -511,3 +511,11 @@
 {"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/dci_selection/importance_k4_random_active_r3.npy", "reason": "Cheap DCI importance cache; evaluation code and metric CSVs retained"}
 {"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/dci_selection/importance_k16_random_active_r12.npy", "reason": "Cheap DCI importance cache; evaluation code and metric CSVs retained"}
 {"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/dci_selection/importance_k2_random_active_r20.npy", "reason": "Cheap DCI importance cache; evaluation code and metric CSVs retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe_summary/linear_probe_accuracy_auc.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe_summary/linear_probe_accuracy_auc.svg", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe_topk_summary/linear_probe_topk_auc.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_overlap_summary/probe_top10_overlap_jaccard.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_overlap_summary/raw_top100_overlap_jaccard.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae_curves/dit_sae_relu_lm32_l10.01_history_first100.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae_curves/dit_sae_relu_lm32_l10.01_history_first200.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}
+{"path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae_curves/dit_sae_relu_lm32_l10.01_history.pdf", "reason": "Replottable DiT figure; plotting scripts and source metrics retained"}

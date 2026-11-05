@@ -51,6 +51,7 @@ svm_results/
 *.webp
 **/edits/
 **/reconstruction/
+**/reconstruction
 **/origin/
 **/delta_h/
 /reproduction/external_artifacts/
