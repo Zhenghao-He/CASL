@@ -45,6 +45,10 @@ def main():
             archived = args.archive / Path(row['destination']).relative_to('/bigtemp/wff7ad/h_SAE')
             relative = archived.relative_to(args.archive)
             if relative.parts[0] == 'external':
+                if relative.parts[1:3] == ('casl_mapping_ablation', 'checkpoints'):
+                    link(archived, ROOT / 'checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse' / archived.name)
+                else:
+                    link(archived, ROOT / 'reproduction/external_artifacts' / Path(*relative.parts[1:]))
                 continue
             if not archived.is_file():
                 raise FileNotFoundError(archived)

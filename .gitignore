@@ -53,3 +53,4 @@ svm_results/
 **/reconstruction/
 **/origin/
 **/delta_h/
+/reproduction/external_artifacts/
