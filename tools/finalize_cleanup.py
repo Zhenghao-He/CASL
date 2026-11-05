@@ -36,11 +36,27 @@ def main():
             raise RuntimeError(f'Dataset deletion incomplete: {rel}')
     # These importance arrays are cheap to recompute from the retained DCI code.
     folder = ROOT / 'rebuttal_metrics/results/celeba_sae_omes_independent/dci_selection'
+    removed_caches = []
     for p in folder.glob('importance_k*.npy'):
         if not p.is_symlink():
             p.unlink()
+            removed_caches.append({'path': str(p), 'reason': 'Cheap DCI importance cache; evaluation code and metric CSVs retained'})
+    if removed_caches:
+        with (STORE / 'audit/deletions.jsonl').open('a') as log:
+            log.write(''.join(json.dumps(row) + '\n' for row in removed_caches))
     out = ROOT / 'reproduction' / 'storage'
     out.mkdir(exist_ok=True)
+    # Preserve pre-existing aliases too (e.g. shared SDXL reconstructions and
+    # the 8-image inversion-cache alias), not just links created by migration.
+    aliases = []
+    for base in [ROOT, ROOT.parent / 'Asyrp_official']:
+        for folder, dirs, files in os.walk(base, followlinks=False):
+            dirs[:] = [d for d in dirs if d not in {'.git', '__pycache__', 'reproduction'}]
+            for name in dirs + files:
+                p = Path(folder) / name
+                if p.is_symlink() and str(p) not in unique:
+                    aliases.append({'workspace_path': str(p.relative_to(ROOT.parent)), 'target': os.readlink(p)})
+    (out / 'path_aliases.json').write_text(json.dumps(aliases, indent=2) + '\n')
     (out / 'artifact_index.jsonl').write_text(''.join(json.dumps(row) + '\n' for row in portable))
     for name in ['deletions.jsonl', 'image_archives.jsonl', 'source_validation.json', 'dit_backbone.sha256']:
         if (STORE / 'audit' / name).exists():
@@ -51,6 +67,9 @@ def main():
         'image_archives': len(images),
         'archived_images': sum(row['images'] for row in images),
         'image_archive_bytes': sum(row['bytes'] for row in images),
+        'workspace_backbone_bytes': sum(p.stat().st_size for p in (STORE / 'workspace').glob('*') if p.is_file()),
+        'preserved_path_aliases': len(aliases),
+        'removed_dci_importance_caches': len(removed_caches),
         'datasets_removed': True,
         'storage_root': str(STORE),
         'validation': 'SHA-256 checked at migration; source symlinks and archive sizes rechecked during finalization; image tar files compared to sources before deletion',

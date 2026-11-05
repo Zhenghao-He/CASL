@@ -1,0 +1,162 @@
+[
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/artifacts/multiconcept_search_sae4096/activation_cache.pt",
+    "target": "/tmp/casl_sdxl/sae_scale_4096/activation_cache.pt"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction",
+    "target": "../full/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Young/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Male/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Black_Hair/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Wearing_Lipstick/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Eyeglasses/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Gray_Hair/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Bangs/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_sae4096/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search_sae4096_normalized/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search_sae4096/reconstruction",
+    "target": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/multiconcept_search/reconstruction"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/precomputed/CelebA_HQ_P2_train_t999_nim8_ninv50_pairs.pth",
+    "target": "CelebA_HQ_P2_train_t999_nim100_ninv50_pairs.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_mlp_young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_mlp_young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_linear_young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_linear_young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_linear_big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_linear_big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_mlp_smiling_smoke_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_mlp_smiling_smoke_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_linear_beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_linear_beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_mlp_big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_mlp_big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_mlp_beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_mlp_beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_mlp_smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_mlp_smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_linear_blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_linear_blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_linear_smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_linear_smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/checkpoint/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/mapping_mlp_blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth",
+    "target": "/u/wff7ad/casl_mapping_ablation/checkpoints/mapping_mlp_blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_linear_big_nose",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_linear_big_nose"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_mlp_beards",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_mlp_beards"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_mlp_young",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_mlp_young"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_linear_beards",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_linear_beards"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_mlp_smiling",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_mlp_smiling"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_mlp_smiling_smoke",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_mlp_smiling_smoke"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_linear_young",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_linear_young"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_linear_smiling",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_linear_smiling"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_linear_blond_hair",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_linear_blond_hair"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_mlp_blond_hair",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_mlp_blond_hair"
+  },
+  {
+    "workspace_path": "Asyrp_SAE/runs/mapping_mlp_big_nose",
+    "target": "/u/wff7ad/casl_mapping_ablation/runs/mapping_mlp_big_nose"
+  }
+]

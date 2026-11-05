@@ -7,6 +7,7 @@ import argparse
 import json
 from pathlib import Path
 import subprocess
+import os
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,6 +55,22 @@ def main():
                 raise FileNotFoundError(archived)
             destination = (ROOT if relative.parts[0] == 'Asyrp_SAE' else ROOT.parent / relative.parts[0]) / Path(*relative.parts[1:])
             link(archived, destination)
+        aliases = ROOT / 'reproduction/storage/path_aliases.json'
+        if aliases.exists():
+            for row in json.loads(aliases.read_text()):
+                relative = Path(row['workspace_path'])
+                destination = (ROOT if relative.parts[0] == 'Asyrp_SAE' else ROOT.parent / relative.parts[0]) / Path(*relative.parts[1:])
+                target = Path(row['target'])
+                if not target.is_absolute():
+                    target = destination.parent / target
+                elif str(target).startswith('/p/realai/zhenghao/LoRA_SAE/'):
+                    rel = target.relative_to('/p/realai/zhenghao/LoRA_SAE')
+                    target = (ROOT if rel.parts[0] == 'Asyrp_SAE' else ROOT.parent / rel.parts[0]) / Path(*rel.parts[1:])
+                elif str(target).startswith('/bigtemp/wff7ad/h_SAE/'):
+                    target = args.archive / target.relative_to('/bigtemp/wff7ad/h_SAE')
+                elif str(target).startswith('/u/wff7ad/casl_'):
+                    target = ROOT / 'reproduction/external_artifacts' / target.relative_to('/u/wff7ad')
+                link(Path(os.path.normpath(target)), destination)
         if args.images:
             image_log = args.archive / 'audit' / 'image_archives.jsonl'
             for line in image_log.read_text().splitlines():

@@ -1,0 +1,15 @@
+{
+  "source_commit": "0453baa",
+  "method": "Export tracked files with git archive into an independent temporary checkout, then run tools/restore_layout.py",
+  "result": "passed",
+  "verified_paths": [
+    "../Asyrp_official/diffusion_latent.py",
+    "../DiT/models.py",
+    "third_party/lfm",
+    "third_party/uspace",
+    "third_party/transfer_disentanglement",
+    "celeba_classifier"
+  ],
+  "archive_link_check": "passed in an independent checkout using --archive; all four attribute-classifier checkpoints are readable",
+  "scope": "Source layout and existing archive links; no dataset download or GPU retraining"
+}

@@ -1,0 +1,13 @@
+{
+  "archived_files": 2022,
+  "archived_file_bytes": 466686622990,
+  "image_archives": 12,
+  "archived_images": 83353,
+  "image_archive_bytes": 7967508480,
+  "workspace_backbone_bytes": 2700611775,
+  "preserved_path_aliases": 40,
+  "removed_dci_importance_caches": 336,
+  "datasets_removed": true,
+  "storage_root": "/bigtemp/wff7ad/h_SAE",
+  "validation": "SHA-256 checked at migration; source symlinks and archive sizes rechecked during finalization; image tar files compared to sources before deletion"
+}
