@@ -1,0 +1,9 @@
+metric,value
+prompt,a smiling face
+image_dir,runs/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/delta_h/images
+mean,0.18214696226641536
+variance,0.00016819964429770954
+std,0.012969180556138061
+min,0.15494605898857117
+max,0.22214441001415253
+count,32.0

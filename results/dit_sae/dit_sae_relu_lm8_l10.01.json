@@ -1,0 +1,15 @@
+{
+  "activation_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_activation_dump/block_20_pooled_activations.pt",
+  "num_samples": 1000,
+  "input_dim": 1152,
+  "n_latents": 9216,
+  "activation": "ReLU",
+  "topk": null,
+  "normalize": false,
+  "batch_size": 64,
+  "epochs": 200,
+  "lr": 0.001,
+  "l1_weight": 0.01,
+  "seed": 42,
+  "checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm8_l10.01.pt"
+}

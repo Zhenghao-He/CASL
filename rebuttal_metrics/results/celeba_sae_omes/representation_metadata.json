@@ -1,0 +1,12 @@
+{
+  "activations": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sample_h/CelebA_HQ_P2_t999_ngen50_nim1000.pth",
+  "sae": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/CelebA_HQ_P2/sae_model_ReLUNone_alpha32.0_scale128.pth",
+  "attributes": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/list_attr_celeba_shift.txt",
+  "n_images": 1000,
+  "steps_per_image": 49,
+  "timestep": 509,
+  "pooling": "mean",
+  "n_latents": 65536,
+  "representation": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes/representations_t509_mean.npy",
+  "classes": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes/classes.csv"
+}

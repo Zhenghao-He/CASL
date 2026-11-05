@@ -1,0 +1,834 @@
+[
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29503.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29504.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29505.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29506.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29507.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29508.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29509.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29509.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29510.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29510.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29511.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29511.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29512.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29512.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29513.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29513.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29514.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29514.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29515.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29515.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29516.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29516.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29517.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29517.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29518.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29518.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29519.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29519.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29520.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29520.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29521.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29521.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29522.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29522.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29523.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29523.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29524.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29524.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29525.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29525.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29526.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29526.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29527.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29527.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29528.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29528.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29529.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29529.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29530.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29530.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29531.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29531.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29532.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/asyrp_cnn/steps05-25/dense/a0p5/29532.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29509.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29509.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29510.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29510.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29511.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29511.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29512.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29512.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29513.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29513.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29514.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29514.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29515.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29515.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29516.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29516.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29517.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29517.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29518.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29518.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29519.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29519.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29520.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29520.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29521.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29521.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29522.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29522.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29523.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29523.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29524.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29524.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29525.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29525.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29526.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29526.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29527.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29527.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29528.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29528.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29529.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29529.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29530.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29530.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29531.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29531.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Blond_Hair",
+    "image_id": "29532.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Blond_Hair/edits/Blond_Hair/casl/steps05-25/topk1/a24/29532.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  }
+]

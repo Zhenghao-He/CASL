@@ -1,0 +1,143 @@
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_0_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_1_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_2_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_3_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_4_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_5_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_6_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_7_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_8_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_9_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_10_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_11_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha8.0_normalizeFalse/xblock_training_images/visualization/train_12_0.png
+min: 0.975715
+max: 0.984204
+mean: 0.979993
+median: 0.979994
+std: 0.001072
+>0 ratio: 1.000000
+10% quantile: 0.978622
+90% quantile: 0.981357
+

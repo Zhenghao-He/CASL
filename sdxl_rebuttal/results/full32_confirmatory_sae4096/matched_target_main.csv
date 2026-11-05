@@ -1,0 +1,4 @@
+concept,status,casl_method,casl_topk,casl_strength,baseline_strength,casl_target,baseline_target,target_relative_mismatch,casl_offtarget,baseline_offtarget,casl_lpips,baseline_lpips,casl_arcface,baseline_arcface,casl_four_classifier_epr,baseline_four_classifier_epr
+Smiling,confirmed_positive,casl,8,28,4,0.283077,0.275658,0.026912,0.078355,0.109040,0.059979,0.112503,0.527069,0.406619,4.016451,2.353610
+Young,mixed_dense_better_on_3_of_4_specificity_metrics,casl_lowrank,32,112,0.875,0.082029,0.083084,0.012699,0.067925,0.062763,0.049253,0.052554,0.697296,0.720213,1.482619,1.623708
+Blond_Hair,semantic_effect_unstable_at_32_images,casl,1,24,0.5,0.000635,0.002243,0.716897,0.023575,0.026111,0.012811,0.019042,0.896028,0.890349,0.788417,0.747275

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 sh_file_name="script_train_xblock.sh"
-gpu="7"
+gpu="1"
 
-config="church.yml" # if you use other dataset, config/path_config.py should be matched
-guid="church_ancient_tower" # guid should be in utils/text_dic.py
+config="celeba_p2.yml"  # if you use other dataset, config/path_config.py should be matched
+guid="grey_hair" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 

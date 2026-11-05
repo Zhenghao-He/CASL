@@ -1,0 +1,91 @@
+{
+  "dataset": "LSUN-Church",
+  "source_dir": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/x0/images",
+  "source_count": 32,
+  "methods": {
+    "Reconstruction": {
+      "Gothic": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      },
+      "Red_Brick": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_red_brick_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      },
+      "Snowy": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_snowy_church_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      },
+      "Wooden": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_wooden_house_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      }
+    },
+    "CASL-Steer": {
+      "Gothic": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      },
+      "Red_Brick": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_red_brick_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      },
+      "Snowy": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_snowy_church_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      },
+      "Wooden": {
+        "status": "ok",
+        "directory": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/runs/church_wooden_house_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images",
+        "edited_count": 32,
+        "pairs": 32,
+        "missing_source_count": 0,
+        "missing_edit_count": 0,
+        "missing_source_ids_sample": [],
+        "missing_edit_ids_sample": []
+      }
+    }
+  }
+}

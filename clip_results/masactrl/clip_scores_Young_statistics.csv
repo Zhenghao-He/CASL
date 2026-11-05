@@ -1,0 +1,9 @@
+metric,value
+prompt,a young face
+image_dir,/p/realai/zhenghao/LoRA_SAE/MasaCtrl/workdir/celeba/young1
+mean,0.2049990282393992
+variance,0.00031493476326219737
+std,0.01774640141725069
+min,0.1695832908153534
+max,0.24150532484054565
+count,32.0

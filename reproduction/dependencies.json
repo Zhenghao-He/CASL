@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Asyrp_official",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_official",
+    "snapshot": "reproduction/dependencies/Asyrp_official",
+    "commit": "a6c82dc760849dd4c1e878990ce38e824967e5b0",
+    "remotes": "origin\tgit@github.com:kwonminki/Asyrp_official.git (fetch)\norigin\tgit@github.com:kwonminki/Asyrp_official.git (push)",
+    "status": "M configs/paths_config.py\n M datasets/LSUN_dataset.py\n M datasets/data_utils.py\n M diffusion_latent.py\n M main.py\n M script_train.sh\n M utils/text_dic.py\n?? __pycache__/diffusion_latent.cpython-312.pyc\n?? __pycache__/diffusion_latent.cpython-39.pyc\n?? alpha_sweep/\n?? checkpoint/arched_eyebrows_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/arched_eyebrows_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/arched_eyebrows_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/arched_eyebrows_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/arched_eyebrows_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/bald_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/bald_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/bald_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/bald_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/bald_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/beards_LC_FFHQ_t999_ninv50_ngen50_0.pth\n?? checkpoint/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/church_snow_LC_church_outdoor_t999_ninv50_ngen50_0.pth\n?? checkpoint/church_snow_LC_church_outdoor_t999_ninv50_ngen50_1.pth\n?? checkpoint/church_snow_LC_church_outdoor_t999_ninv50_ngen50_2.pth\n?? checkpoint/church_snow_LC_church_outdoor_t999_ninv50_ngen50_3.pth\n?? checkpoint/church_snow_LC_church_outdoor_t999_ninv50_ngen50_4.pth\n?? checkpoint/eyeglasses_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/eyeglasses_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/eyeglasses_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/eyeglasses_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/eyeglasses_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/mouth_slightly_open_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/mouth_slightly_open_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/mouth_slightly_open_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/mouth_slightly_open_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/mouth_slightly_open_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/narrow_eyes_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/narrow_eyes_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/narrow_eyes_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/narrow_eyes_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/narrow_eyes_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/old_LC_FFHQ_t999_ninv50_ngen50_0.pth\n?? checkpoint/rebuttal_dog_puppy_train_LC_dog_t999_ninv40_ngen40_0.pth\n?? checkpoint/sad_LC_FFHQ_t999_ninv50_ngen50_0.pth\n?? checkpoint/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? checkpoint/smiling_LC_FFHQ_t999_ninv50_ngen50_0.pth\n?? checkpoint/smiling_LC_FFHQ_t999_ninv50_ngen50_1.pth\n?? checkpoint/smiling_LC_FFHQ_t999_ninv50_ngen50_2.pth\n?? checkpoint/smiling_LC_FFHQ_t999_ninv50_ngen50_3.pth\n?? checkpoint/smiling_LC_FFHQ_t999_ninv50_ngen50_4.pth\n?? checkpoint/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_0.pth\n?? checkpoint/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_1.pth\n?? checkpoint/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_2.pth\n?? checkpoint/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_3.pth\n?? checkpoint/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50_4.pth\n?? configs/__pycache__/paths_config.cpython-312.pyc\n?? configs/__pycache__/paths_config.cpython-39.pyc\n?? datasets/__init__.py\n?? datasets/__pycache__/AFHQ_dataset.cpython-312.pyc\n?? datasets/__pycache__/AFHQ_dataset.cpython-39.pyc\n?? datasets/__pycache__/CelebA_HQ_dataset.cpython-312.pyc\n?? datasets/__pycache__/CelebA_HQ_dataset.cpython-39.pyc\n?? datasets/__pycache__/CelebA_HQ_dataset_dialog.cpython-312.pyc\n?? datasets/__pycache__/CelebA_HQ_dataset_dialog.cpython-39.pyc\n?? datasets/__pycache__/CelebA_HQ_dataset_with_attr.cpython-312.pyc\n?? datasets/__pycache__/CelebA_HQ_dataset_with_attr.cpython-39.pyc\n?? datasets/__pycache__/IMAGENET_dataset.cpython-312.pyc\n?? datasets/__pycache__/IMAGENET_dataset.cpython-39.pyc\n?? datasets/__pycache__/LSUN_dataset.cpython-312.pyc\n?? datasets/__pycache__/LSUN_dataset.cpython-39.pyc\n?? datasets/__pycache__/__init__.cpython-312.pyc\n?? datasets/__pycache__/data_utils.cpython-312.pyc\n?? datasets/__pycache__/data_utils.cpython-39.pyc\n?? datasets/__pycache__/imagenet_dic.cpython-312.pyc\n?? datasets/__pycache__/imagenet_dic.cpython-39.pyc\n?? losses/__pycache__/clip_loss.cpython-312.pyc\n?? losses/__pycache__/clip_loss.cpython-39.pyc\n?? losses/__pycache__/id_loss.cpython-312.pyc\n?? losses/__pycache__/id_loss.cpython-39.pyc\n?? models/ddpm/__pycache__/diffusion.cpython-312.pyc\n?? models/ddpm/__pycache__/diffusion.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/__init__.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/__init__.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/fp16_util.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/fp16_util.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/gaussian_diffusion.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/gaussian_diffusion.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/logger.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/logger.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/losses.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/losses.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/nn.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/nn.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/respace.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/respace.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/script_util.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/script_util.cpython-39.pyc\n?? models/guided_diffusion/__pycache__/unet.cpython-312.pyc\n?? models/guided_diffusion/__pycache__/unet.cpython-39.pyc\n?? models/improved_ddpm/__pycache__/fp16_util.cpython-312.pyc\n?? models/improved_ddpm/__pycache__/fp16_util.cpython-39.pyc\n?? models/improved_ddpm/__pycache__/logger.cpython-312.pyc\n?? models/improved_ddpm/__pycache__/logger.cpython-39.pyc\n?? models/improved_ddpm/__pycache__/nn.cpython-312.pyc\n?? models/improved_ddpm/__pycache__/nn.cpython-39.pyc\n?? models/improved_ddpm/__pycache__/script_util.cpython-312.pyc\n?? models/improved_ddpm/__pycache__/script_util.cpython-39.pyc\n?? models/improved_ddpm/__pycache__/unet.cpython-312.pyc\n?? models/improved_ddpm/__pycache__/unet.cpython-39.pyc\n?? models/insight_face/__pycache__/__init__.cpython-312.pyc\n?? models/insight_face/__pycache__/__init__.cpython-39.pyc\n?? models/insight_face/__pycache__/helpers.cpython-312.pyc\n?? models/insight_face/__pycache__/helpers.cpython-39.pyc\n?? models/insight_face/__pycache__/model_irse.cpython-312.pyc\n?? models/insight_face/__pycache__/model_irse.cpython-39.pyc\n?? runs/\n?? utils/__pycache__/__init__.cpython-312.pyc\n?? utils/__pycache__/__init__.cpython-39.pyc\n?? utils/__pycache__/diffusion_utils.cpython-312.pyc\n?? utils/__pycache__/diffusion_utils.cpython-39.pyc\n?? utils/__pycache__/text_dic.cpython-312.pyc\n?? utils/__pycache__/text_dic.cpython-39.pyc\n?? utils/__pycache__/text_templates.cpython-312.pyc\n?? utils/__pycache__/text_templates.cpython-39.pyc"
+  },
+  {
+    "name": "DiT",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/DiT",
+    "snapshot": "reproduction/dependencies/DiT",
+    "commit": "ed81ce2229091fd4ecc9a223645f95cf379d582b",
+    "remotes": "origin\torg-16943930@github.com:facebookresearch/DiT.git (fetch)\norigin\torg-16943930@github.com:facebookresearch/DiT.git (push)",
+    "status": "?? __pycache__/"
+  },
+  {
+    "name": "MasaCtrl",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/MasaCtrl",
+    "snapshot": "reproduction/dependencies/MasaCtrl",
+    "commit": "d0ba16bb7c12125b509e374b000ee61065bb8149",
+    "remotes": "origin\tgit@github.com:TencentARC/MasaCtrl.git (fetch)\norigin\tgit@github.com:TencentARC/MasaCtrl.git (push)",
+    "status": "M playground.ipynb\n M playground_real.ipynb\n?? =0.34.0,\n?? batch_masactrl_editor.py\n?? masactrl/__pycache__/\n?? move_masactrl_images.sh\n?? move_masactrl_simple.py\n?? move_masactrl_simple.sh\n?? run_batch_editing.sh\n?? workdir/"
+  },
+  {
+    "name": "SwiftEdit",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/SwiftEdit",
+    "snapshot": "reproduction/dependencies/SwiftEdit",
+    "commit": "c3fe64056d58950c3445aa62eb9c0ff94fd284e5",
+    "remotes": "origin\thttps://github.com/Qualcomm-AI-research/SwiftEdit.git (fetch)\norigin\thttps://github.com/Qualcomm-AI-research/SwiftEdit.git (push)",
+    "status": "M models.py\n?? __pycache__/\n?? batch_edit.py\n?? batch_edit_simple.py\n?? output_images/\n?? \"result_woman->Taylor Swift.png\"\n?? run.sh\n?? run_simple.sh\n?? src/__pycache__/\n?? swiftedit_weights.tar.gz\n?? swiftedit_weights.tar.gz.part-aa\n?? swiftedit_weights.tar.gz.part-ab\n?? swiftedit_weights.tar.gz.part-ac\n?? swiftedit_weights.tar.gz.part-ad\n?? swiftedit_weights.tar.gz.part-ae\n?? swiftedit_weights/"
+  },
+  {
+    "name": "sliders",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/sliders",
+    "snapshot": "reproduction/dependencies/sliders",
+    "commit": "fb405a382294a317bd989aa799a2a4c1699f97d4",
+    "remotes": "origin\tgit@github.com:rohitgandikota/sliders.git (fetch)\norigin\tgit@github.com:rohitgandikota/sliders.git (push)",
+    "status": "M SD1-sliders-inference.ipynb\n M __init__.py\n M demo_concept_sliders.ipynb\n M demo_image_editing.ipynb\n M eval-scripts/lpip_score.py\n M requirements.txt\n M trainscripts/imagesliders/data/prompts.yaml\n M trainscripts/textsliders/data/prompts.yaml\n?? =0.34.0,\n?? __pycache__/\n?? batch_image_editor.py\n?? datasets/\n?? edited_imgs/\n?? eval-scripts/calculate_lpips.py\n?? eval-scripts/lpips_age_results.csv\n?? eval-scripts/lpips_age_results_statistics.csv\n?? eval-scripts/lpips_beards_results.csv\n?? eval-scripts/lpips_beards_results_statistics.csv\n?? eval-scripts/run_arcface_batch.py\n?? eval-scripts/run_lpips.sh\n?? eval-scripts/run_lpips_batch.py\n?? eval-scripts/run_lpips_batch.sh\n?? models/\n?? muscular.pt\n?? run_batch_editor.sh\n?? run_train_lora.sh\n?? stock_photo_girl.jpg\n?? test.py\n?? test_image.py\n?? trainscripts/__pycache__/\n?? trainscripts/imagesliders/__pycache__/\n?? trainscripts/textsliders/__pycache__/"
+  },
+  {
+    "name": "Diffusion-Pullback",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Diffusion-Pullback",
+    "snapshot": "reproduction/dependencies/Diffusion-Pullback",
+    "commit": "859c0122b5cb1c8e6488dede29959c785af9aed1",
+    "remotes": "origin\tgit@github.com:enkeejunior1/Diffusion-Pullback.git (fetch)\norigin\tgit@github.com:enkeejunior1/Diffusion-Pullback.git (push)",
+    "status": ""
+  },
+  {
+    "name": "sparse_autoencoder",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/sparse_autoencoder",
+    "snapshot": "reproduction/dependencies/sparse_autoencoder",
+    "commit": "4965b941e9eb590b00b253a2c406db1e1b193942",
+    "remotes": "origin\torg-14957082@github.com:openai/sparse_autoencoder.git (fetch)\norigin\torg-14957082@github.com:openai/sparse_autoencoder.git (push)",
+    "status": ""
+  },
+  {
+    "name": "stargan-v2",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/stargan-v2",
+    "snapshot": "reproduction/dependencies/stargan-v2",
+    "commit": "875b70a150609e8a678ed8482562e7074cdce7e5",
+    "remotes": "origin\thttps://github.com/clovaai/stargan-v2.git (fetch)\norigin\thttps://github.com/clovaai/stargan-v2.git (push)",
+    "status": "?? data/\n?? expr/"
+  },
+  {
+    "name": "ffhq-dataset",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/ffhq-dataset",
+    "snapshot": "reproduction/dependencies/ffhq-dataset",
+    "commit": "4826aa6ea77aa7f1a7802b938ed7c40afb985cda",
+    "remotes": "origin\tgit@github.com:NVlabs/ffhq-dataset.git (fetch)\norigin\tgit@github.com:NVlabs/ffhq-dataset.git (push)",
+    "status": "?? ffhq-dataset-v2.json\n?? images1024x1024/"
+  },
+  {
+    "name": "CelebFaces_Attributes_Classification",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/CelebFaces_Attributes_Classification",
+    "snapshot": "reproduction/dependencies/CelebFaces_Attributes_Classification",
+    "commit": "77f7b145031b1795cd4db68be605bc318081c665",
+    "remotes": "origin\tgit@github.com:clementapa/CelebFaces_Attributes_Classification.git (fetch)\norigin\tgit@github.com:clementapa/CelebFaces_Attributes_Classification.git (push)",
+    "status": ""
+  },
+  {
+    "name": "augclip_eval",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/augclip_eval",
+    "snapshot": "reproduction/dependencies/augclip_eval",
+    "commit": "28281486a7b5a8d044ae5505c02502f7fa0843d2",
+    "remotes": "origin\thttps://github.com/augclip/augclip_eval.git (fetch)\norigin\thttps://github.com/augclip/augclip_eval.git (push)",
+    "status": ""
+  },
+  {
+    "name": "revelio",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/revelio",
+    "snapshot": "reproduction/dependencies/revelio",
+    "commit": "2e6d24508d21804d93cda6f3dfa148caf1be9f68",
+    "remotes": "origin\tgit@github.com:revelio-diffusion/revelio.git (fetch)\norigin\tgit@github.com:revelio-diffusion/revelio.git (push)",
+    "status": ""
+  },
+  {
+    "name": "sliders",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/third_party/sliders",
+    "snapshot": "reproduction/third_party/sliders",
+    "commit": "710c995c34652371444ce041c4890e821d0a7a91",
+    "remotes": "origin\thttps://github.com/rohitgandikota/sliders.git (fetch)\norigin\thttps://github.com/rohitgandikota/sliders.git (push)",
+    "status": "?? trainscripts/textsliders/__pycache__/"
+  },
+  {
+    "name": "augclip_eval",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/third_party/augclip_eval",
+    "snapshot": "reproduction/third_party/augclip_eval",
+    "commit": "28281486a7b5a8d044ae5505c02502f7fa0843d2",
+    "remotes": "origin\thttps://github.com/augclip/augclip_eval.git (fetch)\norigin\thttps://github.com/augclip/augclip_eval.git (push)",
+    "status": ""
+  },
+  {
+    "name": "lfm",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/third_party/lfm",
+    "snapshot": "reproduction/third_party/lfm",
+    "commit": "50d263b0a4471384c0ab073c8f904b73c024c6c0",
+    "remotes": "origin\thttps://github.com/VinAIResearch/LFM.git (fetch)\norigin\thttps://github.com/VinAIResearch/LFM.git (push)",
+    "status": ""
+  },
+  {
+    "name": "transfer_disentanglement",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/third_party/transfer_disentanglement",
+    "snapshot": "reproduction/third_party/transfer_disentanglement",
+    "commit": "75e1a8bd499a19258f2acb6bfa70a356e06fa276",
+    "remotes": "origin\thttps://github.com/JacopoDapueto/transfer_disentanglement.git (fetch)\norigin\thttps://github.com/JacopoDapueto/transfer_disentanglement.git (push)",
+    "status": "?? src/__pycache__/\n?? src/evaluation/__pycache__/\n?? src/evaluation/metrics/__pycache__/\n?? src/utils/__pycache__/"
+  },
+  {
+    "name": "uspace",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/third_party/uspace",
+    "snapshot": "reproduction/third_party/uspace",
+    "commit": "106c4bf03d30de1b49b32ab614796d93971a380d",
+    "remotes": "origin\thttps://github.com/dongzhuoyao/uspace.git (fetch)\norigin\thttps://github.com/dongzhuoyao/uspace.git (push)",
+    "status": ""
+  },
+  {
+    "name": "celeba_classifier",
+    "original_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/celeba_classifier",
+    "snapshot": "reproduction/celeba_classifier",
+    "commit": "6c9303d1e5296e3f2a334341b6e360d9229e272d",
+    "remotes": "origin\tgit@github.com:blingenf/celeba-baselines.git (fetch)\norigin\tgit@github.com:blingenf/celeba-baselines.git (push)",
+    "status": "M celeba.py\n M celeba_evaluate.py\n M celeba_resnet_train.py\n?? MobileNetV2_model/\n?? __pycache__/\n?? celeba_evaluate_mobilenetv2.py\n?? celeba_evaluate_vgg16.py\n?? celeba_evaluate_vit.py\n?? celeba_mobilenetv2_train.py\n?? celeba_vgg16_train.py\n?? celeba_vit_train.py\n?? eval.sh\n?? evaluate_sae.sh\n?? logs/\n?? requirements.txt\n?? resnet_model/\n?? results/vit.txt\n?? train.sh\n?? vgg16_model/\n?? vit_model/"
+  }
+]

@@ -28,7 +28,21 @@ def parse_args_and_config():
     # Training Mode
     parser.add_argument('--run_train', action='store_true', help='run_train')
     parser.add_argument('--train_delta_block', action='store_true', help='train Delta_block')
+    parser.add_argument(
+        '--alignment_mapping',
+        choices=['linear', 'mlp'],
+        default='linear',
+        help='Stage-2 SAE-to-h alignment mapping used by XBlock',
+    )
+    parser.add_argument(
+        '--alignment_hidden_dim',
+        type=int,
+        default=512,
+        help='Hidden width for the parameter-matched two-layer MLP ablation',
+    )
     parser.add_argument('--train_delta_h', action='store_true', help='train Delta_h')
+    parser.add_argument('--additive_dense_h', action='store_true',
+                        help='inject direct dense delta_h additively as h + alpha * delta_h')
     parser.add_argument('--image_space_noise_optim', action='store_true', help='train image_space_noise_optim')
     parser.add_argument('--image_space_noise_optim_delta_block', action='store_true', help='image_space_noise_optim_delta_block')
     parser.add_argument('--just_precompute', action='store_true', help='just_precompute')
@@ -250,6 +264,12 @@ def parse_args_and_config():
 
     # Analysis
     parser.add_argument('--sae_analysis', action='store_true', help='analysis sae')
+    parser.add_argument('--sae_edit_only', action='store_true',
+                        help='run only the SAE intervention sweep')
+    parser.add_argument('--sae_strengths', type=str, default='',
+                        help='comma-separated SAE intervention strengths')
+    parser.add_argument('--sae_decoder_only', action='store_true',
+                        help='use the frozen SAE decoder as the SAE-only control')
     parser.add_argument('--top_k_indice', type=int, default=20, help='top k indices for sae analysis')
     parser.add_argument('--topk_to_analyze', type=int, default=20, help='top k indices for sae analysis')
     parser.add_argument('--scale_to_analyze', type=float, default=32, help='scale for sae analysis')
@@ -400,6 +420,8 @@ def main():
         elif args.sae_analysis:
             runner.compare_mode()
             runner.get_important_z()
+            runner.edit_by_sae()
+        elif args.sae_edit_only:
             runner.edit_by_sae()
         elif args.analyze_sae:
             runner.analyze_sae()

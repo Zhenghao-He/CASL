@@ -1,0 +1,834 @@
+[
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a1/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a2/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/asyrp_cnn/steps05-25/dense/a4/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a12/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a16/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a20/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a24/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Black_Hair",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation8_expanded_sae4096/Black_Hair/edits/Black_Hair/casl/steps05-25/topk8/a28/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  }
+]

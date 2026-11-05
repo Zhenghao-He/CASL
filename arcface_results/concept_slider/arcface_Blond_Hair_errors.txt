@@ -1,0 +1,9 @@
+Errors encountered during ArcFace similarity calculation:
+Total errors: 6
+
+29521: Error calculating similarity: No face detected in 29521.jpg
+29528: Error calculating similarity: No face detected in 29528.jpg
+29501: Error calculating similarity: No face detected in 29501.jpg
+29507: Error calculating similarity: No face detected in 29507.jpg
+29511: Error calculating similarity: No face detected in 29511.jpg
+29523: Error calculating similarity: No face detected in 29523.jpg

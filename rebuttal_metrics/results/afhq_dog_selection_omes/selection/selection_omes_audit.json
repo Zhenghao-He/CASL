@@ -1,0 +1,24 @@
+{
+  "domain": "dog",
+  "representation": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/afhq_dog_selection_omes/paired_representations.npz",
+  "probe_generator": "official Asyrp source/edit pairs",
+  "n_pairs_per_factor": {
+    "Angry": 32,
+    "Sleepy": 32,
+    "Smiling": 32,
+    "Puppy_like": 32
+  },
+  "n_latents": 65536,
+  "n_active": 657,
+  "activity_reference": "shared unedited source representation only",
+  "inactive_threshold": 0.01,
+  "alpha": 0.5,
+  "concepts": [
+    "Angry",
+    "Sleepy",
+    "Smiling",
+    "Puppy_like"
+  ],
+  "random_seeds": 1000,
+  "protocol": "Selection-conditioned OMES on a shared factor-latent relation matrix; exactly k active dimensions per concept and selection rule."
+}

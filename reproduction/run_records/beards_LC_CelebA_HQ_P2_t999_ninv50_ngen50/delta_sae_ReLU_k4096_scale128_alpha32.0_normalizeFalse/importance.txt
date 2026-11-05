@@ -1,0 +1,120 @@
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+
+=== Soft Mask Analysis ===
+min: 0.002160
+max: 0.037412
+mean: 0.002652
+median: 0.002625
+std: 0.000391
+>0.01 ratio: 0.000443
+10% quantile: 0.002488
+90% quantile: 0.002771
+

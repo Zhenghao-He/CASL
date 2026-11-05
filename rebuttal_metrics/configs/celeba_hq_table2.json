@@ -1,0 +1,120 @@
+{
+  "dataset": "CelebA-HQ",
+  "source_dir": "../CelebA-HQ/data1024",
+  "source_text": "a portrait photo of a face",
+  "source_descriptions": {
+    "type": "celeba_attributes",
+    "attribute_file": "../CelebA-HQ/list_attr_celeba_shift.txt"
+  },
+  "concepts": {
+    "Smiling": {
+      "target_text": "a portrait photo of a smiling face",
+      "target_descriptions": [
+        "The person has a smiling expression",
+        "The corners of the mouth curve upward",
+        "The cheeks are raised by the smile",
+        "The face has a joyful expression",
+        "The lips form a clear smile",
+        "The eyes appear cheerful",
+        "The person may show teeth while smiling",
+        "The expression looks warm and friendly"
+      ]
+    },
+    "Big_Nose": {
+      "target_text": "a portrait photo of a face with a big nose",
+      "target_descriptions": [
+        "The person has a large nose",
+        "The nose is visually prominent",
+        "The nasal bridge is broad",
+        "The nostrils appear wide",
+        "The nose occupies a larger facial area",
+        "The nose projects prominently from the face",
+        "The nose is a dominant facial feature",
+        "The nose has a broad tip"
+      ]
+    },
+    "Young": {
+      "target_text": "a portrait photo of a young person",
+      "target_descriptions": [
+        "The person has a youthful face",
+        "The skin appears smooth",
+        "The face has few visible wrinkles",
+        "The cheeks look youthful",
+        "The facial features appear young",
+        "The skin has an even texture",
+        "The person has no age lines",
+        "The overall appearance is that of a young adult"
+      ]
+    },
+    "Beards": {
+      "target_text": "a portrait photo of a person with a beard",
+      "target_descriptions": [
+        "The person has a visible beard",
+        "Facial hair covers the chin",
+        "Facial hair is visible on the cheeks",
+        "The jawline is covered by a beard",
+        "The person has visible mustache hair",
+        "The lower face has dense facial hair",
+        "The face has visible stubble or a beard",
+        "The beard is a prominent facial feature"
+      ]
+    },
+    "Blond_Hair": {
+      "target_text": "a portrait photo of a person with blond hair",
+      "target_descriptions": [
+        "The person has blond hair",
+        "The hair has a light golden color",
+        "The hair contains pale yellow tones",
+        "The hair color is visibly light",
+        "The hair has golden highlights",
+        "The hair appears blonde around the face",
+        "The hair has a warm light color",
+        "The person has clearly blonde hair"
+      ]
+    }
+  },
+  "methods": {
+    "CASL-Steer": {
+      "Smiling": "runs/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale128/delta_h/images",
+      "Big_Nose": "runs/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale64/delta_h/images",
+      "Young": "runs/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale128/delta_h/images",
+      "Beards": "runs/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale96/delta_h/images",
+      "Blond_Hair": "runs/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale128/delta_h/images"
+    },
+    "Asyrp": {
+      "Smiling": "../Asyrp_official/runs/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images",
+      "Big_Nose": "../Asyrp_official/runs/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images",
+      "Young": "../Asyrp_official/runs/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images",
+      "Beards": "../Asyrp_official/runs/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images",
+      "Blond_Hair": "../Asyrp_official/runs/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images"
+    },
+    "Boundary": {
+      "Smiling": "boundary_good/Smiling_500Range_7/images",
+      "Big_Nose": "boundary_good/Big_Nose_500Range_7/images",
+      "Young": "boundary_good/Young_500Range_7/images",
+      "Beards": "boundary_good/Mustache_500Range_7/images",
+      "Blond_Hair": "boundary_good/Blond_Hair_500Range_7/images"
+    },
+    "Concept-Slider": {
+      "Smiling": "../sliders/edited_imgs/smiling",
+      "Big_Nose": "../sliders/edited_imgs/bignose",
+      "Young": "../sliders/edited_imgs/age",
+      "Beards": "../sliders/edited_imgs/beards",
+      "Blond_Hair": "../sliders/edited_imgs/blonde"
+    },
+    "MasaCtrl": {
+      "Smiling": "../MasaCtrl/workdir/celeba/smiling1",
+      "Big_Nose": "../MasaCtrl/workdir/celeba/big_nose1",
+      "Young": "../MasaCtrl/workdir/celeba/young1",
+      "Beards": "../MasaCtrl/workdir/celeba/beards1",
+      "Blond_Hair": "../MasaCtrl/workdir/celeba/blonde_hair1"
+    },
+    "SwiftEdit": {
+      "Smiling": "../SwiftEdit/output_images/smiling",
+      "Big_Nose": "../SwiftEdit/output_images/big_nose",
+      "Young": "../SwiftEdit/output_images/young",
+      "Beards": "../SwiftEdit/output_images/beards",
+      "Blond_Hair": "../SwiftEdit/output_images/blond_hair"
+    }
+  }
+}

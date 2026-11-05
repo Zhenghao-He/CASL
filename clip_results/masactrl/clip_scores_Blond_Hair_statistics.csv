@@ -1,0 +1,9 @@
+metric,value
+prompt,people with blond hair
+image_dir,/p/realai/zhenghao/LoRA_SAE/MasaCtrl/workdir/celeba/blonde_hair1
+mean,0.18524627340957522
+variance,0.00047469344617804394
+std,0.021787460755628315
+min,0.1306595504283905
+max,0.21938879787921906
+count,32.0

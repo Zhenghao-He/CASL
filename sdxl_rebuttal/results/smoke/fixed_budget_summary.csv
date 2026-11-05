@@ -1,0 +1,7 @@
+concept,method,budget,budget_leakage,budget_lpips,budget_arcface,eligible_configurations,best_target_change,best_range,best_topk,best_strength
+Smiling,casl,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",16.0,0.0
+Smiling,casl,moderate,0.02,0.2,0.8,2,0.0,"[5, 25]",16.0,0.0
+Smiling,casl,loose,0.05,0.35,0.65,2,0.0,"[5, 25]",16.0,0.0
+Smiling,dense,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",,0.0
+Smiling,dense,moderate,0.02,0.2,0.8,2,0.0,"[5, 25]",,0.0
+Smiling,dense,loose,0.05,0.35,0.65,2,0.0,"[5, 25]",,0.0

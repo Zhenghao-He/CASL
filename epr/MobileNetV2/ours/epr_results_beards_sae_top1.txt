@@ -1,0 +1,12 @@
+EPR Mean: 1.952107
+EPR Variance: 2.314360
+EPR Std: 1.521302
+EPR Median: 1.194272
+EPR Min: 0.059754
+EPR Max: 4.479932
+NLS (overall): 5.296296
+Target score mean change: 0.343750
+Non-target mean change: 0.064904
+Target accuracy before: 1.000000
+Target accuracy after: 0.656250
+Target label flip rate: 0.343750

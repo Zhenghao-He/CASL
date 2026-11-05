@@ -1,0 +1,9 @@
+metric,value
+prompt,a young face
+image_dir,boundary_good/Young_500Range_7/images
+mean,0.18015484884381294
+variance,0.00022364318751043333
+std,0.014954704527687377
+min,0.1396527737379074
+max,0.2053399682044983
+count,32.0

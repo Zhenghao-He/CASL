@@ -1,0 +1,24 @@
+{
+  "domain": "church",
+  "representation": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/lsun_church_selection_omes/paired_representations.npz",
+  "probe_generator": "official Asyrp source/edit pairs",
+  "n_pairs_per_factor": {
+    "Gothic": 32,
+    "Red_Brick": 32,
+    "Snowy": 32,
+    "Wooden": 32
+  },
+  "n_latents": 65536,
+  "n_active": 1037,
+  "activity_reference": "shared unedited source representation only",
+  "inactive_threshold": 0.005,
+  "alpha": 0.5,
+  "concepts": [
+    "Gothic",
+    "Red_Brick",
+    "Snowy",
+    "Wooden"
+  ],
+  "random_seeds": 1000,
+  "protocol": "Selection-conditioned OMES on a shared factor-latent relation matrix; exactly k active dimensions per concept and selection rule."
+}

@@ -1,0 +1,9 @@
+metric,value
+prompt,people with blond hair
+image_dir,/p/realai/zhenghao/LoRA_SAE/SwiftEdit/output_images/blond_hair
+mean,0.18042624020017684
+variance,0.0012904198246205204
+std,0.035922413958704394
+min,0.08422692120075226
+max,0.23789940774440765
+count,32.0

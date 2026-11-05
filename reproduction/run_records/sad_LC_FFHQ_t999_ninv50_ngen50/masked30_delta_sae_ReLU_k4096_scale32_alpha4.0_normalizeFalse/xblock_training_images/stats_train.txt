@@ -1,0 +1,5500 @@
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_0_0.png
+min: 0.974061
+max: 0.982544
+mean: 0.978459
+median: 0.978459
+std: 0.001095
+>0 ratio: 1.000000
+10% quantile: 0.977052
+90% quantile: 0.979865
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_1_0.png
+min: 0.972409
+max: 0.981103
+mean: 0.976918
+median: 0.976918
+std: 0.001123
+>0 ratio: 1.000000
+10% quantile: 0.975476
+90% quantile: 0.978359
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_2_0.png
+min: 0.970714
+max: 0.979627
+mean: 0.975338
+median: 0.975338
+std: 0.001151
+>0 ratio: 1.000000
+10% quantile: 0.973860
+90% quantile: 0.976815
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_3_0.png
+min: 0.968974
+max: 0.978115
+mean: 0.973719
+median: 0.973718
+std: 0.001180
+>0 ratio: 1.000000
+10% quantile: 0.972202
+90% quantile: 0.975233
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_4_0.png
+min: 0.967189
+max: 0.976565
+mean: 0.972057
+median: 0.972057
+std: 0.001211
+>0 ratio: 1.000000
+10% quantile: 0.970502
+90% quantile: 0.973610
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_5_0.png
+min: 0.965355
+max: 0.974977
+mean: 0.970353
+median: 0.970353
+std: 0.001242
+>0 ratio: 1.000000
+10% quantile: 0.968757
+90% quantile: 0.971946
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_6_0.png
+min: 0.963472
+max: 0.973348
+mean: 0.968604
+median: 0.968604
+std: 0.001275
+>0 ratio: 1.000000
+10% quantile: 0.966965
+90% quantile: 0.970239
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_7_0.png
+min: 0.961537
+max: 0.971677
+mean: 0.966808
+median: 0.966808
+std: 0.001309
+>0 ratio: 1.000000
+10% quantile: 0.965126
+90% quantile: 0.968487
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_8_0.png
+min: 0.959548
+max: 0.969963
+mean: 0.964964
+median: 0.964965
+std: 0.001344
+>0 ratio: 1.000000
+10% quantile: 0.963236
+90% quantile: 0.966689
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_9_0.png
+min: 0.957502
+max: 0.968204
+mean: 0.963070
+median: 0.963071
+std: 0.001381
+>0 ratio: 1.000000
+10% quantile: 0.961294
+90% quantile: 0.964841
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_10_0.png
+min: 0.955398
+max: 0.966397
+mean: 0.961123
+median: 0.961124
+std: 0.001420
+>0 ratio: 1.000000
+10% quantile: 0.959298
+90% quantile: 0.962944
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_11_0.png
+min: 0.953233
+max: 0.964542
+mean: 0.959122
+median: 0.959123
+std: 0.001460
+>0 ratio: 1.000000
+10% quantile: 0.957246
+90% quantile: 0.960994
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_12_0.png
+min: 0.951005
+max: 0.962637
+mean: 0.957065
+median: 0.957066
+std: 0.001501
+>0 ratio: 1.000000
+10% quantile: 0.955134
+90% quantile: 0.958990
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_13_0.png
+min: 0.948709
+max: 0.960678
+mean: 0.954948
+median: 0.954949
+std: 0.001545
+>0 ratio: 1.000000
+10% quantile: 0.952962
+90% quantile: 0.956928
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_14_0.png
+min: 0.946345
+max: 0.958665
+mean: 0.952769
+median: 0.952771
+std: 0.001590
+>0 ratio: 1.000000
+10% quantile: 0.950725
+90% quantile: 0.954808
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_15_0.png
+min: 0.943907
+max: 0.956594
+mean: 0.950527
+median: 0.950529
+std: 0.001637
+>0 ratio: 1.000000
+10% quantile: 0.948421
+90% quantile: 0.952625
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_16_0.png
+min: 0.941395
+max: 0.954464
+mean: 0.948217
+median: 0.948219
+std: 0.001687
+>0 ratio: 1.000000
+10% quantile: 0.946048
+90% quantile: 0.950379
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_17_0.png
+min: 0.938802
+max: 0.952272
+mean: 0.945837
+median: 0.945840
+std: 0.001738
+>0 ratio: 1.000000
+10% quantile: 0.943601
+90% quantile: 0.948065
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_18_0.png
+min: 0.936127
+max: 0.950014
+mean: 0.943384
+median: 0.943387
+std: 0.001792
+>0 ratio: 1.000000
+10% quantile: 0.941079
+90% quantile: 0.945680
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_19_0.png
+min: 0.933365
+max: 0.947689
+mean: 0.940854
+median: 0.940858
+std: 0.001848
+>0 ratio: 1.000000
+10% quantile: 0.938476
+90% quantile: 0.943223
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_20_0.png
+min: 0.930512
+max: 0.945293
+mean: 0.938244
+median: 0.938248
+std: 0.001907
+>0 ratio: 1.000000
+10% quantile: 0.935791
+90% quantile: 0.940688
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_21_0.png
+min: 0.927563
+max: 0.942824
+mean: 0.935551
+median: 0.935555
+std: 0.001969
+>0 ratio: 1.000000
+10% quantile: 0.933017
+90% quantile: 0.938073
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_22_0.png
+min: 0.924514
+max: 0.940277
+mean: 0.932769
+median: 0.932774
+std: 0.002034
+>0 ratio: 1.000000
+10% quantile: 0.930153
+90% quantile: 0.935374
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_23_0.png
+min: 0.921359
+max: 0.937649
+mean: 0.929896
+median: 0.929901
+std: 0.002101
+>0 ratio: 1.000000
+10% quantile: 0.927192
+90% quantile: 0.932588
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_24_0.png
+min: 0.918094
+max: 0.934936
+mean: 0.926926
+median: 0.926932
+std: 0.002173
+>0 ratio: 1.000000
+10% quantile: 0.924130
+90% quantile: 0.929709
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_25_0.png
+min: 0.914713
+max: 0.932135
+mean: 0.923855
+median: 0.923861
+std: 0.002247
+>0 ratio: 1.000000
+10% quantile: 0.920962
+90% quantile: 0.926733
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_26_0.png
+min: 0.911209
+max: 0.929241
+mean: 0.920677
+median: 0.920684
+std: 0.002326
+>0 ratio: 1.000000
+10% quantile: 0.917683
+90% quantile: 0.923655
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_27_0.png
+min: 0.907576
+max: 0.926249
+mean: 0.917387
+median: 0.917395
+std: 0.002408
+>0 ratio: 1.000000
+10% quantile: 0.914287
+90% quantile: 0.920471
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_28_0.png
+min: 0.903807
+max: 0.923155
+mean: 0.913980
+median: 0.913989
+std: 0.002495
+>0 ratio: 1.000000
+10% quantile: 0.910768
+90% quantile: 0.917174
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_29_0.png
+min: 0.899895
+max: 0.919953
+mean: 0.910448
+median: 0.910458
+std: 0.002587
+>0 ratio: 1.000000
+10% quantile: 0.907119
+90% quantile: 0.913760
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_30_0.png
+min: 0.895831
+max: 0.916638
+mean: 0.906787
+median: 0.906797
+std: 0.002683
+>0 ratio: 1.000000
+10% quantile: 0.903332
+90% quantile: 0.910221
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_31_0.png
+min: 0.891607
+max: 0.913204
+mean: 0.902987
+median: 0.902999
+std: 0.002785
+>0 ratio: 1.000000
+10% quantile: 0.899402
+90% quantile: 0.906551
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_32_0.png
+min: 0.887214
+max: 0.909645
+mean: 0.899043
+median: 0.899056
+std: 0.002892
+>0 ratio: 1.000000
+10% quantile: 0.895319
+90% quantile: 0.902744
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_33_0.png
+min: 0.882642
+max: 0.905953
+mean: 0.894945
+median: 0.894959
+std: 0.003005
+>0 ratio: 1.000000
+10% quantile: 0.891075
+90% quantile: 0.898790
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_34_0.png
+min: 0.877880
+max: 0.902123
+mean: 0.890685
+median: 0.890701
+std: 0.003125
+>0 ratio: 1.000000
+10% quantile: 0.886660
+90% quantile: 0.894683
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_35_0.png
+min: 0.872917
+max: 0.898146
+mean: 0.886254
+median: 0.886271
+std: 0.003252
+>0 ratio: 1.000000
+10% quantile: 0.882065
+90% quantile: 0.890414
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_36_0.png
+min: 0.867740
+max: 0.894014
+mean: 0.881641
+median: 0.881660
+std: 0.003386
+>0 ratio: 1.000000
+10% quantile: 0.877279
+90% quantile: 0.885973
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_37_0.png
+min: 0.862336
+max: 0.889717
+mean: 0.876836
+median: 0.876856
+std: 0.003529
+>0 ratio: 1.000000
+10% quantile: 0.872290
+90% quantile: 0.881349
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_38_0.png
+min: 0.856690
+max: 0.885248
+mean: 0.871827
+median: 0.871849
+std: 0.003680
+>0 ratio: 1.000000
+10% quantile: 0.867086
+90% quantile: 0.876533
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_39_0.png
+min: 0.850788
+max: 0.880594
+mean: 0.866602
+median: 0.866626
+std: 0.003840
+>0 ratio: 1.000000
+10% quantile: 0.861653
+90% quantile: 0.871512
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_40_0.png
+min: 0.844611
+max: 0.875746
+mean: 0.861146
+median: 0.861172
+std: 0.004011
+>0 ratio: 1.000000
+10% quantile: 0.855977
+90% quantile: 0.866274
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_41_0.png
+min: 0.838143
+max: 0.870691
+mean: 0.855446
+median: 0.855474
+std: 0.004193
+>0 ratio: 1.000000
+10% quantile: 0.850042
+90% quantile: 0.860805
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_42_0.png
+min: 0.831362
+max: 0.865417
+mean: 0.849485
+median: 0.849516
+std: 0.004386
+>0 ratio: 1.000000
+10% quantile: 0.843831
+90% quantile: 0.855090
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_43_0.png
+min: 0.824248
+max: 0.859910
+mean: 0.843246
+median: 0.843280
+std: 0.004592
+>0 ratio: 1.000000
+10% quantile: 0.837325
+90% quantile: 0.849114
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_44_0.png
+min: 0.816777
+max: 0.854155
+mean: 0.836710
+median: 0.836748
+std: 0.004813
+>0 ratio: 1.000000
+10% quantile: 0.830505
+90% quantile: 0.842859
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_45_0.png
+min: 0.808924
+max: 0.848135
+mean: 0.829858
+median: 0.829899
+std: 0.005048
+>0 ratio: 1.000000
+10% quantile: 0.823348
+90% quantile: 0.836306
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_46_0.png
+min: 0.800661
+max: 0.841834
+mean: 0.822668
+median: 0.822712
+std: 0.005300
+>0 ratio: 1.000000
+10% quantile: 0.815831
+90% quantile: 0.829436
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_47_0.png
+min: 0.791958
+max: 0.835232
+mean: 0.815115
+median: 0.815163
+std: 0.005570
+>0 ratio: 1.000000
+10% quantile: 0.807929
+90% quantile: 0.822226
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_48_0.png
+min: 0.782782
+max: 0.828309
+mean: 0.807173
+median: 0.807226
+std: 0.005859
+>0 ratio: 1.000000
+10% quantile: 0.799613
+90% quantile: 0.814652
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_49_0.png
+min: 0.773098
+max: 0.821043
+mean: 0.798815
+median: 0.798873
+std: 0.006169
+>0 ratio: 1.000000
+10% quantile: 0.790854
+90% quantile: 0.806689
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_50_0.png
+min: 0.762866
+max: 0.813409
+mean: 0.790010
+median: 0.790074
+std: 0.006503
+>0 ratio: 1.000000
+10% quantile: 0.781617
+90% quantile: 0.798308
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_51_0.png
+min: 0.752044
+max: 0.805381
+mean: 0.780725
+median: 0.780795
+std: 0.006861
+>0 ratio: 1.000000
+10% quantile: 0.771868
+90% quantile: 0.789478
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_52_0.png
+min: 0.740587
+max: 0.796930
+mean: 0.770922
+median: 0.770999
+std: 0.007247
+>0 ratio: 1.000000
+10% quantile: 0.761566
+90% quantile: 0.780165
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_53_0.png
+min: 0.728444
+max: 0.788026
+mean: 0.760563
+median: 0.760647
+std: 0.007662
+>0 ratio: 1.000000
+10% quantile: 0.750669
+90% quantile: 0.770334
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_54_0.png
+min: 0.715561
+max: 0.778633
+mean: 0.749605
+median: 0.749696
+std: 0.008110
+>0 ratio: 1.000000
+10% quantile: 0.739130
+90% quantile: 0.759944
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_55_0.png
+min: 0.701878
+max: 0.768715
+mean: 0.737999
+median: 0.738100
+std: 0.008593
+>0 ratio: 1.000000
+10% quantile: 0.726899
+90% quantile: 0.748952
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_56_0.png
+min: 0.687333
+max: 0.758233
+mean: 0.725696
+median: 0.725806
+std: 0.009114
+>0 ratio: 1.000000
+10% quantile: 0.713920
+90% quantile: 0.737311
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_57_0.png
+min: 0.671857
+max: 0.747140
+mean: 0.712640
+median: 0.712760
+std: 0.009677
+>0 ratio: 1.000000
+10% quantile: 0.700135
+90% quantile: 0.724970
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_58_0.png
+min: 0.655377
+max: 0.735391
+mean: 0.698771
+median: 0.698902
+std: 0.010284
+>0 ratio: 1.000000
+10% quantile: 0.685479
+90% quantile: 0.711873
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_59_0.png
+min: 0.637816
+max: 0.722933
+mean: 0.684025
+median: 0.684168
+std: 0.010940
+>0 ratio: 1.000000
+10% quantile: 0.669883
+90% quantile: 0.697959
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_60_0.png
+min: 0.619093
+max: 0.709709
+mean: 0.668332
+median: 0.668487
+std: 0.011647
+>0 ratio: 1.000000
+10% quantile: 0.653274
+90% quantile: 0.683164
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_61_0.png
+min: 0.599125
+max: 0.695660
+mean: 0.651618
+median: 0.651787
+std: 0.012408
+>0 ratio: 1.000000
+10% quantile: 0.635574
+90% quantile: 0.667419
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_62_0.png
+min: 0.577830
+max: 0.680718
+mean: 0.633807
+median: 0.633989
+std: 0.013227
+>0 ratio: 1.000000
+10% quantile: 0.616702
+90% quantile: 0.650648
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_63_0.png
+min: 0.555126
+max: 0.664814
+mean: 0.614816
+median: 0.615012
+std: 0.014105
+>0 ratio: 1.000000
+10% quantile: 0.596576
+90% quantile: 0.632775
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_64_0.png
+min: 0.530939
+max: 0.647874
+mean: 0.594564
+median: 0.594772
+std: 0.015042
+>0 ratio: 1.000000
+10% quantile: 0.575111
+90% quantile: 0.613718
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_65_0.png
+min: 0.505209
+max: 0.629817
+mean: 0.572969
+median: 0.573188
+std: 0.016038
+>0 ratio: 1.000000
+10% quantile: 0.552228
+90% quantile: 0.593392
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_66_0.png
+min: 0.477895
+max: 0.610563
+mean: 0.549951
+median: 0.550179
+std: 0.017087
+>0 ratio: 1.000000
+10% quantile: 0.527855
+90% quantile: 0.571716
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_67_0.png
+min: 0.448988
+max: 0.590027
+mean: 0.525441
+median: 0.525674
+std: 0.018183
+>0 ratio: 1.000000
+10% quantile: 0.501931
+90% quantile: 0.548611
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_68_0.png
+min: 0.418522
+max: 0.568129
+mean: 0.499383
+median: 0.499614
+std: 0.019311
+>0 ratio: 1.000000
+10% quantile: 0.474421
+90% quantile: 0.524004
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_69_0.png
+min: 0.386591
+max: 0.544788
+mean: 0.471744
+median: 0.471965
+std: 0.020452
+>0 ratio: 1.000000
+10% quantile: 0.445318
+90% quantile: 0.497841
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_70_0.png
+min: 0.353368
+max: 0.519937
+mean: 0.442528
+median: 0.442726
+std: 0.021577
+>0 ratio: 1.000000
+10% quantile: 0.414665
+90% quantile: 0.470087
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_71_0.png
+min: 0.319115
+max: 0.493521
+mean: 0.411783
+median: 0.411943
+std: 0.022645
+>0 ratio: 1.000000
+10% quantile: 0.382564
+90% quantile: 0.440744
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_72_0.png
+min: 0.284204
+max: 0.465513
+mean: 0.379622
+median: 0.379724
+std: 0.023605
+>0 ratio: 1.000000
+10% quantile: 0.349198
+90% quantile: 0.409862
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_73_0.png
+min: 0.249111
+max: 0.435919
+mean: 0.346238
+median: 0.346260
+std: 0.024395
+>0 ratio: 1.000000
+10% quantile: 0.314842
+90% quantile: 0.377554
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_74_0.png
+min: 0.214406
+max: 0.404800
+mean: 0.311920
+median: 0.311835
+std: 0.024942
+>0 ratio: 1.000000
+10% quantile: 0.279881
+90% quantile: 0.344017
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_75_0.png
+min: 0.180718
+max: 0.372281
+mean: 0.277058
+median: 0.276843
+std: 0.025172
+>0 ratio: 1.000000
+10% quantile: 0.244803
+90% quantile: 0.309541
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_76_0.png
+min: 0.148680
+max: 0.338571
+mean: 0.242146
+median: 0.241781
+std: 0.025016
+>0 ratio: 1.000000
+10% quantile: 0.210188
+90% quantile: 0.274528
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_77_0.png
+min: 0.118857
+max: 0.303981
+mean: 0.207759
+median: 0.207236
+std: 0.024427
+>0 ratio: 1.000000
+10% quantile: 0.176670
+90% quantile: 0.239481
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_78_0.png
+min: 0.091683
+max: 0.268925
+mean: 0.174517
+median: 0.173843
+std: 0.023391
+>0 ratio: 1.000000
+10% quantile: 0.144876
+90% quantile: 0.204992
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_79_0.png
+min: 0.067414
+max: 0.233926
+mean: 0.143027
+median: 0.142226
+std: 0.021940
+>0 ratio: 1.000000
+10% quantile: 0.115360
+90% quantile: 0.171698
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_80_0.png
+min: 0.046118
+max: 0.199585
+mean: 0.113815
+median: 0.112928
+std: 0.020152
+>0 ratio: 1.000000
+10% quantile: 0.088533
+90% quantile: 0.140218
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_81_0.png
+min: 0.027697
+max: 0.166540
+mean: 0.087273
+median: 0.086348
+std: 0.018140
+>0 ratio: 1.000000
+10% quantile: 0.064631
+90% quantile: 0.111089
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_82_0.png
+min: 0.011931
+max: 0.135402
+mean: 0.063617
+median: 0.062703
+std: 0.016034
+>0 ratio: 1.000000
+10% quantile: 0.043697
+90% quantile: 0.084698
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_83_0.png
+min: 0.000000
+max: 0.106688
+mean: 0.042886
+median: 0.042023
+std: 0.013955
+>0 ratio: 0.999939
+10% quantile: 0.025617
+90% quantile: 0.061249
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_84_0.png
+min: 0.000000
+max: 0.080758
+mean: 0.024990
+median: 0.024180
+std: 0.011942
+>0 ratio: 0.990906
+10% quantile: 0.010159
+90% quantile: 0.040762
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_85_0.png
+min: 0.000000
+max: 0.057785
+mean: 0.010405
+median: 0.008936
+std: 0.009128
+>0 ratio: 0.826599
+10% quantile: 0.000000
+90% quantile: 0.023098
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_86_0.png
+min: 0.000000
+max: 0.037760
+mean: 0.002091
+median: 0.000000
+std: 0.004328
+>0 ratio: 0.324219
+10% quantile: 0.000000
+90% quantile: 0.008016
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_87_0.png
+min: 0.000000
+max: 0.020527
+mean: 0.000131
+median: 0.000000
+std: 0.000945
+>0 ratio: 0.034851
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_88_0.png
+min: 0.000000
+max: 0.005829
+mean: 0.000002
+median: 0.000000
+std: 0.000071
+>0 ratio: 0.000732
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_89_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_90_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_91_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_92_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_93_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_94_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_95_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_96_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_97_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_98_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_99_0.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_0_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_1_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_2_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_3_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_4_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_5_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_6_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_7_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_8_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_9_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_10_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_11_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_12_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_13_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_14_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_15_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_16_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_17_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_18_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_19_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_20_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_21_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_22_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_23_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_24_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_25_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_26_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_27_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_28_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_29_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_30_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_31_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_32_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_33_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_34_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_35_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_36_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_37_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_38_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_39_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_40_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_41_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_42_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_43_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_44_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_45_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_46_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_47_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_48_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_49_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_50_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_51_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_52_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_53_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_54_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_55_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_56_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_57_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_58_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_59_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_60_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_61_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_62_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_63_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_64_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_65_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_66_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_67_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_68_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_69_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_70_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_71_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_72_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_73_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_74_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_75_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_76_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_77_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_78_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_79_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_80_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_81_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_82_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_83_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_84_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_85_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_86_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_87_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_88_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_89_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_90_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_91_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_92_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_93_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_94_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_95_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_96_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_97_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_98_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_99_1.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_0_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_1_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_2_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_3_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_4_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_5_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_6_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_7_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_8_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_9_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_10_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_11_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_12_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_13_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_14_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_15_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_16_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_17_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_18_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_19_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_20_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_21_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_22_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_23_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_24_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_25_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_26_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_27_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_28_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_29_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_30_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_31_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_32_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_33_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_34_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_35_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_36_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_37_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_38_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_39_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_40_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_41_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_42_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_43_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_44_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_45_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_46_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_47_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_48_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_49_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_50_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_51_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_52_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_53_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_54_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_55_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_56_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_57_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_58_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_59_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_60_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_61_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_62_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_63_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_64_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_65_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_66_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_67_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_68_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_69_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_70_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_71_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_72_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_73_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_74_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_75_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_76_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_77_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_78_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_79_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_80_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_81_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_82_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_83_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_84_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_85_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_86_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_87_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_88_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_89_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_90_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_91_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_92_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_93_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_94_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_95_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_96_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_97_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_98_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_99_2.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_0_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_1_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_2_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_3_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_4_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_5_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_6_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_7_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_8_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_9_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_10_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_11_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_12_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_13_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_14_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_15_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_16_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_17_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_18_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_19_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_20_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_21_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_22_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_23_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_24_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_25_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_26_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_27_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_28_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_29_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_30_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_31_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_32_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_33_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_34_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_35_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_36_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_37_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_38_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_39_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_40_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_41_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_42_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_43_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_44_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_45_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_46_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_47_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_48_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_49_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_50_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_51_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_52_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_53_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_54_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_55_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_56_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_57_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_58_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_59_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_60_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_61_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_62_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_63_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_64_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_65_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_66_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_67_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_68_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_69_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_70_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_71_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_72_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_73_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_74_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_75_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_76_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_77_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_78_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_79_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_80_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_81_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_82_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_83_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_84_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_85_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_86_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_87_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_88_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_89_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_90_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_91_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_92_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_93_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_94_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_95_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_96_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_97_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_98_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_99_3.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_0_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_1_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_2_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_3_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_4_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_5_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_6_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_7_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_8_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_9_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_10_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_11_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_12_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_13_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_14_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_15_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_16_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_17_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_18_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_19_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_20_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_21_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_22_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_23_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_24_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_25_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_26_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_27_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_28_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_29_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_30_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_31_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_32_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_33_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_34_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_35_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_36_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_37_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_38_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_39_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_40_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_41_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_42_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_43_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_44_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_45_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_46_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_47_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_48_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_49_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_50_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_51_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_52_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_53_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_54_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_55_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_56_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_57_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_58_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_59_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_60_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_61_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_62_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_63_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_64_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_65_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_66_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_67_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_68_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_69_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_70_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_71_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_72_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_73_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_74_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_75_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_76_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_77_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_78_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_79_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_80_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_81_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_82_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_83_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_84_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_85_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_86_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_87_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_88_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_89_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_90_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_91_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_92_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_93_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_94_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_95_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_96_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_97_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_98_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+
+=== Soft Mask Analysis ===
+File: ./runs/sad_LC_FFHQ_t999_ninv50_ngen50/masked30_delta_sae_ReLU_k4096_scale32_alpha4.0_normalizeFalse/xblock_training_images/visualization/train_99_4.png
+min: 0.000000
+max: 0.000000
+mean: 0.000000
+median: 0.000000
+std: 0.000000
+>0 ratio: 0.000000
+10% quantile: 0.000000
+90% quantile: 0.000000
+

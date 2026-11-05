@@ -1,0 +1,64 @@
+{
+  "concept": "Eyeglasses",
+  "seed": 42,
+  "num_samples": 2000,
+  "num_positive": 1000,
+  "num_negative": 1000,
+  "raw_block_shape": [
+    4,
+    256,
+    1152
+  ],
+  "pooled_shape": [
+    2000,
+    1152
+  ],
+  "feature_shape": [
+    2000,
+    2
+  ],
+  "top_k_features": 2,
+  "test_size": 0.2,
+  "accuracy": 0.6675,
+  "auc": 0.702525,
+  "index_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_concept_latents/Eyeglasses_top100_indices.pt",
+  "sae_checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm32_l10.01.pt",
+  "top_ranked_latents": [
+    {
+      "rank": 1,
+      "subset_position": 0,
+      "latent_index": 33426,
+      "weight": -0.5906185297710232,
+      "abs_weight": 0.5906185297710232
+    },
+    {
+      "rank": 2,
+      "subset_position": 1,
+      "latent_index": 34750,
+      "weight": -0.048466295855793796,
+      "abs_weight": 0.048466295855793796
+    }
+  ],
+  "sampled_paths": [
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/06681.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/15762.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/14430.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/12301.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/28135.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/11181.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/13990.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/03370.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/09590.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/16749.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/20906.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/24756.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/13664.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/09701.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/10921.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/26666.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/14191.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/13609.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/10887.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/02314.jpg"
+  ]
+}

@@ -1,0 +1,19 @@
+concept,method,budget,budget_leakage,budget_lpips,budget_arcface,eligible_configurations,best_target_change,best_range,best_topk,best_strength
+Eyeglasses,casl,strict,0.01,0.1,0.9,2,-5.871959729118642e-05,"[5, 25]",64.0,0.2
+Eyeglasses,casl,moderate,0.02,0.2,0.8,3,-3.893920802511275e-05,"[5, 25]",64.0,0.4
+Eyeglasses,casl,loose,0.05,0.35,0.65,4,0.0002301842905580707,"[5, 25]",64.0,0.8
+Eyeglasses,dense,strict,0.01,0.1,0.9,1,8.582384907640517e-06,"[5, 25]",,0.1
+Eyeglasses,dense,moderate,0.02,0.2,0.8,3,6.575592851731632e-05,"[5, 25]",,0.4
+Eyeglasses,dense,loose,0.05,0.35,0.65,4,0.00046572249266317665,"[5, 25]",,0.8
+Smiling,casl,strict,0.01,0.1,0.9,0,,,,
+Smiling,casl,moderate,0.02,0.2,0.8,2,0.040869842516258297,"[5, 25]",64.0,0.2
+Smiling,casl,loose,0.05,0.35,0.65,3,0.05922661977820095,"[5, 25]",64.0,0.4
+Smiling,dense,strict,0.01,0.1,0.9,1,0.02636715210974215,"[5, 25]",,0.1
+Smiling,dense,moderate,0.02,0.2,0.8,1,0.02636715210974215,"[5, 25]",,0.1
+Smiling,dense,loose,0.05,0.35,0.65,3,0.061201293952763046,"[5, 25]",,0.4
+Young,casl,strict,0.01,0.1,0.9,3,0.011657565832138051,"[5, 25]",64.0,0.2
+Young,casl,moderate,0.02,0.2,0.8,4,0.011657565832138051,"[5, 25]",64.0,0.2
+Young,casl,loose,0.05,0.35,0.65,4,0.011657565832138051,"[5, 25]",64.0,0.2
+Young,dense,strict,0.01,0.1,0.9,1,0.0177930891513824,"[5, 25]",,0.1
+Young,dense,moderate,0.02,0.2,0.8,2,0.0177930891513824,"[5, 25]",,0.1
+Young,dense,loose,0.05,0.35,0.65,3,0.0177930891513824,"[5, 25]",,0.1

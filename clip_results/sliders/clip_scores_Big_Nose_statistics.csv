@@ -1,0 +1,9 @@
+metric,value
+prompt,face with a big nose
+image_dir,runs/big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images
+mean,0.1576050934381783
+variance,0.0002045616269918634
+std,0.014302504221004915
+min,0.13456591963768005
+max,0.18224872648715973
+count,32.0

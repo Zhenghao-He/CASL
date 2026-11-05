@@ -1,0 +1,19 @@
+{
+  "activation_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_activation_dump/block_20_pooled_activations.pt",
+  "num_samples": 1000,
+  "input_dim": 1152,
+  "n_latents": 36864,
+  "activation": "ReLU",
+  "topk": null,
+  "normalize": false,
+  "batch_size": 64,
+  "epochs": 1000,
+  "lr": 0.0005,
+  "l1_weight": 0.01,
+  "seed": 42,
+  "checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm32_l10.01.pt",
+  "history_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm32_l10.01_history.json",
+  "final_loss": 0.225255584359169,
+  "final_recon": 0.2124893043041229,
+  "final_sparse": 1.2766281547546388
+}

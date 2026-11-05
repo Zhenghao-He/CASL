@@ -1,0 +1,16 @@
+{
+  "expected_calls": 50,
+  "finite": true,
+  "hook_calls_with_intervention": 50,
+  "hook_calls_without_intervention": 50,
+  "image_id": "29501.jpg",
+  "reference_shape": [
+    1,
+    4,
+    128,
+    128
+  ],
+  "same_inversion_path": "/tmp/casl_sdxl/full/inversions/29501.pt",
+  "zero_intervention_exact": true,
+  "zero_intervention_max_abs_latent_error": 0.0
+}

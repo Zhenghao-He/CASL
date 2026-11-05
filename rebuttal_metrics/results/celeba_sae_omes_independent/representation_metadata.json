@@ -1,0 +1,16 @@
+{
+  "protocol": "single deterministic q(x_t|x_0) forward pass",
+  "diffusion_checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/pretrained/celebahq_p2.pt",
+  "sae": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/CelebA_HQ_P2/sae_model_ReLUNone_alpha32.0_scale128.pth",
+  "start_index_zero_based": 20000,
+  "first_image": "20001.jpg",
+  "last_image": "24096.jpg",
+  "n_images": 4096,
+  "timestep": 509,
+  "alpha_bar": 0.07096556685061263,
+  "noise_seed": 2026,
+  "pooling": "mean",
+  "n_latents": 65536,
+  "representation": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/representations_t509_mean.npy",
+  "classes": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/classes.csv"
+}

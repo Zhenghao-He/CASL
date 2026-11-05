@@ -672,7 +672,7 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
-    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False , use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae = True):
+    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False , use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae=True, additive_dense_h=False):
         """
         Apply the model to an input batch.
 
@@ -735,7 +735,9 @@ class UNetModel(nn.Module):
                         assert delta_h.shape == h.shape, f"delta_h shape {delta_h.shape} does not match h shape {h.shape}"
                         h2 += delta_h * hs_coeff[i+1]
                 else:   # DiffStyle; Just ignore this code. We will update about it in README.md later.
-                    if use_mask:
+                    if additive_dense_h:
+                        h2 = h * hs_coeff[0] + delta_h * hs_coeff[1]
+                    elif use_mask:
                         mask = th.zeros_like(h)
                         mask[:,:,4:-1,3:5] = 1.0
                         inverted_mask = 1 - mask
@@ -796,7 +798,19 @@ class UNetModel(nn.Module):
     #                                    dropout=0.0
     #                                    )
     #         )
-    def setattr_layers(self, nums, mask_topk, activation='TopK', k=10, alpha=0.5, scale=1.0, is_mask=False, dataset = ""):
+    def setattr_layers(
+        self,
+        nums,
+        mask_topk,
+        activation='TopK',
+        k=10,
+        alpha=0.5,
+        scale=1.0,
+        is_mask=False,
+        dataset="",
+        mapping_type="linear",
+        hidden_dim=512,
+    ):
         ch = int(self.channel_mult[0] * self.model_channels)
 
         for level, mult in enumerate(self.channel_mult):
@@ -819,7 +833,9 @@ class UNetModel(nn.Module):
                 sae_ckpt_path=f"sae/{dataset}/sae_model_{activation}{k if activation == 'TopK' else None}_alpha{alpha}_scale{scale}.pth", 
                 out_channels=ch,
                 mask_topk=mask_topk,
-                is_mask=is_mask
+                is_mask=is_mask,
+                mapping_type=mapping_type,
+                hidden_dim=hidden_dim,
             ))
 
 class DeltaBlock(TimestepBlock):

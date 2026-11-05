@@ -1,0 +1,9 @@
+metric,value
+prompt,a young face
+image_dir,/p/realai/zhenghao/LoRA_SAE/SwiftEdit/output_images/young
+mean,0.21784989070147276
+variance,0.00022216139996144354
+std,0.014905079669744926
+min,0.1848779022693634
+max,0.2533838748931885
+count,32.0

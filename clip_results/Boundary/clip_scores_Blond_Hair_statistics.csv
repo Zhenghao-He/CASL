@@ -1,0 +1,9 @@
+metric,value
+prompt,people with blond hair
+image_dir,boundary_good/Blond_Hair_500Range_7/images
+mean,0.15323935099877417
+variance,0.0009441187365067451
+std,0.030726515202781215
+min,0.10067308694124222
+max,0.2098262906074524
+count,32.0

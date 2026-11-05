@@ -1,0 +1,28 @@
+concept,method,budget,budget_leakage,budget_lpips,budget_arcface,eligible_configurations,best_target_change,best_range,best_topk,best_strength
+Eyeglasses,casl,strict,0.01,0.1,0.9,15,0.0006668059941148273,"[5, 25]",64.0,0.2
+Eyeglasses,casl,moderate,0.02,0.2,0.8,18,0.000919643345696361,"[5, 25]",64.0,0.4
+Eyeglasses,casl,loose,0.05,0.35,0.65,21,0.0009731896861921717,"[5, 25]",16.0,0.8
+Eyeglasses,concept_slider,strict,0.01,0.1,0.9,0,,,,
+Eyeglasses,concept_slider,moderate,0.02,0.2,0.8,0,,,,
+Eyeglasses,concept_slider,loose,0.05,0.35,0.65,0,,,,
+Eyeglasses,dense,strict,0.01,0.1,0.9,5,5.5779401009183964e-05,"[5, 25]",,0.2
+Eyeglasses,dense,moderate,0.02,0.2,0.8,6,0.0017759485272108454,"[5, 25]",,0.4
+Eyeglasses,dense,loose,0.05,0.35,0.65,7,0.0017759485272108454,"[5, 25]",,0.4
+Smiling,casl,strict,0.01,0.1,0.9,9,0.030806701513938536,"[5, 25]",256.0,0.05
+Smiling,casl,moderate,0.02,0.2,0.8,14,0.12218355434015389,"[5, 25]",64.0,0.2
+Smiling,casl,loose,0.05,0.35,0.65,21,0.2767681218683719,"[5, 25]",256.0,0.8
+Smiling,concept_slider,strict,0.01,0.1,0.9,1,-2.1805462893091844e-05,"[0, 49]",,0.0
+Smiling,concept_slider,moderate,0.02,0.2,0.8,1,-2.1805462893091844e-05,"[0, 49]",,0.0
+Smiling,concept_slider,loose,0.05,0.35,0.65,2,0.15607256838120517,"[0, 49]",,0.5
+Smiling,dense,strict,0.01,0.1,0.9,3,0.0286703548626974,"[5, 25]",,0.05
+Smiling,dense,moderate,0.02,0.2,0.8,4,0.04861698084278029,"[5, 25]",,0.1
+Smiling,dense,loose,0.05,0.35,0.65,6,0.1705374056473374,"[5, 25]",,0.4
+Young,casl,strict,0.01,0.1,0.9,14,0.010094240307807888,"[5, 25]",16.0,0.2
+Young,casl,moderate,0.02,0.2,0.8,15,0.010094240307807888,"[5, 25]",16.0,0.2
+Young,casl,loose,0.05,0.35,0.65,20,0.054204590618610375,"[5, 25]",16.0,0.8
+Young,concept_slider,strict,0.01,0.1,0.9,1,2.1003186702721532e-05,"[0, 49]",,0.0
+Young,concept_slider,moderate,0.02,0.2,0.8,1,2.1003186702721532e-05,"[0, 49]",,0.0
+Young,concept_slider,loose,0.05,0.35,0.65,3,0.11475180834531781,"[0, 49]",,0.5
+Young,dense,strict,0.01,0.1,0.9,4,0.005408229306340157,"[5, 25]",,0.1
+Young,dense,moderate,0.02,0.2,0.8,5,0.015178050845861412,"[5, 25]",,0.2
+Young,dense,loose,0.05,0.35,0.65,6,0.09885527938604352,"[5, 25]",,0.4

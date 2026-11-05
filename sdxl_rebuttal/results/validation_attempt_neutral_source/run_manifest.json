@@ -1,0 +1,92 @@
+{
+  "concepts": [
+    "Smiling",
+    "Young",
+    "Eyeglasses"
+  ],
+  "config": {
+    "_config_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/configs/validation.yaml",
+    "activation_step_indices": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45
+    ],
+    "alignment": {
+      "clip_weight": 1.0,
+      "lr": 0.0001,
+      "normalize_delta": true,
+      "preserve_weight": 0.8,
+      "steps": 100,
+      "train_alpha": 0.05,
+      "train_images": 32
+    },
+    "concepts": {
+      "Eyeglasses": {
+        "target_prompt": "a neutral high quality portrait photograph of one person wearing eyeglasses, centered, facing the camera"
+      },
+      "Smiling": {
+        "target_prompt": "a neutral high quality portrait photograph of one smiling person, centered, facing the camera"
+      },
+      "Young": {
+        "target_prompt": "a neutral high quality portrait photograph of one young person, centered, facing the camera"
+      }
+    },
+    "data_dir": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024",
+    "edit": {
+      "strengths": [
+        0.0,
+        0.025,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "timestep_ranges": [
+        [
+          5,
+          25
+        ]
+      ],
+      "topks": [
+        16,
+        64,
+        256
+      ]
+    },
+    "guidance_scale": 1.0,
+    "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+    "neutral_prompt": "a neutral high quality portrait photograph of one person, centered, facing the camera",
+    "num_inference_steps": 50,
+    "resolution": 1024,
+    "result_dir": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation",
+    "sae": {
+      "batch_tokens": 2048,
+      "expansion": 8,
+      "l1": 1.0,
+      "lr": 0.0003,
+      "steps": 400
+    },
+    "seed": 2025,
+    "stage": "validation",
+    "test_count": 8,
+    "test_manifest": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/manifests/main_test_ids.txt",
+    "tokens_per_activation": 96,
+    "train_ids": {
+      "count": 64,
+      "start": 1
+    },
+    "work_dir": "/tmp/casl_sdxl/validation"
+  },
+  "cuda": "12.6",
+  "device": "cuda:0",
+  "methods": [
+    "casl",
+    "dense"
+  ],
+  "torch_version": "2.7.0+cu126"
+}

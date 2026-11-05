@@ -44,7 +44,8 @@ def denoising_step(xt, t, t_next, *,
                    perturb=False,
                    topk_indices=None,
                    scale_to_analyze=None,
-                   delta_sae = True
+                   delta_sae=True,
+                   additive_dense_h=False,
                    ):
 
     # Compute noise and variance
@@ -54,7 +55,8 @@ def denoising_step(xt, t, t_next, *,
                                                      perturb=perturb, 
                                                      topk_indices=topk_indices, 
                                                      scale_to_analyze=scale_to_analyze, 
-                                                     delta_sae=delta_sae)
+                                                     delta_sae=delta_sae,
+                                                     additive_dense_h=additive_dense_h)
     # import pdb; pdb.set_trace()
     if learn_sigma:
         et, logvar_learned = torch.split(et, et.shape[1] // 2, dim=1)

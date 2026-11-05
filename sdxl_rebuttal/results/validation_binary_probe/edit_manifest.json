@@ -1,0 +1,626 @@
+[
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/casl/steps05-25/topk64/a0p8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": 64
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Smiling/dense/steps05-25/dense/a0p8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/casl/steps05-25/topk64/a0p8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": 64
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": null
+  },
+  {
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Young/dense/steps05-25/dense/a0p8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/casl/steps05-25/topk64/a0p8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": 64
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.1,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.2,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.4,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29501.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": null
+  },
+  {
+    "concept": "Eyeglasses",
+    "image_id": "29502.jpg",
+    "method": "dense",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation_binary_probe/edits/Eyeglasses/dense/steps05-25/dense/a0p8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "reused",
+    "strength": 0.8,
+    "topk": null
+  }
+]

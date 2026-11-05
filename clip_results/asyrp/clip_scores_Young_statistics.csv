@@ -1,0 +1,9 @@
+metric,value
+prompt,a young face
+image_dir,../Asyrp_official/runs/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images
+mean,0.21123063005506992
+variance,0.00022208519969761295
+std,0.014902523266132247
+min,0.18899786472320557
+max,0.24041646718978882
+count,32.0

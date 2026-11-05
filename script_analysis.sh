@@ -1,10 +1,9 @@
 #!/bin/bash
 
 sh_file_name="script_analysis.sh"
-gpu="0"
-
+gpu="3"
 config="church.yml" # if you use other dataset, config/path_config.py should be matched
-guid="church_snowy_church" # guid should be in utils/text_dic.py
+guid="church_gothic" # guid should be in utils/text_dic.py
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
 
 # this is for sae analysis
@@ -28,7 +27,7 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --sae_analysis                     \
                         --do_test 1                                         \
                         --n_train_img 100                                   \
                         --n_test_img 32                                     \
-                        --n_iter 1                                          \
+                        --n_iter 5                                          \
                         --bs_train 1                                        \
                         --t_0 999                                           \
                         --n_inv_step 50                                     \

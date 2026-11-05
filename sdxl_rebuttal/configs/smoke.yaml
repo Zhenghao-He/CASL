@@ -1,0 +1,42 @@
+stage: smoke
+model_id: stabilityai/stable-diffusion-xl-base-1.0
+data_dir: /p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024
+test_manifest: manifests/main_test_ids.txt
+work_dir: /tmp/casl_sdxl/smoke
+result_dir: results/smoke
+neutral_prompt: a neutral high quality portrait photograph of one person, centered, facing the camera
+resolution: 512
+seed: 2025
+num_inference_steps: 50
+guidance_scale: 1.0
+train_ids:
+  start: 1
+  count: 8
+test_count: 2
+activation_step_indices: [5, 15, 25, 35, 45]
+tokens_per_activation: 64
+sae:
+  expansion: 4
+  steps: 50
+  batch_tokens: 512
+  lr: 0.0003
+  l1: 0.0001
+alignment:
+  train_images: 4
+  steps: 4
+  lr: 0.0001
+  clip_weight: 1.0
+  preserve_weight: 0.8
+  train_alpha: 0.05
+  normalize_delta: true
+edit:
+  timestep_ranges: [[5, 25]]
+  strengths: [0.0, 0.05]
+  topks: [16]
+concepts:
+  Smiling:
+    target_prompt: a neutral high quality portrait photograph of one smiling person, centered, facing the camera
+  Young:
+    target_prompt: a neutral high quality portrait photograph of one young person, centered, facing the camera
+  Eyeglasses:
+    target_prompt: a neutral high quality portrait photograph of one person wearing eyeglasses, centered, facing the camera

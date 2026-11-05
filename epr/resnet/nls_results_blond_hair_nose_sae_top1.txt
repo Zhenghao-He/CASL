@@ -1,0 +1,6 @@
+NLS: 2.4000
+Target score mean change: 0.1250
+Non-target mean change: 0.0521
+Target accuracy before: 0.969
+Target accuracy after: 0.844
+Target label flip rate: 0.125

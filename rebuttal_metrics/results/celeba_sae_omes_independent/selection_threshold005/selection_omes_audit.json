@@ -1,0 +1,29 @@
+{
+  "representation": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/representations_t509_mean.npy",
+  "classes": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes_independent/classes.csv",
+  "n_samples": 4096,
+  "n_latents": 65536,
+  "n_active": 691,
+  "inactive_threshold": 0.005,
+  "pooling": "average pooling in targeted OS/MES",
+  "alpha": 0.5,
+  "factors": [
+    "Smiling",
+    "Young",
+    "Big_Nose",
+    "Beards",
+    "Blond_Hair"
+  ],
+  "n_observed_factor_configurations": 31,
+  "configuration_count_min": 1,
+  "configuration_count_max": 962,
+  "exact_centroid_pairs_per_factor": {
+    "Smiling": 15,
+    "Young": 15,
+    "Big_Nose": 15,
+    "Beards": 15,
+    "Blond_Hair": 15
+  },
+  "random_seeds": 1000,
+  "protocol": "For each factor and k, compute official-style OS/MES on exactly k selected active rows of one shared full relation matrix; average factor scores. Class centroids marginalize identity nuisance."
+}

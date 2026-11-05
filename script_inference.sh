@@ -7,6 +7,8 @@ guid="smiling"
 test_step=50    # if large, it takes long time.
 dt_lambda=1.0   # hyperparameter for dt_lambda. This is the method that will appear in the next paper.
 export XDG_CACHE_HOME=/p/realai/zhenghao/cache
+export PYTHONPATH=$(pwd)
+
 CUDA_VISIBLE_DEVICES=$gpu python main.py --run_test                         \
                         --config $config                                    \
                         --exp ./runs/${guid}                                \

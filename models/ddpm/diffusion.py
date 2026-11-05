@@ -561,7 +561,7 @@ class DDPM(nn.Module):
         return temb
 
 
-    def forward(self, x, t, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae = True):
+    def forward(self, x, t, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae=True, additive_dense_h=False):
         assert x.shape[2] == x.shape[3] == self.resolution
 
         # timestep embedding
@@ -625,7 +625,9 @@ class DDPM(nn.Module):
                         h2 += delta_h * hs_coeff[i+1]
                 # use input delta_h  : even tough you does not use DeltaBlock, you need to use index is 0.
                 else: # DiffStyle; Just ignore this code. We will update about it in README.md later.
-                    if use_mask:
+                    if additive_dense_h:
+                        h2 = h * hs_coeff[0] + delta_h * hs_coeff[1]
+                    elif use_mask:
                         mask = torch.zeros_like(h)
                         mask[:,:,4:-1,3:5] = 1.0
                         inverted_mask = 1 - mask

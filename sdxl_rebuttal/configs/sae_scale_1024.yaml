@@ -1,0 +1,27 @@
+stage: sae_scale_1024
+model_id: stabilityai/stable-diffusion-xl-base-1.0
+data_dir: /p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024
+test_manifest: manifests/main_test_ids.txt
+work_dir: /tmp/casl_sdxl/sae_scale_1024
+result_dir: results/sae_scale_1024
+neutral_prompt: a neutral high quality portrait photograph of one person, centered, facing the camera
+resolution: 1024
+seed: 2025
+num_inference_steps: 50
+guidance_scale: 1.0
+train_ids:
+  start: 1
+  count: 1024
+test_count: 32
+activation_step_indices: [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47]
+tokens_per_activation: 128
+sae:
+  expansion: 8
+  steps: 1600
+  batch_tokens: 4096
+  lr: 0.0003
+  l1: 1.0
+concepts:
+  Smiling:
+    source_prompt: a neutral high quality portrait photograph of one person with a neutral expression
+    target_prompt: a neutral high quality portrait photograph of one smiling person, centered, facing the camera

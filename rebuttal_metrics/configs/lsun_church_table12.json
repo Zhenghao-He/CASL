@@ -1,0 +1,107 @@
+{
+  "dataset": "LSUN-Church",
+  "source_dir": "runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+  "source_text": "a photo of a church outdoors",
+  "source_descriptions": {
+    "type": "json",
+    "path": "rebuttal_metrics/descriptions/lsun_church_florence2.json"
+  },
+  "concepts": {
+    "Gothic": {
+      "target_text": "a photo of a Gothic church",
+      "target_descriptions": [
+        "The church has Gothic architecture",
+        "The building has pointed arches",
+        "The church has tall narrow windows",
+        "The facade contains ornate stone details",
+        "The building has a steep vertical silhouette",
+        "The church has spires or pinnacles",
+        "The architecture appears medieval",
+        "The exterior has Gothic decorative elements"
+      ]
+    },
+    "Red_Brick": {
+      "target_text": "a photo of a red brick church",
+      "target_descriptions": [
+        "The church walls are made of red brick",
+        "The facade has a reddish brown color",
+        "Individual bricks are visible on the exterior",
+        "The church has masonry walls",
+        "The building has warm red tones",
+        "The exterior texture is brick",
+        "The church has a red brick facade",
+        "Brickwork covers the main building"
+      ]
+    },
+    "Snowy": {
+      "target_text": "a photo of a snowy church",
+      "target_descriptions": [
+        "Snow covers the ground around the church",
+        "The church roof has visible snow",
+        "The scene has a cold winter appearance",
+        "White snow surrounds the building",
+        "The outdoor environment is snowy",
+        "The church is shown in winter weather",
+        "Snow is visible on architectural surfaces",
+        "The scene contains bright white snow"
+      ]
+    },
+    "Wooden": {
+      "target_text": "a photo of a wooden church",
+      "target_descriptions": [
+        "The church exterior is made of wood",
+        "Wooden boards cover the building",
+        "The facade has a natural brown color",
+        "Visible wood grain appears on the walls",
+        "The church has timber construction",
+        "The exterior contains wooden panels",
+        "The architecture resembles a wooden house",
+        "Wood is the dominant building material"
+      ]
+    }
+  },
+  "methods": {
+    "Reconstruction": {
+      "Gothic": "runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+      "Red_Brick": "runs/church_red_brick_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+      "Snowy": "runs/church_snowy_church_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+      "Wooden": "runs/church_wooden_house_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images"
+    },
+    "CASL-Steer": {
+      "Gothic": {
+        "source_dir": "runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/church_gothic_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images"
+      },
+      "Red_Brick": {
+        "source_dir": "runs/church_red_brick_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/church_red_brick_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images"
+      },
+      "Snowy": {
+        "source_dir": "runs/church_snowy_church_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/church_snowy_church_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images"
+      },
+      "Wooden": {
+        "source_dir": "runs/church_wooden_house_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/church_wooden_house_LC_church_outdoor_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale16/delta_h/images"
+      }
+    },
+    "Asyrp": {
+      "Gothic": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_church_gothic_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_church_gothic_split/edit"
+      },
+      "Red_Brick": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_church_red_brick_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_church_red_brick_split/edit"
+      },
+      "Snowy": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_church_snowy_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_church_snowy_split/edit"
+      },
+      "Wooden": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_church_wooden_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_church_wooden_split/edit"
+      }
+    }
+  }
+}

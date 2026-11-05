@@ -26,9 +26,9 @@ from models.improved_ddpm.script_util import i_DDPM
 from utils.diffusion_utils import get_beta_schedule, denoising_step
 from utils.text_dic import SRC_TRG_TXT_DIC
 from losses import id_loss
-from datasets.data_utils import get_dataset, get_dataloader
+from asyrp_datasets.data_utils import get_dataset, get_dataloader
 from configs.paths_config import DATASET_PATHS, MODEL_PATHS
-from datasets.imagenet_dic import IMAGENET_DIC
+from asyrp_datasets.imagenet_dic import IMAGENET_DIC
 from utils.analyze_utils import analyze_soft_mask_distribution_save
 class Asyrp(object):
     def __init__(self, args, config, device=None):
@@ -270,7 +270,7 @@ class Asyrp(object):
                         img_dir = parent_folder,
                         show_kde=True
                     )
-                    # import pdb; pdb.set_trace()
+                    import pdb; pdb.set_trace()
                     topk_indices = torch.topk(importance, self.args.top_k_indice).indices
                     os.makedirs(f"sae/{exp_id}", exist_ok=True)
                     index_save_name = f"sae/{exp_id}/top{self.args.top_k_indice}_indices_sae_model_{self.args.activation}{self.args.k if self.args.activation == 'TopK' else None}_alpha{self.args.alpha}_scale{self.args.scale}.pt"
@@ -315,11 +315,17 @@ class Asyrp(object):
                         is_mask=self.args.masked_xblock,
                         dataset=self.config.data.category)
         model.to(self.device)
-        for i in range(self.args.get_h_num):                   
+        for i in range(self.args.get_h_num):
             get_h = getattr(model, f"layer_{i}")
-            state = torch.load(save_name)[f"{i}"]
-            del state["sae.activation_state_dict"]
-            get_h.load_state_dict(state)
+            if self.args.sae_decoder_only:
+                with torch.no_grad():
+                    get_h.decoder.mlp.weight.copy_(get_h.sae.decoder.weight)
+                    get_h.decoder.mlp.bias.zero_()
+            else:
+                state = torch.load(save_name)[f"{i}"]
+                state.pop("sae.activation_state_dict", None)
+                state.pop("sae.activation", None)
+                get_h.load_state_dict(state)
 
         # import pdb; pdb.set_trace()
         x_lat_tensor = None
@@ -360,8 +366,15 @@ class Asyrp(object):
             if (step+1) % self.args.bs_train != 0:
                 continue
         
-            # for scale in range(18,32,2):
-            for scale in range(34,64,4):
+            if self.args.sae_strengths:
+                strengths = [
+                    float(value)
+                    for value in self.args.sae_strengths.split(",")
+                    if value.strip()
+                ]
+            else:
+                strengths = range(34, 64, 4)
+            for scale in strengths:
                 img_folder = os.path.join(save_folder, f'test_{self.args.n_iter - 1}_scale{scale}')
                 # import pdb; pdb.set_trace()
                 os.makedirs(img_folder, exist_ok=True)
@@ -445,7 +458,9 @@ class Asyrp(object):
                                   alpha=self.args.alpha, 
                                   scale=self.args.scale,
                                   is_mask=self.args.masked_xblock,
-                                  dataset=self.config.data.category
+                                  dataset=self.config.data.category,
+                                  mapping_type=self.args.alignment_mapping,
+                                  hidden_dim=self.args.alignment_hidden_dim,
                                   )
             print("Setattr layers")
             model = model.to(self.device)
@@ -610,6 +625,7 @@ class Asyrp(object):
                                                             delta_h= delta_h_dict[0] if (self.args.ignore_timesteps and self.args.train_delta_h) else delta_h_dict[t[0].item()],
                                                             ignore_timestep=self.args.ignore_timesteps,
                                                             delta_sae = self.args.delta_h, # if you want to use sae to train delta
+                                                            additive_dense_h=self.args.additive_dense_h,
                                                             )
                                                             # when train delta_block, delta_h is None (ignored)
                                 # step 2: DDIM
@@ -637,7 +653,7 @@ class Asyrp(object):
 
                                 # Following DiffusionCLIP, we use direction clip loss as below
                                 loss_clip = -torch.log((2 - clip_loss_func(x0, self.src_txts[0], x0_t, self.trg_txts[0])) / 2)
-                                
+                                # import pdb; pdb.set_trace()
                                 # mask loss
                                 # loss_mask += torch.norm(mask, p=1)
                                 # l0_reg = sum(m.regularization() for m in model.modules() if hasattr(m, "regularization"))
@@ -855,6 +871,7 @@ class Asyrp(object):
                                         perturb=perturb,
                                         topk_indices=topk_indices,
                                         scale_to_analyze=scale_to_analyze,
+                                        additive_dense_h=self.args.additive_dense_h,
                                         )
                         progress_bar.update(1)
 
@@ -973,6 +990,7 @@ class Asyrp(object):
                                         perturb=perturb,
                                         topk_indices=topk_indices,
                                         scale_to_analyze=scale_to_analyze,
+                                        additive_dense_h=self.args.additive_dense_h,
                                         )
                         progress_bar.update(1)
 
@@ -1071,6 +1089,7 @@ class Asyrp(object):
                 save_name = f'checkpoint/{exp_id}_{self.args.n_iter - 1}_{self.args.choose_checkpoint_num}.pth'
         
         # For global delta h
+        load_dict = False
         if self.args.num_mean_of_delta_hs:
             # already exist then load
             if os.path.isfile(f"checkpoint_latent/{exp_id}_{self.args.n_test_step}_{self.args.num_mean_of_delta_hs}.pth"):
@@ -1905,6 +1924,7 @@ class Asyrp(object):
         # import pdb; pdb.set_trace()
 
         C = h_samples[0]["middle_h"].shape[1]
+        import pdb; pdb.set_trace()
         from models.sae.sae import Autoencoder, ACTIVATIONS_CLASSES
         # 初始化 SAE
         if activation == "TopK":

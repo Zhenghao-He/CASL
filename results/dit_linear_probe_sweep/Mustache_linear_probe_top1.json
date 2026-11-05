@@ -1,0 +1,57 @@
+{
+  "concept": "Mustache",
+  "seed": 42,
+  "num_samples": 2000,
+  "num_positive": 1000,
+  "num_negative": 1000,
+  "raw_block_shape": [
+    4,
+    256,
+    1152
+  ],
+  "pooled_shape": [
+    2000,
+    1152
+  ],
+  "feature_shape": [
+    2000,
+    1
+  ],
+  "top_k_features": 1,
+  "test_size": 0.2,
+  "accuracy": 0.6225,
+  "auc": 0.6589,
+  "index_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_concept_latents/Mustache_top100_indices.pt",
+  "sae_checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm32_l10.01.pt",
+  "top_ranked_latents": [
+    {
+      "rank": 1,
+      "subset_position": 0,
+      "latent_index": 33426,
+      "weight": -0.4932739258806252,
+      "abs_weight": 0.4932739258806252
+    }
+  ],
+  "sampled_paths": [
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/07717.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/21256.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/28542.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/08774.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/23622.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/15937.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/03350.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/12087.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/22527.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/27294.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/21666.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/07482.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/14958.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/06564.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/02652.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/02059.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/09444.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/24150.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/26951.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/00287.jpg"
+  ]
+}

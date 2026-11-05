@@ -1,0 +1,85 @@
+{
+  "selection_rule": "largest positive standardized target-vs-nontarget mean activation; label-assisted SAE unit selection",
+  "stage2_supervision": false,
+  "representations": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/rebuttal_metrics/results/celeba_sae_omes/representations_t509_mean.npy",
+  "sae": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/CelebA_HQ_P2/sae_model_ReLUNone_alpha32.0_scale128.pth",
+  "selection_images": 1000,
+  "top_k": 1,
+  "concepts": {
+    "smiling": {
+      "label": "Smiling",
+      "label_inverted": false,
+      "selected_indices": [
+        7798
+      ],
+      "signed_scores": [
+        0.20181435346603394
+      ],
+      "positive_count": 522,
+      "negative_count": 478,
+      "index_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/sae_only_v2_smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50/top1024_indices_sae_model_ReLUNone_alpha32.0_scale128.pt",
+      "checkpoint_path": null,
+      "decoder": "shared frozen SAE decoder"
+    },
+    "young": {
+      "label": "Young",
+      "label_inverted": false,
+      "selected_indices": [
+        45926
+      ],
+      "signed_scores": [
+        0.2082042396068573
+      ],
+      "positive_count": 780,
+      "negative_count": 220,
+      "index_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/sae_only_v2_young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/top1024_indices_sae_model_ReLUNone_alpha32.0_scale128.pt",
+      "checkpoint_path": null,
+      "decoder": "shared frozen SAE decoder"
+    },
+    "big_nose": {
+      "label": "Big_Nose",
+      "label_inverted": false,
+      "selected_indices": [
+        15115
+      ],
+      "signed_scores": [
+        0.17270717024803162
+      ],
+      "positive_count": 386,
+      "negative_count": 614,
+      "index_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/sae_only_v2_big_nose_LC_CelebA_HQ_P2_t999_ninv50_ngen50/top1024_indices_sae_model_ReLUNone_alpha32.0_scale128.pt",
+      "checkpoint_path": null,
+      "decoder": "shared frozen SAE decoder"
+    },
+    "beards": {
+      "label": "Beards",
+      "label_inverted": true,
+      "selected_indices": [
+        25649
+      ],
+      "signed_scores": [
+        0.2370028793811798
+      ],
+      "positive_count": 127,
+      "negative_count": 873,
+      "index_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/sae_only_v2_beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50/top1024_indices_sae_model_ReLUNone_alpha32.0_scale128.pt",
+      "checkpoint_path": null,
+      "decoder": "shared frozen SAE decoder"
+    },
+    "blond_hair": {
+      "label": "Blond_Hair",
+      "label_inverted": false,
+      "selected_indices": [
+        47196
+      ],
+      "signed_scores": [
+        0.25066131353378296
+      ],
+      "positive_count": 190,
+      "negative_count": 810,
+      "index_path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sae/sae_only_v2_blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50/top1024_indices_sae_model_ReLUNone_alpha32.0_scale128.pt",
+      "checkpoint_path": null,
+      "decoder": "shared frozen SAE decoder"
+    }
+  }
+}

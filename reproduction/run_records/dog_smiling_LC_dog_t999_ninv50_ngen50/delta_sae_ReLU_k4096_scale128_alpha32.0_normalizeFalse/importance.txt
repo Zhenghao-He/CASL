@@ -1,0 +1,40 @@
+=== Soft Mask Analysis ===
+min: 0.002162
+max: 0.010463
+mean: 0.002618
+median: 0.002605
+std: 0.000191
+>0.01 ratio: 0.000015
+10% quantile: 0.002472
+90% quantile: 0.002743
+
+=== Soft Mask Analysis ===
+min: 0.002162
+max: 0.010463
+mean: 0.002618
+median: 0.002605
+std: 0.000191
+>0.01 ratio: 0.000015
+10% quantile: 0.002472
+90% quantile: 0.002743
+
+=== Soft Mask Analysis ===
+min: 0.002162
+max: 0.010463
+mean: 0.002618
+median: 0.002605
+std: 0.000191
+>0.01 ratio: 0.000015
+10% quantile: 0.002472
+90% quantile: 0.002743
+
+=== Soft Mask Analysis ===
+min: 0.002162
+max: 0.018506
+mean: 0.002634
+median: 0.002605
+std: 0.000362
+>0.01 ratio: 0.000290
+10% quantile: 0.002472
+90% quantile: 0.002743
+

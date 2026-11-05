@@ -1,0 +1,59 @@
+seed: 42
+lfm_root: third_party/lfm
+checkpoint: third_party/lfm/saved_info/latent_flow/celeba_256/celeb_f8_dit/model_475.pth
+vae: stabilityai/sd-vae-ft-mse
+source_dir: ../CelebA-HQ/data1024
+output_dir: results/flow_uspace_large
+image_limit: 4096
+resolution: 256
+scale_factor: 0.18215
+euler_steps: 50
+
+sae:
+  name: tokenwise_topk20
+  input_mode: tokenwise
+  expansion: 32
+  activation_topk: 20
+  samples_per_image: 4
+  steps: 3000
+  batch_size: 65536
+  lr: 0.001
+  l1: 0
+  val_fraction: 0.1
+
+alignment:
+  casl_variant: mapping
+  concepts:
+    smiling: {source: "a portrait of a person with a neutral expression", target: "a portrait of a smiling person"}
+    young: {source: "a portrait of an old person", target: "a portrait of a young person"}
+    eyeglasses: {source: "a portrait of a person without eyeglasses", target: "a portrait of a person wearing eyeglasses"}
+    male: {source: "a portrait of a woman", target: "a portrait of a man"}
+    mustache: {source: "a portrait of a person without a mustache", target: "a portrait of a person with a mustache"}
+    big_nose: {source: "a portrait of a person with a small nose", target: "a portrait of a person with a big nose"}
+    beard: {source: "a portrait of a clean-shaven person", target: "a portrait of a person with a beard"}
+    no_beard: {source: "a portrait of a person with a beard", target: "a portrait of a clean-shaven person without a beard"}
+    blond_hair: {source: "a portrait of a person with dark hair", target: "a portrait of a person with blond hair"}
+    bangs: {source: "a portrait of a person without bangs", target: "a portrait of a person with bangs"}
+    heavy_makeup: {source: "a portrait of a person without makeup", target: "a portrait of a person wearing heavy makeup"}
+    chubby: {source: "a portrait of a thin-faced person", target: "a portrait of a chubby person"}
+  train_offset: 4096
+  train_images: 16
+  steps: 160
+  lr: 0.03
+  t: 0.5
+  topk: 8
+  train_strength: 0.05
+  preserve_weight: 1.0
+
+edit:
+  test_offset: 5000
+  test_images: 32
+  concepts: [smiling, young, big_nose, beard, blond_hair, eyeglasses, male, mustache, no_beard, bangs, heavy_makeup, chubby]
+  methods: [inversion, dense, casl]
+  strengths: [-4, -2, -1, 0, 1, 2, 4]
+  dense_strengths: [-4, -2, -1, 0, 1, 2, 4]
+  casl_strengths: [-1, -0.5, -0.25, -0.1, 0, 0.1, 0.25, 0.5, 1]
+  base_rms: 0.05
+  topks: [1, 2, 4, 8, 16]
+  edit_t_min: 0.35
+  edit_t_max: 0.75

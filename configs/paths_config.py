@@ -1,8 +1,14 @@
+import os
+from pathlib import Path
+
+# Set CASL_DATA_ROOT when datasets live outside the historical sibling layout.
+DATA_ROOT = Path(os.environ.get('CASL_DATA_ROOT', Path(__file__).resolve().parents[2]))
+
 DATASET_PATHS = {
-	'FFHQ': '/p/realai/zhenghao/LoRA_SAE/ffhq-dataset/images1024x1024/00000/',
-	'CelebA_HQ_P2': '/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024',
-	'AFHQ': '/p/realai/zhenghao/LoRA_SAE/stargan-v2/data/',
-	'LSUN':  '/p/realai/zhenghao/LoRA_SAE/lsun/church',
+	'FFHQ': str(DATA_ROOT / 'ffhq-dataset/images1024x1024/00000'),
+	'CelebA_HQ_P2': str(DATA_ROOT / 'CelebA-HQ/data1024'),
+	'AFHQ': str(DATA_ROOT / 'stargan-v2/data'),
+	'LSUN': str(DATA_ROOT / 'lsun/church'),
     'IMAGENET': '/hdd1/datasets/imagenet/',
 	'CUSTOM': '/hdd1/custom/',
 	'CelebA_HQ_Dialog': '/hdd1/datasets/img_align_celeba/',

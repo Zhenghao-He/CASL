@@ -1,0 +1,9 @@
+metric,value
+prompt,a face with beards
+image_dir,runs/beards_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/delta_h/images
+mean,0.16269913385622203
+variance,0.0018941415284801622
+std,0.04352173627602835
+min,0.08091042190790176
+max,0.25198206305503845
+count,32.0

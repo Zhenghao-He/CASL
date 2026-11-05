@@ -1,0 +1,804 @@
+{
+	"000044.jpg": {
+		"prompt": [
+			"Curly hair",
+			"Frizzy hair"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.4516129032258065,
+			0.5483870967741935
+		],
+		"augclip": [
+			0.64892578125,
+			0.84521484375
+		],
+		"clipscore": [
+			0.02923583984375,
+			-0.030426025390625
+		]
+	},
+	"001822.jpg": {
+		"prompt": [
+			"Crow's feet skin",
+			"Smooth skin"
+		],
+		"model": [
+			"dummy",
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.7741935483870968,
+			0.22580645161290322
+		]
+	},
+	"002645.jpg": {
+		"prompt": [
+			"Low arch of the eyebrows",
+			"High arch of the eyebrows"
+		],
+		"model": [
+			"styleclip",
+			"asyrp"
+		],
+		"h_score": [
+			0.8387096774193549,
+			0.16129032258064516
+		],
+		"augclip": [
+			0.72607421875,
+			0.79296875
+		],
+		"clipscore": [
+			-0.016204833984375,
+			-0.04229736328125
+		]
+	},
+	"002803.jpg": {
+		"prompt": [
+			"Defined jawline",
+			"Double chin jawline"
+		],
+		"model": [
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			0.6774193548387097,
+			0.3225806451612903
+		],
+		"augclip": [
+			0.7958984375,
+			0.6279296875
+		],
+		"clipscore": [
+			0.0184783935546875,
+			-0.034820556640625
+		]
+	},
+	"002991.jpg": {
+		"prompt": [
+			"Square jawline",
+			"Soft jawline"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.22580645161290325,
+			0.7741935483870968
+		],
+		"augclip": [
+			0.689453125,
+			0.8935546875
+		],
+		"clipscore": [
+			0.0009632110595703125,
+			-0.0301513671875
+		]
+	},
+	"003038.jpg": {
+		"prompt": [
+			"Low arch of the eyebrows",
+			"High arch of the eyebrows"
+		],
+		"model": [
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			0.967741935483871,
+			0.03225806451612903
+		],
+		"augclip": [
+			0.83056640625,
+			0.68896484375
+		],
+		"clipscore": [
+			0.005107879638671875,
+			0.030487060546875
+		]
+	},
+	"003123.jpg": {
+		"prompt": [
+			"High jawline",
+			"Low jawline"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.16129032258064513,
+			0.8387096774193549
+		],
+		"augclip": [
+			0.7099609375,
+			0.83447265625
+		],
+		"clipscore": [
+			0.0399169921875,
+			0.049072265625
+		]
+	},
+	"003524.jpg": {
+		"prompt": [
+			"Almond-shaped eyes",
+			"Round eyes"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.25806451612903225,
+			0.7419354838709677
+		],
+		"augclip": [
+			0.900390625,
+			0.8681640625
+		],
+		"clipscore": [
+			0.003482818603515625,
+			-0.033355712890625
+		]
+	},
+	"004045.jpg": {
+		"prompt": [
+			"Blonde hair",
+			"Brunette hair"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.7096774193548387,
+			0.2903225806451613
+		],
+		"augclip": [
+			0.82568359375,
+			0.859375
+		],
+		"clipscore": [
+			0.133056640625,
+			0.00978851318359375
+		]
+	},
+	"004659.jpg": {
+		"prompt": [
+			"Wavy hair",
+			"Straight hair"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.29032258064516125,
+			0.7096774193548387
+		],
+		"augclip": [
+			0.8203125,
+			0.89501953125
+		],
+		"clipscore": [
+			-0.0179901123046875,
+			0.03857421875
+		]
+	},
+	"004690.jpg": {
+		"prompt": [
+			"Rosy cheeks complexion",
+			"Pale complexion"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.5161290322580645,
+			0.4838709677419355
+		],
+		"augclip": [
+			0.91455078125,
+			0.935546875
+		],
+		"clipscore": [
+			0.07000732421875,
+			-0.00919342041015625
+		]
+	},
+	"005751.jpg": {
+		"prompt": [
+			"Crooked teeth",
+			"Straight teeth"
+		],
+		"model": [
+			"dummy",
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.032258064516129004,
+			0.967741935483871
+		]
+	},
+	"006639.jpg": {
+		"prompt": [
+			"Red hair",
+			"Black hair"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.3870967741935484,
+			0.6129032258064516
+		],
+		"augclip": [
+			0.83740234375,
+			0.78955078125
+		],
+		"clipscore": [
+			0.03277587890625,
+			0.1708984375
+		]
+	},
+	"006888.jpg": {
+		"prompt": [
+			"Wide-set eyes",
+			"Close-set eyes"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.5806451612903225,
+			0.41935483870967744
+		],
+		"augclip": [
+			0.830078125,
+			0.8486328125
+		],
+		"clipscore": [
+			0.011566162109375,
+			-0.0003676414489746094
+		]
+	},
+	"007389.jpg": {
+		"prompt": [
+			"Rosacea skin",
+			"Clear skin"
+		],
+		"model": [
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			0.32258064516129037,
+			0.6774193548387096
+		],
+		"augclip": [
+			0.85302734375,
+			0.85888671875
+		],
+		"clipscore": [
+			-0.024658203125,
+			-0.07977294921875
+		]
+	},
+	"007519.jpg": {
+		"prompt": [
+			"Wide-set eyes",
+			"Close-set eyes"
+		],
+		"model": [
+			"dummy",
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		]
+	},
+	"008055.jpg": {
+		"prompt": [
+			"Wide-set eyes",
+			"Close-set eyes"
+		],
+		"model": [
+			"dummy",
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.29032258064516125,
+			0.7096774193548387
+		]
+	},
+	"008468.jpg": {
+		"prompt": [
+			"Laugh lines skin",
+			"Wrinkle-free skin"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.19354838709677424,
+			0.8064516129032258
+		],
+		"augclip": [
+			0.6640625,
+			0.873046875
+		],
+		"clipscore": [
+			0.0309906005859375,
+			0.0216827392578125
+		]
+	},
+	"008494.jpg": {
+		"prompt": [
+			"Gaunt face",
+			"Full face"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.5483870967741935,
+			0.45161290322580644
+		],
+		"augclip": [
+			0.896484375,
+			0.88427734375
+		],
+		"clipscore": [
+			0.01422882080078125,
+			-0.0063934326171875
+		]
+	},
+	"008812.jpg": {
+		"prompt": [
+			"Rosacea skin",
+			"Clear skin"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.6129032258064516,
+			0.3870967741935484
+		],
+		"augclip": [
+			0.8701171875,
+			0.89453125
+		],
+		"clipscore": [
+			0.01739501953125,
+			0.017913818359375
+		]
+	},
+	"008900.jpg": {
+		"prompt": [
+			"Facial hair",
+			"Clean-shaven"
+		],
+		"model": [
+			"dummy",
+			"styleclip",
+			"multi2one"
+		],
+		"h_score": [
+			0.967741935483871,
+			0.03225806451612903
+		]
+	},
+	"009599.jpg": {
+		"prompt": [
+			"Diamond-shaped face",
+			"Long face"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.19354838709677424,
+			0.8064516129032258
+		],
+		"augclip": [
+			0.7216796875,
+			0.73486328125
+		],
+		"clipscore": [
+			0.10479736328125,
+			0.11114501953125
+		]
+	},
+	"009658.jpg": {
+		"prompt": [
+			"Crooked teeth",
+			"Straight teeth"
+		],
+		"model": [
+			"dummy",
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		]
+	},
+	"009910.jpg": {
+		"prompt": [
+			"Wide-set eyes",
+			"Close-set eyes"
+		],
+		"model": [
+			"dummy",
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		]
+	},
+	"012198.jpg": {
+		"prompt": [
+			"Thick eyebrows",
+			"Thin eyebrows"
+		],
+		"model": [
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			0.22580645161290325,
+			0.7741935483870968
+		],
+		"augclip": [
+			0.751953125,
+			0.78173828125
+		],
+		"clipscore": [
+			0.029693603515625,
+			0.00635528564453125
+		]
+	},
+	"012807.jpg": {
+		"prompt": [
+			"Sparse eyebrows",
+			"Thick eyebrows"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.3548387096774194,
+			0.6451612903225806
+		],
+		"augclip": [
+			0.8720703125,
+			0.83984375
+		],
+		"clipscore": [
+			-0.00384521484375,
+			-0.0252227783203125
+		]
+	},
+	"012810.jpg": {
+		"prompt": [
+			"Prominent chin",
+			"Receding chin"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.09677419354838712,
+			0.9032258064516129
+		],
+		"augclip": [
+			0.7607421875,
+			0.89794921875
+		],
+		"clipscore": [
+			-0.060791015625,
+			0.1171875
+		]
+	},
+	"013108.jpg": {
+		"prompt": [
+			"Blonde hair",
+			"Brunette hair"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.5483870967741935,
+			0.45161290322580644
+		],
+		"augclip": [
+			0.80078125,
+			0.87841796875
+		],
+		"clipscore": [
+			0.1920166015625,
+			0.068603515625
+		]
+	},
+	"013133.jpg": {
+		"prompt": [
+			"Prominent chin",
+			"Receding chin"
+		],
+		"model": [
+			"dummy",
+			"styleclip",
+			"asyrp"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		]
+	},
+	"013251.jpg": {
+		"prompt": [
+			"Defined jawline",
+			"Double chin jawline"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.22580645161290325,
+			0.7741935483870968
+		],
+		"augclip": [
+			0.771484375,
+			0.8984375
+		],
+		"clipscore": [
+			0.10809326171875,
+			0.06689453125
+		]
+	},
+	"013461.jpg": {
+		"prompt": [
+			"Rosacea skin",
+			"Clear skin"
+		],
+		"model": [
+			"multi2one",
+			"styleclip"
+		],
+		"h_score": [
+			0.19354838709677424,
+			0.8064516129032258
+		],
+		"augclip": [
+			0.845703125,
+			0.89697265625
+		],
+		"clipscore": [
+			0.04705810546875,
+			0.1009521484375
+		]
+	},
+	"014564.jpg": {
+		"prompt": [
+			"Rosacea skin",
+			"Clear skin"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.032258064516129004,
+			0.967741935483871
+		],
+		"augclip": [
+			0.78369140625,
+			0.83056640625
+		],
+		"clipscore": [
+			-0.004962921142578125,
+			-0.0279541015625
+		]
+	},
+	"014752.jpg": {
+		"prompt": [
+			"Red hair",
+			"Black hair"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.09677419354838712,
+			0.9032258064516129
+		],
+		"augclip": [
+			0.87060546875,
+			0.85302734375
+		],
+		"clipscore": [
+			-0.00420379638671875,
+			0.279541015625
+		]
+	},
+	"015599.jpg": {
+		"prompt": [
+			"Deep-set eyes",
+			"Protruding eyes"
+		],
+		"model": [
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			0.967741935483871,
+			0.03225806451612903
+		],
+		"augclip": [
+			0.86474609375,
+			0.57861328125
+		],
+		"clipscore": [
+			0.0248565673828125,
+			0.052398681640625
+		]
+	},
+	"015675.jpg": {
+		"prompt": [
+			"Rosacea skin",
+			"Clear skin"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.29032258064516125,
+			0.7096774193548387
+		],
+		"augclip": [
+			0.75634765625,
+			0.85546875
+		],
+		"clipscore": [
+			-0.0635986328125,
+			-0.0767822265625
+		]
+	},
+	"016781.jpg": {
+		"prompt": [
+			"High forehead",
+			"Low forehead"
+		],
+		"model": [
+			"asyrp",
+			"multi2one"
+		],
+		"h_score": [
+			0.32258064516129037,
+			0.6774193548387096
+		],
+		"augclip": [
+			0.82421875,
+			0.8291015625
+		],
+		"clipscore": [
+			0.04010009765625,
+			0.08648681640625
+		]
+	},
+	"017014.jpg": {
+		"prompt": [
+			"Wide-set eyes",
+			"Close-set eyes"
+		],
+		"model": [
+			"multi2one",
+			"asyrp"
+		],
+		"h_score": [
+			0.9032258064516129,
+			0.0967741935483871
+		],
+		"augclip": [
+			0.68505859375,
+			0.65576171875
+		],
+		"clipscore": [
+			0.038177490234375,
+			0.027435302734375
+		]
+	},
+	"017096.jpg": {
+		"prompt": [
+			"Round face",
+			"Heart-shaped face"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.4838709677419355,
+			0.5161290322580645
+		],
+		"augclip": [
+			0.84130859375,
+			0.7822265625
+		],
+		"clipscore": [
+			-0.0120086669921875,
+			-0.037078857421875
+		]
+	},
+	"017253.jpg": {
+		"prompt": [
+			"Deep-set eyes",
+			"Protruding eyes"
+		],
+		"model": [
+			"asyrp",
+			"styleclip"
+		],
+		"h_score": [
+			0.25806451612903225,
+			0.7419354838709677
+		],
+		"augclip": [
+			0.84765625,
+			0.884765625
+		],
+		"clipscore": [
+			0.0423583984375,
+			-0.0276031494140625
+		]
+	}
+}

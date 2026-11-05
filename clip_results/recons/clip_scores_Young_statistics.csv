@@ -1,0 +1,9 @@
+metric,value
+prompt,a young face
+image_dir,runs/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/x0/images
+mean,0.17351009277626872
+variance,0.00017481167314142474
+std,0.013221636553068032
+min,0.13534574210643768
+max,0.196201890707016
+count,32.0

@@ -1,0 +1,34 @@
+stage: validation-schedule-probe
+model_id: stabilityai/stable-diffusion-xl-base-1.0
+data_dir: /p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024
+test_manifest: manifests/main_test_ids.txt
+work_dir: /tmp/casl_sdxl/validation
+result_dir: results/validation_schedule_probe
+neutral_prompt: a neutral high quality portrait photograph of one person, centered, facing the camera
+resolution: 1024
+seed: 2025
+num_inference_steps: 50
+guidance_scale: 1.0
+train_ids: {start: 1, count: 64}
+test_count: 2
+activation_step_indices: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+tokens_per_activation: 96
+sae: {expansion: 8, steps: 400, batch_tokens: 2048, lr: 0.0003, l1: 1.0}
+alignment:
+  train_images: 32
+  steps: 200
+  lr: 0.0001
+  clip_weight: 1.0
+  target_clip_weight: 1.0
+  target_temperature: 0.05
+  preserve_weight: 0.8
+  train_alpha: 0.05
+  normalize_delta: true
+edit:
+  timestep_ranges: [[0, 15], [5, 25], [10, 35], [0, 49]]
+  strengths: [0.2, 0.4, 0.8]
+  topks: [64]
+concepts:
+  Eyeglasses:
+    source_prompt: a high quality portrait photograph of one person without glasses
+    target_prompt: a neutral high quality portrait photograph of one person wearing eyeglasses, centered, facing the camera

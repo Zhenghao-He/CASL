@@ -1,0 +1,436 @@
+diff --git a/configs/paths_config.py b/configs/paths_config.py
+index 4307a1c..6312e87 100644
+--- a/configs/paths_config.py
++++ b/configs/paths_config.py
+@@ -1,8 +1,8 @@
+ DATASET_PATHS = {
+-	'FFHQ': '/hdd1/datasets/celeba_hq/',
+-	'CelebA_HQ': '/hdd1/datasets/celeba_hq/',
+-	'AFHQ': '/hdd1/datasets/afhq/',
+-	'LSUN':  '/hdd1/datasets/lsun/',
++	'FFHQ': '/p/realai/zhenghao/LoRA_SAE/ffhq-dataset/images1024x1024/00000/',
++	'CelebA_HQ_P2': '/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024',
++	'AFHQ': '/p/realai/zhenghao/LoRA_SAE/stargan-v2/data/',
++	'LSUN':  '/p/realai/zhenghao/LoRA_SAE/lsun/church/',
+     'IMAGENET': '/hdd1/datasets/imagenet/',
+ 	'CUSTOM': '/hdd1/custom/',
+ 	'CelebA_HQ_Dialog': '/hdd1/datasets/img_align_celeba/',
+@@ -10,8 +10,10 @@ DATASET_PATHS = {
+ }
+ 
+ MODEL_PATHS = {
+-	'AFHQ': "pretrained/afhq_dog_4m.pt",
+-	'FFHQ': "pretrained/ffhq_10m.pt",
++	'AFHQ': "../Asyrp_SAE/pretrained/afhqdog_p2.pt",
++	'FFHQ': "pretrained/ffhq_p2.pt",
++    'LSUN': "../Asyrp_SAE/pretrained/ddpm_church.pt",
++    'CelebA_HQ_P2': "pretrained/celebahq_p2.pt",
+ 	'ir_se50': 'pretrained/model_ir_se50.pth',
+     'IMAGENET': "pretrained/256x256_diffusion_uncond.pt",
+ 	'shape_predictor': "pretrained/shape_predictor_68_face_landmarks.dat.bz2",
+diff --git a/datasets/LSUN_dataset.py b/datasets/LSUN_dataset.py
+index 08b9805..f62c5b3 100644
+--- a/datasets/LSUN_dataset.py
++++ b/datasets/LSUN_dataset.py
+@@ -15,8 +15,11 @@ class VisionDataset(data.Dataset):
+     _repr_indent = 4
+ 
+     def __init__(self, root, transforms=None, transform=None, target_transform=None):
+-        if isinstance(root, torch._six.string_classes):
++        # if isinstance(root, torch._six.string_classes):
++        #     root = os.path.expanduser(root)
++        if isinstance(root, str):
+             root = os.path.expanduser(root)
++
+         self.root = root
+ 
+         has_transforms = transforms is not None
+diff --git a/datasets/data_utils.py b/datasets/data_utils.py
+index 5add2e2..7876af0 100644
+--- a/datasets/data_utils.py
++++ b/datasets/data_utils.py
+@@ -32,6 +32,30 @@ class CustomImageDataset(Dataset):
+             image = self.transform(image)
+ 
+         return image
++    
++class CustomImageDatasetWithName(Dataset):
++    def __init__(self, img_dir, transform=None, test_nums=None, train=True):
++        self.img_dir = img_dir
++        # 建议加上排序，保证文件顺序和标签一致
++        self.img_files = sorted(os.listdir(img_dir))
++        if test_nums is not None:
++            if train:
++                self.img_files = self.img_files[:-test_nums]
++            else:
++                self.img_files = self.img_files[-test_nums:]
++        self.transform = transform
++
++    def __len__(self):
++        return len(self.img_files)
++
++    def __getitem__(self, idx):
++        img_name = self.img_files[idx]
++        img_path = os.path.join(self.img_dir, img_name)
++        image = Image.open(img_path).convert('RGB')
++        if self.transform:
++            image = self.transform(image)
++
++        return image, img_name
+ 
+ def get_dataset(dataset_type, dataset_paths, config, target_class_num=None, gender=None):
+     # if category is CUSTOM, get images from custom arg path
+@@ -48,6 +72,9 @@ def get_dataset(dataset_type, dataset_paths, config, target_class_num=None, gend
+         train_dataset, test_dataset = get_celeba_dataset_attr(dataset_paths['CelebA_HQ'], config)
+     elif dataset_type == "CelebA_HQ":
+         train_dataset, test_dataset = get_celeba_dataset(dataset_paths['CelebA_HQ'], config)
++    elif dataset_type == "CelebA_HQ_P2":
++        train_dataset = CustomImageDatasetWithName(dataset_paths['CelebA_HQ_P2'], transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]), test_nums=500)
++        test_dataset = CustomImageDatasetWithName(dataset_paths['CelebA_HQ_P2'], transforms.Compose([transforms.Resize((256, 256)), transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]), test_nums=500, train=False)
+     elif dataset_type == "CelebA_HQ_Dialog":
+         train_dataset, test_dataset = get_celeba_dialog_dataset(dataset_paths['CelebA_HQ_Dialog'], config)
+     elif dataset_type == "IMAGENET":
+diff --git a/diffusion_latent.py b/diffusion_latent.py
+index 9726d46..03cfdf0 100644
+--- a/diffusion_latent.py
++++ b/diffusion_latent.py
+@@ -83,7 +83,7 @@ class Asyrp(object):
+                 url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/church_outdoor.ckpt"
+         elif self.config.data.dataset in ["CelebA_HQ", "CUSTOM", "CelebA_HQ_Dialog"]:
+             url = "https://image-editing-test-12345.s3-us-west-2.amazonaws.com/checkpoints/celeba_hq.ckpt"
+-        elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET", "MetFACE"]:
++        elif self.config.data.dataset in ["FFHQ", "AFHQ", "IMAGENET", "MetFACE", "CelebA_HQ_P2"]:
+             # get the model ["FFHQ", "AFHQ", "MetFACE"] from 
+             # https://1drv.ms/u/s!AkQjJhxDm0Fyhqp_4gkYjwVRBe8V_w?e=Et3ITH
+             # reference : ILVR (https://arxiv.org/abs/2108.02938), P2 weighting (https://arxiv.org/abs/2204.00227)
+@@ -102,6 +102,8 @@ class Asyrp(object):
+             model = DDPM(self.config) 
+             if self.args.model_path:
+                 init_ckpt = torch.load(self.args.model_path)
++            elif self.config.data.dataset == "LSUN":
++                init_ckpt = torch.load(MODEL_PATHS[self.config.data.dataset])
+             else:
+                 init_ckpt = torch.hub.load_state_dict_from_url(url, map_location=self.device)
+             self.learn_sigma = False
+@@ -261,7 +263,13 @@ class Asyrp(object):
+                     x_lat_tensor = None
+                     x0_tensor = None
+ 
+-                    for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['train']):
++                    for step, lat_pair in enumerate(img_lat_pairs_dic['train']):
++                        img_name = None
++                        if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
++                            x0, _, x_lat, img_name = lat_pair
++                            img_name = os.path.splitext(img_name[0])[0]
++                        else:
++                            x0, _, x_lat = lat_pair
+                         if self.args.target_image_id:
+                             assert self.args.bs_train == 1, "target_image_id is only supported for batch_size == 1"
+                             if not step in self.args.target_image_id:
+@@ -414,8 +422,14 @@ class Asyrp(object):
+             x_lat_tensor = None
+             x0_tensor = None
+ 
+-            for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['test']):
+-                    
++            for step, lat_pair in enumerate(img_lat_pairs_dic['test']):
++                img_name = None
++                if self.config.data.category == 'CelebA_HQ' or self.config.data.category == 'CelebA_HQ_P2':
++                    x0, _, x_lat, img_name = lat_pair
++                    img_name = os.path.splitext(img_name[0])[0]
++                else:
++                    x0, _, x_lat = lat_pair
++
+                 if x_lat_tensor is None:
+                     x_lat_tensor = x_lat
+                     if self.args.use_x0_tensor:
+@@ -426,12 +440,14 @@ class Asyrp(object):
+                         x0_tensor = torch.cat((x0_tensor, x0), dim=0)
+                 if (step+1) % self.args.bs_train != 0:
+                     continue
+-
+-                self.save_image(model, x_lat_tensor, seq_test, seq_test_next,
+-                                            save_x0 = self.args.save_x0, save_x_origin = self.args.save_x_origin,
+-                                            x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
+-                                            folder_dir=self.args.test_image_folder,
+-                                            file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
++                
++                folder = os.path.join(self.args.test_image_folder, f'iter{self.args.n_iter - 1}')
++                self.save_image_sae(model, x_lat_tensor, seq_test, seq_test_next,
++                                     save_x0=self.args.save_x0, save_x_origin=self.args.save_x_origin,
++                                     x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
++                                     folder_dir=folder,
++                                     file_name=f'test_{step}_{self.args.n_iter - 1}' if img_name is None else img_name,
++                                     hs_coeff=hs_coeff,
+                                             )
+                                         
+                 if step == self.args.n_test_img - 1:
+@@ -486,7 +502,7 @@ class Asyrp(object):
+                         output = torch.cat([x, x0_t], dim=0)
+                         output = (output + 1) * 0.5
+                         grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
+-                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalization=True)
++                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalize=True)
+ 
+                 x_list.append(x)
+ 
+@@ -524,7 +540,7 @@ class Asyrp(object):
+                             output = torch.cat([x, x0_t], dim=0)
+                             output = (output + 1) * 0.5
+                             grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
+-                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalization=True)
++                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalize=True)
+                         if get_delta_hs and t[0]>= self.t_edit:
+                             if delta_h_dict[t[0].item()] is None:
+                                 delta_h_dict[t[0].item()] = delta_h
+@@ -538,7 +554,7 @@ class Asyrp(object):
+ 
+         grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
+ 
+-        tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalization=True)
++        tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalize=True)
+ 
+         time_e = time.time()
+         print(f'{time_e - time_s} seconds, {file_name}_ngen{self.args.n_train_step}.png is saved')
+@@ -840,7 +856,15 @@ class Asyrp(object):
+         if self.args.do_test:
+             x_lat_tensor = None
+ 
+-            for step, (x0, _, x_lat) in enumerate(img_lat_pairs_dic['test']):
++            for step, lat_pair in enumerate(img_lat_pairs_dic['test']):
++                # CelebA-HQ P2 cached pairs also store the source filename.
++                # Keep the original three-item path for other datasets.
++                if len(lat_pair) == 4:
++                    x0, _, x_lat, img_name = lat_pair
++                    img_name = os.path.splitext(img_name[0])[0]
++                else:
++                    x0, _, x_lat = lat_pair
++                    img_name = None
+ 
+                 if self.args.target_image_id:
+                     assert self.args.bs_train == 1, "target_image_id is only supported for batch_size == 1"
+@@ -866,7 +890,12 @@ class Asyrp(object):
+                                             x0_tensor=x0_tensor, delta_h_dict=delta_h_dict,
+                                             folder_dir=self.args.test_image_folder, get_delta_hs=self.args.num_mean_of_delta_hs,
+                                             save_process_origin=self.args.save_process_origin, save_process_delta_h=self.args.save_process_delta_h,
+-                                            file_name=f'test_{step}_{self.args.n_iter - 1}', hs_coeff=hs_coeff,
++                                            file_name=(
++                                                f'test_{step}_{self.args.n_iter - 1}'
++                                                if img_name is None
++                                                else img_name
++                                            ),
++                                            hs_coeff=hs_coeff,
+                                             )
+                                         
+                 if step == self.args.n_test_img - 1:
+@@ -1004,9 +1033,10 @@ class Asyrp(object):
+                     DATASET_PATHS["custom_train"] = self.args.custom_train_dataset_dir
+                     DATASET_PATHS["custom_test"] = self.args.custom_test_dataset_dir
+ 
++                # import pdb; pdb.set_trace()
+                 train_dataset, test_dataset = get_dataset(self.config.data.dataset, DATASET_PATHS, self.config,
+                                                               target_class_num=self.args.target_class_num)
+-
++                # import pdb; pdb.set_trace()
+                 loader_dic = get_dataloader(train_dataset, test_dataset, bs_train=1,#self.args.bs_train,
+                                             num_workers=self.config.data.num_workers, shuffle=self.args.shuffle_train_dataloader)
+                 loader = loader_dic[mode]
+@@ -1411,6 +1441,124 @@ class Asyrp(object):
+         else:
+             return cosine
+ 
++    @torch.no_grad()
++    def save_image_sae(self, model, x_lat_tensor, seq_inv, seq_inv_next,
++                    save_x0 = False, save_x_origin = False,
++                    save_process_delta_h = False, save_process_origin = False,
++                    x0_tensor = None, delta_h_dict=None, get_delta_hs=False,
++                    folder_dir="", file_name="", hs_coeff=(1.0,1.0),
++                    image_space_noise_dict=None, perturb=False,topk_indices=None, scale_to_analyze=None):
++        
++        if save_process_origin or save_process_delta_h:
++            os.makedirs(os.path.join(folder_dir,file_name), exist_ok=True)
++
++        process_num = int(save_x_origin) + (len(hs_coeff) if isinstance(hs_coeff, list) else 1)
++        
++
++        with tqdm(total=len(seq_inv)*(process_num), desc=f"Generative process") as progress_bar:
++            time_s = time.time()
++
++            # x_list = []
++
++            if save_x0:
++                if x0_tensor is not None:
++                    x = x0_tensor.to(self.device)
++                    x = (x + 1) * 0.5
++                    grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
++                    save_path = os.path.join(folder_dir, "x0", "images")
++                    os.makedirs(save_path, exist_ok=True)
++                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalize=True)
++
++                    # x_list.append(x0_tensor.to(self.device))
++            
++            if save_x_origin:
++            # No delta h
++                x = x_lat_tensor.clone().to(self.device)
++
++                for it, (i, j) in enumerate(zip(reversed((seq_inv)), reversed((seq_inv_next)))):
++                    t = (torch.ones(self.args.bs_train) * i).to(self.device)
++                    t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
++
++                    x, x0_t, _, _ , _ = denoising_step(x, t=t, t_next=t_next, models=model,
++                                    logvars=self.logvar,
++                                    sampling_type= self.args.sample_type,
++                                    b=self.betas,
++                                    learn_sigma=self.learn_sigma,
++                                    eta=1.0 if (self.args.origin_process_addnoise and t[0]<self.t_addnoise) else 0.0,
++                                    )
++                    progress_bar.update(1)
++                    
++                    if save_process_origin:
++                        output = torch.cat([x, x0_t], dim=0)
++                        output = (output + 1) * 0.5
++                        grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
++                        tvu.save_image(grid, os.path.join(folder_dir, file_name, f'origin_{int(t[0].item())}.png'), normalize=True)
++
++                # x_list.append(x)
++                x = (x + 1) * 0.5
++                grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
++                save_path = os.path.join(folder_dir, "origin", "images")
++                os.makedirs(save_path, exist_ok=True)
++                tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalize=True)
++
++            if self.args.pass_editing:
++                pass
++            else:
++                if not isinstance(hs_coeff, list):
++                    hs_coeff = [hs_coeff]
++                
++                for hs_coeff_tuple in hs_coeff:
++
++                    x = x_lat_tensor.clone().to(self.device)
++
++                    for it, (i, j) in enumerate(zip(reversed((seq_inv)), reversed((seq_inv_next)))):
++                        t = (torch.ones(self.args.bs_train) * i).to(self.device)
++                        t_next = (torch.ones(self.args.bs_train) * j).to(self.device)
++
++                        x, x0_t, delta_h, _= denoising_step(x, t=t, t_next=t_next, models=model,
++                                        logvars=self.logvar,                                
++                                        sampling_type=self.args.sample_type,
++                                        b=self.betas,
++                                        learn_sigma=self.learn_sigma,
++                                        index=self.args.get_h_num-1 if not (self.args.image_space_noise_optim or self.args.image_space_noise_optim_delta_block) else None,
++                                        eta=1.0 if t[0]<self.t_addnoise else 0.0,
++                                        t_edit= self.t_edit,
++                                        hs_coeff=hs_coeff_tuple,
++                                        delta_h=None if get_delta_hs else delta_h_dict[0] if (self.args.ignore_timesteps and self.args.train_delta_h) else delta_h_dict[int(t[0].item())] if t[0]>= self.t_edit else None,
++                                        ignore_timestep=self.args.ignore_timesteps,
++                                        dt_lambda=self.args.dt_lambda,
++                                        warigari=self.args.warigari
++                                        )
++                        progress_bar.update(1)
++
++                        if save_process_delta_h:
++                            output = torch.cat([x, x0_t], dim=0)
++                            output = (output + 1) * 0.5
++                            grid = tvu.make_grid(output, nrow=self.args.bs_train, padding=1)
++                            tvu.save_image(grid, os.path.join(folder_dir, file_name, f'delta_h_{int(t[0].item())}.png'), normalize=True)
++                        if get_delta_hs and t[0]>= self.t_edit:
++                            if delta_h_dict[t[0].item()] is None:
++                                delta_h_dict[t[0].item()] = delta_h
++                            else:
++                                delta_h_dict[int(t[0].item())] = delta_h_dict[int(t[0].item())] + delta_h
++
++                    # x_list.append(x)
++                    x = (x + 1) * 0.5
++                    grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
++                    save_path = os.path.join(folder_dir, "delta_h", "images")
++                    os.makedirs(save_path, exist_ok=True)
++                    tvu.save_image(grid, os.path.join(save_path, f"{file_name}.jpg"), normalize=True)
++
++        # x = torch.cat(x_list, dim=0)
++        # x = (x + 1) * 0.5
++
++        # grid = tvu.make_grid(x, nrow=self.args.bs_train, padding=1)
++
++        # tvu.save_image(grid, os.path.join(folder_dir, f'{file_name}_ngen{self.args.n_train_step}.png'), normalize=True)
++
++        time_e = time.time()
++        print(f'{time_e - time_s} seconds, {file_name}_ngen{self.args.n_train_step}.png is saved')
++
+     
+ 
+ 
+diff --git a/main.py b/main.py
+index 271ec84..04a6e81 100755
+--- a/main.py
++++ b/main.py
+@@ -163,7 +163,6 @@ def parse_args_and_config():
+     parser.add_argument('--sample_type', type=str, default='ddim', help='ddpm for Markovian sampling, ddim for non-Markovian sampling')
+     parser.add_argument('--eta', type=float, default=0.0, help='Controls of varaince of the generative process')
+     parser.add_argument('--rambda', type=float, default=1.0, help='Controls of rambda')
+-
+     parser.add_argument('--LPIPS_addnoise_th', type=float, default=0.1, help='LPIPS_addnoise_th')
+     parser.add_argument('--n_test_pretrained_inv_step', type=int, default=40, help='# of steps during generative pross for inversion')
+ 
+diff --git a/script_train.sh b/script_train.sh
+index 383eb26..84a53d5 100644
+--- a/script_train.sh
++++ b/script_train.sh
+@@ -1,10 +1,10 @@
+ #!/bin/bash
+ 
+ sh_file_name="script_train.sh"
+-gpu="0"
++gpu="1"
+ 
+-config="custom.yml" # if you use other dataset, config/path_config.py should be matched
+-guid="smiling" # guid should be in utils/text_dic.py
++config="celeba_p2.yml" # if you use other dataset, config/path_config.py should be matched
++guid="narrow_eyes" # guid should be in utils/text_dic.py
+ 
+ 
+ CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
+@@ -26,13 +26,12 @@ CUDA_VISIBLE_DEVICES=$gpu python main.py --run_train                        \
+                         --user_defined_t_addnoise 200                       \
+                         --train_delta_block                                 \
+                         --sh_file_name $sh_file_name                        \
+-                        --save_x0                                           \
+                         --use_x0_tensor                                     \
+                         --hs_coeff_delta_h 1.0                              \
+                         --lr_training 0.5                                   \
+                         --clip_loss_w 1.0                                   \
+                         --l1_loss_w 3.0                                     \
+-                        --retrain 1                                         \
++                        --retrain 0                                         \
+                         --custom_train_dataset_dir "test_images/celeba/train"       \
+                         --custom_test_dataset_dir "test_images/celeba/test"         \
+                         --sh_file_name "script_train.sh"
+diff --git a/utils/text_dic.py b/utils/text_dic.py
+index 472064f..cf96318 100644
+--- a/utils/text_dic.py
++++ b/utils/text_dic.py
+@@ -12,6 +12,8 @@ SRC_TRG_TXT_DIC = {
+             ['old person']),
+     'young': (['person'],
+               ['young person']),
++    'big_nose': (['person'],
++                ['person with big nose']),
+     'beards': (['person'],
+                ['person with beards']),
+     'angry': (['face'],
+@@ -34,7 +36,14 @@ SRC_TRG_TXT_DIC = {
+                    ['person with curly hair']),
+     'bald': (['person'],
+                    ['person with bald head']),
+-
++        'eyeglasses': (['person'],
++                ['person wearing eyeglasses']),
++        'mouth_slightly_open': (['face'],
++                                ['face with mouth slightly open']),
++        'arched_eyebrows': (['face'],
++                        ['face with arched eyebrows']),
++        'narrow_eyes': (['face'],
++                        ['face with narrow eyes']),
+ 
+     'nicolas': (['Person'],
+                 ['Nicolas Cage']),

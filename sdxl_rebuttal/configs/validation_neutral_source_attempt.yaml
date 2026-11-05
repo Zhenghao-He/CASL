@@ -1,0 +1,36 @@
+# Archived failed validation configuration. Do not use as the primary result.
+stage: validation-neutral-source-attempt
+model_id: stabilityai/stable-diffusion-xl-base-1.0
+data_dir: /p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024
+test_manifest: manifests/main_test_ids.txt
+work_dir: /tmp/casl_sdxl/validation
+result_dir: results/validation_attempt_neutral_source
+neutral_prompt: a neutral high quality portrait photograph of one person, centered, facing the camera
+resolution: 1024
+seed: 2025
+num_inference_steps: 50
+guidance_scale: 1.0
+train_ids: {start: 1, count: 64}
+test_count: 8
+activation_step_indices: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+tokens_per_activation: 96
+sae: {expansion: 8, steps: 400, batch_tokens: 2048, lr: 0.0003, l1: 1.0}
+alignment:
+  train_images: 32
+  steps: 100
+  lr: 0.0001
+  clip_weight: 1.0
+  preserve_weight: 0.8
+  train_alpha: 0.05
+  normalize_delta: true
+edit:
+  timestep_ranges: [[5, 25]]
+  strengths: [0.0, 0.025, 0.05, 0.1, 0.2]
+  topks: [16, 64, 256]
+concepts:
+  Smiling:
+    target_prompt: a neutral high quality portrait photograph of one smiling person, centered, facing the camera
+  Young:
+    target_prompt: a neutral high quality portrait photograph of one young person, centered, facing the camera
+  Eyeglasses:
+    target_prompt: a neutral high quality portrait photograph of one person wearing eyeglasses, centered, facing the camera

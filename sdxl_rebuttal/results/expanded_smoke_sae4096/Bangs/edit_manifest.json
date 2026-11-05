@@ -1,0 +1,938 @@
+[
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a0/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a0/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a0p25/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.25,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a0p25/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.25,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a0p5/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a0p5/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/asyrp_cnn/steps05-25/dense/a4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a0/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a0/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a12/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a12/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 12.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a128/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 128.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a128/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 128.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a16/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a16/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 16.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a160/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 160.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a160/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 160.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a192/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 192.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a192/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 192.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a20/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a20/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 20.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a24/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a24/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 24.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a28/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a28/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a32/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a32/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a64/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 64.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a64/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 64.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a8/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 8.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a8/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 8.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a96/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 96.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk1/a96/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 96.0,
+    "topk": 1
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a0/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a0/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a128/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 128.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a128/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 128.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a160/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 160.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a160/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 160.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a192/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 192.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a192/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 192.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a32/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a32/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a64/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 64.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a64/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 64.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a96/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 96.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk32/a96/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 96.0,
+    "topk": 32
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a0/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a0/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 0.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a1/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a1/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 1.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a128/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 128.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a128/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 128.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a160/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 160.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a160/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 160.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a192/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 192.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a192/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 192.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a32/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a32/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a64/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 64.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a64/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 64.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a96/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 96.0,
+    "topk": 8
+  },
+  {
+    "concept": "Bangs",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/expanded_smoke_sae4096/Bangs/edits/Bangs/casl/steps05-25/topk8/a96/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 96.0,
+    "topk": 8
+  }
+]

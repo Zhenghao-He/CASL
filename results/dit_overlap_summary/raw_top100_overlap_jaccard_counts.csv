@@ -1,0 +1,6 @@
+concept,Eyeglasses,Male,Mustache,Smiling,Young
+Eyeglasses,100,99,99,99,8
+Male,99,100,99,99,8
+Mustache,99,99,100,98,8
+Smiling,99,99,98,100,8
+Young,8,8,8,8,100

@@ -1,0 +1,28 @@
+concept,method,budget,budget_leakage,budget_lpips,budget_arcface,eligible_configurations,best_target_change,best_range,best_topk,best_strength
+Eyeglasses,casl,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",64.0,0.0
+Eyeglasses,casl,moderate,0.02,0.2,0.8,2,0.0070358797013341245,"[5, 25]",64.0,0.2
+Eyeglasses,casl,loose,0.05,0.35,0.65,4,0.018096417613605788,"[5, 25]",64.0,0.8
+Eyeglasses,concept_slider,strict,0.01,0.1,0.9,0,,,,
+Eyeglasses,concept_slider,moderate,0.02,0.2,0.8,0,,,,
+Eyeglasses,concept_slider,loose,0.05,0.35,0.65,0,,,,
+Eyeglasses,dense,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",,0.0
+Eyeglasses,dense,moderate,0.02,0.2,0.8,2,0.00931614318187712,"[5, 25]",,0.2
+Eyeglasses,dense,loose,0.05,0.35,0.65,3,0.00931614318187712,"[5, 25]",,0.2
+Smiling,casl,strict,0.01,0.1,0.9,1,0.0006870729448564847,"[5, 25]",64.0,0.0
+Smiling,casl,moderate,0.02,0.2,0.8,1,0.0006870729448564847,"[5, 25]",64.0,0.0
+Smiling,casl,loose,0.05,0.35,0.65,2,0.1587697228806064,"[5, 25]",64.0,0.2
+Smiling,concept_slider,strict,0.01,0.1,0.9,1,0.0,"[0, 49]",,0.0
+Smiling,concept_slider,moderate,0.02,0.2,0.8,1,0.0,"[0, 49]",,0.0
+Smiling,concept_slider,loose,0.05,0.35,0.65,2,0.18769554965547286,"[0, 49]",,0.5
+Smiling,dense,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",,0.0
+Smiling,dense,moderate,0.02,0.2,0.8,1,0.0,"[5, 25]",,0.0
+Smiling,dense,loose,0.05,0.35,0.65,2,0.14675201598538476,"[5, 25]",,0.2
+Young,casl,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",64.0,0.0
+Young,casl,moderate,0.02,0.2,0.8,1,0.0,"[5, 25]",64.0,0.0
+Young,casl,loose,0.05,0.35,0.65,2,0.016491102407599073,"[5, 25]",64.0,0.2
+Young,concept_slider,strict,0.01,0.1,0.9,1,0.0,"[0, 49]",,0.0
+Young,concept_slider,moderate,0.02,0.2,0.8,1,0.0,"[0, 49]",,0.0
+Young,concept_slider,loose,0.05,0.35,0.65,2,0.13123925036052236,"[0, 49]",,0.5
+Young,dense,strict,0.01,0.1,0.9,1,0.0,"[5, 25]",,0.0
+Young,dense,moderate,0.02,0.2,0.8,1,0.0,"[5, 25]",,0.0
+Young,dense,loose,0.05,0.35,0.65,2,0.04011061272831281,"[5, 25]",,0.2

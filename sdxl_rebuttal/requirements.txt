@@ -1,0 +1,8 @@
+# The repository environment already provides torch, torchvision, transformers,
+# accelerate, numpy, scipy, pandas, matplotlib, Pillow, and OpenAI CLIP.
+diffusers==0.34.0
+lpips==0.1.4
+insightface==0.7.3
+onnxruntime-gpu==1.22.0
+protobuf==4.25.8
+PyYAML>=6.0

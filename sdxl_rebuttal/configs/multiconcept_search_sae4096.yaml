@@ -1,0 +1,93 @@
+stage: search_sae4096
+model_id: stabilityai/stable-diffusion-xl-base-1.0
+data_dir: /p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024
+test_manifest: manifests/main_test_ids.txt
+work_dir: /p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/artifacts/multiconcept_search_sae4096
+result_dir: results/multiconcept_search_sae4096
+neutral_prompt: a neutral high quality portrait photograph of one person, centered, facing the camera
+resolution: 1024
+seed: 2025
+num_inference_steps: 50
+guidance_scale: 1.0
+train_ids:
+  start: 1
+  count: 4096
+test_count: 2
+activation_step_indices: [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47]
+tokens_per_activation: 128
+sae:
+  expansion: 8
+  steps: 2000
+  batch_tokens: 4096
+  lr: 0.0003
+  l1: 1.0
+alignment:
+  train_images: 64
+  steps: 120
+  lr: 0.0001
+  lowrank_rank: 256
+  clip_weight: 1.0
+  target_clip_weight: 1.0
+  target_temperature: 0.05
+  preserve_weight: 0.8
+  train_alpha: 0.05
+  normalize_delta: true
+edit:
+  batch_size: 2
+  timestep_ranges: [[5, 25]]
+  strengths: [0.0, 1.0]
+  strengths_by_method:
+    casl: [0.0, 1.0, 32.0, 64.0, 96.0, 128.0, 160.0, 192.0]
+    casl_lowrank: [0.0, 1.0, 32.0, 64.0, 96.0, 128.0, 160.0, 192.0]
+    asyrp_cnn: [0.0, 0.25, 0.5, 1.0, 2.0, 4.0]
+  normalize_delta_by_method:
+    casl: false
+    casl_lowrank: false
+    asyrp_cnn: false
+  topks: [1, 8, 32, 128]
+concepts:
+  Smiling:
+    attribute: Smiling
+    source_prompt: a high quality portrait photograph of one person with a neutral expression
+    target_prompt: a high quality portrait photograph of one smiling person
+  Young:
+    attribute: Young
+    source_prompt: a high quality portrait photograph of one old person
+    target_prompt: a high quality portrait photograph of one young person
+  Big_Nose:
+    attribute: Big_Nose
+    source_prompt: a high quality portrait photograph of one person with a small nose
+    target_prompt: a high quality portrait photograph of one person with a big nose
+  Beards:
+    attribute: No_Beard
+    target_sign: -1
+    source_prompt: a high quality portrait photograph of one clean shaven person without a beard
+    target_prompt: a high quality portrait photograph of one person with a full beard
+  Blond_Hair:
+    attribute: Blond_Hair
+    source_prompt: a high quality portrait photograph of one person with dark hair
+    target_prompt: a high quality portrait photograph of one person with blond hair
+  Eyeglasses:
+    attribute: Eyeglasses
+    source_prompt: a high quality portrait photograph of one person without glasses
+    target_prompt: a high quality portrait photograph of one person wearing eyeglasses
+  Male:
+    attribute: Male
+    source_prompt: a high quality portrait photograph of one woman
+    target_prompt: a high quality portrait photograph of one man
+  Bangs:
+    attribute: Bangs
+    source_prompt: a high quality portrait photograph of one person with a visible forehead and no bangs
+    target_prompt: a high quality portrait photograph of one person with bangs
+  Gray_Hair:
+    attribute: Gray_Hair
+    source_prompt: a high quality portrait photograph of one person with dark non-gray hair
+    target_prompt: a high quality portrait photograph of one person with gray hair
+  Wearing_Lipstick:
+    attribute: Wearing_Lipstick
+    source_prompt: a high quality portrait photograph of one person without lipstick
+    target_prompt: a high quality portrait photograph of one person wearing red lipstick
+  Black_Hair:
+    attribute: Black_Hair
+    source_prompt: a high quality portrait photograph of one person with light non-black hair
+    target_prompt: a high quality portrait photograph of one person with black hair

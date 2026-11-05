@@ -1,0 +1,9 @@
+metric,value
+prompt,a smiling face
+image_dir,boundary_good/Smiling_500Range_7/images
+mean,0.16642481414601207
+variance,0.00015455312807905928
+std,0.01243193983572392
+min,0.14066563546657562
+max,0.1975378394126892
+count,32.0

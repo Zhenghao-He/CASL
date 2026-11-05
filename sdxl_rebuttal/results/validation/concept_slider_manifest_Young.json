@@ -1,0 +1,674 @@
+[
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29501.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29502.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29503.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29503.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29504.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29504.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29505.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29505.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29506.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29506.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29507.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29507.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.0,
+    "concept": "Young",
+    "image_id": "29508.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0/29508.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "copied_zero",
+    "strength": 0.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29501.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29502.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29503.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29503.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29504.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29504.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29505.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29505.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29506.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29506.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29507.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29507.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -0.5,
+    "concept": "Young",
+    "image_id": "29508.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a0p5/29508.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 0.5,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29501.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29502.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29503.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29503.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29504.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29504.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29505.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29505.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29506.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29506.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29507.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29507.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -1.0,
+    "concept": "Young",
+    "image_id": "29508.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a1/29508.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 1.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29501.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29502.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29503.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29503.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29504.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29504.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29505.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29505.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29506.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29506.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29507.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29507.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -2.0,
+    "concept": "Young",
+    "image_id": "29508.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a2/29508.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29501.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29502.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29503.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29503.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29504.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29504.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29505.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29505.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29506.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29506.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29507.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29507.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -3.0,
+    "concept": "Young",
+    "image_id": "29508.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a3/29508.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 3.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29501.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29501.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29502.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29502.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29503.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29503.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29504.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29504.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29505.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29505.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29506.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29506.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29507.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29507.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "applied_scale": -4.0,
+    "concept": "Young",
+    "image_id": "29508.jpg",
+    "method": "concept_slider",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/validation/edits/Young/concept_slider/steps00-49/dense/a4/29508.jpg",
+    "range": [
+      0,
+      49
+    ],
+    "status": "complete",
+    "strength": 4.0,
+    "topk": null
+  }
+]

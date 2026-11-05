@@ -673,7 +673,7 @@ class UNetModel(nn.Module):
         self.middle_block.apply(convert_module_to_f32)
         self.output_blocks.apply(convert_module_to_f32)
 
-    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae = True):
+    def forward(self, x, timesteps, y=None, index=None, t_edit=400, hs_coeff=(1.0, 1.0), delta_h=None, ignore_timestep=False, use_mask=False, perturb=False, topk_indices=None, scale_to_analyze=None, delta_sae=True, additive_dense_h=False):
         """
         Apply the model to an input batch.
 
@@ -732,7 +732,9 @@ class UNetModel(nn.Module):
                 else:  #DiffStyle # DiffStyle; Just ignore this code. We will update about it in README.md later.
                     # pass
                     print("--------------------use input delta_h---------------------")
-                    if use_mask:
+                    if additive_dense_h:
+                        h2 = h * hs_coeff[0] + delta_h * hs_coeff[1]
+                    elif use_mask:
                         mask = th.zeros_like(h)
                         mask[:,:,4:-1,3:5] = 1.0
                         inverted_mask = 1 - mask
@@ -901,8 +903,8 @@ class XBlock(nn.Module):
         with th.no_grad():
             z, info = self.sae.encode(x_flat,ts)  # (B, H*W, latent_dim)
         if perturb:
-            # import pdb; pdb.set_trace()
             if self.is_mask:
+                import pdb; pdb.set_trace()
                 hard_mask = self.decoder.hard_topk_mask(logits=self.decoder.mask_logits, k=self.decoder.mask_topk)
                 idx = th.nonzero(hard_mask).squeeze()
                 z[:, idx] *= scale_to_analyze

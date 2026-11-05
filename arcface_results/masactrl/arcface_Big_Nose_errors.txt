@@ -1,0 +1,26 @@
+Errors encountered during ArcFace similarity calculation:
+Total errors: 23
+
+29515: Error calculating similarity: No face detected in 29515_masactrl_edited.png
+29512: Error calculating similarity: No face detected in 29512_masactrl_edited.png
+29529: Error calculating similarity: No face detected in 29529_masactrl_edited.png
+29527: Error calculating similarity: No face detected in 29527_masactrl_edited.png
+29503: Error calculating similarity: No face detected in 29503_masactrl_edited.png
+29504: Error calculating similarity: No face detected in 29504_masactrl_edited.png
+29521: Error calculating similarity: No face detected in 29521.jpg
+29528: Error calculating similarity: No face detected in 29528.jpg
+29513: Error calculating similarity: No face detected in 29513_masactrl_edited.png
+29514: Error calculating similarity: No face detected in 29514_masactrl_edited.png
+29502: Error calculating similarity: No face detected in 29502_masactrl_edited.png
+29501: Error calculating similarity: No face detected in 29501.jpg
+29506: Error calculating similarity: No face detected in 29506_masactrl_edited.png
+29508: Error calculating similarity: No face detected in 29508_masactrl_edited.png
+29525: Error calculating similarity: No face detected in 29525_masactrl_edited.png
+29517: Error calculating similarity: No face detected in 29517_masactrl_edited.png
+29510: Error calculating similarity: No face detected in 29510_masactrl_edited.png
+29532: Error calculating similarity: No face detected in 29532_masactrl_edited.png
+29509: Error calculating similarity: No face detected in 29509_masactrl_edited.png
+29507: Error calculating similarity: No face detected in 29507.jpg
+29511: Error calculating similarity: No face detected in 29511.jpg
+29518: Error calculating similarity: No face detected in 29518_masactrl_edited.png
+29523: Error calculating similarity: No face detected in 29523.jpg

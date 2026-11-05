@@ -1,0 +1,47 @@
+seed: 42
+lfm_root: third_party/lfm
+checkpoint: third_party/lfm/saved_info/latent_flow/celeba_256/celeb_f8_dit/model_475.pth
+vae: stabilityai/sd-vae-ft-mse
+source_dir: runs/young_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale64_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images
+output_dir: results/flow_uspace_smoke
+image_limit: 32
+resolution: 256
+scale_factor: 0.18215
+euler_steps: 50
+
+sae:
+  expansion: 2
+  samples_per_image: 16
+  steps: 1200
+  batch_size: 128
+  lr: 0.0003
+  l1: 0.0005
+
+alignment:
+  concepts:
+    smiling:
+      source: "a portrait of a person with a neutral expression"
+      target: "a portrait of a smiling person"
+    young:
+      source: "a portrait of an old person"
+      target: "a portrait of a young person"
+    eyeglasses:
+      source: "a portrait of a person without eyeglasses"
+      target: "a portrait of a person wearing eyeglasses"
+  train_images: 2
+  steps: 80
+  lr: 0.03
+  t: 0.5
+  topk: 8
+  train_strength: 0.05
+  preserve_weight: 1.0
+
+edit:
+  test_images: 2
+  concepts: [smiling]
+  methods: [inversion, dense, casl]
+  strengths: [-4, -2, -1, 0, 1, 2, 4]
+  base_rms: 0.05
+  topks: [1, 2, 4, 8, 16]
+  edit_t_min: 0.35
+  edit_t_max: 0.75

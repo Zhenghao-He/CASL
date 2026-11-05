@@ -1,0 +1,9 @@
+metric,value
+prompt,a smiling face
+image_dir,../Asyrp_official/runs/smiling_LC_CelebA_HQ_P2_t999_ninv50_ngen50/test_images/100/iter4/delta_h/images
+mean,0.19922386901453137
+variance,0.00020256178802092995
+std,0.014232420314933436
+min,0.16438154876232147
+max,0.2336057722568512
+count,32.0

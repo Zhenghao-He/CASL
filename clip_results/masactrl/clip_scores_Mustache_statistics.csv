@@ -1,0 +1,9 @@
+metric,value
+prompt,a face with beards
+image_dir,/p/realai/zhenghao/LoRA_SAE/MasaCtrl/workdir/celeba/beards1
+mean,0.2344523873180151
+variance,0.0005133577128846704
+std,0.022657398634544752
+min,0.1984548419713974
+max,0.26928573846817017
+count,32.0

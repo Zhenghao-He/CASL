@@ -1,0 +1,9 @@
+image_id,source_path,reconstruction_path,inversion_lpips,inversion_arcface
+29501.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29501.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29501.jpg,0.02914440631866455,
+29502.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29502.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29502.jpg,0.07757454365491867,0.9229946136474609
+29503.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29503.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29503.jpg,0.041940513998270035,0.9788069725036621
+29504.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29504.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29504.jpg,0.044236768037080765,0.9688928127288818
+29505.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29505.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29505.jpg,0.07051964104175568,0.9856975674629211
+29506.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29506.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29506.jpg,0.040788743644952774,0.9796752333641052
+29507.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29507.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29507.jpg,0.058361075818538666,
+29508.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29508.jpg,sdxl_rebuttal/results/validation8_expanded_sae4096/Blond_Hair/reconstruction/29508.jpg,0.09599162638187408,0.7759692668914795

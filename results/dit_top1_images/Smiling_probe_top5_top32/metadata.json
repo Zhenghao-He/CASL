@@ -1,0 +1,226 @@
+{
+  "concept": "Smiling",
+  "seed": 42,
+  "sample_size": 256,
+  "top_images": 32,
+  "top_k_features": 5,
+  "probe_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe/Smiling_linear_probe.json",
+  "latent_indices": [
+    13228,
+    20796,
+    30069,
+    29100,
+    30155
+  ],
+  "latent_weights": [
+    1.5922772884368896,
+    1.3290255069732666,
+    -1.3014434576034546,
+    -1.0823761224746704,
+    -1.0132101774215698
+  ],
+  "sae_checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm32_l10.01.pt",
+  "raw_block_shape": [
+    4,
+    256,
+    1152
+  ],
+  "pooled_shape": [
+    256,
+    1152
+  ],
+  "exported": [
+    {
+      "rank": 1,
+      "score": -13.042501449584961,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29235.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/01_score_-13.0425_29235.jpg"
+    },
+    {
+      "rank": 2,
+      "score": -13.460697174072266,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/26406.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/02_score_-13.4607_26406.jpg"
+    },
+    {
+      "rank": 3,
+      "score": -14.952226638793945,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/26740.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/03_score_-14.9522_26740.jpg"
+    },
+    {
+      "rank": 4,
+      "score": -15.148286819458008,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/26448.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/04_score_-15.1483_26448.jpg"
+    },
+    {
+      "rank": 5,
+      "score": -15.49938678741455,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/15148.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/05_score_-15.4994_15148.jpg"
+    },
+    {
+      "rank": 6,
+      "score": -15.657347679138184,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/15036.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/06_score_-15.6573_15036.jpg"
+    },
+    {
+      "rank": 7,
+      "score": -15.792075157165527,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/21296.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/07_score_-15.7921_21296.jpg"
+    },
+    {
+      "rank": 8,
+      "score": -15.812787055969238,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/03666.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/08_score_-15.8128_03666.jpg"
+    },
+    {
+      "rank": 9,
+      "score": -15.921217918395996,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/28771.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/09_score_-15.9212_28771.jpg"
+    },
+    {
+      "rank": 10,
+      "score": -15.958660125732422,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/25095.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/10_score_-15.9587_25095.jpg"
+    },
+    {
+      "rank": 11,
+      "score": -16.09375,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/05608.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/11_score_-16.0938_05608.jpg"
+    },
+    {
+      "rank": 12,
+      "score": -16.129913330078125,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/04682.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/12_score_-16.1299_04682.jpg"
+    },
+    {
+      "rank": 13,
+      "score": -16.176334381103516,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/01544.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/13_score_-16.1763_01544.jpg"
+    },
+    {
+      "rank": 14,
+      "score": -16.294740676879883,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/20972.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/14_score_-16.2947_20972.jpg"
+    },
+    {
+      "rank": 15,
+      "score": -16.30838394165039,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/09607.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/15_score_-16.3084_09607.jpg"
+    },
+    {
+      "rank": 16,
+      "score": -16.30854034423828,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/23984.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/16_score_-16.3085_23984.jpg"
+    },
+    {
+      "rank": 17,
+      "score": -16.351713180541992,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/14858.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/17_score_-16.3517_14858.jpg"
+    },
+    {
+      "rank": 18,
+      "score": -16.393224716186523,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/12965.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/18_score_-16.3932_12965.jpg"
+    },
+    {
+      "rank": 19,
+      "score": -16.45786476135254,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/01042.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/19_score_-16.4579_01042.jpg"
+    },
+    {
+      "rank": 20,
+      "score": -16.46686363220215,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/18586.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/20_score_-16.4669_18586.jpg"
+    },
+    {
+      "rank": 21,
+      "score": -16.5291805267334,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/08239.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/21_score_-16.5292_08239.jpg"
+    },
+    {
+      "rank": 22,
+      "score": -16.58988380432129,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29420.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/22_score_-16.5899_29420.jpg"
+    },
+    {
+      "rank": 23,
+      "score": -16.718650817871094,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/28990.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/23_score_-16.7187_28990.jpg"
+    },
+    {
+      "rank": 24,
+      "score": -16.789857864379883,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/22998.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/24_score_-16.7899_22998.jpg"
+    },
+    {
+      "rank": 25,
+      "score": -16.81085205078125,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/07847.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/25_score_-16.8109_07847.jpg"
+    },
+    {
+      "rank": 26,
+      "score": -16.823022842407227,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/10077.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/26_score_-16.8230_10077.jpg"
+    },
+    {
+      "rank": 27,
+      "score": -16.835296630859375,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29905.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/27_score_-16.8353_29905.jpg"
+    },
+    {
+      "rank": 28,
+      "score": -16.890426635742188,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/24133.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/28_score_-16.8904_24133.jpg"
+    },
+    {
+      "rank": 29,
+      "score": -16.930404663085938,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/22982.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/29_score_-16.9304_22982.jpg"
+    },
+    {
+      "rank": 30,
+      "score": -16.946931838989258,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/17456.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/30_score_-16.9469_17456.jpg"
+    },
+    {
+      "rank": 31,
+      "score": -16.982383728027344,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/16560.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/31_score_-16.9824_16560.jpg"
+    },
+    {
+      "rank": 32,
+      "score": -17.005355834960938,
+      "source": "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/18391.jpg",
+      "copied_to": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_top1_images/Smiling_probe_top5_top32/32_score_-17.0054_18391.jpg"
+    }
+  ]
+}

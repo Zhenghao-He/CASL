@@ -1,0 +1,27 @@
+{
+  "smiling": {
+    "casl": 128.0,
+    "sae_only": -16.0,
+    "dense_clip": 2.0
+  },
+  "young": {
+    "casl": 128.0,
+    "sae_only": 0.0,
+    "dense_clip": 2.0
+  },
+  "big_nose": {
+    "casl": 64.0,
+    "sae_only": 192.0,
+    "dense_clip": -1.0
+  },
+  "beards": {
+    "casl": 96.0,
+    "sae_only": -128.0,
+    "dense_clip": -2.0
+  },
+  "blond_hair": {
+    "casl": 128.0,
+    "sae_only": -48.0,
+    "dense_clip": 3.0
+  }
+}

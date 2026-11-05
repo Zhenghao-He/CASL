@@ -1,0 +1,107 @@
+{
+  "dataset": "AFHQ-Dog",
+  "source_dir": "runs/dog_angry_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+  "source_text": "a photo of a dog",
+  "source_descriptions": {
+    "type": "json",
+    "path": "rebuttal_metrics/descriptions/afhq_dog_florence2.json"
+  },
+  "concepts": {
+    "Angry": {
+      "target_text": "a photo of an angry dog",
+      "target_descriptions": [
+        "The dog has an angry expression",
+        "The dog's eyes appear tense",
+        "The dog's brow is furrowed",
+        "The muzzle has a tense shape",
+        "The dog may bare its teeth",
+        "The ears show an alert aggressive posture",
+        "The dog's face appears threatening",
+        "The dog's posture appears agitated"
+      ]
+    },
+    "Sleepy": {
+      "target_text": "a photo of a sleepy dog",
+      "target_descriptions": [
+        "The dog has a sleepy expression",
+        "The dog's eyes are partly closed",
+        "The dog's posture is relaxed",
+        "The head appears lowered or resting",
+        "The dog's ears are relaxed",
+        "The face appears tired",
+        "The dog looks ready to sleep",
+        "The body has a calm resting posture"
+      ]
+    },
+    "Smiling": {
+      "target_text": "a photo of a smiling dog",
+      "target_descriptions": [
+        "The dog has a smiling expression",
+        "The dog's mouth curves upward",
+        "The mouth is open in a happy expression",
+        "The dog's eyes appear cheerful",
+        "The facial expression looks friendly",
+        "The dog may show its tongue",
+        "The cheeks and muzzle look relaxed",
+        "The dog appears happy"
+      ]
+    },
+    "Puppy_like": {
+      "target_text": "a photo of a puppy-like dog",
+      "target_descriptions": [
+        "The dog has puppy-like features",
+        "The dog has a small youthful face",
+        "The eyes appear large and round",
+        "The muzzle is short and soft",
+        "The dog's body appears small",
+        "The fur has a soft youthful appearance",
+        "The ears look proportionally large",
+        "The dog resembles a young puppy"
+      ]
+    }
+  },
+  "methods": {
+    "Reconstruction": {
+      "Angry": "runs/dog_angry_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+      "Sleepy": "runs/dog_sleepy_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+      "Smiling": "runs/dog_smiling_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+      "Puppy_like": "runs/dog_puppy_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images"
+    },
+    "CASL-Steer": {
+      "Angry": {
+        "source_dir": "runs/dog_angry_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/dog_angry_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale32/delta_h/images"
+      },
+      "Sleepy": {
+        "source_dir": "runs/dog_sleepy_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/dog_sleepy_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale64/delta_h/images"
+      },
+      "Smiling": {
+        "source_dir": "runs/dog_smiling_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/dog_smiling_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale32/delta_h/images"
+      },
+      "Puppy_like": {
+        "source_dir": "runs/dog_puppy_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images",
+        "edited_dir": "runs/dog_puppy_LC_dog_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/test_xblock_editted_delta_images_topk1/100/test_0_scale64/delta_h/images"
+      }
+    },
+    "Asyrp": {
+      "Angry": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_dog_angry_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_dog_angry_split/edit"
+      },
+      "Sleepy": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_dog_sleepy_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_dog_sleepy_split/edit"
+      },
+      "Smiling": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_dog_smiling_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_dog_smiling_split/edit"
+      },
+      "Puppy_like": {
+        "source_dir": "../Asyrp_official/runs/rebuttal_dog_puppy_split/source",
+        "edited_dir": "../Asyrp_official/runs/rebuttal_dog_puppy_split/edit"
+      }
+    }
+  }
+}

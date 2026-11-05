@@ -1,0 +1,9 @@
+metric,value
+prompt,a smiling face
+image_dir,/p/realai/zhenghao/LoRA_SAE/MasaCtrl/workdir/celeba/smiling1
+mean,0.2046975614503026
+variance,0.00017173729044989757
+std,0.013104857513529003
+min,0.18144935369491577
+max,0.23153884708881378
+count,32.0

@@ -1,0 +1,6 @@
+concept,accuracy,auc,num_samples,num_positive,num_negative,feature_dim,source_file
+Eyeglasses,0.8575,0.934675,2000,1000,1000,100,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe/Eyeglasses_linear_probe.json
+Male,0.8575,0.935125,2000,1000,1000,100,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe/Male_linear_probe.json
+Mustache,0.82,0.887475,2000,1000,1000,100,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe/Mustache_linear_probe.json
+Smiling,0.7775,0.8456249999999998,2000,1000,1000,100,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe/Smiling_linear_probe.json
+Young,0.7,0.7537,2000,1000,1000,100,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_linear_probe/Young_linear_probe.json

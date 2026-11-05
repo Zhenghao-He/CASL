@@ -1,0 +1,9 @@
+metric,value
+prompt,a smiling face
+image_dir,/p/realai/zhenghao/LoRA_SAE/SwiftEdit/output_images/smiling
+mean,0.18913213722407818
+variance,0.00016917656546716273
+std,0.013006789206685973
+min,0.15165695548057556
+max,0.2099817991256714
+count,32.0

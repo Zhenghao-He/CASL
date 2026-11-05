@@ -1,0 +1,20 @@
+=== Soft Mask Analysis ===
+min: 0.002167
+max: 0.036277
+mean: 0.002655
+median: 0.002606
+std: 0.000521
+>0.01 ratio: 0.000595
+10% quantile: 0.002473
+90% quantile: 0.002745
+
+=== Soft Mask Analysis ===
+min: 0.002167
+max: 0.036277
+mean: 0.002655
+median: 0.002606
+std: 0.000521
+>0.01 ratio: 0.000595
+10% quantile: 0.002473
+90% quantile: 0.002745
+

@@ -1,0 +1,9 @@
+metric,value
+prompt,people with blond hair
+image_dir,runs/blond_hair_LC_CelebA_HQ_P2_t999_ninv50_ngen50/delta_sae_ReLU_k4096_scale128_alpha32.0_normalizeFalse/xblock_test_images/100/iter4_ngen50/origin/images
+mean,0.15409667254425585
+variance,0.0011037554556928121
+std,0.033222815288485294
+min,0.07456494122743607
+max,0.2292870283126831
+count,32.0

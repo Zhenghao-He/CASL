@@ -1,0 +1,9 @@
+metric,value
+prompt,a face with beards
+image_dir,boundary_good/Mustache_500Range_7/images
+mean,0.13447193265892565
+variance,0.0014626657207804242
+std,0.03824481299183491
+min,0.08019151538610458
+max,0.21923747658729553
+count,32.0

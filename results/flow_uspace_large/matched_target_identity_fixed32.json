@@ -1,0 +1,74 @@
+[
+  {
+    "concept": "smiling",
+    "n": 32,
+    "dense_topk": null,
+    "dense_strength": 4.0,
+    "casl_topk": 16.0,
+    "casl_strength": -0.5,
+    "dense_target_clip_change": 0.00026269955560563846,
+    "casl_target_clip_change": 0.0003673848696053093,
+    "dense_lpips": 0.07341241918038574,
+    "casl_lpips": 0.022842189660877872,
+    "lpips_delta_casl_minus_dense": -0.05057022951950786,
+    "lpips_delta_95ci": [
+      -0.06290359277809329,
+      -0.03888500712237148
+    ],
+    "dense_arcface": 0.8613903004190196,
+    "casl_arcface": 0.9647299958311993,
+    "arcface_delta_casl_minus_dense": 0.1033396954121797,
+    "arcface_delta_95ci": [
+      0.0766313756937566,
+      0.13078431111315023
+    ]
+  },
+  {
+    "concept": "no_beard",
+    "n": 32,
+    "dense_topk": null,
+    "dense_strength": -4.0,
+    "casl_topk": 8.0,
+    "casl_strength": -0.1,
+    "dense_target_clip_change": 0.000528279226273302,
+    "casl_target_clip_change": 0.0007003564387559844,
+    "dense_lpips": 0.07128679519519206,
+    "casl_lpips": 0.0060776360915042,
+    "lpips_delta_casl_minus_dense": -0.06520915910368785,
+    "lpips_delta_95ci": [
+      -0.07554246888521447,
+      -0.05633397150613746
+    ],
+    "dense_arcface": 0.8669616243113643,
+    "casl_arcface": 0.9767771441003551,
+    "arcface_delta_casl_minus_dense": 0.10981551978899085,
+    "arcface_delta_95ci": [
+      0.0741234615445137,
+      0.15057940418305604
+    ]
+  },
+  {
+    "concept": "blond_hair",
+    "n": 32,
+    "dense_topk": null,
+    "dense_strength": 4.0,
+    "casl_topk": 8.0,
+    "casl_strength": 4.0,
+    "dense_target_clip_change": 0.005911503452807641,
+    "casl_target_clip_change": 0.004960918333381422,
+    "dense_lpips": 0.08235174737637858,
+    "casl_lpips": 0.25862771878018975,
+    "lpips_delta_casl_minus_dense": 0.17627597140381113,
+    "lpips_delta_95ci": [
+      0.15845907542097848,
+      0.19390361418772956
+    ],
+    "dense_arcface": 0.8511947626652925,
+    "casl_arcface": 0.5641916028477929,
+    "arcface_delta_casl_minus_dense": -0.2848045595667579,
+    "arcface_delta_95ci": [
+      -0.3390480601313439,
+      -0.22656978328119626
+    ]
+  }
+]

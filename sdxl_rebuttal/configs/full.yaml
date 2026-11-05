@@ -1,0 +1,60 @@
+stage: full
+model_id: stabilityai/stable-diffusion-xl-base-1.0
+data_dir: /p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024
+test_manifest: manifests/main_test_ids.txt
+work_dir: /tmp/casl_sdxl/full
+result_dir: results/full
+neutral_prompt: a neutral high quality portrait photograph of one person, centered, facing the camera
+resolution: 1024
+seed: 2025
+num_inference_steps: 50
+guidance_scale: 1.0
+train_ids:
+  start: 1
+  count: 256
+test_count: 32
+activation_step_indices: [3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47]
+tokens_per_activation: 128
+sae:
+  expansion: 8
+  steps: 1200
+  batch_tokens: 4096
+  lr: 0.0003
+  l1: 1.0
+alignment:
+  train_images: 128
+  steps: 300
+  lr: 0.0001
+  clip_weight: 1.0
+  target_clip_weight: 1.0
+  target_temperature: 0.05
+  preserve_weight: 0.8
+  train_alpha: 0.05
+  normalize_delta: true
+edit:
+  # The validation-selected range/top-k must be copied here before launch.
+  batch_size: 16
+  timestep_ranges: [[5, 25]]
+  # Confirmatory subset selected after the seven-point validation sweep:
+  # zero, low/moderate, moderate/high, and maximum tested intervention.
+  strengths: [0.0, 0.2, 0.4, 0.8]
+  topks: [64]
+concepts:
+  Smiling:
+    source_prompt: a neutral high quality portrait photograph of one person with a neutral expression
+    target_prompt: a neutral high quality portrait photograph of one smiling person, centered, facing the camera
+  Young:
+    source_prompt: a high quality portrait photograph of one old person
+    target_prompt: a neutral high quality portrait photograph of one young person, centered, facing the camera
+  Eyeglasses:
+    source_prompt: a high quality portrait photograph of one person without glasses
+    target_prompt: a neutral high quality portrait photograph of one person wearing eyeglasses, centered, facing the camera
+concept_slider:
+  # Validation-selected confirmation points (zero, low, medium, best target).
+  strengths: [0.0, 0.5, 1.0, 3.0]
+  weights:
+    Smiling: /tmp/casl_sdxl/concept_sliders/smiling.pt
+    Young: /tmp/casl_sdxl/concept_sliders/age.pt
+  signs:
+    Smiling: 1.0
+    Young: -1.0

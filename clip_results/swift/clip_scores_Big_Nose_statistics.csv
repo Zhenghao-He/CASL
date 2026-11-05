@@ -1,0 +1,9 @@
+metric,value
+prompt,face with a big nose
+image_dir,/p/realai/zhenghao/LoRA_SAE/SwiftEdit/output_images/big_nose
+mean,0.1596739173401147
+variance,0.0003932728541251382
+std,0.01983110824248454
+min,0.12005891650915146
+max,0.2075452357530594
+count,32.0

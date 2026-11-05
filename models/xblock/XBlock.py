@@ -1,7 +1,15 @@
 import torch as th
 import torch.nn as nn
 class DirectionDecoder(nn.Module):
-    def __init__(self, channels, out_channels, mask_topk=3, is_mask=False):
+    def __init__(
+        self,
+        channels,
+        out_channels,
+        mask_topk=3,
+        is_mask=False,
+        mapping_type="linear",
+        hidden_dim=512,
+    ):
         super().__init__()
         self.out_channels = out_channels
         # self.mask_logits = nn.Parameter(th.zeros(channels))
@@ -22,7 +30,16 @@ class DirectionDecoder(nn.Module):
         # from utils.l0_regularization import L0Dense
         # self.mlp = L0Dense(in_features=channels, out_features=out_channels, bias=True, weight_decay=100000., droprate_init=0.1, temperature=2./3.,
         #          lamba=10., local_rep=False)
-        self.mlp = nn.Linear(channels, out_channels)
+        if mapping_type == "linear":
+            self.mlp = nn.Linear(channels, out_channels)
+        elif mapping_type == "mlp":
+            self.mlp = nn.Sequential(
+                nn.Linear(channels, hidden_dim),
+                nn.SiLU(),
+                nn.Linear(hidden_dim, out_channels),
+            )
+        else:
+            raise ValueError(f"Unknown alignment mapping: {mapping_type}")
 
     def hard_topk_mask(self, logits, k):
         # logits: [d]
@@ -52,7 +69,15 @@ class DirectionDecoder(nn.Module):
     
 
 class XBlock(nn.Module):
-    def __init__(self, sae_ckpt_path, out_channels, mask_topk=10, is_mask=False):
+    def __init__(
+        self,
+        sae_ckpt_path,
+        out_channels,
+        mask_topk=10,
+        is_mask=False,
+        mapping_type="linear",
+        hidden_dim=512,
+    ):
         super().__init__()
 
         # === 1. 加载SAE模型 ===
@@ -66,7 +91,15 @@ class XBlock(nn.Module):
             channels=self.sae.encoder.out_features,  
             out_channels=out_channels,
             mask_topk=mask_topk,
-            is_mask=self.is_mask
+            is_mask=self.is_mask,
+            mapping_type=mapping_type,
+            hidden_dim=hidden_dim,
+        )
+        n_parameters = sum(
+            parameter.numel() for parameter in self.decoder.parameters()
+        )
+        print(
+            f"Stage-2 mapping={mapping_type}, parameters={n_parameters:,}"
         )
 
     def forward(self, x, t, perturb=False, topk_indices=None, scale_to_analyze=1.0):

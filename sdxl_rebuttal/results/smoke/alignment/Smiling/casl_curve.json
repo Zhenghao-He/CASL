@@ -1,0 +1,38 @@
+[
+  {
+    "clip_directional": 1.0045527219772339,
+    "grad_norm": 163.46405029296875,
+    "image_id": "00001.jpg",
+    "latent_l1": 0.005516128148883581,
+    "loss": 1.0089656114578247,
+    "step": 0,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9911032319068909,
+    "grad_norm": 2.573287010192871,
+    "image_id": "00002.jpg",
+    "latent_l1": 0.011981474235653877,
+    "loss": 1.0006884336471558,
+    "step": 1,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.067510962486267,
+    "grad_norm": 0.7891607880592346,
+    "image_id": "00003.jpg",
+    "latent_l1": 0.013099031522870064,
+    "loss": 1.077990174293518,
+    "step": 2,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8893090486526489,
+    "grad_norm": 0.5101102590560913,
+    "image_id": "00004.jpg",
+    "latent_l1": 0.006218954920768738,
+    "loss": 0.894284188747406,
+    "step": 3,
+    "timestep_index": 5
+  }
+]

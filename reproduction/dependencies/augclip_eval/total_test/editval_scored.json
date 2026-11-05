@@ -1,0 +1,705 @@
+{
+	"240698_positional_addition_shoes to right.png": {
+		"img_name": "ROOT_DIR/editval/original/000000240698.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/240698_positional_addition_shoes to right.png",
+		"prompt": "Add shoes to right the bench",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		]
+	},
+	"151300_positional_addition_shoes to right.png": {
+		"img_name": "ROOT_DIR/editval/original/000000151300.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/151300_positional_addition_shoes to right.png",
+		"prompt": "Add shoes to right the bench",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		]
+	},
+	"272694_positional_addition_kettle to right.png": {
+		"img_name": "ROOT_DIR/editval/original/000000272694.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/272694_positional_addition_kettle to right.png",
+		"prompt": "Add kettle to right the cup",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		]
+	},
+	"175227_color_red.png": {
+		"img_name": "ROOT_DIR/editval/original/000000175227.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/175227_color_red.png",
+		"prompt": "Change the color of backpack into red",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.94384765625,
+			0.7998046875
+		],
+		"clipscore": [
+			0.07861328125,
+			0.072509765625
+		]
+	},
+	"557137_color_red.png": {
+		"img_name": "ROOT_DIR/editval/original/000000557137.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/557137_color_red.png",
+		"prompt": "Change the color of donut into red",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.95458984375,
+			0.9404296875
+		],
+		"clipscore": [
+			0.302490234375,
+			0.31787109375
+		]
+	},
+	"453138_color_red.png": {
+		"img_name": "ROOT_DIR/editval/original/000000453138.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/453138_color_red.png",
+		"prompt": "Change the color of bicycle into red",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.943359375,
+			0.9140625
+		],
+		"clipscore": [
+			0.34716796875,
+			0.29248046875
+		]
+	},
+	"548957_color_orange.png": {
+		"img_name": "ROOT_DIR/editval/original/000000548957.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/548957_color_orange.png",
+		"prompt": "Change the color of apple into orange",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.92138671875,
+			0.96728515625
+		],
+		"clipscore": [
+			0.1829833984375,
+			0.1856689453125
+		]
+	},
+	"414624_texture_shiny silver.png": {
+		"img_name": "ROOT_DIR/editval/original/000000414624.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/414624_texture_shiny silver.png",
+		"prompt": "Change the texture of car into shiny silver",
+		"model": [
+			"diffedit",
+			"instructpix2pix"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.85791015625,
+			0.939453125
+		],
+		"clipscore": [
+			0.0916748046875,
+			0.09429931640625
+		]
+	},
+	"240698_texture_leather.png": {
+		"img_name": "ROOT_DIR/editval/original/000000240698.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/240698_texture_leather.png",
+		"prompt": "Change the texture of bench into leather",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.83642578125,
+			0.93896484375
+		],
+		"clipscore": [
+			0.2489013671875,
+			0.2330322265625
+		]
+	},
+	"11635_texture_spotted.png": {
+		"img_name": "ROOT_DIR/editval/original/000000011635.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/11635_texture_spotted.png",
+		"prompt": "Change the texture of dog into spotted",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.82373046875,
+			0.919921875
+		],
+		"clipscore": [
+			-0.02691650390625,
+			0.0457763671875
+		]
+	},
+	"79966_texture_wooden.png": {
+		"img_name": "ROOT_DIR/editval/original/000000079966.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/79966_texture_wooden.png",
+		"prompt": "Change the texture of bicycle into wooden",
+		"model": [
+			"diffedit",
+			"instructpix2pix"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.8525390625,
+			0.96826171875
+		],
+		"clipscore": [
+			0.125244140625,
+			0.10186767578125
+		]
+	},
+	"434201_texture_leopard spots.png": {
+		"img_name": "ROOT_DIR/editval/original/000000434201.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/434201_texture_leopard spots.png",
+		"prompt": "Change the texture of apple into leopard spots",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.8333333333333334,
+			0.16666666666666666
+		],
+		"augclip": [
+			0.79541015625,
+			0.978515625
+		],
+		"clipscore": [
+			0.1949462890625,
+			0.1373291015625
+		]
+	},
+	"240698_texture_steel.png": {
+		"img_name": "ROOT_DIR/editval/original/000000240698.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/240698_texture_steel.png",
+		"prompt": "Change the texture of bench into steel",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.8333333333333334,
+			0.16666666666666666
+		],
+		"augclip": [
+			0.82080078125,
+			0.953125
+		],
+		"clipscore": [
+			0.1795654296875,
+			0.104248046875
+		]
+	},
+	"113199_alter_parts_add jelly beans toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000113199.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/113199_alter_parts_add jelly beans toppings.png",
+		"prompt": "add jelly beans toppings to pizza",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.64208984375,
+			0.83056640625
+		],
+		"clipscore": [
+			0.18310546875,
+			0.240966796875
+		]
+	},
+	"475236_alter_parts_add fruit pieces toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000475236.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/475236_alter_parts_add fruit pieces toppings.png",
+		"prompt": "add fruit pieces toppings to donut",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.33333333333333337,
+			0.6666666666666666
+		],
+		"augclip": [
+			0.90625,
+			0.8740234375
+		],
+		"clipscore": [
+			0.121826171875,
+			0.281494140625
+		]
+	},
+	"113513_alter_parts_add tomato toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000113513.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/113513_alter_parts_add tomato toppings.png",
+		"prompt": "add tomato toppings to pizza",
+		"model": [
+			"DDS",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		]
+	},
+	"557137_alter_parts_add chocolate toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000557137.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/557137_alter_parts_add chocolate toppings.png",
+		"prompt": "add chocolate toppings to donut",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.16666666666666663,
+			0.8333333333333334
+		],
+		"augclip": [
+			0.916015625,
+			0.9326171875
+		],
+		"clipscore": [
+			0.185302734375,
+			0.1112060546875
+		]
+	},
+	"250614_alter_parts_add jelly beans toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000250614.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/250614_alter_parts_add jelly beans toppings.png",
+		"prompt": "add jelly beans toppings to pizza",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.16666666666666663,
+			0.8333333333333334
+		],
+		"augclip": [
+			0.931640625,
+			0.90771484375
+		],
+		"clipscore": [
+			0.06939697265625,
+			0.1456298828125
+		]
+	},
+	"250614_alter_parts_add tomato toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000250614.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/250614_alter_parts_add tomato toppings.png",
+		"prompt": "add tomato toppings to pizza",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.9345703125,
+			0.96435546875
+		],
+		"clipscore": [
+			0.07757568359375,
+			0.18017578125
+		]
+	},
+	"557137_alter_parts_add fruit pieces toppings.png": {
+		"img_name": "ROOT_DIR/editval/original/000000557137.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/557137_alter_parts_add fruit pieces toppings.png",
+		"prompt": "add fruit pieces toppings to donut",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.8333333333333334,
+			0.16666666666666666
+		],
+		"augclip": [
+			0.8447265625,
+			0.88720703125
+		],
+		"clipscore": [
+			0.310791015625,
+			0.07928466796875
+		]
+	},
+	"119320_object_replacement_cat.png": {
+		"img_name": "ROOT_DIR/editval/original/000000119320.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/119320_object_replacement_cat.png",
+		"prompt": "Change a dog into cat",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.85986328125,
+			0.86181640625
+		],
+		"clipscore": [
+			0.5205078125,
+			0.5126953125
+		]
+	},
+	"409652_object_replacement_dog.png": {
+		"img_name": "ROOT_DIR/editval/original/000000409652.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/409652_object_replacement_dog.png",
+		"prompt": "Change a cat into dog",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.33333333333333337,
+			0.6666666666666666
+		],
+		"augclip": [
+			0.8916015625,
+			0.873046875
+		],
+		"clipscore": [
+			0.488037109375,
+			0.501953125
+		]
+	},
+	"414624_object_replacement_motorcycle.png": {
+		"img_name": "ROOT_DIR/editval/original/000000414624.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/414624_object_replacement_motorcycle.png",
+		"prompt": "Change a car into motorcycle",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.85986328125,
+			0.69580078125
+		],
+		"clipscore": [
+			0.294189453125,
+			0.2164306640625
+		]
+	},
+	"321852_object_replacement_wine glass.png": {
+		"img_name": "ROOT_DIR/editval/original/000000321852.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/321852_object_replacement_wine glass.png",
+		"prompt": "Change a cup into wine glass",
+		"model": [
+			"diffedit",
+			"instructpix2pix"
+		],
+		"h_score": [
+			0.8333333333333334,
+			0.16666666666666666
+		],
+		"augclip": [
+			0.8076171875,
+			0.62255859375
+		],
+		"clipscore": [
+			0.1416015625,
+			0.19677734375
+		]
+	},
+	"414624_object_replacement_pickup truck.png": {
+		"img_name": "ROOT_DIR/editval/original/000000414624.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/414624_object_replacement_pickup truck.png",
+		"prompt": "Change a car into pickup truck",
+		"model": [
+			"diffedit",
+			"instructpix2pix"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.8671875,
+			0.87646484375
+		],
+		"clipscore": [
+			0.1829833984375,
+			0.11456298828125
+		]
+	},
+	"113168_object_replacement_cat.png": {
+		"img_name": "ROOT_DIR/editval/original/000000113168.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/113168_object_replacement_cat.png",
+		"prompt": "Change a dog into cat",
+		"model": [
+			"diffedit",
+			"instructpix2pix"
+		],
+		"h_score": [
+			0.16666666666666663,
+			0.8333333333333334
+		],
+		"augclip": [
+			0.84033203125,
+			0.89794921875
+		],
+		"clipscore": [
+			0.467041015625,
+			0.55322265625
+		]
+	},
+	"272694_style_Minimalism.png": {
+		"img_name": "ROOT_DIR/editval/original/000000272694.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/272694_style_Minimalism.png",
+		"prompt": "Change an art painting of a cup in Minimalism style",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.33333333333333337,
+			0.6666666666666666
+		],
+		"augclip": [
+			0.546875,
+			0.64111328125
+		],
+		"clipscore": [
+			0.040740966796875,
+			-0.00264739990234375
+		]
+	},
+	"11635_style_Fauvism.png": {
+		"img_name": "ROOT_DIR/editval/original/000000011635.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/11635_style_Fauvism.png",
+		"prompt": "Change an art painting of a dog in Fauvism style",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.900390625,
+			0.6845703125
+		],
+		"clipscore": [
+			0.087646484375,
+			0.054351806640625
+		]
+	},
+	"434201_style_Pointillism.png": {
+		"img_name": "ROOT_DIR/editval/original/000000434201.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/434201_style_Pointillism.png",
+		"prompt": "Change an art painting of a apple in Pointillism style",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.7626953125,
+			0.892578125
+		],
+		"clipscore": [
+			0.19775390625,
+			0.15185546875
+		]
+	},
+	"321852_style_Art Nouveau Modern.png": {
+		"img_name": "ROOT_DIR/editval/original/000000321852.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/321852_style_Art Nouveau Modern.png",
+		"prompt": "Change an art painting of a cup in Art Nouveau Modern style",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.33333333333333337,
+			0.6666666666666666
+		],
+		"augclip": [
+			0.70654296875,
+			0.74072265625
+		],
+		"clipscore": [
+			0.09130859375,
+			0.0958251953125
+		]
+	},
+	"158044_action_sit.png": {
+		"img_name": "ROOT_DIR/editval/original/000000158044.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/158044_action_sit.png",
+		"prompt": "Change person into person sitting",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.64697265625,
+			0.7392578125
+		],
+		"clipscore": [
+			0.0084075927734375,
+			0.003173828125
+		]
+	},
+	"385588_action_jump.png": {
+		"img_name": "ROOT_DIR/editval/original/000000385588.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/385588_action_jump.png",
+		"prompt": "Change person into person jumping",
+		"model": [
+			"diffedit",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.6865234375,
+			0.65771484375
+		],
+		"clipscore": [
+			0.222412109375,
+			0.18994140625
+		]
+	},
+	"566395_background_grassland.png": {
+		"img_name": "ROOT_DIR/editval/original/000000566395.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/566395_background_grassland.png",
+		"prompt": "Change the background into grassland",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.560546875,
+			0.80126953125
+		],
+		"clipscore": [
+			0.2177734375,
+			0.1572265625
+		]
+	},
+	"85856_background_grassland.png": {
+		"img_name": "ROOT_DIR/editval/original/000000085856.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/85856_background_grassland.png",
+		"prompt": "Change the background into grassland",
+		"model": [
+			"instructpix2pix",
+			"prompt-to-prompt"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.59033203125,
+			0.9072265625
+		],
+		"clipscore": [
+			0.1630859375,
+			0.1185302734375
+		]
+	},
+	"45392_background_street.png": {
+		"img_name": "ROOT_DIR/editval/original/000000045392.jpg",
+		"output_name": "ROOT_DIR/editval/MODEL_NAME/45392_background_street.png",
+		"prompt": "Change the background into street",
+		"model": [
+			"diffedit",
+			"instructpix2pix"
+		],
+		"h_score": [
+			0.33333333333333337,
+			0.6666666666666666
+		],
+		"augclip": [
+			0.77392578125,
+			0.84326171875
+		],
+		"clipscore": [
+			NaN,
+			NaN
+		]
+	}
+}

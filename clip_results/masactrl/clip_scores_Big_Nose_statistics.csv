@@ -1,0 +1,9 @@
+metric,value
+prompt,face with a big nose
+image_dir,/p/realai/zhenghao/LoRA_SAE/MasaCtrl/workdir/celeba/big_nose1
+mean,0.20067538740113378
+variance,0.000853867284541957
+std,0.02922100758943738
+min,0.1592162698507309
+max,0.2761498689651489
+count,32.0

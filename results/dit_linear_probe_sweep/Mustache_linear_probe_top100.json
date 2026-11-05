@@ -1,0 +1,190 @@
+{
+  "concept": "Mustache",
+  "seed": 42,
+  "num_samples": 2000,
+  "num_positive": 1000,
+  "num_negative": 1000,
+  "raw_block_shape": [
+    4,
+    256,
+    1152
+  ],
+  "pooled_shape": [
+    2000,
+    1152
+  ],
+  "feature_shape": [
+    2000,
+    100
+  ],
+  "top_k_features": 100,
+  "test_size": 0.2,
+  "accuracy": 0.82,
+  "auc": 0.887475,
+  "index_file": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_concept_latents/Mustache_top100_indices.pt",
+  "sae_checkpoint": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/results/dit_sae/dit_sae_relu_lm32_l10.01.pt",
+  "top_ranked_latents": [
+    {
+      "rank": 1,
+      "subset_position": 63,
+      "latent_index": 12986,
+      "weight": 1.1765865104076823,
+      "abs_weight": 1.1765865104076823
+    },
+    {
+      "rank": 2,
+      "subset_position": 59,
+      "latent_index": 26918,
+      "weight": -1.1650587734935103,
+      "abs_weight": 1.1650587734935103
+    },
+    {
+      "rank": 3,
+      "subset_position": 28,
+      "latent_index": 1868,
+      "weight": -1.1444181353329466,
+      "abs_weight": 1.1444181353329466
+    },
+    {
+      "rank": 4,
+      "subset_position": 72,
+      "latent_index": 36484,
+      "weight": 1.1124515241162019,
+      "abs_weight": 1.1124515241162019
+    },
+    {
+      "rank": 5,
+      "subset_position": 60,
+      "latent_index": 18013,
+      "weight": -1.031360907070978,
+      "abs_weight": 1.031360907070978
+    },
+    {
+      "rank": 6,
+      "subset_position": 2,
+      "latent_index": 28531,
+      "weight": -1.0080766146956786,
+      "abs_weight": 1.0080766146956786
+    },
+    {
+      "rank": 7,
+      "subset_position": 26,
+      "latent_index": 30069,
+      "weight": -0.983472092669418,
+      "abs_weight": 0.983472092669418
+    },
+    {
+      "rank": 8,
+      "subset_position": 79,
+      "latent_index": 7712,
+      "weight": -0.9739864088867565,
+      "abs_weight": 0.9739864088867565
+    },
+    {
+      "rank": 9,
+      "subset_position": 75,
+      "latent_index": 7739,
+      "weight": 0.9513322962441765,
+      "abs_weight": 0.9513322962441765
+    },
+    {
+      "rank": 10,
+      "subset_position": 40,
+      "latent_index": 9139,
+      "weight": 0.9343911249791169,
+      "abs_weight": 0.9343911249791169
+    },
+    {
+      "rank": 11,
+      "subset_position": 32,
+      "latent_index": 6176,
+      "weight": 0.9119723622893346,
+      "abs_weight": 0.9119723622893346
+    },
+    {
+      "rank": 12,
+      "subset_position": 31,
+      "latent_index": 8118,
+      "weight": 0.8089255300414436,
+      "abs_weight": 0.8089255300414436
+    },
+    {
+      "rank": 13,
+      "subset_position": 41,
+      "latent_index": 5623,
+      "weight": -0.767867412221838,
+      "abs_weight": 0.767867412221838
+    },
+    {
+      "rank": 14,
+      "subset_position": 13,
+      "latent_index": 26594,
+      "weight": -0.7616520506135466,
+      "abs_weight": 0.7616520506135466
+    },
+    {
+      "rank": 15,
+      "subset_position": 34,
+      "latent_index": 30155,
+      "weight": 0.7343541843873294,
+      "abs_weight": 0.7343541843873294
+    },
+    {
+      "rank": 16,
+      "subset_position": 87,
+      "latent_index": 4464,
+      "weight": -0.7123327914307038,
+      "abs_weight": 0.7123327914307038
+    },
+    {
+      "rank": 17,
+      "subset_position": 90,
+      "latent_index": 13686,
+      "weight": 0.6909524161683834,
+      "abs_weight": 0.6909524161683834
+    },
+    {
+      "rank": 18,
+      "subset_position": 11,
+      "latent_index": 35342,
+      "weight": 0.6819972169664175,
+      "abs_weight": 0.6819972169664175
+    },
+    {
+      "rank": 19,
+      "subset_position": 55,
+      "latent_index": 36037,
+      "weight": 0.6647105642347196,
+      "abs_weight": 0.6647105642347196
+    },
+    {
+      "rank": 20,
+      "subset_position": 57,
+      "latent_index": 25730,
+      "weight": -0.6643714391374881,
+      "abs_weight": 0.6643714391374881
+    }
+  ],
+  "sampled_paths": [
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/07717.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/21256.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/28542.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/08774.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/23622.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/15937.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/03350.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/12087.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/22527.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/27294.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/21666.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/07482.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/14958.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/06564.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/02652.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/02059.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/09444.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/24150.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/26951.jpg",
+    "/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/00287.jpg"
+  ]
+}

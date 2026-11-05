@@ -1,0 +1,122 @@
+[
+  {
+    "concept": "smiling",
+    "n": 8,
+    "dense_topk": null,
+    "dense_strength": 4.0,
+    "casl_topk": 16.0,
+    "casl_strength": -0.1,
+    "dense_target_clip_change": 0.0012825336307286995,
+    "casl_target_clip_change": 0.0013300757855176876,
+    "dense_lpips": 0.06591848446987567,
+    "casl_lpips": 0.004105309577425875,
+    "lpips_delta_casl_minus_dense": -0.06181317489244979,
+    "lpips_delta_95ci": [
+      -0.08049898818717344,
+      -0.04488486428017502
+    ],
+    "dense_arcface": 0.8807704076170921,
+    "casl_arcface": 0.9867413267493248,
+    "arcface_delta_casl_minus_dense": 0.10597091913223267,
+    "arcface_delta_95ci": [
+      0.0715409517288208,
+      0.1381810512393713
+    ]
+  },
+  {
+    "concept": "beard",
+    "n": 8,
+    "dense_topk": null,
+    "dense_strength": 2.0,
+    "casl_topk": 1.0,
+    "casl_strength": -4.0,
+    "dense_target_clip_change": 0.004898170009255401,
+    "casl_target_clip_change": 0.0049130320549011005,
+    "dense_lpips": 0.03171864186879243,
+    "casl_lpips": 0.32326310127973557,
+    "lpips_delta_casl_minus_dense": 0.2915444594109431,
+    "lpips_delta_95ci": [
+      0.2491312467027456,
+      0.33666291646659374
+    ],
+    "dense_arcface": 0.9173957705497742,
+    "casl_arcface": 0.552817802876234,
+    "arcface_delta_casl_minus_dense": -0.3645779676735401,
+    "arcface_delta_95ci": [
+      -0.4810569233261049,
+      -0.2568993641063573
+    ]
+  },
+  {
+    "concept": "no_beard",
+    "n": 8,
+    "dense_topk": null,
+    "dense_strength": -4.0,
+    "casl_topk": 8.0,
+    "casl_strength": -0.5,
+    "dense_target_clip_change": 0.0028437990695238374,
+    "casl_target_clip_change": 0.0026621911674738125,
+    "dense_lpips": 0.05900187930092212,
+    "casl_lpips": 0.024378820089623277,
+    "lpips_delta_casl_minus_dense": -0.03462305921129885,
+    "lpips_delta_95ci": [
+      -0.04159102260018702,
+      -0.027520896776695752
+    ],
+    "dense_arcface": 0.8686184287071228,
+    "casl_arcface": 0.932741716504097,
+    "arcface_delta_casl_minus_dense": 0.06412328779697418,
+    "arcface_delta_95ci": [
+      0.011532805860042572,
+      0.13736062496900558
+    ]
+  },
+  {
+    "concept": "young",
+    "n": 8,
+    "dense_topk": null,
+    "dense_strength": -1.0,
+    "casl_topk": 8.0,
+    "casl_strength": -0.5,
+    "dense_target_clip_change": 0.0007694475352764124,
+    "casl_target_clip_change": 0.0007790587842464378,
+    "dense_lpips": 0.012510719243437,
+    "casl_lpips": 0.022313586319796685,
+    "lpips_delta_casl_minus_dense": 0.009802867076359686,
+    "lpips_delta_95ci": [
+      0.004376356839202324,
+      0.016820703525445443
+    ],
+    "dense_arcface": 0.9525083675980568,
+    "casl_arcface": 0.940290592610836,
+    "arcface_delta_casl_minus_dense": -0.012217774987220764,
+    "arcface_delta_95ci": [
+      -0.036030225455760956,
+      0.00607648491859436
+    ]
+  },
+  {
+    "concept": "blond_hair",
+    "n": 8,
+    "dense_topk": null,
+    "dense_strength": 4.0,
+    "casl_topk": 8.0,
+    "casl_strength": 0.1,
+    "dense_target_clip_change": 0.0014608278870582253,
+    "casl_target_clip_change": 0.0016531068831682249,
+    "dense_lpips": 0.05809679906815285,
+    "casl_lpips": 0.005018241645302575,
+    "lpips_delta_casl_minus_dense": -0.05307855742285028,
+    "lpips_delta_95ci": [
+      -0.060341850343684195,
+      -0.04575396043946965
+    ],
+    "dense_arcface": 0.8948912024497986,
+    "casl_arcface": 0.9886785447597504,
+    "arcface_delta_casl_minus_dense": 0.09378734230995178,
+    "arcface_delta_95ci": [
+      0.07199347112327814,
+      0.11435817312449216
+    ]
+  }
+]

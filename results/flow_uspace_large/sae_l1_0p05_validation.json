@@ -1,0 +1,14 @@
+{
+  "train_samples": 14746,
+  "validation_samples": 1638,
+  "train": {
+    "mse": 0.005184314070830558,
+    "l0": 5842.425742574257,
+    "explained_variance": 0.9910109264079681
+  },
+  "validation": {
+    "mse": 0.043089315277025086,
+    "l0": 6134.8998778998775,
+    "explained_variance": 0.9251490922562176
+  }
+}

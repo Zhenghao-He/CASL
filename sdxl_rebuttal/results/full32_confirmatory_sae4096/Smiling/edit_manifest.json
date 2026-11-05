@@ -1,0 +1,1666 @@
+[
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29503.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29504.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29505.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29506.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29507.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29508.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29509.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29509.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29510.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29510.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29511.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29511.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29512.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29512.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29513.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29513.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29514.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29514.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29515.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29515.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29516.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29516.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29517.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29517.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29518.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29518.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29519.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29519.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29520.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29520.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29521.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29521.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29522.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29522.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29523.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29523.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29524.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29524.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29525.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29525.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29526.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29526.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29527.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29527.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29528.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29528.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29529.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29529.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29530.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29530.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29531.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29531.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29532.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a2/29532.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 2.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29503.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29504.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29505.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29506.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29507.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29508.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29509.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29509.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29510.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29510.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29511.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29511.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29512.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29512.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29513.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29513.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29514.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29514.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29515.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29515.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29516.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29516.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29517.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29517.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29518.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29518.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29519.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29519.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29520.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29520.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29521.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29521.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29522.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29522.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29523.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29523.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29524.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29524.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29525.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29525.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29526.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29526.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29527.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29527.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29528.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29528.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29529.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29529.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29530.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29530.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29531.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29531.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29532.jpg",
+    "method": "asyrp_cnn",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/asyrp_cnn/steps05-25/dense/a4/29532.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 4.0,
+    "topk": null
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29509.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29509.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29510.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29510.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29511.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29511.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29512.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29512.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29513.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29513.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29514.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29514.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29515.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29515.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29516.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29516.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29517.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29517.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29518.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29518.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29519.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29519.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29520.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29520.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29521.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29521.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29522.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29522.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29523.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29523.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29524.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29524.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29525.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29525.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29526.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29526.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29527.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29527.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29528.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29528.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29529.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29529.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29530.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29530.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29531.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29531.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29532.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a28/29532.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 28.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29501.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29501.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29502.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29502.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29503.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29503.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29504.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29504.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29505.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29505.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29506.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29506.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29507.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29507.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29508.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29508.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29509.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29509.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29510.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29510.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29511.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29511.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29512.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29512.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29513.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29513.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29514.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29514.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29515.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29515.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29516.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29516.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29517.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29517.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29518.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29518.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29519.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29519.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29520.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29520.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29521.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29521.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29522.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29522.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29523.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29523.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29524.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29524.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29525.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29525.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29526.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29526.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29527.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29527.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29528.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29528.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29529.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29529.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29530.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29530.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29531.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29531.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  },
+  {
+    "concept": "Smiling",
+    "image_id": "29532.jpg",
+    "method": "casl",
+    "path": "/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/full32_confirmatory_sae4096/Smiling/edits/Smiling/casl/steps05-25/topk8/a32/29532.jpg",
+    "range": [
+      5,
+      25
+    ],
+    "status": "recovered_existing",
+    "strength": 32.0,
+    "topk": 8
+  }
+]

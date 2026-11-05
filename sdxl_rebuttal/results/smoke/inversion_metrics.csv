@@ -1,0 +1,3 @@
+image_id,source_path,reconstruction_path,inversion_lpips,inversion_arcface
+29501.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29501.jpg,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/smoke/reconstruction/29501.jpg,0.12230760604143143,
+29502.jpg,/p/realai/zhenghao/LoRA_SAE/CelebA-HQ/data1024/29502.jpg,/p/realai/zhenghao/LoRA_SAE/Asyrp_SAE/sdxl_rebuttal/results/smoke/reconstruction/29502.jpg,0.4093463718891144,0.2802759110927582

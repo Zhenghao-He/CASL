@@ -1,0 +1,13 @@
+{
+  "zero_intervention_max_abs": 0.0,
+  "finite": true,
+  "u_shape": [
+    1,
+    4,
+    32,
+    32
+  ],
+  "patch_tokens": 256,
+  "sae_input": 4096,
+  "sae_latent": 8192
+}

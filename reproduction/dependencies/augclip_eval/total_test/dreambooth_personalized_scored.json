@@ -1,0 +1,875 @@
+{
+	"berry_bowl_1.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/berry_bowl_1.png",
+		"prompt": [
+			"bowl",
+			"a V* bowl in the jungle"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.78857421875,
+			0.78466796875
+		],
+		"clipscore": [
+			0.05291748046875,
+			0.0728759765625
+		]
+	},
+	"candle_2.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/candle_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/candle_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/candle_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/candle_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/candle_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/candle_2.png",
+		"prompt": [
+			"candle",
+			"a V* candle in the snow"
+		],
+		"model": [
+			"custom_diffusion",
+			"ELITE"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.63232421875,
+			0.70751953125
+		],
+		"clipscore": [
+			0.133544921875,
+			0.1123046875
+		]
+	},
+	"pink_sunglasses_3.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/pink_sunglasses_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/pink_sunglasses_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/pink_sunglasses_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/pink_sunglasses_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/pink_sunglasses_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/pink_sunglasses_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/pink_sunglasses_3.png",
+		"prompt": [
+			"glasses",
+			"a V* glasses on the beach"
+		],
+		"model": [
+			"custom_diffusion",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.74951171875,
+			0.81298828125
+		],
+		"clipscore": [
+			0.11041259765625,
+			0.06048583984375
+		]
+	},
+	"wolf_plushie_5.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/wolf_plushie_5.png",
+		"prompt": [
+			"stuffed animal",
+			"a V* stuffed animal on top of pink fabric"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.66943359375,
+			0.60888671875
+		],
+		"clipscore": [
+			0.06689453125,
+			0.11602783203125
+		]
+	},
+	"berry_bowl_6.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/berry_bowl_6.png",
+		"prompt": [
+			"bowl",
+			"a V* bowl on top of a wooden floor"
+		],
+		"model": [
+			"blip_diffusion",
+			"ELITE"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.76953125,
+			0.72412109375
+		],
+		"clipscore": [
+			-0.0166015625,
+			0.01525115966796875
+		]
+	},
+	"shiny_sneaker_7.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/shiny_sneaker_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/shiny_sneaker_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/shiny_sneaker_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/shiny_sneaker_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/shiny_sneaker_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/shiny_sneaker_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/shiny_sneaker_7.png",
+		"prompt": [
+			"sneaker",
+			"a V* sneaker with a city in the background"
+		],
+		"model": [
+			"blip_diffusion",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.73779296875,
+			0.595703125
+		],
+		"clipscore": [
+			-0.0728759765625,
+			0.041748046875
+		]
+	},
+	"grey_sloth_plushie_8.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/grey_sloth_plushie_8.png",
+		"prompt": [
+			"stuffed animal",
+			"a V* stuffed animal with a mountain in the background"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.7724609375,
+			0.73193359375
+		],
+		"clipscore": [
+			0.125244140625,
+			0.217529296875
+		]
+	},
+	"monster_toy_9.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/monster_toy_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/monster_toy_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/monster_toy_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/monster_toy_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/monster_toy_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/monster_toy_9.png",
+		"prompt": [
+			"toy",
+			"a V* toy with a blue house in the background"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.6689453125,
+			0.73291015625
+		],
+		"clipscore": [
+			0.06787109375,
+			0.08514404296875
+		]
+	},
+	"grey_sloth_plushie_12.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/grey_sloth_plushie_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/grey_sloth_plushie_12.png",
+		"prompt": [
+			"stuffed animal",
+			"a V* stuffed animal with a tree and autumn leaves in the background"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.74365234375,
+			0.783203125
+		],
+		"clipscore": [
+			0.043426513671875,
+			0.0504150390625
+		]
+	},
+	"fancy_boot_13.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/fancy_boot_13.png",
+		"prompt": [
+			"boot",
+			"a V* boot with the Eiffel Tower in the background"
+		],
+		"model": [
+			"blip_diffusion",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.80126953125,
+			0.55810546875
+		],
+		"clipscore": [
+			0.2296142578125,
+			0.178955078125
+		]
+	},
+	"poop_emoji_14.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/poop_emoji_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/poop_emoji_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/poop_emoji_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/poop_emoji_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/poop_emoji_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/poop_emoji_14.png",
+		"prompt": [
+			"toy",
+			"a V* toy floating on top of water"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.783203125,
+			0.5546875
+		],
+		"clipscore": [
+			0.1263427734375,
+			0.1160888671875
+		]
+	},
+	"berry_bowl_16.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/berry_bowl_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/berry_bowl_16.png",
+		"prompt": [
+			"bowl",
+			"a V* bowl on top of green grass with sunflowers around it"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.8359375,
+			0.61376953125
+		],
+		"clipscore": [
+			0.218994140625,
+			0.266845703125
+		]
+	},
+	"backpack_dog_20.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/backpack_dog_20.png",
+		"prompt": [
+			"backpack",
+			"a V* backpack on top of a white rug"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.68896484375,
+			0.6416015625
+		],
+		"clipscore": [
+			0.0280303955078125,
+			0.08148193359375
+		]
+	},
+	"rc_car_21.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/rc_car_21.png",
+		"prompt": [
+			"toy",
+			"a red V* toy"
+		],
+		"model": [
+			"custom_diffusion",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.599609375,
+			0.72607421875
+		],
+		"clipscore": [
+			0.07501220703125,
+			0.0178070068359375
+		]
+	},
+	"rc_car_22.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/rc_car_22.png",
+		"prompt": [
+			"toy",
+			"a purple V* toy"
+		],
+		"model": [
+			"custom_diffusion",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.53076171875,
+			0.70263671875
+		],
+		"clipscore": [
+			0.1470947265625,
+			0.10028076171875
+		]
+	},
+	"fancy_boot_23.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/fancy_boot_23.png",
+		"prompt": [
+			"boot",
+			"a shiny V* boot"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.74560546875,
+			0.69775390625
+		],
+		"clipscore": [
+			0.14794921875,
+			0.11041259765625
+		]
+	},
+	"backpack_dog_25.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/backpack_dog_25.png",
+		"prompt": [
+			"backpack",
+			"a cube shaped V* backpack"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.74853515625,
+			0.76318359375
+		],
+		"clipscore": [
+			0.024078369140625,
+			0.0400390625
+		]
+	},
+	"backpack_dog_27.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/backpack_dog_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/backpack_dog_27.png",
+		"prompt": [
+			"backpack",
+			"a V* backpack in the snow"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.6826171875,
+			0.6123046875
+		],
+		"clipscore": [
+			0.1307373046875,
+			0.203125
+		]
+	},
+	"colorful_sneaker_30.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/colorful_sneaker_30.png",
+		"prompt": [
+			"sneaker",
+			"a V* sneaker on top of pink fabric"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.64306640625,
+			0.7216796875
+		],
+		"clipscore": [
+			0.014312744140625,
+			0.02386474609375
+		]
+	},
+	"rc_car_31.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/rc_car_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/rc_car_31.png",
+		"prompt": [
+			"toy",
+			"a V* toy on top of a wooden floor"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.66748046875,
+			0.521484375
+		],
+		"clipscore": [
+			0.0438232421875,
+			0.09051513671875
+		]
+	},
+	"fancy_boot_32.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_04.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/fancy_boot_05.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/fancy_boot_32.png",
+		"prompt": [
+			"boot",
+			"a V* boot with a city in the background"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.83154296875,
+			0.57861328125
+		],
+		"clipscore": [
+			0.2200927734375,
+			0.190673828125
+		]
+	},
+	"wolf_plushie_33.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/wolf_plushie_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/wolf_plushie_33.png",
+		"prompt": [
+			"stuffed animal",
+			"a V* stuffed animal with a mountain in the background"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.65869140625,
+			0.58544921875
+		],
+		"clipscore": [
+			0.048828125,
+			0.1053466796875
+		]
+	},
+	"red_cartoon_36.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_03.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/red_cartoon_36.png",
+		"prompt": [
+			"cartoon",
+			"a V* cartoon with a wheat field in the background"
+		],
+		"model": [
+			"ELITE",
+			"custom_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.84521484375,
+			0.609375
+		],
+		"clipscore": [
+			0.356689453125,
+			0.22998046875
+		]
+	},
+	"red_cartoon_37.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/red_cartoon_03.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/red_cartoon_37.png",
+		"prompt": [
+			"cartoon",
+			"a V* cartoon with a tree and autumn leaves in the background"
+		],
+		"model": [
+			"custom_diffusion",
+			"ELITE"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.68310546875,
+			0.86181640625
+		],
+		"clipscore": [
+			0.1632080078125,
+			0.2032470703125
+		]
+	},
+	"duck_toy_39.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_03.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/duck_toy_39.png",
+		"prompt": [
+			"toy",
+			"a V* toy floating on top of water"
+		],
+		"model": [
+			"custom_diffusion",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.70068359375,
+			0.8857421875
+		],
+		"clipscore": [
+			0.108642578125,
+			0.124267578125
+		]
+	},
+	"colorful_sneaker_41.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/colorful_sneaker_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/colorful_sneaker_41.png",
+		"prompt": [
+			"sneaker",
+			"a V* sneaker on top of green grass with sunflowers around it"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.5,
+			0.5
+		],
+		"augclip": [
+			0.70068359375,
+			0.64453125
+		],
+		"clipscore": [
+			0.12469482421875,
+			0.233154296875
+		]
+	},
+	"robot_toy_44.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/robot_toy_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/robot_toy_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/robot_toy_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/robot_toy_03.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/robot_toy_04.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/robot_toy_44.png",
+		"prompt": [
+			"toy",
+			"a V* toy on top of a dirt road"
+		],
+		"model": [
+			"custom_diffusion",
+			"ELITE"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.44873046875,
+			0.79150390625
+		],
+		"clipscore": [
+			0.15771484375,
+			0.10357666015625
+		]
+	},
+	"duck_toy_45.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_03.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/duck_toy_45.png",
+		"prompt": [
+			"toy",
+			"a V* toy on top of a white rug"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			0.0,
+			1.0
+		],
+		"augclip": [
+			0.94580078125,
+			0.9091796875
+		],
+		"clipscore": [
+			0.1507568359375,
+			0.10687255859375
+		]
+	},
+	"duck_toy_49.png": {
+		"img_name": [
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_00.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_01.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_02.jpg",
+			"ROOT_DIR/dreambooth_personalized/original/duck_toy_03.jpg"
+		],
+		"output_name": "ROOT_DIR/dreambooth_personalized/MODEL_NAME/duck_toy_49.png",
+		"prompt": [
+			"toy",
+			"a wet V* toy"
+		],
+		"model": [
+			"ELITE",
+			"blip_diffusion"
+		],
+		"h_score": [
+			1.0,
+			0.0
+		],
+		"augclip": [
+			0.92529296875,
+			0.89404296875
+		],
+		"clipscore": [
+			0.178955078125,
+			-0.00028228759765625
+		]
+	}
+}

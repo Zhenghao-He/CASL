@@ -1,0 +1,902 @@
+[
+  {
+    "clip_directional": 1.022216796875,
+    "grad_norm": 403.69769287109375,
+    "image_id": "00001.jpg",
+    "latent_l1": 0.004144259728491306,
+    "loss": 1.0255322456359863,
+    "step": 0,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9715251922607422,
+    "grad_norm": 3.8844265937805176,
+    "image_id": "00002.jpg",
+    "latent_l1": 0.005146699026226997,
+    "loss": 0.9756425619125366,
+    "step": 1,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0690836906433105,
+    "grad_norm": 3.6469154357910156,
+    "image_id": "00003.jpg",
+    "latent_l1": 0.004781779367476702,
+    "loss": 1.0729091167449951,
+    "step": 2,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9191257953643799,
+    "grad_norm": 2.0049960613250732,
+    "image_id": "00004.jpg",
+    "latent_l1": 0.006953575648367405,
+    "loss": 0.9246886372566223,
+    "step": 3,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0769354104995728,
+    "grad_norm": 2.520050048828125,
+    "image_id": "00005.jpg",
+    "latent_l1": 0.004617528524249792,
+    "loss": 1.0806294679641724,
+    "step": 4,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8512108325958252,
+    "grad_norm": 1.981998085975647,
+    "image_id": "00006.jpg",
+    "latent_l1": 0.005487687885761261,
+    "loss": 0.8556009531021118,
+    "step": 5,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0079504251480103,
+    "grad_norm": 3.761362314224243,
+    "image_id": "00007.jpg",
+    "latent_l1": 0.00576088996604085,
+    "loss": 1.012559175491333,
+    "step": 6,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0252712965011597,
+    "grad_norm": 1.659419059753418,
+    "image_id": "00008.jpg",
+    "latent_l1": 0.005047773011028767,
+    "loss": 1.0293095111846924,
+    "step": 7,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8591230511665344,
+    "grad_norm": 1.3048372268676758,
+    "image_id": "00009.jpg",
+    "latent_l1": 0.00498004537075758,
+    "loss": 0.8631070852279663,
+    "step": 8,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0149825811386108,
+    "grad_norm": 3.884497880935669,
+    "image_id": "00010.jpg",
+    "latent_l1": 0.006139676086604595,
+    "loss": 1.0198943614959717,
+    "step": 9,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0440889596939087,
+    "grad_norm": 0.6273112297058105,
+    "image_id": "00011.jpg",
+    "latent_l1": 0.005570124834775925,
+    "loss": 1.048545002937317,
+    "step": 10,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8482321500778198,
+    "grad_norm": 0.6213858723640442,
+    "image_id": "00012.jpg",
+    "latent_l1": 0.0058658914640545845,
+    "loss": 0.8529248833656311,
+    "step": 11,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.942597508430481,
+    "grad_norm": 1.7922797203063965,
+    "image_id": "00013.jpg",
+    "latent_l1": 0.005693084094673395,
+    "loss": 0.9471519589424133,
+    "step": 12,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0388778448104858,
+    "grad_norm": 0.5557219982147217,
+    "image_id": "00014.jpg",
+    "latent_l1": 0.0057160272262990475,
+    "loss": 1.0434507131576538,
+    "step": 13,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9220694303512573,
+    "grad_norm": 0.6317578554153442,
+    "image_id": "00015.jpg",
+    "latent_l1": 0.005857896059751511,
+    "loss": 0.9267557263374329,
+    "step": 14,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8273409605026245,
+    "grad_norm": 1.2970259189605713,
+    "image_id": "00016.jpg",
+    "latent_l1": 0.005413875915110111,
+    "loss": 0.8316720724105835,
+    "step": 15,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.7920185327529907,
+    "grad_norm": 1.0435514450073242,
+    "image_id": "00017.jpg",
+    "latent_l1": 0.006003659218549728,
+    "loss": 0.7968214750289917,
+    "step": 16,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8841672539710999,
+    "grad_norm": 0.8744357228279114,
+    "image_id": "00018.jpg",
+    "latent_l1": 0.006641574203968048,
+    "loss": 0.8894805312156677,
+    "step": 17,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0217756032943726,
+    "grad_norm": 0.4181865453720093,
+    "image_id": "00019.jpg",
+    "latent_l1": 0.005254095885902643,
+    "loss": 1.025978922843933,
+    "step": 18,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.041326642036438,
+    "grad_norm": 0.8795962333679199,
+    "image_id": "00020.jpg",
+    "latent_l1": 0.005082317627966404,
+    "loss": 1.0453925132751465,
+    "step": 19,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9375423789024353,
+    "grad_norm": 1.1491471529006958,
+    "image_id": "00021.jpg",
+    "latent_l1": 0.00648382818326354,
+    "loss": 0.9427294135093689,
+    "step": 20,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8438656330108643,
+    "grad_norm": 1.0858442783355713,
+    "image_id": "00022.jpg",
+    "latent_l1": 0.005391126498579979,
+    "loss": 0.848178505897522,
+    "step": 21,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8891366720199585,
+    "grad_norm": 0.5619887113571167,
+    "image_id": "00023.jpg",
+    "latent_l1": 0.005934808868914843,
+    "loss": 0.893884539604187,
+    "step": 22,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0573382377624512,
+    "grad_norm": 0.4109068512916565,
+    "image_id": "00024.jpg",
+    "latent_l1": 0.00519685260951519,
+    "loss": 1.0614956617355347,
+    "step": 23,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.0112013816833496,
+    "grad_norm": 0.3692787289619446,
+    "image_id": "00025.jpg",
+    "latent_l1": 0.007845771498978138,
+    "loss": 1.0174779891967773,
+    "step": 24,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9182755947113037,
+    "grad_norm": 0.8771691918373108,
+    "image_id": "00026.jpg",
+    "latent_l1": 0.004936632700264454,
+    "loss": 0.9222248792648315,
+    "step": 25,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8485150337219238,
+    "grad_norm": 0.4657597243785858,
+    "image_id": "00027.jpg",
+    "latent_l1": 0.005790291354060173,
+    "loss": 0.8531472682952881,
+    "step": 26,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8212070465087891,
+    "grad_norm": 0.492710143327713,
+    "image_id": "00028.jpg",
+    "latent_l1": 0.005289718974381685,
+    "loss": 0.8254387974739075,
+    "step": 27,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9806452393531799,
+    "grad_norm": 0.9529879689216614,
+    "image_id": "00029.jpg",
+    "latent_l1": 0.005355820059776306,
+    "loss": 0.9849299192428589,
+    "step": 28,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8777668476104736,
+    "grad_norm": 0.8182895183563232,
+    "image_id": "00030.jpg",
+    "latent_l1": 0.005823550745844841,
+    "loss": 0.8824256658554077,
+    "step": 29,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.8968815803527832,
+    "grad_norm": 0.335296630859375,
+    "image_id": "00031.jpg",
+    "latent_l1": 0.006057858467102051,
+    "loss": 0.9017278552055359,
+    "step": 30,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 1.082232117652893,
+    "grad_norm": 0.3075092136859894,
+    "image_id": "00032.jpg",
+    "latent_l1": 0.005600481294095516,
+    "loss": 1.0867124795913696,
+    "step": 31,
+    "timestep_index": 5
+  },
+  {
+    "clip_directional": 0.9080299139022827,
+    "grad_norm": 1.1010280847549438,
+    "image_id": "00001.jpg",
+    "latent_l1": 0.004597358871251345,
+    "loss": 0.9117078185081482,
+    "step": 32,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7654739618301392,
+    "grad_norm": 0.7503266930580139,
+    "image_id": "00002.jpg",
+    "latent_l1": 0.00440643448382616,
+    "loss": 0.7689990997314453,
+    "step": 33,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.8335316777229309,
+    "grad_norm": 0.3632572591304779,
+    "image_id": "00003.jpg",
+    "latent_l1": 0.0049420250579714775,
+    "loss": 0.8374853134155273,
+    "step": 34,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7176329493522644,
+    "grad_norm": 0.4859120845794678,
+    "image_id": "00004.jpg",
+    "latent_l1": 0.0038198663387447596,
+    "loss": 0.7206888198852539,
+    "step": 35,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7560177445411682,
+    "grad_norm": 0.6934127807617188,
+    "image_id": "00005.jpg",
+    "latent_l1": 0.00432722270488739,
+    "loss": 0.7594795227050781,
+    "step": 36,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7934815287590027,
+    "grad_norm": 0.614069402217865,
+    "image_id": "00006.jpg",
+    "latent_l1": 0.003849419066682458,
+    "loss": 0.796561062335968,
+    "step": 37,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7657619714736938,
+    "grad_norm": 0.762593150138855,
+    "image_id": "00007.jpg",
+    "latent_l1": 0.003678931389003992,
+    "loss": 0.7687051296234131,
+    "step": 38,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.8144757151603699,
+    "grad_norm": 0.5314022898674011,
+    "image_id": "00008.jpg",
+    "latent_l1": 0.00384775223210454,
+    "loss": 0.8175539374351501,
+    "step": 39,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7989765405654907,
+    "grad_norm": 0.3694077134132385,
+    "image_id": "00009.jpg",
+    "latent_l1": 0.00427473708987236,
+    "loss": 0.8023963570594788,
+    "step": 40,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.712029218673706,
+    "grad_norm": 0.543248176574707,
+    "image_id": "00010.jpg",
+    "latent_l1": 0.004040725063532591,
+    "loss": 0.7152618169784546,
+    "step": 41,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7493883371353149,
+    "grad_norm": 0.4975554943084717,
+    "image_id": "00011.jpg",
+    "latent_l1": 0.005263621918857098,
+    "loss": 0.753599226474762,
+    "step": 42,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7794394493103027,
+    "grad_norm": 0.545121967792511,
+    "image_id": "00012.jpg",
+    "latent_l1": 0.004117337986826897,
+    "loss": 0.7827333211898804,
+    "step": 43,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7610132694244385,
+    "grad_norm": 0.22233524918556213,
+    "image_id": "00013.jpg",
+    "latent_l1": 0.005639013834297657,
+    "loss": 0.7655245065689087,
+    "step": 44,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7634056806564331,
+    "grad_norm": 0.3126174807548523,
+    "image_id": "00014.jpg",
+    "latent_l1": 0.003909523133188486,
+    "loss": 0.7665333151817322,
+    "step": 45,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.8184095621109009,
+    "grad_norm": 0.20152629911899567,
+    "image_id": "00015.jpg",
+    "latent_l1": 0.0045217969454824924,
+    "loss": 0.8220270276069641,
+    "step": 46,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.9053495526313782,
+    "grad_norm": 0.5552789568901062,
+    "image_id": "00016.jpg",
+    "latent_l1": 0.0038111950270831585,
+    "loss": 0.9083985090255737,
+    "step": 47,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.9748867154121399,
+    "grad_norm": 0.5324152708053589,
+    "image_id": "00017.jpg",
+    "latent_l1": 0.0039168428629636765,
+    "loss": 0.978020191192627,
+    "step": 48,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.971228837966919,
+    "grad_norm": 0.6474245190620422,
+    "image_id": "00018.jpg",
+    "latent_l1": 0.0034882845357060432,
+    "loss": 0.974019467830658,
+    "step": 49,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7352452874183655,
+    "grad_norm": 0.4010576605796814,
+    "image_id": "00019.jpg",
+    "latent_l1": 0.0048703718930482864,
+    "loss": 0.739141583442688,
+    "step": 50,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7485113739967346,
+    "grad_norm": 0.6584784984588623,
+    "image_id": "00020.jpg",
+    "latent_l1": 0.003739590523764491,
+    "loss": 0.751503050327301,
+    "step": 51,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7608057856559753,
+    "grad_norm": 0.5104596018791199,
+    "image_id": "00021.jpg",
+    "latent_l1": 0.0040745860897004604,
+    "loss": 0.7640654444694519,
+    "step": 52,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.8061078786849976,
+    "grad_norm": 0.4106849431991577,
+    "image_id": "00022.jpg",
+    "latent_l1": 0.004199455492198467,
+    "loss": 0.8094674348831177,
+    "step": 53,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7980722188949585,
+    "grad_norm": 0.865434467792511,
+    "image_id": "00023.jpg",
+    "latent_l1": 0.004013728816062212,
+    "loss": 0.8012831807136536,
+    "step": 54,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.9061669707298279,
+    "grad_norm": 0.37923943996429443,
+    "image_id": "00024.jpg",
+    "latent_l1": 0.004412674345076084,
+    "loss": 0.9096971154212952,
+    "step": 55,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7879758477210999,
+    "grad_norm": 0.9996355175971985,
+    "image_id": "00025.jpg",
+    "latent_l1": 0.0053461166098713875,
+    "loss": 0.7922527194023132,
+    "step": 56,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7633183598518372,
+    "grad_norm": 0.7804311513900757,
+    "image_id": "00026.jpg",
+    "latent_l1": 0.004093816038221121,
+    "loss": 0.7665933966636658,
+    "step": 57,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7014486789703369,
+    "grad_norm": 0.8972650766372681,
+    "image_id": "00027.jpg",
+    "latent_l1": 0.0038884617388248444,
+    "loss": 0.7045594453811646,
+    "step": 58,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.8318380117416382,
+    "grad_norm": 0.5343675017356873,
+    "image_id": "00028.jpg",
+    "latent_l1": 0.003772219642996788,
+    "loss": 0.8348557949066162,
+    "step": 59,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.9251720905303955,
+    "grad_norm": 0.6968417167663574,
+    "image_id": "00029.jpg",
+    "latent_l1": 0.0034381337463855743,
+    "loss": 0.9279226064682007,
+    "step": 60,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.8564739227294922,
+    "grad_norm": 0.6665089130401611,
+    "image_id": "00030.jpg",
+    "latent_l1": 0.004564405418932438,
+    "loss": 0.8601254224777222,
+    "step": 61,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.9662310481071472,
+    "grad_norm": 0.3084346055984497,
+    "image_id": "00031.jpg",
+    "latent_l1": 0.0040049804374575615,
+    "loss": 0.9694350361824036,
+    "step": 62,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7839696407318115,
+    "grad_norm": 0.4927617609500885,
+    "image_id": "00032.jpg",
+    "latent_l1": 0.0040341028943657875,
+    "loss": 0.787196934223175,
+    "step": 63,
+    "timestep_index": 10
+  },
+  {
+    "clip_directional": 0.7066562175750732,
+    "grad_norm": 0.5144986510276794,
+    "image_id": "00001.jpg",
+    "latent_l1": 0.0028930041007697582,
+    "loss": 0.7089706063270569,
+    "step": 64,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7203624248504639,
+    "grad_norm": 0.3909086585044861,
+    "image_id": "00002.jpg",
+    "latent_l1": 0.0026413295418024063,
+    "loss": 0.7224754691123962,
+    "step": 65,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8199952244758606,
+    "grad_norm": 0.7876816391944885,
+    "image_id": "00003.jpg",
+    "latent_l1": 0.0028250846080482006,
+    "loss": 0.8222553133964539,
+    "step": 66,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7863503098487854,
+    "grad_norm": 0.4000057876110077,
+    "image_id": "00004.jpg",
+    "latent_l1": 0.003043233184143901,
+    "loss": 0.788784921169281,
+    "step": 67,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7333132028579712,
+    "grad_norm": 0.41133612394332886,
+    "image_id": "00005.jpg",
+    "latent_l1": 0.003163472516462207,
+    "loss": 0.7358439564704895,
+    "step": 68,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6963080167770386,
+    "grad_norm": 0.4103442132472992,
+    "image_id": "00006.jpg",
+    "latent_l1": 0.002683432772755623,
+    "loss": 0.698454737663269,
+    "step": 69,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8668277263641357,
+    "grad_norm": 1.1934257745742798,
+    "image_id": "00007.jpg",
+    "latent_l1": 0.0026085206773132086,
+    "loss": 0.8689145445823669,
+    "step": 70,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7352336645126343,
+    "grad_norm": 0.639676034450531,
+    "image_id": "00008.jpg",
+    "latent_l1": 0.0042214905843138695,
+    "loss": 0.7386108636856079,
+    "step": 71,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7693787217140198,
+    "grad_norm": 0.6270134449005127,
+    "image_id": "00009.jpg",
+    "latent_l1": 0.003682586597278714,
+    "loss": 0.772324800491333,
+    "step": 72,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7353869676589966,
+    "grad_norm": 0.27129706740379333,
+    "image_id": "00010.jpg",
+    "latent_l1": 0.003271375084295869,
+    "loss": 0.7380040884017944,
+    "step": 73,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6852055191993713,
+    "grad_norm": 0.34387630224227905,
+    "image_id": "00011.jpg",
+    "latent_l1": 0.004630845971405506,
+    "loss": 0.688910186290741,
+    "step": 74,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7374917268753052,
+    "grad_norm": 1.610438585281372,
+    "image_id": "00012.jpg",
+    "latent_l1": 0.002826428972184658,
+    "loss": 0.7397528886795044,
+    "step": 75,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6788585186004639,
+    "grad_norm": 0.5105568170547485,
+    "image_id": "00013.jpg",
+    "latent_l1": 0.003380859037861228,
+    "loss": 0.6815631985664368,
+    "step": 76,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8727545738220215,
+    "grad_norm": 0.18818016350269318,
+    "image_id": "00014.jpg",
+    "latent_l1": 0.004645838867872953,
+    "loss": 0.876471221446991,
+    "step": 77,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8051705956459045,
+    "grad_norm": 1.9365376234054565,
+    "image_id": "00015.jpg",
+    "latent_l1": 0.0028059757314622402,
+    "loss": 0.8074153661727905,
+    "step": 78,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7125982046127319,
+    "grad_norm": 0.6003243327140808,
+    "image_id": "00016.jpg",
+    "latent_l1": 0.00437941076233983,
+    "loss": 0.7161017060279846,
+    "step": 79,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6806682348251343,
+    "grad_norm": 0.3291369378566742,
+    "image_id": "00017.jpg",
+    "latent_l1": 0.003438732121139765,
+    "loss": 0.6834192276000977,
+    "step": 80,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8762591481208801,
+    "grad_norm": 0.5828580260276794,
+    "image_id": "00018.jpg",
+    "latent_l1": 0.003447245340794325,
+    "loss": 0.8790169358253479,
+    "step": 81,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7870101928710938,
+    "grad_norm": 0.31547558307647705,
+    "image_id": "00019.jpg",
+    "latent_l1": 0.004296612925827503,
+    "loss": 0.790447473526001,
+    "step": 82,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7277963757514954,
+    "grad_norm": 0.5144773125648499,
+    "image_id": "00020.jpg",
+    "latent_l1": 0.0028343242593109608,
+    "loss": 0.7300638556480408,
+    "step": 83,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8751097917556763,
+    "grad_norm": 2.8574020862579346,
+    "image_id": "00021.jpg",
+    "latent_l1": 0.003954734653234482,
+    "loss": 0.878273606300354,
+    "step": 84,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7123522758483887,
+    "grad_norm": 0.5795029401779175,
+    "image_id": "00022.jpg",
+    "latent_l1": 0.0028192708268761635,
+    "loss": 0.7146077156066895,
+    "step": 85,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6574544310569763,
+    "grad_norm": 0.31374964118003845,
+    "image_id": "00023.jpg",
+    "latent_l1": 0.004631226882338524,
+    "loss": 0.6611593961715698,
+    "step": 86,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8467234969139099,
+    "grad_norm": 0.2133483588695526,
+    "image_id": "00024.jpg",
+    "latent_l1": 0.004649442620575428,
+    "loss": 0.8504430651664734,
+    "step": 87,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7153246998786926,
+    "grad_norm": 1.127035140991211,
+    "image_id": "00025.jpg",
+    "latent_l1": 0.0035142661072313786,
+    "loss": 0.7181361317634583,
+    "step": 88,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7176224589347839,
+    "grad_norm": 0.3565978407859802,
+    "image_id": "00026.jpg",
+    "latent_l1": 0.0026949511375278234,
+    "loss": 0.7197784185409546,
+    "step": 89,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6624295711517334,
+    "grad_norm": 0.4606732130050659,
+    "image_id": "00027.jpg",
+    "latent_l1": 0.0025581782683730125,
+    "loss": 0.6644760966300964,
+    "step": 90,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7118442058563232,
+    "grad_norm": 0.39914801716804504,
+    "image_id": "00028.jpg",
+    "latent_l1": 0.0028347428888082504,
+    "loss": 0.7141119837760925,
+    "step": 91,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.6539602875709534,
+    "grad_norm": 0.5409140586853027,
+    "image_id": "00029.jpg",
+    "latent_l1": 0.0028931566048413515,
+    "loss": 0.6562747955322266,
+    "step": 92,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.7563705444335938,
+    "grad_norm": 1.040399432182312,
+    "image_id": "00030.jpg",
+    "latent_l1": 0.0028802824672311544,
+    "loss": 0.7586747407913208,
+    "step": 93,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8717223405838013,
+    "grad_norm": 0.2812500596046448,
+    "image_id": "00031.jpg",
+    "latent_l1": 0.0028923009522259235,
+    "loss": 0.8740361928939819,
+    "step": 94,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.732664942741394,
+    "grad_norm": 1.0923978090286255,
+    "image_id": "00032.jpg",
+    "latent_l1": 0.003291231580078602,
+    "loss": 0.7352979183197021,
+    "step": 95,
+    "timestep_index": 15
+  },
+  {
+    "clip_directional": 0.8177372217178345,
+    "grad_norm": 1.1259996891021729,
+    "image_id": "00001.jpg",
+    "latent_l1": 0.0019744604360312223,
+    "loss": 0.8193168044090271,
+    "step": 96,
+    "timestep_index": 20
+  },
+  {
+    "clip_directional": 0.9046415090560913,
+    "grad_norm": 1.2450453042984009,
+    "image_id": "00002.jpg",
+    "latent_l1": 0.002124080201610923,
+    "loss": 0.9063407778739929,
+    "step": 97,
+    "timestep_index": 20
+  },
+  {
+    "clip_directional": 0.6049935817718506,
+    "grad_norm": 0.38863563537597656,
+    "image_id": "00003.jpg",
+    "latent_l1": 0.002279397565871477,
+    "loss": 0.6068171262741089,
+    "step": 98,
+    "timestep_index": 20
+  },
+  {
+    "clip_directional": 0.8876955509185791,
+    "grad_norm": 0.26047244668006897,
+    "image_id": "00004.jpg",
+    "latent_l1": 0.002108532004058361,
+    "loss": 0.8893823623657227,
+    "step": 99,
+    "timestep_index": 20
+  }
+]

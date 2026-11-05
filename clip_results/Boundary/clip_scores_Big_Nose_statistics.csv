@@ -1,0 +1,9 @@
+metric,value
+prompt,face with a big nose
+image_dir,boundary_good/Big_Nose_500Range_7/images
+mean,0.14886528253555298
+variance,0.0001971449324568164
+std,0.014040830903362394
+min,0.12164616584777832
+max,0.18591421842575073
+count,32.0

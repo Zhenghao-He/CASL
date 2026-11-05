@@ -1,0 +1,11 @@
+{
+  "edit_reference": "Euler inversion reconstruction",
+  "inversion_reference": "original image",
+  "epr": "mean across ResNet18, MobileNetV2, VGG16, ViT-B/16; each backbone uses aggregate |target logit delta| / mean aggregate |off-target logit delta|",
+  "target_change": "mean signed target probability change across four classifiers",
+  "success": "negative-to-positive rate, averaged across four classifiers",
+  "manifests": [
+    "manifest_blond_hair_minimal32.csv"
+  ],
+  "rows": 64
+}

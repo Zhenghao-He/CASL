@@ -40,7 +40,7 @@
 #!/bin/bash
 #!/bin/bash
 
-MODEL_NAME="resnet"  # resnet18 or mobilenetv2
+MODEL_NAME="mobilenetv2"  # resnet18 or mobilenetv2
 BATCH_SIZE=32
 MODEL_PATH=./celeba_classifier/${MODEL_NAME}_model/${MODEL_NAME}18_multiplicative_pretrain_
 LABEL_FILE=../CelebA-HQ/list_attr_celeba_shift.txt
