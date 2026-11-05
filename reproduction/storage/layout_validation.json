@@ -11,5 +11,15 @@
     "celeba_classifier"
   ],
   "archive_link_check": "passed in an independent checkout using --archive; all four attribute-classifier checkpoints are readable",
-  "scope": "Source layout and existing archive links; no dataset download or GPU retraining"
+  "final_archive_restore": {
+    "source_commit": "0339211",
+    "result": "passed",
+    "method": "Independent git-archive checkout followed by restore_layout.py --archive",
+    "checks": [
+      "Every indexed workspace artifact is readable",
+      "All 40 original path aliases are restored",
+      "The 8-image inversion cache resolves through its original alias"
+    ]
+  },
+  "scope": "Source layout and archive restoration; no dataset download or GPU retraining"
 }
